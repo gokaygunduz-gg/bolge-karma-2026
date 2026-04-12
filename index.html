@@ -183,14 +183,15 @@
 </div>
 <script>
 (function(){
-  const PW = "karma2026";
   const KEY = "bolge_karma_auth";
   const overlay = document.getElementById("pw-overlay");
-  if(sessionStorage.getItem(KEY) === "1"){ overlay.style.display="none"; }
+  const pwOff = localStorage.getItem('karma_pw_off') === '1';
+  if(pwOff || sessionStorage.getItem(KEY) === "1"){ overlay.style.display="none"; }
   else { overlay.style.display="flex"; setTimeout(()=>document.getElementById("pw-input").focus(),100); }
   window.checkPw = function(){
     const v = document.getElementById("pw-input").value;
-    if(v === PW){ sessionStorage.setItem(KEY,"1"); overlay.style.display="none"; }
+    const curPW = localStorage.getItem('karma_pw') || "karma2026";
+    if(v === curPW){ sessionStorage.setItem(KEY,"1"); overlay.style.display="none"; }
     else { document.getElementById("pw-err").style.display="block"; document.getElementById("pw-input").value=""; }
   };
 })();
@@ -677,17 +678,75 @@ function renderMatrix(content) {
   content.appendChild(wrap);
 }
 
-// ── Admin şifresi ─────────────────────────────────────────────────────────────
-const ADMIN_PW = "admin2026";
+// ── Admin şifre yönetimi (localStorage tabanlı) ───────────────────────────────
+function getMainPw()  { return localStorage.getItem('karma_pw')       || 'karma2026'; }
+function getAdminPw() { return localStorage.getItem('karma_admin_pw') || 'admin2026'; }
+function isPwOff()    { return localStorage.getItem('karma_pw_off')   === '1'; }
+
 let adminUnlocked = sessionStorage.getItem("bolge_karma_admin") === "1";
 
-// ── Admin sekmesi ─────────────────────────────────────────────────────────────
+// Bekleyen değişiklikler (oturum bazlı)
+let pendingClubAliases   = {};  // raw → {canonical, city, region}
+let pendingNameOverrides = {};  // "name|by|gender" → {name,birth_year,gender,resolution,...}
+
+// Şehir → Bölge haritası
+const CITY_REGION = {
+  'İstanbul':1,
+  'Bursa':2,'Kocaeli':2,'Sakarya':2,'Edirne':2,'Tekirdağ':2,'Kırklareli':2,
+  'Çanakkale':2,'Balıkesir':2,'Bilecik':2,'Yalova':2,
+  'İzmir':3,'Aydın':3,'Muğla':3,'Manisa':3,'Denizli':3,
+  'Afyonkarahisar':3,'Kütahya':3,'Uşak':3,
+  'Ankara':4,'Konya':4,'Eskişehir':4,'Sivas':4,'Kayseri':4,'Aksaray':4,
+  'Niğde':4,'Nevşehir':4,'Kırıkkale':4,'Yozgat':4,'Çankırı':4,'Kırşehir':4,'Karaman':4,
+  'Samsun':5,'Trabzon':5,'Zonguldak':5,'Kastamonu':5,'Sinop':5,'Artvin':5,
+  'Rize':5,'Ordu':5,'Giresun':5,'Tokat':5,'Amasya':5,'Bolu':5,'Bartın':5,
+  'Karabük':5,'Düzce':5,'Gümüşhane':5,'Bayburt':5,
+  'Adana':6,'Antalya':6,'Mersin':6,'Gaziantep':6,'Şanlıurfa':6,'Diyarbakır':6,
+  'Malatya':6,'Elazığ':6,'Erzurum':6,'Van':6,'Hatay':6,'Kahramanmaraş':6,
+  'Osmaniye':6,'Adıyaman':6,'Batman':6,'Mardin':6,'Siirt':6,'Muş':6,'Bitlis':6,
+  'Hakkari':6,'Ağrı':6,'Kars':6,'Ardahan':6,'Iğdır':6,'Bingöl':6,'Tunceli':6,
+  'Erzincan':6,'Şırnak':6
+};
+const REGION_NAMES = {1:'İstanbul',2:'Marmara',3:'Ege',4:'İç Anadolu',5:'Karadeniz',6:'Güneydoğu'};
+const CITIES_SORTED = Object.keys(CITY_REGION).sort((a,b)=>a.localeCompare(b,'tr'));
+
+function _cityOpts() {
+  return '<option value="">-- Şehir seç --</option>' +
+    CITIES_SORTED.map(c=>`<option value="${c}">${c} (B${CITY_REGION[c]})</option>`).join('');
+}
+function _regionOpts() {
+  return '<option value="">Bölge</option>' +
+    [1,2,3,4,5,6].map(r=>`<option value="${r}">B${r} ${REGION_NAMES[r]}</option>`).join('');
+}
+function _esc(s){ return String(s).replace(/'/g,"\\'"); }
+function showMsg(id,text,color){
+  const el=document.getElementById(id); if(!el)return;
+  el.style.display='block'; el.style.color=color; el.textContent=text;
+}
+
+// ── Aynı isimli sporcu tespiti ────────────────────────────────────────────────
+function findDuplicateAthletes() {
+  if (!DATA||!DATA.groups) return [];
+  const seen={};
+  for (const grp of Object.values(DATA.groups)) {
+    for (const a of grp.athletes) {
+      if (a.selected==='MULTINATIONS') continue;
+      const key=`${a.name.toLowerCase()}|${a.birth_year}|${a.gender}`;
+      if(!seen[key]) seen[key]=[];
+      if(!seen[key].some(s=>s.club===a.club))
+        seen[key].push({name:a.name,birth_year:a.birth_year,gender:a.gender,club:a.club||'',city:a.city||'',region:a.region||0});
+    }
+  }
+  return Object.entries(seen).filter(([,e])=>e.length>1).map(([,e])=>e);
+}
+
+// ── Admin render ──────────────────────────────────────────────────────────────
 function renderAdmin(content) {
   if (!adminUnlocked) {
-    const div = document.createElement('div');
-    div.style.cssText = 'max-width:340px;margin:40px auto;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px;text-align:center';
-    div.innerHTML = `
-      <p style="color:#94a3b8;margin-bottom:16px;font-size:13px;">Admin şifresi girin</p>
+    const div=document.createElement('div');
+    div.style.cssText='max-width:340px;margin:40px auto;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px;text-align:center';
+    div.innerHTML=`
+      <p style="color:#94a3b8;margin-bottom:16px;font-size:13px">Admin şifresi girin</p>
       <input id="admin-pw-in" type="password" placeholder="Admin şifre"
         style="width:100%;padding:10px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:14px;margin-bottom:10px"
         onkeydown="if(event.key==='Enter')checkAdminPw()">
@@ -695,148 +754,392 @@ function renderAdmin(content) {
         style="width:100%;padding:10px;background:#3b82f6;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Giriş</button>
       <p id="admin-pw-err" style="color:#ef4444;font-size:12px;margin-top:8px;display:none">Yanlış şifre</p>`;
     content.appendChild(div);
-    setTimeout(()=>{ const el=document.getElementById('admin-pw-in'); if(el) el.focus(); }, 50);
+    setTimeout(()=>{const el=document.getElementById('admin-pw-in');if(el)el.focus();},50);
     return;
   }
 
-  // Eksik kulüp raporu
-  const missingSection = DATA._missing_clubs && DATA._missing_clubs.length > 0
-    ? `<div style="background:#1e293b;border:1px solid #ef4444;border-radius:8px;padding:14px;margin-bottom:14px">
-        <div style="color:#ef4444;font-weight:600;margin-bottom:8px">⚠ Bölgesi Bilinmeyen Kulüpler (${DATA._missing_clubs.length})</div>
-        <div style="font-size:12px;color:#94a3b8;margin-bottom:8px">Bu kulüpleri <code style="color:#f59e0b">manual_overrides.json</code>'a ekleyin (GitHub'dan telefonla düzenlenebilir)</div>
-        ${DATA._missing_clubs.map(c=>`<div style="font-size:12px;color:#e2e8f0;padding:3px 0;border-bottom:1px solid #334155">${c}</div>`).join('')}
-       </div>`
-    : `<div style="background:#1e293b;border:1px solid #22c55e;border-radius:8px;padding:12px;margin-bottom:14px;color:#22c55e;font-size:13px">✓ Tüm kulüpler eşleşti</div>`;
+  const wrap=document.createElement('div');
+  wrap.style.cssText='max-width:640px;margin:0 auto;padding:12px';
 
-  const nextUpdateInfo = getNextUpdateInfo();
+  function sec(title,borderColor,body){
+    const el=document.createElement('div');
+    el.style.cssText=`background:#1e293b;border:1px solid ${borderColor};border-radius:8px;padding:14px;margin-bottom:14px`;
+    el.innerHTML=`<div style="font-size:11px;font-weight:700;color:${borderColor};margin-bottom:10px;letter-spacing:.05em">${title}</div>${body}`;
+    return el;
+  }
 
-  const div = document.createElement('div');
-  div.style.cssText = 'max-width:640px;margin:16px auto;padding:0 12px';
-  div.innerHTML = `
-    <h3 style="color:#e2e8f0;margin-bottom:14px;font-size:15px">⚙ Admin Paneli</h3>
-
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;margin-bottom:14px">
-      <div style="color:#94a3b8;font-size:11px;margin-bottom:6px">ZAMANLAMA</div>
-      <div style="font-size:13px;color:#e2e8f0">Son güncelleme: <b>${DATA.generated_at}</b></div>
-      <div style="font-size:13px;color:#94a3b8;margin-top:4px">${nextUpdateInfo}</div>
-      <div style="font-size:11px;color:#64748b;margin-top:6px">17-20 Nisan arası her 20dk otomatik güncelleme + Lenex kontrol saatleri</div>
-    </div>
-
-    ${missingSection}
-
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;margin-bottom:14px">
-      <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">KULÜP / SPORCU OVERRIDE EKLE</div>
-      <div style="font-size:12px;color:#94a3b8;margin-bottom:10px">
-        GitHub'dan <b style="color:#f59e0b">manual_overrides.json</b> dosyasını düzenleyin:<br>
-        <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/edit/master/manual_overrides.json"
-           target="_blank"
-           style="color:#3b82f6;font-size:13px;text-decoration:none">→ GitHub'da düzenle (telefondan çalışır)</a>
+  // ── 1. GÜVENLİK ──
+  const pwOff=isPwOff();
+  wrap.appendChild(sec('🔒 GÜVENLİK','#94a3b8',`
+    <div style="margin-bottom:14px">
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">
+        Giriş Şifresi ${pwOff?'<span style="color:#ef4444;font-weight:700">[KAPALI — herkes girebilir]</span>':''}
       </div>
-      <div style="font-size:11px;color:#64748b">Düzenledikten sonra Actions → "Update Panel" → Run workflow</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
+        <input id="new-main-pw" type="text" placeholder="Yeni şifre yaz..."
+          style="flex:1;min-width:130px;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
+        <button onclick="adminChangePw('main')"
+          style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
+        <button onclick="adminTogglePw()"
+          style="padding:8px 14px;background:${pwOff?'#22c55e':'#ef4444'};border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">
+          ${pwOff?'Şifreyi Aç':'Şifreyi Kaldır'}</button>
+      </div>
+      <div id="pw-main-msg" style="font-size:11px;margin-top:2px;display:none"></div>
     </div>
+    <div>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Admin Şifresi</div>
+      <div style="display:flex;gap:6px">
+        <input id="new-admin-pw" type="text" placeholder="Yeni admin şifre..."
+          style="flex:1;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
+        <button onclick="adminChangePw('admin')"
+          style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
+      </div>
+      <div id="pw-admin-msg" style="font-size:11px;margin-top:4px;display:none"></div>
+    </div>
+  `));
 
-    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px">
-      <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">MANUEL GÜNCELLEME</div>
-      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Edirne URL ile hemen güncelle:</div>
-      <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/actions/workflows/update-panel.yml"
-         target="_blank"
-         style="display:inline-block;padding:8px 16px;background:#3b82f6;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none">
-        → GitHub Actions'a git
-      </a>
-    </div>
-  `;
-  content.appendChild(div);
+  // ── 2. EKSİK KULÜPLER ──
+  const allMissing = DATA._missing_clubs || [];
+  const missing = allMissing.filter(c=>!pendingClubAliases[c]);
+  const resolved = Object.keys(pendingClubAliases);
+  let clubBody = '';
+  if (resolved.length>0) {
+    clubBody += `<div style="margin-bottom:10px;padding:8px;background:#0f172a;border-radius:6px">
+      <div style="font-size:11px;color:#22c55e;margin-bottom:4px">✓ Bu oturumda çözülenler (${resolved.length})</div>
+      ${resolved.map(r=>`<div style="font-size:12px;color:#64748b;padding:1px 0">${r} → ${pendingClubAliases[r].city} (B${pendingClubAliases[r].region})</div>`).join('')}
+    </div>`;
+  }
+  if (missing.length===0 && resolved.length===0) {
+    clubBody += `<div style="font-size:13px;color:#22c55e">✓ Tüm kulüpler eşleşti</div>`;
+  } else {
+    missing.forEach((club,i) => {
+      clubBody += `
+        <div style="border:1px solid #334155;border-radius:6px;padding:10px;margin-bottom:8px">
+          <div style="font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:8px">${club}</div>
+          <div style="display:flex;gap:6px;margin-bottom:6px;flex-wrap:wrap;align-items:center">
+            <select id="cs-${i}" onchange="adminCityDrop(${i},'${_esc(club)}')"
+              style="flex:1;min-width:160px;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
+              ${_cityOpts()}
+            </select>
+            <span id="crb-${i}" style="font-size:11px;color:#64748b;min-width:80px"></span>
+          </div>
+          <div style="display:flex;gap:6px;margin-bottom:6px;flex-wrap:wrap">
+            <input id="cm-${i}" type="text" placeholder="veya şehri manuel yaz..."
+              style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
+              oninput="adminCityMan(${i},'${_esc(club)}')">
+            <select id="cr-${i}"
+              style="padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:12px">
+              ${_regionOpts()}
+            </select>
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <input id="cc-${i}" type="text" placeholder="Kanonik kulüp adı (boşsa aynı kalır)"
+              style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
+              value="${club}">
+            <button onclick="adminSaveClub(${i},'${_esc(club)}')"
+              style="padding:7px 14px;background:#22c55e;border:none;border-radius:6px;color:#0f172a;font-size:12px;font-weight:700;cursor:pointer">Kaydet</button>
+          </div>
+          <div id="clm-${i}" style="font-size:11px;margin-top:5px;display:none"></div>
+        </div>`;
+    });
+  }
+  wrap.appendChild(sec(`🏢 EKSİK KULÜPLER${missing.length>0?' ('+missing.length+')':' ✓'}`,
+    missing.length>0?'#ef4444':'#22c55e', clubBody));
+
+  // ── 3. AYNI İSİMLİ SPORCULAR ──
+  const dupes = findDuplicateAthletes().filter(entries=>{
+    const key=`${entries[0].name.toLowerCase()}|${entries[0].birth_year}|${entries[0].gender}`;
+    return !pendingNameOverrides[key];
+  });
+  const resolvedDupes = Object.values(pendingNameOverrides);
+  let dupeBody = '';
+  if (resolvedDupes.length>0) {
+    dupeBody += `<div style="margin-bottom:10px;padding:8px;background:#0f172a;border-radius:6px">
+      <div style="font-size:11px;color:#22c55e;margin-bottom:4px">✓ Bu oturumda çözülenler (${resolvedDupes.length})</div>
+      ${resolvedDupes.map(d=>`<div style="font-size:12px;color:#64748b;padding:1px 0">
+        ${d.name} (${d.birth_year}) → ${d.resolution==='same'?'Aynı sporcu, kulüp: '+(d.canonical_club||'—'):'Farklı sporcular'}
+      </div>`).join('')}
+    </div>`;
+  }
+  if (dupes.length===0 && resolvedDupes.length===0) {
+    dupeBody += `<div style="font-size:13px;color:#22c55e">✓ Çakışan sporcu adı bulunamadı</div>`;
+  } else {
+    dupes.forEach((entries,i)=>{
+      const a=entries[0];
+      const genL=a.gender==='F'?'Kadın':'Erkek';
+      const byL={2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'}[a.birth_year]||a.birth_year;
+      dupeBody += `
+        <div style="border:1px solid #f59e0b;border-radius:6px;padding:10px;margin-bottom:10px">
+          <div style="font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:3px">${a.name}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-bottom:8px">${byL} ${genL} — ${entries.length} farklı kayıt</div>
+          ${entries.map((e,ei)=>`<div style="font-size:12px;color:#e2e8f0;padding:3px 0;border-bottom:1px solid #0f172a">
+            ${ei+1}. <b>${e.club||'Ferdi'}</b> — ${e.city||'?'} (B${e.region||'?'})</div>`).join('')}
+          <div style="display:flex;gap:6px;margin-top:10px;flex-wrap:wrap">
+            <button onclick="adminDupeAyni(${i},'${_esc(a.name)}',${a.birth_year},'${a.gender}')"
+              style="padding:7px 12px;background:#f59e0b;border:none;border-radius:6px;color:#0f172a;font-size:12px;font-weight:700;cursor:pointer">Aynı Sporcu →</button>
+            <button onclick="adminDupeFarkli(${i},'${_esc(a.name)}',${a.birth_year},'${a.gender}')"
+              style="padding:7px 12px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:12px;cursor:pointer">Farklı Sporcular</button>
+          </div>
+          <div id="dsf-${i}" style="display:none;margin-top:10px;border-top:1px solid #334155;padding-top:10px">
+            <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Doğru kulübü seç veya yaz:</div>
+            <select id="dcs-${i}" onchange="document.getElementById('dcm-${i}').value=this.value;document.getElementById('dcy-${i}').value=''"
+              style="width:100%;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px;margin-bottom:6px">
+              ${entries.map(e=>`<option value="${_esc(e.club)}">${e.club||'Ferdi'} — ${e.city||'?'} (B${e.region||'?'})</option>`).join('')}
+              <option value="">-- Manuel gir --</option>
+            </select>
+            <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+              <input id="dcm-${i}" type="text" placeholder="Kulüp adı"
+                style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
+                value="${_esc(entries[0].club)}">
+              <input id="dcy-${i}" type="text" placeholder="Şehir"
+                style="width:110px;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
+                value="${_esc(entries[0].city)}">
+            </div>
+            <button onclick="adminDupeSave(${i},'${_esc(a.name)}',${a.birth_year},'${a.gender}')"
+              style="padding:7px 16px;background:#22c55e;border:none;border-radius:6px;color:#0f172a;font-size:12px;font-weight:700;cursor:pointer">Onayla</button>
+          </div>
+        </div>`;
+    });
+  }
+  wrap.appendChild(sec(`👥 AYNI İSİMLİ SPORCULAR${dupes.length>0?' ('+dupes.length+')':' ✓'}`,
+    dupes.length>0?'#f59e0b':'#22c55e', dupeBody));
+
+  // ── 4. DEĞİŞİKLİKLERİ KAYDET ──
+  const hasChanges = Object.keys(pendingClubAliases).length>0 || Object.keys(pendingNameOverrides).length>0;
+  const ghToken = localStorage.getItem('karma_gh_token')||'';
+  let saveBody = `
+    <div style="margin-bottom:12px">
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:5px">
+        GitHub Token
+        <span style="color:#64748b;font-size:10px"> — Bu cihazın localStorage'ında saklanır</span>
+      </div>
+      <div style="display:flex;gap:6px">
+        <input id="gh-tok" type="password" placeholder="ghp_..." value="${ghToken}"
+          style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
+        <button onclick="adminSaveToken()"
+          style="padding:7px 10px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:12px;cursor:pointer">Kaydet</button>
+      </div>
+      <div style="font-size:11px;color:#64748b;margin-top:4px">
+        <a href="https://github.com/settings/tokens/new?scopes=repo&description=karma-panel" target="_blank" style="color:#3b82f6">
+          → Token oluştur (repo scope seç)</a>
+      </div>
+    </div>`;
+  if (hasChanges) {
+    saveBody += `
+      <div style="background:#0f172a;border-radius:6px;padding:10px;margin-bottom:10px">
+        <div style="font-size:11px;color:#94a3b8;margin-bottom:4px">BEKLEYEN DEĞİŞİKLİKLER</div>
+        ${Object.keys(pendingClubAliases).length>0?`<div style="font-size:12px;color:#f59e0b">• ${Object.keys(pendingClubAliases).length} kulüp override</div>`:''}
+        ${Object.keys(pendingNameOverrides).length>0?`<div style="font-size:12px;color:#f59e0b">• ${Object.keys(pendingNameOverrides).length} sporcu override</div>`:''}
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button onclick="adminCommit()"
+          style="padding:9px 16px;background:#22c55e;border:none;border-radius:6px;color:#0f172a;font-size:13px;font-weight:700;cursor:pointer">💾 GitHub'a Kaydet</button>
+        <button onclick="adminCopyJson()"
+          style="padding:9px 14px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:13px;cursor:pointer">📋 JSON Kopyala</button>
+      </div>
+      <div id="save-msg" style="font-size:12px;margin-top:8px;display:none"></div>`;
+  } else {
+    saveBody += `<div style="font-size:13px;color:#64748b">Bekleyen değişiklik yok.</div>
+      <div id="save-msg" style="font-size:12px;margin-top:6px;display:none"></div>`;
+  }
+  wrap.appendChild(sec('💾 DEĞİŞİKLİKLERİ KAYDET','#3b82f6', saveBody));
+
+  // ── 5. DURUM ──
+  wrap.appendChild(sec('📡 DURUM','#64748b',`
+    <div style="font-size:13px;color:#e2e8f0;margin-bottom:4px">Son güncelleme: <b>${DATA.generated_at}</b></div>
+    <div style="font-size:12px;color:#94a3b8;margin-bottom:10px">${getNextUpdateInfo()}</div>
+    <div style="font-size:11px;color:#64748b;margin-bottom:10px">17-20 Nisan: her 20dk + Lenex saatleri (TR 08:50-23:50)</div>
+    <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/actions/workflows/update-panel.yml"
+       target="_blank"
+       style="display:inline-block;padding:7px 14px;background:#3b82f6;color:#fff;border-radius:6px;font-size:12px;font-weight:600;text-decoration:none">
+      → GitHub Actions (Manuel Tetikle)
+    </a>
+  `));
+
+  content.appendChild(wrap);
 }
 
-window.checkAdminPw = function() {
-  const v = document.getElementById('admin-pw-in').value;
-  if (v === ADMIN_PW) {
-    adminUnlocked = true;
-    sessionStorage.setItem("bolge_karma_admin","1");
-    document.getElementById('admin-tab').style.display = '';
-    renderAll();
+// ── Admin aksiyonlar ──────────────────────────────────────────────────────────
+window.checkAdminPw = function(){
+  const v=document.getElementById('admin-pw-in').value;
+  if(v===getAdminPw()){
+    adminUnlocked=true; sessionStorage.setItem("bolge_karma_admin","1");
+    document.getElementById('admin-tab').style.display=''; renderAll();
   } else {
-    document.getElementById('admin-pw-err').style.display = 'block';
-    document.getElementById('admin-pw-in').value = '';
+    document.getElementById('admin-pw-err').style.display='block';
+    document.getElementById('admin-pw-in').value='';
   }
 };
+window.adminChangePw = function(type){
+  if(type==='main'){
+    const v=document.getElementById('new-main-pw').value.trim();
+    if(!v){showMsg('pw-main-msg','Şifre boş olamaz','#ef4444');return;}
+    localStorage.setItem('karma_pw',v); localStorage.setItem('karma_pw_off','0');
+    showMsg('pw-main-msg','✓ Giriş şifresi değiştirildi → '+v,'#22c55e');
+  } else {
+    const v=document.getElementById('new-admin-pw').value.trim();
+    if(!v){showMsg('pw-admin-msg','Şifre boş olamaz','#ef4444');return;}
+    localStorage.setItem('karma_admin_pw',v);
+    showMsg('pw-admin-msg','✓ Admin şifresi değiştirildi → '+v,'#22c55e');
+  }
+};
+window.adminTogglePw = function(){
+  localStorage.setItem('karma_pw_off', isPwOff()?'0':'1');
+  renderAll();
+};
+window.adminCityDrop = function(i,club){
+  const city=document.getElementById(`cs-${i}`)?.value||'';
+  const reg=CITY_REGION[city]||0;
+  const b=document.getElementById(`crb-${i}`); if(b) b.textContent=reg?`B${reg} ${REGION_NAMES[reg]}`:'';
+  const cr=document.getElementById(`cr-${i}`); if(cr&&reg) cr.value=reg;
+  const cm=document.getElementById(`cm-${i}`); if(cm) cm.value='';
+};
+window.adminCityMan = function(i,club){
+  const city=document.getElementById(`cm-${i}`)?.value.trim()||'';
+  const reg=CITY_REGION[city]||0;
+  const b=document.getElementById(`crb-${i}`); if(b) b.textContent=reg?`B${reg} ${REGION_NAMES[reg]}`:'';
+  const cr=document.getElementById(`cr-${i}`); if(cr&&reg) cr.value=reg;
+  const cs=document.getElementById(`cs-${i}`); if(cs) cs.value='';
+};
+window.adminSaveClub = function(i,club){
+  const selCity=document.getElementById(`cs-${i}`)?.value||'';
+  const manCity=document.getElementById(`cm-${i}`)?.value.trim()||'';
+  const city=selCity||manCity;
+  if(!city){showMsg(`clm-${i}`,'⚠ Şehir seçin veya yazın','#ef4444');return;}
+  const regV=document.getElementById(`cr-${i}`)?.value;
+  const region=parseInt(regV)||CITY_REGION[city]||0;
+  if(!region){showMsg(`clm-${i}`,'⚠ Bölge seçin','#ef4444');return;}
+  const canonical=document.getElementById(`cc-${i}`)?.value.trim()||club;
+  pendingClubAliases[club]={canonical,city,region};
+  showMsg(`clm-${i}`,`✓ Kaydedildi: ${city} B${region}`, '#22c55e');
+  setTimeout(()=>renderAll(),800);
+};
+window.adminDupeAyni = function(i,name,by,gender){
+  const f=document.getElementById(`dsf-${i}`); if(f) f.style.display='';
+};
+window.adminDupeFarkli = function(i,name,by,gender){
+  const key=`${name.toLowerCase()}|${by}|${gender}`;
+  pendingNameOverrides[key]={name,birth_year:by,gender,resolution:'different'};
+  renderAll();
+};
+window.adminDupeSave = function(i,name,by,gender){
+  const club=document.getElementById(`dcm-${i}`)?.value.trim()||'';
+  const city=document.getElementById(`dcy-${i}`)?.value.trim()||'';
+  const region=CITY_REGION[city]||0;
+  const key=`${name.toLowerCase()}|${by}|${gender}`;
+  pendingNameOverrides[key]={name,birth_year:by,gender,resolution:'same',canonical_club:club,canonical_city:city,canonical_region:region};
+  renderAll();
+};
+window.adminSaveToken = function(){
+  const v=document.getElementById('gh-tok')?.value.trim()||'';
+  localStorage.setItem('karma_gh_token',v);
+  showMsg('save-msg', v?'✓ Token kaydedildi':'Token temizlendi','#22c55e');
+};
+window.adminCommit = async function(){
+  const token=localStorage.getItem('karma_gh_token')||'';
+  if(!token){showMsg('save-msg','⚠ GitHub token girilmedi','#ef4444');return;}
+  showMsg('save-msg','⟳ GitHub\'a gönderiliyor...','#f59e0b');
+  try {
+    const REPO='gokaygunduz-gg/bolge-karma-2026', PATH='manual_overrides.json';
+    const hdr={Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json'};
+    const g=await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`,{headers:hdr});
+    const gj=await g.json();
+    const current=JSON.parse(atob(gj.content.replace(/\n/g,'')));
+    const aliases=current.club_aliases||[];
+    const nameOvr=current.name_overrides||[];
+    for(const[raw,d]of Object.entries(pendingClubAliases)){
+      const idx=aliases.findIndex(a=>a.raw===raw);
+      const e={raw,canonical:d.canonical,city:d.city,region:d.region};
+      if(idx>=0) aliases[idx]=e; else aliases.push(e);
+    }
+    for(const[,d]of Object.entries(pendingNameOverrides)){
+      const idx=nameOvr.findIndex(n=>n.name.toLowerCase()===d.name.toLowerCase()&&n.birth_year===d.birth_year&&n.gender===d.gender);
+      if(idx>=0) nameOvr[idx]=d; else nameOvr.push(d);
+    }
+    current.club_aliases=aliases; current.name_overrides=nameOvr;
+    const newContent=btoa(unescape(encodeURIComponent(JSON.stringify(current,null,2))));
+    const p=await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`,{
+      method:'PUT',headers:{...hdr,'Content-Type':'application/json'},
+      body:JSON.stringify({message:`admin: override güncellendi (${new Date().toLocaleString('tr')})`,content:newContent,sha:gj.sha})
+    });
+    if(p.ok){
+      showMsg('save-msg','✓ GitHub\'a kaydedildi! Actions\'tan paneli güncelleyebilirsiniz.','#22c55e');
+      pendingClubAliases={}; pendingNameOverrides={};
+    } else {
+      const err=await p.json(); showMsg('save-msg',`⚠ Hata: ${err.message}`,'#ef4444');
+    }
+  } catch(e){ showMsg('save-msg',`⚠ Bağlantı hatası: ${e.message}`,'#ef4444'); }
+};
+window.adminCopyJson = function(){
+  const obj={
+    club_aliases:Object.entries(pendingClubAliases).map(([raw,d])=>({raw,canonical:d.canonical,city:d.city,region:d.region})),
+    name_overrides:Object.values(pendingNameOverrides)
+  };
+  const txt=JSON.stringify(obj,null,2);
+  navigator.clipboard.writeText(txt).then(()=>{
+    showMsg('save-msg','✓ JSON kopyalandı — manual_overrides.json\'a ekleyin','#22c55e');
+  }).catch(()=>{
+    const m=document.getElementById('save-msg');
+    if(m){m.style.display='block';m.style.color='#94a3b8';
+      m.innerHTML=`<textarea style="width:100%;height:120px;background:#0f172a;color:#e2e8f0;border:1px solid #334155;border-radius:4px;padding:6px;font-size:11px">${txt}</textarea>`;}
+  });
+};
 
-// Admin sekmesine gizli erişim: başlığa 3x hızlı tıklama
-let headerTapCount = 0, headerTapTimer = null;
-document.querySelector('header h1').addEventListener('click', ()=>{
-  headerTapCount++;
-  if (headerTapTimer) clearTimeout(headerTapTimer);
-  headerTapTimer = setTimeout(()=>{ headerTapCount=0; }, 1000);
-  if (headerTapCount >= 3) {
-    headerTapCount = 0;
-    document.getElementById('admin-tab').style.display = '';
-    switchTab('admin', document.getElementById('admin-tab'));
+// ── Gizli erişim: başlığa 3x tıkla ──────────────────────────────────────────
+let _tapC=0,_tapT=null;
+document.querySelector('header h1').addEventListener('click',()=>{
+  _tapC++;
+  if(_tapT) clearTimeout(_tapT);
+  _tapT=setTimeout(()=>_tapC=0,1000);
+  if(_tapC>=3){
+    _tapC=0;
+    document.getElementById('admin-tab').style.display='';
+    switchTab('admin',document.getElementById('admin-tab'));
   }
 });
 
 // ── Sonraki güncelleme hesapla ────────────────────────────────────────────────
-function getNextUpdateInfo() {
-  const now = new Date();
-  const y = now.getUTCFullYear(), m = now.getUTCMonth(), d = now.getUTCDate();
-  // Yarış tarihleri: 17-20 Nisan 2026
-  if (y !== 2026 || m !== 3 || d < 17 || d > 20) return 'Otomatik güncelleme: 17-20 Nisan arası aktif';
-  // UTC 05:00-21:00 arası her 20dk
-  const utcH = now.getUTCHours(), utcM = now.getUTCMinutes();
-  const totalMin = utcH * 60 + utcM;
-  if (totalMin < 5*60 || totalMin >= 21*60) return 'Güncelleme bu gece 21:00 UTC\'de başlar (TR 00:00)';
-  const nextSlot = Math.ceil((utcM + 1) / 20) * 20;
-  const waitMin = nextSlot <= 60 ? nextSlot - utcM : 60 - utcM + (nextSlot - 60);
-  const nextH = nextSlot >= 60 ? utcH + 1 : utcH;
-  const nextMStr = (nextSlot % 60).toString().padStart(2,'0');
-  return `Sonraki otomatik güncelleme: ~${waitMin} dk sonra (UTC ${nextH}:${nextMStr} = TR ${nextH+3}:${nextMStr})`;
+function getNextUpdateInfo(){
+  const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
+  if(y!==2026||m!==3||d<17||d>20) return 'Otomatik güncelleme: 17-20 Nisan arası aktif';
+  const utcH=now.getUTCHours(),utcM=now.getUTCMinutes();
+  if(utcH<5||utcH>=21) return 'Güncelleme dışı saat (UTC 05-21 arası aktif)';
+  const passed=utcM%20, wait=20-passed;
+  const nextM=(utcM+wait)%60, nextH=utcH+(utcM+wait>=60?1:0);
+  return `Sonraki güncelleme: ~${wait} dk sonra (TR ${nextH+3}:${String(nextM).padStart(2,'0')})`;
 }
 
-// ── Sonraki güncelleme sayacı (header) ───────────────────────────────────────
-function updateNextBadge() {
-  const badge = document.getElementById('next-update-badge');
-  if (!badge) return;
-  const now = new Date();
-  const y = now.getUTCFullYear(), m = now.getUTCMonth(), d = now.getUTCDate();
-  if (y !== 2026 || m !== 3 || d < 17 || d > 20) { badge.style.display='none'; return; }
-  const utcH = now.getUTCHours(), utcM = now.getUTCMinutes(), utcS = now.getUTCSeconds();
-  if (utcH < 5 || utcH >= 21) { badge.style.display='none'; return; }
-  const totalSec = utcH*3600 + utcM*60 + utcS;
-  const slotSec = Math.ceil((totalSec+1)/1200)*1200;  // 1200s = 20dk
-  const waitSec = slotSec - totalSec;
-  const wm = Math.floor(waitSec/60), ws = waitSec%60;
-  badge.style.display = '';
-  badge.textContent = `↻ ${wm}:${ws.toString().padStart(2,'0')}`;
+// ── Header sayaç ──────────────────────────────────────────────────────────────
+function updateNextBadge(){
+  const badge=document.getElementById('next-update-badge'); if(!badge)return;
+  const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
+  if(y!==2026||m!==3||d<17||d>20){badge.style.display='none';return;}
+  const utcH=now.getUTCHours(),utcM=now.getUTCMinutes(),utcS=now.getUTCSeconds();
+  if(utcH<5||utcH>=21){badge.style.display='none';return;}
+  const totalSec=utcH*3600+utcM*60+utcS;
+  const slotSec=Math.ceil((totalSec+1)/1200)*1200;
+  const waitSec=slotSec-totalSec;
+  badge.style.display='';
+  badge.textContent=`↻ ${Math.floor(waitSec/60)}:${String(waitSec%60).padStart(2,'0')}`;
 }
-setInterval(updateNextBadge, 1000);
+setInterval(updateNextBadge,1000);
 updateNextBadge();
 
-// ── missing clubs JSON'a ekle ─────────────────────────────────────────────────
-const _origLoadData = loadData;
-async function loadData() {
-  if (window.RESULTS_DATA) {
-    DATA = window.RESULTS_DATA;
-    // missing_clubs endpoint'i dene
-    try {
-      const r = await fetch('https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now());
-      if (r.ok) { const rep = await r.json(); DATA._missing_clubs = rep.missing_clubs || []; }
-    } catch(e) {}
-    renderAll();
-    return;
+// ── Veri yükleme (missing report dahil) ──────────────────────────────────────
+async function loadData(){
+  const MISSING_URL='https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now();
+  if(window.RESULTS_DATA){
+    DATA=window.RESULTS_DATA;
+    try{const r=await fetch(MISSING_URL);if(r.ok){const j=await r.json();DATA._missing_clubs=j.missing_clubs||[];}}catch(e){}
+    renderAll();return;
   }
-  try {
-    const [r1, r2] = await Promise.allSettled([
-      fetch('results.json?t=' + Date.now()),
-      fetch('https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now())
-    ]);
-    if (r1.status === 'fulfilled' && r1.value.ok) DATA = await r1.value.json();
+  try{
+    const[r1,r2]=await Promise.allSettled([fetch('results.json?t='+Date.now()),fetch(MISSING_URL)]);
+    if(r1.status==='fulfilled'&&r1.value.ok) DATA=await r1.value.json();
     else throw new Error('Veri yüklenemedi');
-    if (r2.status === 'fulfilled' && r2.value.ok) {
-      const rep = await r2.value.json(); DATA._missing_clubs = rep.missing_clubs || [];
-    }
+    if(r2.status==='fulfilled'&&r2.value.ok){const j=await r2.value.json();DATA._missing_clubs=j.missing_clubs||[];}
     renderAll();
-  } catch(e) {
-    document.getElementById('loader').textContent = '⚠ Veri yüklenemedi.';
-  }
+  }catch(e){document.getElementById('loader').textContent='⚠ Veri yüklenemedi.';}
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
