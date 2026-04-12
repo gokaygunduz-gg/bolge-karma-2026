@@ -165,6 +165,36 @@
 </style>
 </head>
 <body>
+<!-- ── Şifre Koruması ── -->
+<div id="pw-overlay" style="display:none;position:fixed;inset:0;background:#0f172a;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+  <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:36px 40px;text-align:center;max-width:340px;width:90%;">
+    <div style="font-size:28px;margin-bottom:8px;">🏊</div>
+    <h2 style="color:#e2e8f0;font-size:18px;margin-bottom:4px;">2026 Federasyon Karması</h2>
+    <p style="color:#94a3b8;font-size:13px;margin-bottom:20px;">Devam etmek için şifreyi girin</p>
+    <input id="pw-input" type="password" placeholder="Şifre"
+      style="width:100%;padding:10px 14px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:15px;outline:none;margin-bottom:12px;"
+      onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()"
+      style="width:100%;padding:10px;background:#3b82f6;border:none;border-radius:8px;color:#fff;font-size:15px;font-weight:600;cursor:pointer;">
+      Giriş
+    </button>
+    <p id="pw-err" style="color:#ef4444;font-size:12px;margin-top:10px;display:none;">Yanlış şifre</p>
+  </div>
+</div>
+<script>
+(function(){
+  const PW = "karma2026";
+  const KEY = "bolge_karma_auth";
+  const overlay = document.getElementById("pw-overlay");
+  if(sessionStorage.getItem(KEY) === "1"){ overlay.style.display="none"; }
+  else { overlay.style.display="flex"; setTimeout(()=>document.getElementById("pw-input").focus(),100); }
+  window.checkPw = function(){
+    const v = document.getElementById("pw-input").value;
+    if(v === PW){ sessionStorage.setItem(KEY,"1"); overlay.style.display="none"; }
+    else { document.getElementById("pw-err").style.display="block"; document.getElementById("pw-input").value=""; }
+  };
+})();
+</script>
 
 <header>
   <div class="header-row">
@@ -173,6 +203,7 @@
       <div class="updated" id="updated">Yükleniyor...</div>
     </div>
     <div style="display:flex;gap:6px;align-items:center">
+      <span id="next-update-badge" style="display:none;font-size:10px;color:var(--muted);background:#1e293b;border:1px solid #334155;border-radius:6px;padding:2px 7px;line-height:22px;">—</span>
       <span class="legs-badge" id="legs-badge">—</span>
       <button class="refresh-btn" onclick="loadData()">↺</button>
     </div>
@@ -184,6 +215,7 @@
   <div class="tab active" data-tab="rankings" onclick="switchTab('rankings',this)">Sıralama</div>
   <div class="tab" data-tab="clubs" onclick="switchTab('clubs',this)">Kulüpler</div>
   <div class="tab" data-tab="matrix" onclick="switchTab('matrix',this)">Özet</div>
+  <div class="tab" id="admin-tab" data-tab="admin" onclick="switchTab('admin',this)" style="display:none">⚙ Admin</div>
 </div>
 
 <!-- ── Filtreler (sadece Sıralama sekmesinde) ── -->
@@ -325,6 +357,7 @@ function renderAll() {
   if (activeTab === 'rankings') renderRankings(content);
   else if (activeTab === 'clubs') renderClubs(content);
   else if (activeTab === 'matrix') renderMatrix(content);
+  else if (activeTab === 'admin') renderAdmin(content);
 }
 
 function legsLabel(legs) {
@@ -644,17 +677,170 @@ function renderMatrix(content) {
   content.appendChild(wrap);
 }
 
-// ── Auto-refresh ──────────────────────────────────────────────────────────────
-let autoRefresh = null;
-function startAutoRefresh(intervalSec = 30) {
-  if (autoRefresh) clearInterval(autoRefresh);
-  autoRefresh = setInterval(loadData, intervalSec * 1000);
+// ── Admin şifresi ─────────────────────────────────────────────────────────────
+const ADMIN_PW = "admin2026";
+let adminUnlocked = sessionStorage.getItem("bolge_karma_admin") === "1";
+
+// ── Admin sekmesi ─────────────────────────────────────────────────────────────
+function renderAdmin(content) {
+  if (!adminUnlocked) {
+    const div = document.createElement('div');
+    div.style.cssText = 'max-width:340px;margin:40px auto;background:#1e293b;border:1px solid #334155;border-radius:12px;padding:28px;text-align:center';
+    div.innerHTML = `
+      <p style="color:#94a3b8;margin-bottom:16px;font-size:13px;">Admin şifresi girin</p>
+      <input id="admin-pw-in" type="password" placeholder="Admin şifre"
+        style="width:100%;padding:10px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:14px;margin-bottom:10px"
+        onkeydown="if(event.key==='Enter')checkAdminPw()">
+      <button onclick="checkAdminPw()"
+        style="width:100%;padding:10px;background:#3b82f6;border:none;border-radius:8px;color:#fff;font-size:14px;font-weight:600;cursor:pointer">Giriş</button>
+      <p id="admin-pw-err" style="color:#ef4444;font-size:12px;margin-top:8px;display:none">Yanlış şifre</p>`;
+    content.appendChild(div);
+    setTimeout(()=>{ const el=document.getElementById('admin-pw-in'); if(el) el.focus(); }, 50);
+    return;
+  }
+
+  // Eksik kulüp raporu
+  const missingSection = DATA._missing_clubs && DATA._missing_clubs.length > 0
+    ? `<div style="background:#1e293b;border:1px solid #ef4444;border-radius:8px;padding:14px;margin-bottom:14px">
+        <div style="color:#ef4444;font-weight:600;margin-bottom:8px">⚠ Bölgesi Bilinmeyen Kulüpler (${DATA._missing_clubs.length})</div>
+        <div style="font-size:12px;color:#94a3b8;margin-bottom:8px">Bu kulüpleri <code style="color:#f59e0b">manual_overrides.json</code>'a ekleyin (GitHub'dan telefonla düzenlenebilir)</div>
+        ${DATA._missing_clubs.map(c=>`<div style="font-size:12px;color:#e2e8f0;padding:3px 0;border-bottom:1px solid #334155">${c}</div>`).join('')}
+       </div>`
+    : `<div style="background:#1e293b;border:1px solid #22c55e;border-radius:8px;padding:12px;margin-bottom:14px;color:#22c55e;font-size:13px">✓ Tüm kulüpler eşleşti</div>`;
+
+  const nextUpdateInfo = getNextUpdateInfo();
+
+  const div = document.createElement('div');
+  div.style.cssText = 'max-width:640px;margin:16px auto;padding:0 12px';
+  div.innerHTML = `
+    <h3 style="color:#e2e8f0;margin-bottom:14px;font-size:15px">⚙ Admin Paneli</h3>
+
+    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;margin-bottom:14px">
+      <div style="color:#94a3b8;font-size:11px;margin-bottom:6px">ZAMANLAMA</div>
+      <div style="font-size:13px;color:#e2e8f0">Son güncelleme: <b>${DATA.generated_at}</b></div>
+      <div style="font-size:13px;color:#94a3b8;margin-top:4px">${nextUpdateInfo}</div>
+      <div style="font-size:11px;color:#64748b;margin-top:6px">17-20 Nisan arası her 20dk otomatik güncelleme + Lenex kontrol saatleri</div>
+    </div>
+
+    ${missingSection}
+
+    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px;margin-bottom:14px">
+      <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">KULÜP / SPORCU OVERRIDE EKLE</div>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:10px">
+        GitHub'dan <b style="color:#f59e0b">manual_overrides.json</b> dosyasını düzenleyin:<br>
+        <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/edit/master/manual_overrides.json"
+           target="_blank"
+           style="color:#3b82f6;font-size:13px;text-decoration:none">→ GitHub'da düzenle (telefondan çalışır)</a>
+      </div>
+      <div style="font-size:11px;color:#64748b">Düzenledikten sonra Actions → "Update Panel" → Run workflow</div>
+    </div>
+
+    <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:14px">
+      <div style="color:#94a3b8;font-size:11px;margin-bottom:8px">MANUEL GÜNCELLEME</div>
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Edirne URL ile hemen güncelle:</div>
+      <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/actions/workflows/update-panel.yml"
+         target="_blank"
+         style="display:inline-block;padding:8px 16px;background:#3b82f6;color:#fff;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none">
+        → GitHub Actions'a git
+      </a>
+    </div>
+  `;
+  content.appendChild(div);
+}
+
+window.checkAdminPw = function() {
+  const v = document.getElementById('admin-pw-in').value;
+  if (v === ADMIN_PW) {
+    adminUnlocked = true;
+    sessionStorage.setItem("bolge_karma_admin","1");
+    document.getElementById('admin-tab').style.display = '';
+    renderAll();
+  } else {
+    document.getElementById('admin-pw-err').style.display = 'block';
+    document.getElementById('admin-pw-in').value = '';
+  }
+};
+
+// Admin sekmesine gizli erişim: başlığa 3x hızlı tıklama
+let headerTapCount = 0, headerTapTimer = null;
+document.querySelector('header h1').addEventListener('click', ()=>{
+  headerTapCount++;
+  if (headerTapTimer) clearTimeout(headerTapTimer);
+  headerTapTimer = setTimeout(()=>{ headerTapCount=0; }, 1000);
+  if (headerTapCount >= 3) {
+    headerTapCount = 0;
+    document.getElementById('admin-tab').style.display = '';
+    switchTab('admin', document.getElementById('admin-tab'));
+  }
+});
+
+// ── Sonraki güncelleme hesapla ────────────────────────────────────────────────
+function getNextUpdateInfo() {
+  const now = new Date();
+  const y = now.getUTCFullYear(), m = now.getUTCMonth(), d = now.getUTCDate();
+  // Yarış tarihleri: 17-20 Nisan 2026
+  if (y !== 2026 || m !== 3 || d < 17 || d > 20) return 'Otomatik güncelleme: 17-20 Nisan arası aktif';
+  // UTC 05:00-21:00 arası her 20dk
+  const utcH = now.getUTCHours(), utcM = now.getUTCMinutes();
+  const totalMin = utcH * 60 + utcM;
+  if (totalMin < 5*60 || totalMin >= 21*60) return 'Güncelleme bu gece 21:00 UTC\'de başlar (TR 00:00)';
+  const nextSlot = Math.ceil((utcM + 1) / 20) * 20;
+  const waitMin = nextSlot <= 60 ? nextSlot - utcM : 60 - utcM + (nextSlot - 60);
+  const nextH = nextSlot >= 60 ? utcH + 1 : utcH;
+  const nextMStr = (nextSlot % 60).toString().padStart(2,'0');
+  return `Sonraki otomatik güncelleme: ~${waitMin} dk sonra (UTC ${nextH}:${nextMStr} = TR ${nextH+3}:${nextMStr})`;
+}
+
+// ── Sonraki güncelleme sayacı (header) ───────────────────────────────────────
+function updateNextBadge() {
+  const badge = document.getElementById('next-update-badge');
+  if (!badge) return;
+  const now = new Date();
+  const y = now.getUTCFullYear(), m = now.getUTCMonth(), d = now.getUTCDate();
+  if (y !== 2026 || m !== 3 || d < 17 || d > 20) { badge.style.display='none'; return; }
+  const utcH = now.getUTCHours(), utcM = now.getUTCMinutes(), utcS = now.getUTCSeconds();
+  if (utcH < 5 || utcH >= 21) { badge.style.display='none'; return; }
+  const totalSec = utcH*3600 + utcM*60 + utcS;
+  const slotSec = Math.ceil((totalSec+1)/1200)*1200;  // 1200s = 20dk
+  const waitSec = slotSec - totalSec;
+  const wm = Math.floor(waitSec/60), ws = waitSec%60;
+  badge.style.display = '';
+  badge.textContent = `↻ ${wm}:${ws.toString().padStart(2,'0')}`;
+}
+setInterval(updateNextBadge, 1000);
+updateNextBadge();
+
+// ── missing clubs JSON'a ekle ─────────────────────────────────────────────────
+const _origLoadData = loadData;
+async function loadData() {
+  if (window.RESULTS_DATA) {
+    DATA = window.RESULTS_DATA;
+    // missing_clubs endpoint'i dene
+    try {
+      const r = await fetch('https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now());
+      if (r.ok) { const rep = await r.json(); DATA._missing_clubs = rep.missing_clubs || []; }
+    } catch(e) {}
+    renderAll();
+    return;
+  }
+  try {
+    const [r1, r2] = await Promise.allSettled([
+      fetch('results.json?t=' + Date.now()),
+      fetch('https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now())
+    ]);
+    if (r1.status === 'fulfilled' && r1.value.ok) DATA = await r1.value.json();
+    else throw new Error('Veri yüklenemedi');
+    if (r2.status === 'fulfilled' && r2.value.ok) {
+      const rep = await r2.value.json(); DATA._missing_clubs = rep.missing_clubs || [];
+    }
+    renderAll();
+  } catch(e) {
+    document.getElementById('loader').textContent = '⚠ Veri yüklenemedi.';
+  }
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
 loadData();
-// Uncomment for live Edirne mode:
-// startAutoRefresh(30);
 </script>
 </body>
 </html>

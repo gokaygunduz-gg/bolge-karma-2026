@@ -1,9 +1,20 @@
 name: Update Panel (Edirne Canlı)
 
+# ─────────────────────────────────────────────────────────────────────────────
+# ZAMANLAMA (TR = UTC+3)
+#
+# Her 20 dakika:  17-20 Nisan, TR 08:00-23:59
+# Lenex kontrol:  17-20 Nisan saat 08:50 10:50 12:50 14:50 15:50 17:50 19:50 21:50 23:50 (TR)
+#
+# Yarış yoksa EDIRNE_URL boşsa sadece generate_rankings_json.py çalışır (Antalya verisi gösterilir).
+# ─────────────────────────────────────────────────────────────────────────────
 on:
   schedule:
-    # Her 30 dakikada bir — UTC 06:00-20:00 arası (TR 09:00-23:00)
-    - cron: '*/30 6-20 * * *'
+    # Her 20 dakika — 17-20 Nisan, UTC 05:00-21:00 (TR 08:00-00:00)
+    - cron: '0,20,40 5-21 17-20 4 *'
+    # Lenex kontrol saatleri — UTC: 05:50 07:50 09:50 11:50 12:50 14:50 16:50 18:50 20:50
+    - cron: '50 5,7,9,11,12,14,16,18,20 17-20 4 *'
+
   workflow_dispatch:
     inputs:
       edirne_url:
@@ -28,9 +39,23 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('requirements.txt') }}-v2
+          restore-keys: pip-
+
       - name: Install dependencies
         run: |
-          pip install requests openpyxl rapidfuzz
+          pip install \
+            requests \
+            openpyxl \
+            rapidfuzz \
+            lxml \
+            beautifulsoup4 \
+            pymupdf \
+            rapidocr-onnxruntime
 
       - name: Set Edirne URL
         run: |
@@ -39,6 +64,35 @@ jobs:
             URL="${{ vars.EDIRNE_URL }}"
           fi
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
+
+      - name: Apply manual overrides
+        run: |
+          python -c "
+          import json, os, sys
+          sys.path.insert(0, '.')
+          override_file = 'manual_overrides.json'
+          if not os.path.exists(override_file):
+              print('  manual_overrides.json yok, atlanıyor.')
+              sys.exit(0)
+          from modules.m4_mapping import reload_mapping
+          reload_mapping()
+          with open(override_file, encoding='utf-8') as f:
+              data = json.load(f)
+          # Club aliases — in-memory ekleme (m4_mapping._mapping_cache güncelle)
+          aliases = data.get('club_aliases', [])
+          if aliases:
+              from modules import m4_mapping as mm
+              for al in aliases:
+                  raw = al.get('raw','').strip().lower()
+                  if raw and raw not in mm._mapping_cache:
+                      mm._mapping_cache[raw] = {
+                          'club_canonical': al.get('canonical', al.get('raw','')),
+                          'city': al.get('city',''),
+                          'region': al.get('region', 0)
+                      }
+                      print(f'  Override uygulandı: {al[\"raw\"]} -> {al.get(\"canonical\")}')
+          print(f'  {len(aliases)} kulüp override yüklendi.')
+          "
 
       - name: Fetch Edirne data & update DB
         if: env.EDIRNE_URL != ''
@@ -49,11 +103,11 @@ jobs:
         run: |
           python generate_rankings_json.py
 
-      - name: Commit updated DB & JSON to master
+      - name: Commit updated DB & panel to master
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add panel/results_inline.js panel/results.json data/bolge_karmalari.db
+          git add panel/results_inline.js panel/results.json data/bolge_karmalari.db data/missing_report.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "Değişiklik yok."
           else
@@ -65,19 +119,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # gh-pages branch'ini fetch et
           git fetch origin gh-pages
           git worktree add /tmp/gh-pages origin/gh-pages
-          # panel/ içeriğini kopyala
           cp panel/index.html /tmp/gh-pages/index.html
           cp panel/results_inline.js /tmp/gh-pages/results_inline.js
           cp panel/results.json /tmp/gh-pages/results.json
-          # push
           cd /tmp/gh-pages
           git add -A
           if git diff --staged --quiet; then
             echo "gh-pages değişiklik yok."
           else
-            git commit -m "deploy: panel $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git commit -m "deploy: $(date -u '+%Y-%m-%d %H:%M') UTC"
             git push origin HEAD:gh-pages
           fi

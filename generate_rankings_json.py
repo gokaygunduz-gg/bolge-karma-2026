@@ -176,6 +176,23 @@ def main():
             "athletes":           build_group_data(group, by_leg_data),
         }
 
+    # ── Missing clubs raporu (telefonda bakılabilir) ──────────────────────────
+    try:
+        from modules.m4_mapping import get_missing_clubs
+        missing = get_missing_clubs()
+        if missing:
+            missing_report = {
+                "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "missing_clubs": sorted(missing),
+                "count": len(missing),
+                "_talimat": "Bu kulüpleri manual_overrides.json'a club_aliases olarak ekleyin"
+            }
+            report_path = os.path.join(os.path.dirname(__file__), "data", "missing_report.json")
+            with open(report_path, "w", encoding="utf-8") as f:
+                json.dump(missing_report, f, ensure_ascii=False, indent=2)
+    except Exception:
+        pass
+
     # ── Yaz ──────────────────────────────────────────────────────────────────
     os.makedirs(OUT_DIR, exist_ok=True)
     json_str = json.dumps(output, ensure_ascii=False, indent=2)

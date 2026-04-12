@@ -25,9 +25,6 @@ fix_istanbul_merged_auto.py
 fix_istanbul_overrides.py
 fix_istanbul_remaining.py
 
-# Kulüp mapping exceli (büyük/özel)
-Kulüp Şehir Mapping Exceli/
-
-# Veritabanı (İstanbul)
+# Veritabanı (İstanbul — federasyon için gerekli değil)
 database/athletes.db
 database/swimming.db

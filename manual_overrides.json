@@ -1,0 +1,14 @@
+{
+  "_aciklama": "Bu dosyayı GitHub'dan telefonla düzenleyebilirsiniz. Workflow her çalışmada bu dosyayı okur.",
+  "_kullanim": "Yeni kulüp veya ferdi sporcu için club_aliases'a ekleyin. region: 1=İstanbul 2=Marmara 3=Ege 4=İçAnadolu 5=Karadeniz 6=GüneyDoğu",
+
+  "club_aliases": [
+    {
+      "_ornek": "Aşağıdaki satırı kopyalayıp doldurun, bu _ornek satırını silmeyin",
+      "raw": "ÖRNEK KULÜP ADI (yarışta göründüğü gibi)",
+      "canonical": "Doğru Kulüp Adı",
+      "city": "Şehir",
+      "region": 1
+    }
+  ]
+}
