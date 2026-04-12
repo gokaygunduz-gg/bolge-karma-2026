@@ -30,6 +30,26 @@ TARGET_BYS = {2013, 2012, 2011}
 GENDER_MAP = {"Kadın": "F", "Kız": "F", "Erkek": "M", "K": "F", "E": "M", "F": "F", "M": "M"}
 
 
+def _load_name_overrides() -> dict:
+    """manual_overrides.json'dan sporcu override'larını yükle."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manual_overrides.json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        import json
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        overrides = {}
+        for item in data.get("name_overrides", []):
+            if item.get("resolution") == "same":
+                key = (item["name"].lower().strip(), item["birth_year"], item["gender"])
+                overrides[key] = item
+        return overrides
+    except Exception as e:
+        print(f"  ⚠ name_overrides yüklenemedi: {e}")
+        return {}
+
+
 def process_edirne(url: str, verbose: bool = True):
     """
     Verilen URL'den Edirne sonuçlarını çeker, puanlar ve DB'ye yazar.
@@ -41,6 +61,10 @@ def process_edirne(url: str, verbose: bool = True):
     init_fed_db()
     reload_mapping()
     clear_missing_clubs()
+
+    name_overrides = _load_name_overrides()
+    if name_overrides:
+        print(f"  ℹ {len(name_overrides)} sporcu override yüklendi.")
 
     results = scrape_race(url, verbose=verbose)
     if not results:
@@ -64,6 +88,14 @@ def process_edirne(url: str, verbose: bool = True):
         club   = r.get("club", "") or ""
         city   = r.get("city", "") or ""
         region = r.get("region")
+
+        # Sporcu override uygula (aynı isimli ama farklı kulüp durumu)
+        ovr_key = (name.lower().strip(), birth_year, gender)
+        if ovr_key in name_overrides:
+            ovr = name_overrides[ovr_key]
+            club   = ovr.get("canonical_club", club) or club
+            city   = ovr.get("canonical_city", city) or city
+            region = ovr.get("canonical_region", region) or region
         stroke = r.get("stroke") or ""
         dist   = r.get("distance") or 0
         t_txt  = r.get("time_text") or ""
