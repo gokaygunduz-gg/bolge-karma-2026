@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>2026 Federasyon Karması Sıralaması</title>
+<!-- file:// protokolü için gömülü veri (generate_rankings_json.py tarafından üretilir) -->
+<script src="results_inline.js"></script>
+<style>
+  :root {
+    --bg:      #0f172a;
+    --card:    #1e293b;
+    --border:  #334155;
+    --text:    #e2e8f0;
+    --muted:   #94a3b8;
+    --gold:    #f59e0b;
+    --green:   #22c55e;
+    --blue:    #3b82f6;
+    --red:     #ef4444;
+    --purple:  #a855f7;
+    --teal:    #14b8a6;
+    --orange:  #fb923c;
+    --pink:    #f472b6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; }
+
+  /* ── Header ── */
+  header { background: #0f172a; border-bottom: 1px solid var(--border); padding: 10px 14px; position: sticky; top: 0; z-index: 100; }
+  .header-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  h1 { font-size: 15px; font-weight: 700; color: var(--gold); }
+  .updated { font-size: 10px; color: var(--muted); }
+  .legs-badge { font-size: 10px; background: var(--card); border: 1px solid var(--border); padding: 2px 8px; border-radius: 12px; color: var(--teal); }
+  .refresh-btn { background: var(--blue); color: #fff; border: none; padding: 5px 10px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+
+  /* ── Sekmeler ── */
+  .tabs { display: flex; gap: 0; background: var(--card); border-bottom: 1px solid var(--border); overflow-x: auto; }
+  .tab { padding: 10px 16px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* ── Filtreler ── */
+  .filters { padding: 8px 12px; background: var(--card); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .filter-btn {
+    padding: 4px 12px; border-radius: 16px; border: 1px solid var(--border);
+    background: var(--bg); color: var(--muted); font-size: 11px; cursor: pointer; transition: all .15s;
+  }
+  .filter-btn.active { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .filter-sep { width: 1px; height: 20px; background: var(--border); }
+  .filter-label { font-size: 10px; color: var(--muted); }
+
+  /* ── Leg toggle ── */
+  .leg-toggle { display: flex; gap: 4px; padding: 6px 12px; background: #162032; border-bottom: 1px solid var(--border); }
+  .leg-btn { padding: 4px 10px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: var(--muted); font-size: 11px; cursor: pointer; }
+  .leg-btn.active { background: var(--teal); border-color: var(--teal); color: #111; font-weight: 700; }
+
+  /* ── Tablo bölüm ── */
+  .group-section { margin: 10px 10px 0; }
+  .group-header {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px 10px 0 0;
+    padding: 9px 12px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;
+  }
+  .group-title { font-size: 13px; font-weight: 600; }
+  .group-subtitle { font-size: 10px; color: var(--muted); margin-top: 2px; }
+  .group-stats { font-size: 10px; color: var(--muted); text-align: right; line-height: 1.5; }
+  .group-toggle { color: var(--muted); font-size: 16px; }
+
+  .group-table { border: 1px solid var(--border); border-top: 0; border-radius: 0 0 10px 10px; overflow: hidden; margin-bottom: 10px; }
+  table { width: 100%; border-collapse: collapse; }
+  th { background: #1a2740; color: var(--muted); font-size: 10px; font-weight: 600; padding: 6px 8px; text-align: left; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: .4px; }
+  td { padding: 7px 8px; border-bottom: 1px solid #1e293b; vertical-align: middle; }
+  tr:last-child td { border-bottom: 0; }
+  tr.selected-tr     { background: rgba(34,197,94,.07); }
+  tr.selected-bolge  { background: rgba(59,130,246,.07); }
+  tr.selected-multi  { background: rgba(245,158,11,.07); }
+  tr.selected-tie    { background: rgba(168,85,247,.08); }
+  tr.row-expanded    { background: rgba(255,255,255,.04); }
+
+  /* ── Sütunlar ── */
+  .col-rank  { width: 32px; text-align: center; font-weight: 700; }
+  .col-name  { min-width: 120px; }
+  .col-score { width: 44px; text-align: center; font-weight: 700; }
+  .col-sel   { width: 72px; text-align: center; }
+  .col-region{ width: 30px; text-align: center; }
+  .col-expand{ width: 24px; text-align: center; cursor: pointer; }
+  .name-cell { font-weight: 600; font-size: 12px; }
+  .club-cell { font-size: 10px; color: var(--muted); margin-top: 1px; }
+  .tie-mark  { color: var(--purple); font-size: 11px; margin-left: 3px; }
+
+  /* ── Seçim badge ── */
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+  .badge-tr     { background: rgba(34,197,94,.2);  color: var(--green); }
+  .badge-bolge  { background: rgba(59,130,246,.2); color: var(--blue); }
+  .badge-multi  { background: rgba(245,158,11,.25); color: var(--gold); }
+  .badge-baraj  { background: rgba(239,68,68,.15); color: var(--red); font-size: 9px; }
+  .badge-tie    { background: rgba(168,85,247,.2); color: var(--purple); font-size: 9px; }
+  .badge-none   { color: var(--border); font-size: 9px; }
+
+  /* ── Puan rengi ── */
+  .pts-9  { color: var(--gold); font-weight:800 }
+  .pts-7  { color: #fb923c; }
+  .pts-6  { color: #facc15; }
+  .pts-5  { color: var(--green); }
+  .pts-4  { color: var(--teal); }
+  .pts-3  { color: var(--blue); }
+  .pts-2  { color: var(--purple); }
+  .pts-1  { color: var(--muted); }
+  .pts-0  { color: var(--border); }
+
+  /* ── Genişletilmiş satır ── */
+  .expand-row td { padding: 0 !important; }
+  .event-detail {
+    padding: 8px 12px; background: #162032; border-top: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; gap: 5px;
+  }
+  .event-chip {
+    display: inline-flex; align-items: center; gap: 3px;
+    padding: 3px 7px; border-radius: 7px; font-size: 10px;
+    background: var(--card); border: 1px solid var(--border);
+  }
+  .event-chip.in-top3 { border-color: var(--gold); background: rgba(245,158,11,.08); }
+  .event-chip .ep { font-weight: 700; min-width: 10px; }
+  .event-chip .en { color: var(--muted); }
+  .top3-crown     { font-size: 10px; }
+
+  /* ── Sıra rengi ── */
+  .rank-1 { color: var(--gold) }
+  .rank-2 { color: #e2e8f0 }
+  .rank-3 { color: #cd7f32 }
+
+  /* ── Kulüp tablosu ── */
+  .club-table-wrap { margin: 10px; }
+  .club-table-wrap h3 { font-size: 13px; color: var(--gold); margin-bottom: 8px; padding: 8px 0; }
+  .club-filter-row { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 8px; }
+  .club-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; }
+  .club-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 6px 10px; text-align: left; }
+  .club-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .club-table tr:last-child td { border-bottom: 0; }
+  .club-total { font-weight: 700; color: var(--text); }
+  .num-multi { color: var(--gold); font-weight: 700; }
+  .num-tr    { color: var(--green); font-weight: 700; }
+  .num-bolge { color: var(--blue); font-weight: 700; }
+
+  /* ── Özet Matris ── */
+  .matrix-wrap { margin: 10px; }
+  .matrix-wrap h3 { font-size: 13px; color: var(--gold); margin-bottom: 8px; padding-top: 8px; }
+  .matrix-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; }
+  .matrix-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 6px 10px; text-align: center; }
+  .matrix-table th:first-child { text-align: left; }
+  .matrix-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; text-align: center; }
+  .matrix-table td:first-child { text-align: left; font-weight: 600; }
+  .matrix-table tr:last-child td { border-bottom: 0; font-weight: 700; background: rgba(255,255,255,.03); }
+
+  /* ── Loader ── */
+  #loader { display: flex; align-items: center; justify-content: center; height: 60vh; font-size: 16px; color: var(--muted); text-align: center; padding: 20px; }
+
+  /* ── Tab content ── */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  /* ── Responsive ── */
+  @media(max-width:480px) {
+    .col-region { display: none; }
+    .hide-sm    { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <div>
+      <h1>2026 Fed. Karması Sıralaması</h1>
+      <div class="updated" id="updated">Yükleniyor...</div>
+    </div>
+    <div style="display:flex;gap:6px;align-items:center">
+      <span class="legs-badge" id="legs-badge">—</span>
+      <button class="refresh-btn" onclick="loadData()">↺</button>
+    </div>
+  </div>
+</header>
+
+<!-- ── Sekmeler ── -->
+<div class="tabs">
+  <div class="tab active" data-tab="rankings" onclick="switchTab('rankings',this)">Sıralama</div>
+  <div class="tab" data-tab="clubs" onclick="switchTab('clubs',this)">Kulüpler</div>
+  <div class="tab" data-tab="matrix" onclick="switchTab('matrix',this)">Özet</div>
+</div>
+
+<!-- ── Filtreler (sadece Sıralama sekmesinde) ── -->
+<div id="filter-bar">
+  <div class="filters">
+    <span class="filter-label">Yaş:</span>
+    <div style="display:flex;gap:5px;flex-wrap:wrap">
+      <button class="filter-btn active" data-age="all">Tümü</button>
+      <button class="filter-btn" data-age="2013">13 Yaş</button>
+      <button class="filter-btn" data-age="2012">14 Yaş</button>
+      <button class="filter-btn" data-age="2011">15 Yaş</button>
+    </div>
+    <div class="filter-sep"></div>
+    <span class="filter-label">Cinsiyet:</span>
+    <div style="display:flex;gap:5px;flex-wrap:wrap">
+      <button class="filter-btn active" data-gender="all">K+E</button>
+      <button class="filter-btn" data-gender="F">Kadın</button>
+      <button class="filter-btn" data-gender="M">Erkek</button>
+    </div>
+    <div class="filter-sep"></div>
+    <span class="filter-label">Bölge:</span>
+    <div style="display:flex;gap:5px;flex-wrap:wrap" id="region-filters">
+      <button class="filter-btn active" data-region="all">Tümü</button>
+      <button class="filter-btn" data-region="1">B1</button>
+      <button class="filter-btn" data-region="2">B2</button>
+      <button class="filter-btn" data-region="3">B3</button>
+      <button class="filter-btn" data-region="4">B4</button>
+      <button class="filter-btn" data-region="5">B5</button>
+      <button class="filter-btn" data-region="6">B6</button>
+    </div>
+    <div class="filter-sep"></div>
+    <span class="filter-label">Göster:</span>
+    <div style="display:flex;gap:5px;flex-wrap:wrap">
+      <button class="filter-btn active" data-sel="all">Tümü</button>
+      <button class="filter-btn" data-sel="selected">Seçilenler</button>
+    </div>
+  </div>
+  <div class="leg-toggle">
+    <span style="font-size:10px;color:var(--muted);line-height:26px;margin-right:4px">Veri:</span>
+    <button class="leg-btn active" data-leg="combined">Antalya+Edirne</button>
+    <button class="leg-btn" data-leg="antalya">Sadece Antalya</button>
+    <button class="leg-btn" data-leg="edirne">Sadece Edirne</button>
+  </div>
+</div>
+
+<div id="content">
+  <div id="loader">⟳ Yükleniyor...</div>
+</div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────────────────────
+let DATA        = null;
+let filterAge   = 'all';
+let filterGender= 'all';
+let filterRegion= 'all';
+let filterSel   = 'all';
+let activeLeg   = 'combined';   // 'combined' | 'antalya' | 'edirne'
+let activeTab   = 'rankings';
+let activeClubGroup = 'overall';  // kulüpler sekmesi için global state
+let expanded    = new Set();
+
+// ── Load ──────────────────────────────────────────────────────────────────────
+async function loadData() {
+  if (window.RESULTS_DATA) {
+    DATA = window.RESULTS_DATA;
+    renderAll();
+    return;
+  }
+  try {
+    const r = await fetch('results.json?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    DATA = await r.json();
+    renderAll();
+  } catch(e) {
+    document.getElementById('loader').textContent =
+      '⚠ Veri yüklenemedi. serve.py ile açın veya generate_rankings_json.py çalıştırın.';
+  }
+}
+
+// ── Tab switch ────────────────────────────────────────────────────────────────
+function switchTab(tab, el) {
+  activeTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('filter-bar').style.display = tab === 'rankings' ? '' : 'none';
+  renderAll();
+}
+
+// ── Filter listeners ──────────────────────────────────────────────────────────
+document.querySelectorAll('[data-age]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterAge = btn.dataset.age;
+    document.querySelectorAll('[data-age]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+document.querySelectorAll('[data-gender]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterGender = btn.dataset.gender;
+    document.querySelectorAll('[data-gender]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+document.querySelectorAll('[data-region]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterRegion = btn.dataset.region;
+    document.querySelectorAll('[data-region]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+document.querySelectorAll('[data-sel]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterSel = btn.dataset.sel;
+    document.querySelectorAll('[data-sel]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+document.querySelectorAll('[data-leg]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    activeLeg = btn.dataset.leg;
+    document.querySelectorAll('[data-leg]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderAll();
+  });
+});
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function renderAll() {
+  if (!DATA) return;
+  document.getElementById('updated').textContent = 'Son güncelleme: ' + DATA.generated_at;
+  document.getElementById('legs-badge').textContent = legsLabel(DATA.legs);
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  if (activeTab === 'rankings') renderRankings(content);
+  else if (activeTab === 'clubs') renderClubs(content);
+  else if (activeTab === 'matrix') renderMatrix(content);
+}
+
+function legsLabel(legs) {
+  if (!legs) return '—';
+  const parts = [];
+  if (legs.includes('antalya')) parts.push('Antalya ✓');
+  if (legs.includes('edirne'))  parts.push('Edirne ✓');
+  return parts.join(' + ') || legs;
+}
+
+// ── Rankings tab ──────────────────────────────────────────────────────────────
+function renderRankings(content) {
+  const ORDER = ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+  let anyShown = false;
+  for (const key of ORDER) {
+    const grp = DATA.groups[key];
+    if (!grp) continue;
+    if (filterAge    !== 'all' && String(grp.birth_year) !== filterAge)  continue;
+    if (filterGender !== 'all' && grp.gender !== filterGender)           continue;
+
+    let athletes = grp.athletes;
+
+    // Bölge filtresi: Multinations sporcular her zaman göster
+    if (filterRegion !== 'all') {
+      athletes = athletes.filter(a =>
+        a.selected === 'MULTINATIONS' ||
+        String(a.region) === filterRegion
+      );
+    }
+    if (filterSel === 'selected') {
+      athletes = athletes.filter(a =>
+        a.selected === 'TR' || a.selected === 'BÖLGE' || a.selected === 'MULTINATIONS'
+      );
+    }
+    if (athletes.length === 0) continue;
+    anyShown = true;
+    content.appendChild(buildGroupSection(key, grp, athletes));
+  }
+  if (!anyShown) {
+    content.innerHTML = '<div style="padding:32px;text-align:center;color:var(--muted)">Sonuç bulunamadı</div>';
+  }
+}
+
+function buildGroupSection(key, grp, athletes) {
+  const sec = document.createElement('div');
+  sec.className = 'group-section';
+  const gIcon  = grp.gender === 'F' ? '♀' : '♂';
+  const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+  const multiC = athletes.filter(a => a.selected==='MULTINATIONS').length;
+  const trC    = athletes.filter(a => a.selected==='TR').length;
+  const bC     = athletes.filter(a => a.selected==='BÖLGE').length;
+
+  sec.innerHTML = `
+    <div class="group-header" onclick="toggleGroup('${key}')">
+      <div>
+        <div class="group-title">
+          <span style="color:${gColor}">${gIcon}</span>
+          ${grp.age_label} ${grp.gender_label}
+        </div>
+        <div class="group-subtitle">
+          TR: ${grp.tr_quota} &nbsp;|&nbsp; B1: ${grp.region_1_quota} &nbsp;|&nbsp; Diğer: ${grp.region_other_quota}
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="group-stats">
+          <div><span style="color:var(--gold)">MULTI: ${multiC}</span></div>
+          <div><span style="color:var(--green)">TR: ${trC}</span> &nbsp; <span style="color:var(--blue)">Blg: ${bC}</span></div>
+        </div>
+        <span class="group-toggle" id="toggle-${key}">▾</span>
+      </div>
+    </div>
+    <div class="group-table" id="grp-${key}">
+      ${buildTable(key, grp, athletes)}
+    </div>
+  `;
+  return sec;
+}
+
+function toggleGroup(key) {
+  const el  = document.getElementById('grp-' + key);
+  const tog = document.getElementById('toggle-' + key);
+  if (el.style.display === 'none') { el.style.display = ''; tog.textContent = '▾'; }
+  else                              { el.style.display = 'none'; tog.textContent = '▸'; }
+}
+
+function buildTable(groupKey, grp, athletes) {
+  let rows = '';
+  // Satır numarası için index (Multinations grubunu 0 ile başlat)
+  athletes.forEach((a, idx) => {
+    const expKey = groupKey + '_' + idx;
+    const isExp  = expanded.has(expKey);
+
+    const isMulti = a.selected === 'MULTINATIONS';
+    const isTied  = a.tied && !isMulti;
+    let rowCls = '';
+    if (isMulti)              rowCls = 'selected-multi';
+    else if (isTied)          rowCls = 'selected-tie';
+    else if (a.selected==='TR')    rowCls = 'selected-tr';
+    else if (a.selected==='BÖLGE') rowCls = 'selected-bolge';
+    if (isExp) rowCls += ' row-expanded';
+
+    const rankCls = (a.rank && a.rank <= 3 && !isMulti) ? `rank-${a.rank}` : '';
+    const rankStr = isMulti ? '★' : (a.rank || '—');
+
+    // Seçim badge
+    let badgeHtml = '';
+    if (isMulti)
+      badgeHtml = `<span class="badge badge-multi">Multinations</span>`;
+    else if (a.selected==='TR')
+      badgeHtml = `<span class="badge badge-tr">${a.selected_slot}</span>`;
+    else if (a.selected==='BÖLGE') {
+      const tieNote = isTied ? ' ★' : '';
+      badgeHtml = `<span class="badge badge-bolge">${a.selected_slot}${tieNote}</span>`;
+    } else if (a.selected==='BARAJ_YOK')
+      badgeHtml = `<span class="badge badge-baraj">Baraj↓</span>`;
+    else {
+      if (isTied) badgeHtml = `<span class="badge badge-tie">Eşit★</span>`;
+      else        badgeHtml = `<span class="badge-none">—</span>`;
+    }
+
+    // Leg'e göre puan
+    let score, events;
+    if (activeLeg === 'antalya') {
+      score  = a.top3_antalya;
+      events = a.events_antalya;
+    } else if (activeLeg === 'edirne') {
+      score  = a.top3_edirne;
+      events = a.events_edirne;
+    } else {
+      score  = a.top3;
+      events = a.events;
+    }
+
+    // Tie işareti isim yanında
+    const tieStar = (isTied && a.selected !== 'TR') ? '<span class="tie-mark">★</span>' : '';
+
+    rows += `<tr class="${rowCls}">
+      <td class="col-rank ${rankCls}">${rankStr}</td>
+      <td class="col-name">
+        <div class="name-cell">${a.name}${tieStar}</div>
+        <div class="club-cell">${a.club || ''} ${a.city ? '· '+a.city : ''}</div>
+      </td>
+      <td class="col-score ${ptsClass(Math.floor(score/3))}">${score}</td>
+      <td class="col-sel">${badgeHtml}</td>
+      <td class="col-region hide-sm">${a.region || '—'}</td>
+      <td class="col-expand" onclick="toggleRow('${groupKey}',${idx},event)">${isExp ? '▲' : '▼'}</td>
+    </tr>`;
+
+    if (isExp) {
+      rows += `<tr class="expand-row"><td colspan="6"><div class="event-detail">
+        ${buildEventChips(events || [])}
+      </div></td></tr>`;
+    }
+  });
+
+  return `<table>
+    <thead><tr>
+      <th class="col-rank">#</th>
+      <th>Ad Soyad / Kulüp</th>
+      <th class="col-score">Puan</th>
+      <th class="col-sel">Seçim</th>
+      <th class="col-region hide-sm">Blg</th>
+      <th class="col-expand"></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+function buildEventChips(events) {
+  if (!events || events.length === 0)
+    return '<span style="color:var(--muted);font-size:11px">Bu yarışta puan yok</span>';
+  return events.map(ev => {
+    const crown = ev.in_top3 ? '<span class="top3-crown">★</span>' : '';
+    return `<div class="event-chip ${ev.in_top3 ? 'in-top3' : ''}">
+      ${crown}<span class="ep ${ptsClass(ev.points)}">${ev.points}</span>
+      <span class="en">${ev.event}</span>
+    </div>`;
+  }).join('');
+}
+
+function toggleRow(groupKey, idx, e) {
+  e.stopPropagation();
+  const key = groupKey + '_' + idx;
+  if (expanded.has(key)) expanded.delete(key);
+  else expanded.add(key);
+  renderAll();
+}
+
+function ptsClass(p) {
+  if (p >= 9) return 'pts-9';
+  if (p >= 7) return 'pts-7';
+  if (p >= 6) return 'pts-6';
+  if (p >= 5) return 'pts-5';
+  if (p >= 4) return 'pts-4';
+  if (p >= 3) return 'pts-3';
+  if (p >= 2) return 'pts-2';
+  if (p >= 1) return 'pts-1';
+  return 'pts-0';
+}
+
+// ── Clubs tab ─────────────────────────────────────────────────────────────────
+function renderClubs(content) {
+  if (!DATA || !DATA.club_rankings) {
+    content.innerHTML = '<div style="padding:20px;color:var(--muted)">Veri yok</div>';
+    return;
+  }
+  const cr = DATA.club_rankings;
+
+  // Group seçici
+  const groupKeys = ['overall', ...Object.keys(cr.by_group || {}).sort()];
+  const GROUP_LABEL = {
+    overall: 'Genel Toplam',
+    '2013_F': '13 Yaş Kadın', '2013_M': '13 Yaş Erkek',
+    '2012_F': '14 Yaş Kadın', '2012_M': '14 Yaş Erkek',
+    '2011_F': '15 Yaş Kadın', '2011_M': '15 Yaş Erkek',
+  };
+
+  const wrap = document.createElement('div');
+  wrap.className = 'club-table-wrap';
+
+  // Butonlar
+  const filterRow = document.createElement('div');
+  filterRow.className = 'club-filter-row';
+  groupKeys.forEach(gk => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn' + (gk === activeClubGroup ? ' active' : '');
+    btn.textContent = GROUP_LABEL[gk] || gk;
+    btn.onclick = () => { activeClubGroup = gk; renderAll(); };
+    filterRow.appendChild(btn);
+  });
+
+  const h3 = document.createElement('h3');
+  h3.textContent = 'Kulüp Sıralaması — ' + (GROUP_LABEL[activeClubGroup] || activeClubGroup);
+
+  const data = activeClubGroup === 'overall' ? cr.overall : (cr.by_group[activeClubGroup] || []);
+
+  let rows = '';
+  data.filter(c => c.total > 0).forEach((c, i) => {
+    rows += `<tr>
+      <td style="color:var(--muted);font-size:11px">${i+1}</td>
+      <td>${c.club}</td>
+      <td class="num-multi">${c.multi || 0}</td>
+      <td class="num-tr">${c.tr || 0}</td>
+      <td class="num-bolge">${c.bolge || 0}</td>
+      <td class="club-total">${c.total}</td>
+    </tr>`;
+  });
+
+  const table = `<table class="club-table">
+    <thead><tr>
+      <th>#</th><th>Kulüp</th>
+      <th style="color:var(--gold)">Multi</th>
+      <th style="color:var(--green)">TR</th>
+      <th style="color:var(--blue)">Bölge</th>
+      <th>Toplam</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+
+  const tableDiv = document.createElement('div');
+  tableDiv.innerHTML = table;
+  wrap.appendChild(h3);
+  wrap.appendChild(filterRow);
+  wrap.appendChild(tableDiv);
+  content.appendChild(wrap);
+}
+
+// ── Matrix tab ────────────────────────────────────────────────────────────────
+function renderMatrix(content) {
+  if (!DATA || !DATA.summary_matrix) {
+    content.innerHTML = '<div style="padding:20px;color:var(--muted)">Veri yok</div>';
+    return;
+  }
+  const matrix = DATA.summary_matrix;
+  const AGE = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const GEN = {F:'Kadın',M:'Erkek'};
+
+  let totalMulti=0, totalTR=0, totalBolge=0, totalAll=0;
+  let rows = '';
+  matrix.forEach(g => {
+    const label = `${AGE[g.birth_year]||g.birth_year} ${GEN[g.gender]||g.gender}`;
+    totalMulti += g.multi; totalTR += g.tr; totalBolge += g.bolge; totalAll += g.total;
+    rows += `<tr>
+      <td>${label}</td>
+      <td class="num-multi">${g.multi}</td>
+      <td class="num-tr">${g.tr}</td>
+      <td class="num-bolge">${g.bolge}</td>
+      <td class="club-total">${g.total}</td>
+    </tr>`;
+  });
+  rows += `<tr>
+    <td>TOPLAM</td>
+    <td class="num-multi">${totalMulti}</td>
+    <td class="num-tr">${totalTR}</td>
+    <td class="num-bolge">${totalBolge}</td>
+    <td class="club-total">${totalAll}</td>
+  </tr>`;
+
+  const wrap = document.createElement('div');
+  wrap.className = 'matrix-wrap';
+  wrap.innerHTML = `
+    <h3>Seçim Özeti</h3>
+    <table class="matrix-table">
+      <thead><tr>
+        <th>Grup</th>
+        <th style="color:var(--gold)">Multinations</th>
+        <th style="color:var(--green)">TR Kadro</th>
+        <th style="color:var(--blue)">Bölge</th>
+        <th>Toplam</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div style="margin-top:12px;font-size:11px;color:var(--muted);padding:4px 0">
+      ★ Eşit puanlı sporcular mor yıldız ile işaretlenmiştir. Eşitlik durumunda kural PDF'te tanımlanmamıştır — her iki sporcu da sıralamada gösterilmiştir.
+    </div>
+  `;
+  content.appendChild(wrap);
+}
+
+// ── Auto-refresh ──────────────────────────────────────────────────────────────
+let autoRefresh = null;
+function startAutoRefresh(intervalSec = 30) {
+  if (autoRefresh) clearInterval(autoRefresh);
+  autoRefresh = setInterval(loadData, intervalSec * 1000);
+}
+
+// ── Start ─────────────────────────────────────────────────────────────────────
+loadData();
+// Uncomment for live Edirne mode:
+// startAutoRefresh(30);
+</script>
+</body>
+</html>

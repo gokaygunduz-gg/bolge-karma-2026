@@ -1,0 +1,59 @@
+name: Update Panel (Edirne Canlı)
+
+on:
+  schedule:
+    # Her 30 dakikada bir — UTC 06:00-20:00 arası (TR 09:00-23:00)
+    - cron: '*/30 6-20 * * *'
+  workflow_dispatch:
+    inputs:
+      edirne_url:
+        description: 'Edirne yarış URL (boş bırakırsan kayıtlı URL kullanılır)'
+        required: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests openpyxl rapidfuzz
+
+      - name: Set Edirne URL
+        run: |
+          URL="${{ github.event.inputs.edirne_url }}"
+          if [ -z "$URL" ]; then
+            URL="${{ vars.EDIRNE_URL }}"
+          fi
+          echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
+
+      - name: Fetch Edirne data & update DB
+        if: env.EDIRNE_URL != ''
+        run: |
+          python process_edirne_karma.py --url "$EDIRNE_URL"
+
+      - name: Generate panel JSON
+        run: |
+          python generate_rankings_json.py
+
+      - name: Commit & push updated panel
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add panel/results_inline.js panel/results.json data/bolge_karmalari.db
+          if git diff --staged --quiet; then
+            echo "Değişiklik yok, push atlanıyor."
+          else
+            git commit -m "chore: panel güncellendi ($(date -u '+%Y-%m-%d %H:%M') UTC)"
+            git push
+          fi

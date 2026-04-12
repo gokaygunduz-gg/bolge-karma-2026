@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Büyük/gereksiz dosyalar
+_cache_pdf.json
+_cache_html.json
+_debug_*.txt
+Old files/
+Çıktılar/
+
+# İstanbul veri scriptleri (karma ile ilgisiz)
+fix_istanbul_*.py
+rescrape_pdf_istanbul.py
+reexport_istanbul*.py
+selfcheck*.py
+compare_istanbul*.py
+export_html_source.py
+patch_and_export.py
+scrape_antalya.py
+fix_istanbul_*.py
+fix_istanbul_itu.py
+fix_istanbul_merged_auto.py
+fix_istanbul_overrides.py
+fix_istanbul_remaining.py
+
+# Kulüp mapping exceli (büyük/özel)
+Kulüp Şehir Mapping Exceli/
+
+# Veritabanı (İstanbul)
+database/athletes.db
+database/swimming.db
