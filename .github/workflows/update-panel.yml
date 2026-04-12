@@ -10,6 +10,9 @@ on:
         description: 'Edirne yarış URL (boş bırakırsan kayıtlı URL kullanılır)'
         required: false
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -46,14 +49,35 @@ jobs:
         run: |
           python generate_rankings_json.py
 
-      - name: Commit & push updated panel
+      - name: Commit updated DB & JSON to master
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add panel/results_inline.js panel/results.json data/bolge_karmalari.db
           if git diff --staged --quiet; then
-            echo "Değişiklik yok, push atlanıyor."
+            echo "Değişiklik yok."
           else
             git commit -m "chore: panel güncellendi ($(date -u '+%Y-%m-%d %H:%M') UTC)"
             git push
+          fi
+
+      - name: Deploy panel to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # gh-pages branch'ini fetch et
+          git fetch origin gh-pages
+          git worktree add /tmp/gh-pages origin/gh-pages
+          # panel/ içeriğini kopyala
+          cp panel/index.html /tmp/gh-pages/index.html
+          cp panel/results_inline.js /tmp/gh-pages/results_inline.js
+          cp panel/results.json /tmp/gh-pages/results.json
+          # push
+          cd /tmp/gh-pages
+          git add -A
+          if git diff --staged --quiet; then
+            echo "gh-pages değişiklik yok."
+          else
+            git commit -m "deploy: panel $(date -u '+%Y-%m-%d %H:%M') UTC"
+            git push origin HEAD:gh-pages
           fi
