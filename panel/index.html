@@ -522,14 +522,15 @@ function buildTable(groupKey, grp, athletes) {
 
     // 1. bitiş badge
     let firstBadge = '';
-    if (a.first_place && a.first_place.length > 0) {
-      const fp = a.first_place;
-      // Tooltip: hangi branşlarda 1. olduğunu göster
-      const strokeAbbr = {Serbest:'SB',Sırtüstü:'SR',Kurbağalama:'KR',Kelebek:'KL',Karışık:'KA'};
-      const legAbbr    = {antalya:'A',edirne:'E'};
-      const details = fp.map(f => `${legAbbr[f.leg]||f.leg} ${f.dist}m ${strokeAbbr[f.stroke]||f.stroke}`).join(', ');
-      firstBadge = `<span class="badge badge-first" title="1. Bitiş: ${details}">🥇 ${fp.length > 1 ? fp.length+'× ' : ''}1.</span>`;
-    }
+    try {
+      if (a.first_place && a.first_place.length > 0) {
+        const fp = a.first_place;
+        const legAbbr = {antalya:'A', edirne:'E'};
+        const details = fp.map(f => `${legAbbr[f.leg]||f.leg} ${f.dist}m ${f.stroke}`).join(', ');
+        const cnt = fp.length;
+        firstBadge = `<span class="badge badge-first" title="1. Bitis: ${details}">\uD83E\uDD47 ${cnt > 1 ? cnt+'\u00D7 ' : ''}1.</span>`;
+      }
+    } catch(e) { firstBadge = ''; }
 
     rows += `<tr class="${rowCls}">
       <td class="col-rank ${rankCls}">${rankStr}</td>
