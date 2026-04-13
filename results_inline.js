@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-12 19:30:08",
+  "generated_at": "2026-04-13 07:14:15",
   "legs": "antalya",
   "groups": {
     "2011_F": {
@@ -31,6 +31,23 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 100
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -103,6 +120,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 100
+            }
+          ],
           "events": [
             {
               "event": "400m Serbest",
@@ -175,6 +199,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "200m Kelebek",
@@ -263,6 +294,18 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 100
+            }
+          ],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -319,6 +362,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 100
+            }
+          ],
           "events": [
             {
               "event": "100m Kelebek",
@@ -407,6 +457,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 50
+            }
+          ],
           "events": [
             {
               "event": "50m Serbest",
@@ -479,6 +536,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -551,6 +615,7 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -639,6 +704,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Karışık",
+              "dist": 400
+            }
+          ],
           "events": [
             {
               "event": "200m Karışık",
@@ -695,6 +767,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -767,6 +840,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -887,6 +961,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -1007,6 +1082,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -1079,6 +1155,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -1151,6 +1228,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -1223,6 +1301,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -1279,6 +1358,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -1351,6 +1431,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -1423,6 +1504,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -1495,6 +1577,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -1551,6 +1634,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -1623,6 +1707,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -1679,6 +1764,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -1751,6 +1837,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -1823,6 +1910,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -1895,6 +1983,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -1951,6 +2040,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -2007,6 +2097,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -2063,6 +2154,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -2119,6 +2211,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -2159,6 +2252,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -2215,6 +2309,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -2271,6 +2366,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -2327,6 +2423,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -2383,6 +2480,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -2439,6 +2537,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -2479,6 +2578,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -2519,6 +2619,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -2575,6 +2676,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -2631,6 +2733,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -2671,6 +2774,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -2711,6 +2815,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -2767,6 +2872,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -2823,6 +2929,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -2879,6 +2986,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -2934,6 +3042,23 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 100
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Kurbağalama",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -3038,6 +3163,28 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 100
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 100
+            }
+          ],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -3142,6 +3289,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Sırtüstü",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -3214,6 +3368,18 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Karışık",
+              "dist": 200
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Karışık",
+              "dist": 400
+            }
+          ],
           "events": [
             {
               "event": "400m Karışık",
@@ -3286,6 +3452,23 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 400
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 800
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 1500
+            }
+          ],
           "events": [
             {
               "event": "1500m Serbest",
@@ -3358,6 +3541,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "200m Kelebek",
@@ -3430,6 +3620,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "200m Serbest",
@@ -3518,6 +3715,18 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 50
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 100
+            }
+          ],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -3590,6 +3799,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -3678,6 +3888,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -3750,6 +3961,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -3822,6 +4034,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -3942,6 +4155,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -4046,6 +4260,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -4118,6 +4333,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -4206,6 +4422,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -4262,6 +4479,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -4334,6 +4552,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -4406,6 +4625,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -4478,6 +4698,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -4550,6 +4771,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -4622,6 +4844,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -4726,6 +4949,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -4814,6 +5038,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -4934,6 +5159,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -5022,6 +5248,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -5110,6 +5337,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -5182,6 +5410,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -5238,6 +5467,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -5326,6 +5556,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -5398,6 +5629,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -5486,6 +5718,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -5558,6 +5791,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -5630,6 +5864,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -5686,6 +5921,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Sırtüstü",
@@ -5758,6 +5994,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -5814,6 +6051,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -5870,6 +6108,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -5942,6 +6181,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -6014,6 +6254,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -6086,6 +6327,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -6142,6 +6384,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -6214,6 +6457,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -6286,6 +6530,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -6342,6 +6587,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -6382,6 +6628,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -6438,6 +6685,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -6494,6 +6742,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -6550,6 +6799,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -6606,6 +6856,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -6646,6 +6897,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -6702,6 +6954,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -6774,6 +7027,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -6830,6 +7084,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -6886,6 +7141,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -6926,6 +7182,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -6966,6 +7223,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -7006,6 +7264,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -7046,6 +7305,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -7102,6 +7362,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -7158,6 +7419,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -7214,6 +7476,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -7254,6 +7517,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -7294,6 +7558,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -7334,6 +7599,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -7374,6 +7640,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -7414,6 +7681,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -7454,6 +7722,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -7494,6 +7763,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -7534,6 +7804,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -7574,6 +7845,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -7614,6 +7886,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -7669,6 +7942,28 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 200
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 400
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 800
+            },
+            {
+              "leg": "antalya",
+              "stroke": "Serbest",
+              "dist": 1500
+            }
+          ],
           "events": [
             {
               "event": "400m Serbest",
@@ -7757,6 +8052,13 @@ window.RESULTS_DATA = {
           "selected_label": "Multinations",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Karışık",
+              "dist": 200
+            }
+          ],
           "events": [
             {
               "event": "200m Karışık",
@@ -7845,6 +8147,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -7917,6 +8220,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -7989,6 +8293,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -8109,6 +8414,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -8213,6 +8519,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -8285,6 +8592,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -8389,6 +8697,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -8445,6 +8754,13 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 50
+            }
+          ],
           "events": [
             {
               "event": "50m Kelebek",
@@ -8549,6 +8865,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -8653,6 +8970,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -8741,6 +9059,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -8813,6 +9132,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -8901,6 +9221,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -9005,6 +9326,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -9061,6 +9383,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -9149,6 +9472,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -9237,6 +9561,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -9293,6 +9618,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -9381,6 +9707,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -9453,6 +9780,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -9509,6 +9837,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -9613,6 +9942,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -9669,6 +9999,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -9741,6 +10072,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Sırtüstü",
@@ -9797,6 +10129,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -9837,6 +10170,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -9909,6 +10243,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -9965,6 +10300,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -10021,6 +10357,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -10077,6 +10414,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -10165,6 +10503,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -10221,6 +10560,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -10277,6 +10617,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -10317,6 +10658,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -10357,6 +10699,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -10397,6 +10740,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -10437,6 +10781,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -10493,6 +10838,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -10549,6 +10895,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -10589,6 +10936,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -10629,6 +10977,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Serbest",
@@ -10685,6 +11034,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -10741,6 +11091,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -10781,6 +11132,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -10821,6 +11173,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -10861,6 +11214,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -10916,6 +11270,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -10988,6 +11343,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -11060,6 +11416,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -11148,6 +11505,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -11236,6 +11594,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -11324,6 +11683,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -11428,6 +11788,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Serbest",
@@ -11500,6 +11861,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -11588,6 +11950,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -11708,6 +12071,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -11780,6 +12144,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -11852,6 +12217,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -11940,6 +12306,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -12012,6 +12379,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -12132,6 +12500,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -12220,6 +12589,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -12308,6 +12678,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -12396,6 +12767,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -12484,6 +12856,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -12556,6 +12929,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -12628,6 +13002,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -12748,6 +13123,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -12836,6 +13212,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -12924,6 +13301,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -12996,6 +13374,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -13084,6 +13463,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -13172,6 +13552,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -13276,6 +13657,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -13380,6 +13762,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -13468,6 +13851,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -13540,6 +13924,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -13612,6 +13997,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -13716,6 +14102,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -13772,6 +14159,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -13844,6 +14232,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -13932,6 +14321,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -14020,6 +14410,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -14092,6 +14483,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -14180,6 +14572,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -14236,6 +14629,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -14324,6 +14718,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -14380,6 +14775,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -14452,6 +14848,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -14508,6 +14905,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -14596,6 +14994,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -14684,6 +15083,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Serbest",
@@ -14756,6 +15156,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -14828,6 +15229,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -14900,6 +15302,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -14956,6 +15359,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -15028,6 +15432,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Serbest",
@@ -15084,6 +15489,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -15140,6 +15546,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -15212,6 +15619,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -15268,6 +15676,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -15340,6 +15749,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -15396,6 +15806,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -15452,6 +15863,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -15508,6 +15920,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -15580,6 +15993,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -15636,6 +16050,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -15708,6 +16123,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -15748,6 +16164,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -15804,6 +16221,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -15844,6 +16262,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -15884,6 +16303,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -15924,6 +16344,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -15964,6 +16385,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -16019,6 +16441,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -16123,6 +16546,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -16227,6 +16651,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -16347,6 +16772,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -16435,6 +16861,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -16523,6 +16950,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -16643,6 +17071,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -16763,6 +17192,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -16867,6 +17297,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -17019,6 +17450,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -17107,6 +17539,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -17227,6 +17660,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -17315,6 +17749,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -17403,6 +17838,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -17523,6 +17959,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -17611,6 +18048,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -17731,6 +18169,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -17835,6 +18274,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -17955,6 +18395,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -18043,6 +18484,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -18115,6 +18557,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -18219,6 +18662,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -18291,6 +18735,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -18411,6 +18856,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -18499,6 +18945,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -18571,6 +19018,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -18675,6 +19123,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -18747,6 +19196,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -18819,6 +19269,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -18875,6 +19326,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -18931,6 +19383,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -18987,6 +19440,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -19059,6 +19513,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -19115,6 +19570,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -19187,6 +19643,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -19243,6 +19700,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -19299,6 +19757,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -19355,6 +19814,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -19491,6 +19951,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -19595,6 +20056,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -19667,6 +20129,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -19739,6 +20202,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -19811,6 +20275,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -19899,6 +20364,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -19955,6 +20421,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -20011,6 +20478,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -20099,6 +20567,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -20171,6 +20640,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -20243,6 +20713,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -20299,6 +20770,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -20355,6 +20827,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -20411,6 +20884,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -20515,6 +20989,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -20587,6 +21062,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -20643,6 +21119,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -20699,6 +21176,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -20771,6 +21249,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -20843,6 +21322,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -20883,6 +21363,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -20939,6 +21420,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -20979,6 +21461,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -21051,6 +21534,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -21107,6 +21591,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -21163,6 +21648,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -21219,6 +21705,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -21275,6 +21762,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -21331,6 +21819,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -21387,6 +21876,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -21459,6 +21949,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -21499,6 +21990,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -21539,6 +22031,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -21579,6 +22072,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -21635,6 +22129,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -21675,6 +22170,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -21731,6 +22227,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -21771,6 +22268,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -21811,6 +22309,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -21867,6 +22366,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -21907,6 +22407,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -21947,6 +22448,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -21987,6 +22489,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -22043,6 +22546,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -22083,6 +22587,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Karışık",
@@ -22123,6 +22628,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -22163,6 +22669,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -22203,6 +22710,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -22243,6 +22751,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -22298,6 +22807,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -22418,6 +22928,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -22538,6 +23049,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -22642,6 +23154,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -22762,6 +23275,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -22882,6 +23396,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -23034,6 +23549,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -23106,6 +23622,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -23210,6 +23727,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -23298,6 +23816,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -23370,6 +23889,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -23474,6 +23994,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -23610,6 +24131,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -23730,6 +24252,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -23850,6 +24373,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -23922,6 +24446,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -24026,6 +24551,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -24146,6 +24672,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -24250,6 +24777,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -24338,6 +24866,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -24410,6 +24939,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -24498,6 +25028,7 @@ window.RESULTS_DATA = {
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "200m Sırtüstü",
@@ -24570,6 +25101,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -24658,6 +25190,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -24762,6 +25295,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -24882,6 +25416,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -25002,6 +25537,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -25122,6 +25658,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Serbest",
@@ -25210,6 +25747,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -25282,6 +25820,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -25354,6 +25893,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -25458,6 +25998,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -25530,6 +26071,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -25602,6 +26144,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -25674,6 +26217,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -25746,6 +26290,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -25802,6 +26347,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -25874,6 +26420,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -25946,6 +26493,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -26018,6 +26566,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kelebek",
@@ -26090,6 +26639,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -26162,6 +26712,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -26250,6 +26801,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -26338,6 +26890,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": true,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -26426,6 +26979,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -26498,6 +27052,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -26570,6 +27125,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -26658,6 +27214,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "400m Karışık",
@@ -26762,6 +27319,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -26834,6 +27392,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -26890,6 +27449,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -26994,6 +27554,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kelebek",
@@ -27082,6 +27643,7 @@ window.RESULTS_DATA = {
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -27138,6 +27700,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -27194,6 +27757,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -27250,6 +27814,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -27322,6 +27887,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -27378,6 +27944,7 @@ window.RESULTS_DATA = {
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -27434,6 +28001,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -27490,6 +28058,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kelebek",
@@ -27546,6 +28115,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Sırtüstü",
@@ -27602,6 +28172,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -27642,6 +28213,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -27698,6 +28270,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -27754,6 +28327,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -27810,6 +28384,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -27866,6 +28441,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -27906,6 +28482,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Serbest",
@@ -28010,6 +28587,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Kurbağalama",
@@ -28066,6 +28644,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Sırtüstü",
@@ -28122,6 +28701,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -28162,6 +28742,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -28218,6 +28799,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -28274,6 +28856,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -28314,6 +28897,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -28354,6 +28938,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "200m Kurbağalama",
@@ -28394,6 +28979,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -28434,6 +29020,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "50m Sırtüstü",
@@ -28474,6 +29061,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -28514,6 +29102,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -28554,6 +29143,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -28594,6 +29184,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -28634,6 +29225,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "100m Kurbağalama",
@@ -28674,6 +29266,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "1500m Serbest",
@@ -28714,6 +29307,7 @@ window.RESULTS_DATA = {
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
