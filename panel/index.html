@@ -182,17 +182,41 @@
   </div>
 </div>
 <script>
-(function(){
+// ── Merkezi auth (gh-pages/auth.json) ────────────────────────────────────────
+// Şifre bu cihazda değil GitHub'da saklanır → değişince herkes için geçerli
+const AUTH_URL = 'https://gokaygunduz-gg.github.io/bolge-karma-2026/auth.json';
+let _auth = null;  // {pw, admin_pw, pw_off}
+
+async function loadAuth() {
+  try {
+    const r = await fetch(AUTH_URL + '?t=' + Date.now());
+    if (r.ok) _auth = await r.json();
+  } catch(e) {}
+  if (!_auth) _auth = { pw: 'karma2026', admin_pw: 'admin2026', pw_off: false };
+}
+
+function getMainPw()  { return _auth ? _auth.pw        : 'karma2026'; }
+function getAdminPw() { return _auth ? _auth.admin_pw  : 'admin2026'; }
+function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
+
+(async function(){
   const KEY = "bolge_karma_auth";
   const overlay = document.getElementById("pw-overlay");
-  const pwOff = localStorage.getItem('karma_pw_off') === '1';
-  if(pwOff || sessionStorage.getItem(KEY) === "1"){ overlay.style.display="none"; }
-  else { overlay.style.display="flex"; setTimeout(()=>document.getElementById("pw-input").focus(),100); }
+  await loadAuth();
+  if(isPwOff() || sessionStorage.getItem(KEY) === "1"){
+    overlay.style.display = "none";
+  } else {
+    overlay.style.display = "flex";
+    setTimeout(()=>document.getElementById("pw-input").focus(), 100);
+  }
   window.checkPw = function(){
     const v = document.getElementById("pw-input").value;
-    const curPW = localStorage.getItem('karma_pw') || "karma2026";
-    if(v === curPW){ sessionStorage.setItem(KEY,"1"); overlay.style.display="none"; }
-    else { document.getElementById("pw-err").style.display="block"; document.getElementById("pw-input").value=""; }
+    if(v === getMainPw()){
+      sessionStorage.setItem(KEY,"1"); overlay.style.display="none";
+    } else {
+      document.getElementById("pw-err").style.display="block";
+      document.getElementById("pw-input").value="";
+    }
   };
 })();
 </script>
@@ -679,9 +703,7 @@ function renderMatrix(content) {
 }
 
 // ── Admin şifre yönetimi (localStorage tabanlı) ───────────────────────────────
-function getMainPw()  { return localStorage.getItem('karma_pw')       || 'karma2026'; }
-function getAdminPw() { return localStorage.getItem('karma_admin_pw') || 'admin2026'; }
-function isPwOff()    { return localStorage.getItem('karma_pw_off')   === '1'; }
+// getMainPw / getAdminPw / isPwOff → auth.json'dan, tanımlar script başında
 
 let adminUnlocked = sessionStorage.getItem("bolge_karma_admin") === "1";
 
@@ -970,22 +992,49 @@ window.checkAdminPw = function(){
     document.getElementById('admin-pw-in').value='';
   }
 };
-window.adminChangePw = function(type){
-  if(type==='main'){
-    const v=document.getElementById('new-main-pw').value.trim();
-    if(!v){showMsg('pw-main-msg','Şifre boş olamaz','#ef4444');return;}
-    localStorage.setItem('karma_pw',v); localStorage.setItem('karma_pw_off','0');
-    showMsg('pw-main-msg','✓ Giriş şifresi değiştirildi → '+v,'#22c55e');
+window.adminChangePw = async function(type){
+  const token = localStorage.getItem('karma_gh_token')||'';
+  if(!token){ showMsg(type==='main'?'pw-main-msg':'pw-admin-msg','⚠ Önce GitHub Token girin (Kaydet bölümü)','#ef4444'); return; }
+  const field = type==='main'?'new-main-pw':'new-admin-pw';
+  const msgId = type==='main'?'pw-main-msg':'pw-admin-msg';
+  const v = document.getElementById(field)?.value.trim();
+  if(!v){ showMsg(msgId,'Şifre boş olamaz','#ef4444'); return; }
+  showMsg(msgId,'⟳ Kaydediliyor...','#f59e0b');
+  const ok = await _updateAuthJson(token, type==='main'?{pw:v}:{admin_pw:v});
+  if(ok){
+    showMsg(msgId,`✓ ${type==='main'?'Giriş':'Admin'} şifresi değiştirildi — tüm cihazlarda geçerli`,'#22c55e');
+    document.getElementById(field).value='';
   } else {
-    const v=document.getElementById('new-admin-pw').value.trim();
-    if(!v){showMsg('pw-admin-msg','Şifre boş olamaz','#ef4444');return;}
-    localStorage.setItem('karma_admin_pw',v);
-    showMsg('pw-admin-msg','✓ Admin şifresi değiştirildi → '+v,'#22c55e');
+    showMsg(msgId,'⚠ Kaydedilemedi — token doğru mu?','#ef4444');
   }
 };
-window.adminTogglePw = function(){
-  localStorage.setItem('karma_pw_off', isPwOff()?'0':'1');
-  renderAll();
+window.adminTogglePw = async function(){
+  const token = localStorage.getItem('karma_gh_token')||'';
+  if(!token){ alert('Önce GitHub Token girin'); return; }
+  const newOff = !isPwOff();
+  const ok = await _updateAuthJson(token, {pw_off: newOff});
+  if(ok) renderAll();
+  else alert('Kaydedilemedi — token doğru mu?');
+};
+
+// auth.json'ı GitHub API ile güncelle (gh-pages branch)
+async function _updateAuthJson(token, patch){
+  try {
+    const REPO='gokaygunduz-gg/bolge-karma-2026', BRANCH='gh-pages', PATH='auth.json';
+    const hdr={Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json'};
+    const g = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}?ref=${BRANCH}`,{headers:hdr});
+    if(!g.ok) return false;
+    const gj = await g.json();
+    const current = JSON.parse(atob(gj.content.replace(/\n/g,'')));
+    Object.assign(current, patch);
+    const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(current))));
+    const p = await fetch(`https://api.github.com/repos/${REPO}/contents/${PATH}`,{
+      method:'PUT', headers:{...hdr,'Content-Type':'application/json'},
+      body:JSON.stringify({message:`admin: auth güncellendi`,content:newContent,sha:gj.sha,branch:BRANCH})
+    });
+    if(p.ok){ _auth = {...current, ...patch}; return true; }
+    return false;
+  } catch(e){ return false; }
 };
 window.adminCityDrop = function(i,club){
   const city=document.getElementById(`cs-${i}`)?.value||'';
