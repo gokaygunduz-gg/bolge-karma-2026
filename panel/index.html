@@ -94,6 +94,7 @@
   .badge-baraj  { background: rgba(239,68,68,.15); color: var(--red); font-size: 9px; }
   .badge-tie    { background: rgba(168,85,247,.2); color: var(--purple); font-size: 9px; }
   .badge-none   { color: var(--border); font-size: 9px; }
+  .badge-first  { background: rgba(250,204,21,.2); color: #facc15; font-size: 9px; margin-left: 3px; }
 
   /* ── Puan rengi ── */
   .pts-9  { color: var(--gold); font-weight:800 }
@@ -519,10 +520,21 @@ function buildTable(groupKey, grp, athletes) {
     // Tie işareti isim yanında
     const tieStar = (isTied && a.selected !== 'TR') ? '<span class="tie-mark">★</span>' : '';
 
+    // 1. bitiş badge
+    let firstBadge = '';
+    if (a.first_place && a.first_place.length > 0) {
+      const fp = a.first_place;
+      // Tooltip: hangi branşlarda 1. olduğunu göster
+      const strokeAbbr = {Serbest:'SB',Sırtüstü:'SR',Kurbağalama:'KR',Kelebek:'KL',Karışık:'KA'};
+      const legAbbr    = {antalya:'A',edirne:'E'};
+      const details = fp.map(f => `${legAbbr[f.leg]||f.leg} ${f.dist}m ${strokeAbbr[f.stroke]||f.stroke}`).join(', ');
+      firstBadge = `<span class="badge badge-first" title="1. Bitiş: ${details}">🥇 ${fp.length > 1 ? fp.length+'× ' : ''}1.</span>`;
+    }
+
     rows += `<tr class="${rowCls}">
       <td class="col-rank ${rankCls}">${rankStr}</td>
       <td class="col-name">
-        <div class="name-cell">${a.name}${tieStar}</div>
+        <div class="name-cell">${a.name}${tieStar}${firstBadge}</div>
         <div class="club-cell">${a.club || ''} ${a.city ? '· '+a.city : ''}</div>
       </td>
       <td class="col-score ${ptsClass(Math.floor(score/3))}">${score}</td>

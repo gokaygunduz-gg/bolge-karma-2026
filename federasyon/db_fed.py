@@ -253,6 +253,35 @@ def load_athletes_for_ranking_by_leg(birth_years: list[int] = None) -> dict:
     return athletes
 
 
+def get_event_winners(birth_years: list = None) -> dict:
+    """
+    Her (race_leg, gender, stroke, distance) kombinasyonunda en iyi zamana sahip
+    sporcuyu döner. Yaş grupları beraber değerlendirilir (13+14+15 aynı havuz).
+    Kız/Erkek ayrı.
+
+    Dönen yapı:
+      {(race_leg, gender, stroke, distance): "sporcu adı"}
+    """
+    bys = birth_years or [2011, 2012, 2013]
+    placeholders = ",".join("?" * len(bys))
+    with get_conn() as conn:
+        rows = conn.execute(f"""
+            SELECT race_leg, gender, stroke, distance, athlete_name, time_seconds
+            FROM fed_results
+            WHERE birth_year IN ({placeholders})
+              AND time_seconds IS NOT NULL
+              AND time_seconds > 0
+            ORDER BY race_leg, gender, stroke, distance, time_seconds ASC
+        """, bys).fetchall()
+
+    winners = {}
+    for row in rows:
+        key = (row["race_leg"], row["gender"], row["stroke"], row["distance"])
+        if key not in winners:  # İlk kayıt = en iyi zaman (ORDER BY asc)
+            winners[key] = row["athlete_name"]
+    return winners
+
+
 def get_stats() -> dict:
     with get_conn() as conn:
         r = conn.execute("""
