@@ -1209,18 +1209,26 @@ updateNextBadge();
 // ── Veri yükleme (missing report dahil) ──────────────────────────────────────
 async function loadData(){
   const MISSING_URL='https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now();
-  if(window.RESULTS_DATA){
-    DATA=window.RESULTS_DATA;
-    try{const r=await fetch(MISSING_URL);if(r.ok){const j=await r.json();DATA._missing_clubs=j.missing_clubs||[];}}catch(e){}
-    renderAll();return;
+  const isOnline = location.protocol !== 'file:';
+
+  if(isOnline){
+    // Online: her zaman fresh results.json çek (cache bypass)
+    try{
+      const[r1,r2]=await Promise.allSettled([
+        fetch('results.json?t='+Date.now()),
+        fetch(MISSING_URL)
+      ]);
+      if(r1.status==='fulfilled'&&r1.value.ok) DATA=await r1.value.json();
+      else if(window.RESULTS_DATA) DATA=window.RESULTS_DATA;  // network fail → inline fallback
+      else throw new Error('Veri yüklenemedi');
+      if(r2.status==='fulfilled'&&r2.value.ok){const j=await r2.value.json();DATA._missing_clubs=j.missing_clubs||[];}
+      renderAll();
+    }catch(e){document.getElementById('loader').textContent='⚠ Veri yüklenemedi.';}
+  } else {
+    // Offline / file:// → gömülü veri kullan
+    if(window.RESULTS_DATA){ DATA=window.RESULTS_DATA; renderAll(); }
+    else document.getElementById('loader').textContent='⚠ Veri bulunamadı.';
   }
-  try{
-    const[r1,r2]=await Promise.allSettled([fetch('results.json?t='+Date.now()),fetch(MISSING_URL)]);
-    if(r1.status==='fulfilled'&&r1.value.ok) DATA=await r1.value.json();
-    else throw new Error('Veri yüklenemedi');
-    if(r2.status==='fulfilled'&&r2.value.ok){const j=await r2.value.json();DATA._missing_clubs=j.missing_clubs||[];}
-    renderAll();
-  }catch(e){document.getElementById('loader').textContent='⚠ Veri yüklenemedi.';}
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
