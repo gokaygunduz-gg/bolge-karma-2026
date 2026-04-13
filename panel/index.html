@@ -792,13 +792,31 @@ function renderAdmin(content) {
 
   // ── 1. GÜVENLİK ──
   const pwOff=isPwOff();
+  const ghTokVal=localStorage.getItem('karma_gh_token')||'';
   wrap.appendChild(sec('🔒 GÜVENLİK','#94a3b8',`
-    <div style="margin-bottom:14px">
-      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">
-        Giriş Şifresi ${pwOff?'<span style="color:#ef4444;font-weight:700">[KAPALI — herkes girebilir]</span>':''}
+    <div style="margin-bottom:12px;padding:10px;background:#0f172a;border-radius:6px">
+      <div style="font-size:11px;color:#64748b;margin-bottom:6px">GITHUB TOKEN — şifre değiştirmek için gerekli</div>
+      <div style="display:flex;gap:6px;margin-bottom:4px">
+        <input id="gh-tok-sec" type="password" placeholder="ghp_..."
+          value="${ghTokVal}"
+          style="flex:1;padding:7px;background:#1e293b;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
+        <button onclick="adminTestToken()"
+          style="padding:7px 10px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:11px;cursor:pointer">Test</button>
+        <button onclick="adminSaveToken()"
+          style="padding:7px 10px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:11px;cursor:pointer">Kaydet</button>
       </div>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px">
-        <input id="new-main-pw" type="text" placeholder="Yeni şifre yaz..."
+      <div id="tok-msg" style="font-size:11px;display:none"></div>
+      <div style="font-size:10px;color:#475569;margin-top:4px">
+        <a href="https://github.com/settings/tokens/new?scopes=repo&description=karma-panel" target="_blank" style="color:#3b82f6">→ Token oluştur (repo scope)</a>
+        — Her cihazda bir kere girilmeli
+      </div>
+    </div>
+    <div style="margin-bottom:12px">
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">
+        Giriş Şifresi ${pwOff?'<span style="color:#ef4444;font-weight:700">[KAPALI — herkes girebilir]</span>':'<span style="color:#64748b;font-size:10px">Mevcut: '+getMainPw()+'</span>'}
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">
+        <input id="new-main-pw" type="text" placeholder="Yeni giriş şifresi..."
           style="flex:1;min-width:130px;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
         <button onclick="adminChangePw('main')"
           style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
@@ -928,24 +946,7 @@ function renderAdmin(content) {
 
   // ── 4. DEĞİŞİKLİKLERİ KAYDET ──
   const hasChanges = Object.keys(pendingClubAliases).length>0 || Object.keys(pendingNameOverrides).length>0;
-  const ghToken = localStorage.getItem('karma_gh_token')||'';
-  let saveBody = `
-    <div style="margin-bottom:12px">
-      <div style="font-size:12px;color:#94a3b8;margin-bottom:5px">
-        GitHub Token
-        <span style="color:#64748b;font-size:10px"> — Bu cihazın localStorage'ında saklanır</span>
-      </div>
-      <div style="display:flex;gap:6px">
-        <input id="gh-tok" type="password" placeholder="ghp_..." value="${ghToken}"
-          style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
-        <button onclick="adminSaveToken()"
-          style="padding:7px 10px;background:#334155;border:none;border-radius:6px;color:#e2e8f0;font-size:12px;cursor:pointer">Kaydet</button>
-      </div>
-      <div style="font-size:11px;color:#64748b;margin-top:4px">
-        <a href="https://github.com/settings/tokens/new?scopes=repo&description=karma-panel" target="_blank" style="color:#3b82f6">
-          → Token oluştur (repo scope seç)</a>
-      </div>
-    </div>`;
+  let saveBody = ``;
   if (hasChanges) {
     saveBody += `
       <div style="background:#0f172a;border-radius:6px;padding:10px;margin-bottom:10px">
@@ -992,29 +993,47 @@ window.checkAdminPw = function(){
     document.getElementById('admin-pw-in').value='';
   }
 };
+function _getToken(){
+  // Önce ekrandaki inputtan oku, yoksa localStorage'dan
+  return (document.getElementById('gh-tok-sec')?.value.trim()) ||
+         localStorage.getItem('karma_gh_token') || '';
+}
+window.adminTestToken = async function(){
+  const token=_getToken();
+  if(!token){showMsg('tok-msg','⚠ Token girin','#ef4444');return;}
+  showMsg('tok-msg','⟳ Test ediliyor...','#f59e0b');
+  try{
+    const r=await fetch('https://api.github.com/repos/gokaygunduz-gg/bolge-karma-2026',
+      {headers:{Authorization:`token ${token}`,Accept:'application/vnd.github.v3+json'}});
+    if(r.ok) showMsg('tok-msg','✓ Token geçerli — şifre değiştirebilirsiniz','#22c55e');
+    else showMsg('tok-msg',`⚠ Token hatalı (${r.status}) — repo scope seçildi mi?`,'#ef4444');
+  }catch(e){showMsg('tok-msg','⚠ Bağlantı hatası','#ef4444');}
+};
 window.adminChangePw = async function(type){
-  const token = localStorage.getItem('karma_gh_token')||'';
-  if(!token){ showMsg(type==='main'?'pw-main-msg':'pw-admin-msg','⚠ Önce GitHub Token girin (Kaydet bölümü)','#ef4444'); return; }
-  const field = type==='main'?'new-main-pw':'new-admin-pw';
-  const msgId = type==='main'?'pw-main-msg':'pw-admin-msg';
-  const v = document.getElementById(field)?.value.trim();
-  if(!v){ showMsg(msgId,'Şifre boş olamaz','#ef4444'); return; }
+  const token=_getToken();
+  const msgId=type==='main'?'pw-main-msg':'pw-admin-msg';
+  if(!token){showMsg(msgId,'⚠ Üstteki Token alanını doldurun','#ef4444');return;}
+  const field=type==='main'?'new-main-pw':'new-admin-pw';
+  const v=document.getElementById(field)?.value.trim();
+  if(!v){showMsg(msgId,'Şifre boş olamaz','#ef4444');return;}
   showMsg(msgId,'⟳ Kaydediliyor...','#f59e0b');
-  const ok = await _updateAuthJson(token, type==='main'?{pw:v}:{admin_pw:v});
+  const ok=await _updateAuthJson(token, type==='main'?{pw:v}:{admin_pw:v});
   if(ok){
-    showMsg(msgId,`✓ ${type==='main'?'Giriş':'Admin'} şifresi değiştirildi — tüm cihazlarda geçerli`,'#22c55e');
+    showMsg(msgId,`✓ Değiştirildi: "${v}" — tüm cihazlarda geçerli`,'#22c55e');
     document.getElementById(field).value='';
+    localStorage.setItem('karma_gh_token', token);  // başarılıysa kaydet
   } else {
-    showMsg(msgId,'⚠ Kaydedilemedi — token doğru mu?','#ef4444');
+    showMsg(msgId,'⚠ Kaydedilemedi — Token geçerli mi? "Test" butonuna basın','#ef4444');
   }
 };
 window.adminTogglePw = async function(){
-  const token = localStorage.getItem('karma_gh_token')||'';
-  if(!token){ alert('Önce GitHub Token girin'); return; }
-  const newOff = !isPwOff();
-  const ok = await _updateAuthJson(token, {pw_off: newOff});
-  if(ok) renderAll();
-  else alert('Kaydedilemedi — token doğru mu?');
+  const token=_getToken();
+  if(!token){showMsg('pw-main-msg','⚠ Üstteki Token alanını doldurun','#ef4444');return;}
+  const newOff=!isPwOff();
+  showMsg('pw-main-msg','⟳ Kaydediliyor...','#f59e0b');
+  const ok=await _updateAuthJson(token,{pw_off:newOff});
+  if(ok){ localStorage.setItem('karma_gh_token',token); renderAll(); }
+  else showMsg('pw-main-msg','⚠ Kaydedilemedi','#ef4444');
 };
 
 // auth.json'ı GitHub API ile güncelle (gh-pages branch)
@@ -1080,12 +1099,12 @@ window.adminDupeSave = function(i,name,by,gender){
   renderAll();
 };
 window.adminSaveToken = function(){
-  const v=document.getElementById('gh-tok')?.value.trim()||'';
+  const v=document.getElementById('gh-tok-sec')?.value.trim()||'';
   localStorage.setItem('karma_gh_token',v);
-  showMsg('save-msg', v?'✓ Token kaydedildi':'Token temizlendi','#22c55e');
+  showMsg('tok-msg', v?'✓ Token bu cihaza kaydedildi':'Token temizlendi','#22c55e');
 };
 window.adminCommit = async function(){
-  const token=localStorage.getItem('karma_gh_token')||'';
+  const token=_getToken();
   if(!token){showMsg('save-msg','⚠ GitHub token girilmedi','#ef4444');return;}
   showMsg('save-msg','⟳ GitHub\'a gönderiliyor...','#f59e0b');
   try {
