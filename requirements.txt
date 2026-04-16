@@ -1,0 +1,8 @@
+requests
+openpyxl
+rapidfuzz
+lxml
+beautifulsoup4
+pymupdf
+PyPDF2
+rapidocr-onnxruntime
