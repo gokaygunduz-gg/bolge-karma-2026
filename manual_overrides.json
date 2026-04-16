@@ -9,6 +9,43 @@
       "canonical": "Doğru Kulüp Adı",
       "city": "Şehir",
       "region": 1
+    },
+    {
+      "_aciklama": "Edirne'de görülen yeni kulüpler (ProgressionDetails.pdf, 16.04.2026)",
+      "raw": "Afyonkarahisar Maraşal Gençlik Spor Kulübü",
+      "canonical": "Afyonkarahisar Maraşal Gençlik Spor Kulübü",
+      "city": "Afyonkarahisar",
+      "region": 3
+    },
+    {
+      "raw": "Erciyes Yıldız Spor Kulübü",
+      "canonical": "Erciyes Yıldız Spor Kulübü",
+      "city": "Kayseri",
+      "region": 4
+    },
+    {
+      "raw": "Manisa Gençlik Ve Spor IL Müdürlüğü Spor Kulübü",
+      "canonical": "Manisa Gençlik Ve Spor Il Müdürlüğü Spor Kulübü",
+      "city": "Manisa",
+      "region": 3
+    },
+    {
+      "raw": "Sinop Gençlik Ve Spor IL Müdürlüğü Spor Kulübü",
+      "canonical": "Sinop Gençlik Ve Spor Il Müdürlüğü Spor Kulübü",
+      "city": "Sinop",
+      "region": 5
+    },
+    {
+      "raw": "Karabük Gençlik Ve Spor IL Müdürlüğü Spor Kulübü",
+      "canonical": "Karabük Gençlik Ve Spor Il Müdürlüğü Spor Kulübü",
+      "city": "Karabük",
+      "region": 4
+    },
+    {
+      "raw": "Karadenizsu Sporları Spor Kulübü",
+      "canonical": "Karadenizsu Sporları Spor Kulübü",
+      "city": "Ordu",
+      "region": 5
     }
   ],
 
@@ -22,6 +59,26 @@
       "canonical_club": "Doğru Kulüp",
       "canonical_city": "Şehir",
       "canonical_region": 1
+    },
+    {
+      "_aciklama": "Efe ÖZER 2011: Antalya'da İstanbul Ferdi, Edirne'de Beylikdüzü — aynı sporcu, kulübe geçmiş",
+      "name": "Efe ÖZER",
+      "birth_year": 2011,
+      "gender": "M",
+      "resolution": "same",
+      "canonical_club": "Beylikdüzü Yüzme Spor Kulübü",
+      "canonical_city": "İstanbul",
+      "canonical_region": 1
+    },
+    {
+      "_aciklama": "Zeynep KAYA 2013: Antalya'da Ted Ankara Kolejliler, Edirne'de Ferdi — aynı sporcu",
+      "name": "Zeynep Kaya",
+      "birth_year": 2013,
+      "gender": "F",
+      "resolution": "same",
+      "canonical_club": "Ted Ankara Kolejliler Spor Kulübü",
+      "canonical_city": "Ankara",
+      "canonical_region": 4
     }
   ]
 }

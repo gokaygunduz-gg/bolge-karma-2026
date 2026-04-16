@@ -217,6 +217,61 @@ def reload_mapping() -> None:
     logger.info("Mapping cache temizlendi, yeniden yuklenecek.")
 
 
+def apply_overrides_to_mapping(override_path: str | None = None) -> int:
+    """
+    manual_overrides.json içindeki club_aliases'ı bellek cache'ine ekler.
+    reload_mapping()'den SONRA çağrılmalıdır.
+
+    Döndürür: eklenen alias sayısı
+    """
+    import json, os
+    from pathlib import Path
+
+    if override_path is None:
+        override_path = str(Path(__file__).parent.parent / "manual_overrides.json")
+
+    if not os.path.exists(override_path):
+        return 0
+
+    try:
+        with open(override_path, encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        logger.warning("manual_overrides.json okunamadı: %s", e)
+        return 0
+
+    # Cache'in yüklenmiş olduğundan emin ol
+    mapping = _get_mapping()
+
+    added = 0
+    for alias in data.get("club_aliases", []):
+        raw = alias.get("raw", "").strip()
+        if not raw or raw.startswith("_") or alias.get("_ornek"):
+            continue
+        canonical = alias.get("canonical") or raw
+        city      = alias.get("city", "")
+        region    = alias.get("region", 0)
+        if not city or not region:
+            continue
+        info: ClubInfo = {
+            "club_canonical": canonical,
+            "city":           city,
+            "region":         int(region),
+        }
+        key = normalize_for_lookup(raw)
+        if key and key not in mapping:
+            mapping[key] = info
+            # nospace cache de güncelle
+            ns = _get_mapping_nospace()
+            ns[key.replace(" ", "")] = info
+            added += 1
+            logger.debug("Override alias eklendi: %s → %s (%s, B%d)", raw, canonical, city, region)
+
+    if added:
+        logger.info("manual_overrides.json: %d yeni club alias eklendi.", added)
+    return added
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 2. Arama fonksiyonları
 # ─────────────────────────────────────────────────────────────────────────────

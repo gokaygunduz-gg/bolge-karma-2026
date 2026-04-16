@@ -65,35 +65,6 @@ jobs:
           fi
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
-      - name: Apply manual overrides
-        run: |
-          python -c "
-          import json, os, sys
-          sys.path.insert(0, '.')
-          override_file = 'manual_overrides.json'
-          if not os.path.exists(override_file):
-              print('  manual_overrides.json yok, atlanıyor.')
-              sys.exit(0)
-          from modules.m4_mapping import reload_mapping
-          reload_mapping()
-          with open(override_file, encoding='utf-8') as f:
-              data = json.load(f)
-          # Club aliases — in-memory ekleme (m4_mapping._mapping_cache güncelle)
-          aliases = data.get('club_aliases', [])
-          if aliases:
-              from modules import m4_mapping as mm
-              for al in aliases:
-                  raw = al.get('raw','').strip().lower()
-                  if raw and raw not in mm._mapping_cache:
-                      mm._mapping_cache[raw] = {
-                          'club_canonical': al.get('canonical', al.get('raw','')),
-                          'city': al.get('city',''),
-                          'region': al.get('region', 0)
-                      }
-                      print(f'  Override uygulandı: {al[\"raw\"]} -> {al.get(\"canonical\")}')
-          print(f'  {len(aliases)} kulüp override yüklendi.')
-          "
-
       - name: Fetch Edirne data & update DB
         if: env.EDIRNE_URL != ''
         run: |

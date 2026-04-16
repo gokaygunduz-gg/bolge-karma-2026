@@ -19,7 +19,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from database.db import init_db
 from modules.m2_scraper import scrape_race
-from modules.m4_mapping import reload_mapping, clear_missing_clubs
+from modules.m4_mapping import reload_mapping, clear_missing_clubs, apply_overrides_to_mapping
 from federasyon.scoring_tables import EXCEL_COL_TO_EVENT
 from federasyon.scorer import score_athlete_row, parse_time
 from federasyon.db_fed import init_fed_db, upsert_result, rebuild_athlete_best
@@ -60,6 +60,9 @@ def process_edirne(url: str, verbose: bool = True):
     init_db()
     init_fed_db()
     reload_mapping()
+    overrides_added = apply_overrides_to_mapping()
+    if overrides_added:
+        print(f"  ℹ {overrides_added} kulüp override mapping'e eklendi.")
     clear_missing_clubs()
 
     name_overrides = _load_name_overrides()

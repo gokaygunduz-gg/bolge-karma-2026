@@ -269,6 +269,126 @@ def _dedup_best_time(results: list[dict]) -> list[dict]:
 # Ana scraping fonksiyonları
 # ─────────────────────────────────────────────────────────────────────────────
 
+# ─────────────────────────────────────────────────────────────────────────────
+# OCR sonuçları için DB-bazlı fuzzy isim düzeltme
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _fuzzy_correct_ocr_names(results: list[dict], birth_years: list[int] | None = None,
+                               threshold: int = 82, verbose: bool = False) -> list[dict]:
+    """
+    OCR ile okunmuş isimleri DB'deki bilinen sporcularla fuzzy eşleştirerek düzeltir.
+
+    Sadece source='ocr' olan sonuçlara uygulanır.
+    rapidfuzz.fuzz.token_sort_ratio kullanır (kelime sırası bağımsız eşleşme).
+
+    threshold: Minimum eşleşme skoru (0-100). 82 = yaklaşık 2-3 karakter farkı.
+    """
+    try:
+        from rapidfuzz import fuzz, process as rfprocess
+    except ImportError:
+        logger.warning("rapidfuzz yok — OCR fuzzy düzeltme atlanıyor. pip install rapidfuzz")
+        return results
+
+    # Sadece OCR sonuçları varsa çalıştır
+    ocr_results = [r for r in results if r.get("source") == "ocr"]
+    if not ocr_results:
+        return results
+
+    # DB'den bilinen sporcuları yükle
+    try:
+        import sqlite3
+        from pathlib import Path
+        db_path = Path(__file__).parent.parent / "data" / "bolge_karmalari.db"
+        if not db_path.exists():
+            return results
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        bys = birth_years or [2011, 2012, 2013]
+        placeholders = ",".join("?" * len(bys))
+        rows = conn.execute(
+            f"SELECT DISTINCT athlete_name, birth_year, gender, club FROM fed_athlete_best "
+            f"WHERE birth_year IN ({placeholders})",
+            bys
+        ).fetchall()
+        conn.close()
+    except Exception as e:
+        logger.warning("OCR fuzzy DB yüklenemedi: %s", e)
+        return results
+
+    if not rows:
+        return results
+
+    # Doğum yılı × cinsiyet grupları
+    from collections import defaultdict
+    db_by_group: dict[tuple, list[dict]] = defaultdict(list)
+    for r in rows:
+        key = (r["birth_year"], r["gender"])
+        db_by_group[key].append({
+            "name":   r["athlete_name"],
+            "club":   r["club"] or "",
+            "by":     r["birth_year"],
+            "gender": r["gender"],
+        })
+
+    # Her grubun isim listesini önden hazırla
+    db_names_by_group: dict[tuple, list[str]] = {
+        k: [a["name"] for a in v] for k, v in db_by_group.items()
+    }
+
+    corrected = 0
+    result_out = []
+    for r in results:
+        if r.get("source") != "ocr":
+            result_out.append(r)
+            continue
+
+        by     = r.get("birth_year")
+        gender = r.get("gender")
+        name   = r.get("name") or r.get("name_raw", "")
+        group_key = (by, gender)
+
+        candidates = db_names_by_group.get(group_key)
+        if not candidates or not name:
+            result_out.append(r)
+            continue
+
+        # Fuzzy eşleştir
+        match = rfprocess.extractOne(
+            name, candidates,
+            scorer=fuzz.token_sort_ratio,
+            score_cutoff=threshold
+        )
+        if match:
+            matched_name, score, _ = match
+            if matched_name.lower() != normalize_for_lookup(name).replace(" ", ""):
+                # DB'den kulüp bilgisini de al
+                db_entry = next(
+                    (a for a in db_by_group[group_key] if a["name"] == matched_name), None
+                )
+                r = dict(r)
+                r["name"]     = matched_name
+                r["name_raw"] = matched_name
+                if db_entry and db_entry["club"] and not r.get("club_found"):
+                    from modules.m4_mapping import lookup_club
+                    club_info = lookup_club(db_entry["club"])
+                    if club_info:
+                        r["club"]       = club_info["club_canonical"]
+                        r["city"]       = club_info["city"]
+                        r["region"]     = club_info["region"]
+                        r["club_found"] = True
+                r["_ocr_corrected"] = True
+                r["_ocr_match_score"] = score
+                corrected += 1
+                if verbose:
+                    print(f"  OCR düzelt: '{name}' → '{matched_name}' (skor={score})")
+
+        result_out.append(r)
+
+    if verbose and corrected:
+        print(f"  OCR fuzzy: {corrected} isim düzeltildi")
+    return result_out
+
+
 def scrape_race(url: str, verbose: bool = True,
                 include_progression: bool = False) -> list[dict]:
     """
@@ -363,6 +483,10 @@ def scrape_race(url: str, verbose: bool = True,
 
     results = _enrich_all(raw_results)
     results = _merge_abbreviated_names(results)
+    # OCR ise DB ile fuzzy isim düzeltme uygula
+    has_ocr = any(r.get("source") == "ocr" for r in results)
+    if has_ocr:
+        results = _fuzzy_correct_ocr_names(results, verbose=verbose)
     results = _dedup_best_time(results)
     _add_race_date(results, race_date)
     if verbose:
@@ -401,6 +525,9 @@ def scrape_direct_pdf(pdf_url: str, verbose: bool = True) -> list[dict]:
     source_label = raw_results[0].source if raw_results else "pdf"
     results = _enrich_all(raw_results)
     results = _merge_abbreviated_names(results)
+    has_ocr = any(r.get("source") == "ocr" for r in results)
+    if has_ocr:
+        results = _fuzzy_correct_ocr_names(results, verbose=verbose)
     results = _dedup_best_time(results)
     if verbose:
         _print_summary(results, source=source_label)
