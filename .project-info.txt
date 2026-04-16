@@ -1,0 +1,4 @@
+Proje: Bölge Karmaları 2026
+Açıklama: TYF Yüzme Yarışları Bölge Karmaları Takım Seçimi Analiz Sistemi
+Versiyon: 2.0
+Tarih: 24 Aralık 2024

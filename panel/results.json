@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13 07:14:15",
+  "generated_at": "2026-04-16 23:11:06",
   "legs": "antalya",
   "groups": {
     "2011_F": {
@@ -5148,7 +5148,7 @@
           "name": "Efe Özer",
           "birth_year": 2011,
           "gender": "M",
-          "club": "İstanbul Ferdi",
+          "club": "Beylikdüzü Yüzme Spor Kulübü",
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
@@ -21808,7 +21808,7 @@
           "name": "Zeynep Kaya",
           "birth_year": 2013,
           "gender": "F",
-          "club": "Ted Ankara Kolejliler Spor Kulübü",
+          "club": "Ankara Ferdi",
           "city": "Ankara",
           "region": 4,
           "top3": 4,
@@ -22396,7 +22396,7 @@
           "name": "Melisa Görgülü",
           "birth_year": 2013,
           "gender": "F",
-          "club": "Gaziantep Gençlik Ve Spor Il Mudurlugu Spor Kulübü",
+          "club": "Gaziantep Ferdi",
           "city": "Gaziantep",
           "region": 6,
           "top3": 2,
@@ -26879,7 +26879,7 @@
           "name": "Uras Güneş",
           "birth_year": 2013,
           "gender": "M",
-          "club": "Dokuz Eylül Üniversitesi Spor Kulübü",
+          "club": "İzmir Ferdi",
           "city": "İzmir",
           "region": 3,
           "top3": 9,
@@ -27746,7 +27746,7 @@
           "name": "Egemen Karakuş",
           "birth_year": 2013,
           "gender": "M",
-          "club": "Bursa Osmangazi Belediye Spor Kulübü",
+          "club": "Bursa Ferdi",
           "city": "Bursa",
           "region": 2,
           "top3": 7,
@@ -29443,6 +29443,13 @@
         "total": 2
       },
       {
+        "club": "Beylikdüzü Yüzme Spor Kulübü",
+        "multi": 0,
+        "tr": 1,
+        "bolge": 1,
+        "total": 2
+      },
+      {
         "club": "İstanbul Teknik Üniversitesi Spor Kulübü",
         "multi": 0,
         "tr": 1,
@@ -29461,13 +29468,6 @@
         "multi": 0,
         "tr": 0,
         "bolge": 2,
-        "total": 2
-      },
-      {
-        "club": "Beylikdüzü Yüzme Spor Kulübü",
-        "multi": 0,
-        "tr": 1,
-        "bolge": 1,
         "total": 2
       },
       {
@@ -29653,13 +29653,6 @@
         "total": 1
       },
       {
-        "club": "Dokuz Eylül Üniversitesi Spor Kulübü",
-        "multi": 0,
-        "tr": 0,
-        "bolge": 1,
-        "total": 1
-      },
-      {
         "club": "Gebze Gençlik Ve Spor Ilçe Müdürlüğü Spor Kulübü",
         "multi": 0,
         "tr": 1,
@@ -29766,6 +29759,13 @@
       },
       {
         "club": "Pamukkale Olimpik Sporlar Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 1,
+        "total": 1
+      },
+      {
+        "club": "İzmir Ferdi",
         "multi": 0,
         "tr": 0,
         "bolge": 1,
@@ -29884,13 +29884,6 @@
         "total": 0
       },
       {
-        "club": "İstanbul Ferdi",
-        "multi": 0,
-        "tr": 0,
-        "bolge": 0,
-        "total": 0
-      },
-      {
         "club": "Dragos Spor Kulübü",
         "multi": 0,
         "tr": 0,
@@ -29941,6 +29934,13 @@
       },
       {
         "club": "Corlu Yüzme İhtisas Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 0,
+        "total": 0
+      },
+      {
+        "club": "İstanbul Ferdi",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
@@ -30003,6 +30003,13 @@
         "total": 0
       },
       {
+        "club": "Dokuz Eylül Üniversitesi Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 0,
+        "total": 0
+      },
+      {
         "club": "Anadolu Yildizlari Yüzme Spor Kulübü",
         "multi": 0,
         "tr": 0,
@@ -30052,14 +30059,14 @@
         "total": 0
       },
       {
-        "club": "İzmir Ferdi",
+        "club": "Canakkale Belediyesi Spor Kulübü",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
         "total": 0
       },
       {
-        "club": "Canakkale Belediyesi Spor Kulübü",
+        "club": "Ankara Ferdi",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
@@ -30074,6 +30081,13 @@
       },
       {
         "club": "Kulac Yüzme İhtisas Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 0,
+        "total": 0
+      },
+      {
+        "club": "Gaziantep Ferdi",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
@@ -30108,7 +30122,7 @@
         "total": 0
       },
       {
-        "club": "Bursa Osmangazi Belediye Spor Kulübü",
+        "club": "Bursa Ferdi",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
@@ -30351,7 +30365,7 @@
           "total": 0
         },
         {
-          "club": "İstanbul Ferdi",
+          "club": "Beylikdüzü Yüzme Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
@@ -31183,7 +31197,7 @@
           "total": 0
         },
         {
-          "club": "Ted Ankara Kolejliler Spor Kulübü",
+          "club": "Ankara Ferdi",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
@@ -31232,7 +31246,7 @@
           "total": 0
         },
         {
-          "club": "Gaziantep Gençlik Ve Spor Il Mudurlugu Spor Kulübü",
+          "club": "Gaziantep Ferdi",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
@@ -31240,6 +31254,13 @@
         },
         {
           "club": "Denizli Büyükşehir Belediye Spor Kulübü",
+          "multi": 0,
+          "tr": 0,
+          "bolge": 0,
+          "total": 0
+        },
+        {
+          "club": "Gaziantep Gençlik Ve Spor Il Mudurlugu Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
@@ -31465,7 +31486,7 @@
           "total": 1
         },
         {
-          "club": "Dokuz Eylül Üniversitesi Spor Kulübü",
+          "club": "İzmir Ferdi",
           "multi": 0,
           "tr": 0,
           "bolge": 1,
@@ -31521,7 +31542,7 @@
           "total": 0
         },
         {
-          "club": "Bursa Osmangazi Belediye Spor Kulübü",
+          "club": "Bursa Ferdi",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
