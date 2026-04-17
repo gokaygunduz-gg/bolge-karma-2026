@@ -46,12 +46,11 @@ jobs:
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
       - name: Fix DB name encoding
-        run: python -c "import sqlite3,os;db='data/bolge_karmalari.db';i=chr(305);fixes=[('Naz Haz'+i+'rolan','Naz Hazirolan'),('Ahmet Tuna Atc'+i,'Ahmet Tuna Atci')];c=sqlite3.connect(db) if os.path.exists(db) else None;c and [[c.execute('UPDATE fed_results SET athlete_name=? WHERE athlete_name=?',f),c.execute('UPDATE fed_athlete_best SET athlete_name=? WHERE athlete_name=?',f)] for f in fixes] and (c.commit(),c.close())"
-
+        
       - name: Fetch Edirne data
         if: env.EDIRNE_URL != ''
         run: python process_edirne_karma.py --url "$EDIRNE_URL"
-
+        run: python -c "import sqlite3,os;db='data/bolge_karmalari.db';i=chr(305);fixes=[('Naz Haz'+i+'rolan','Naz Hazirolan'),('Ahmet Tuna Atc'+i,'Ahmet Tuna Atci')];c=sqlite3.connect(db) if os.path.exists(db) else None;c and ([[c.execute('UPDATE fed_results SET athlete_name=? WHERE athlete_name=?',f),c.execute('UPDATE fed_athlete_best SET athlete_name=? WHERE athlete_name=?',f)] for f in fixes],c.execute(\"UPDATE fed_results SET region=4,city='Ankara' WHERE athlete_name='Zeynep Kaya' AND birth_year=2013\"),c.execute(\"UPDATE fed_athlete_best SET region=4,city='Ankara' WHERE athlete_name='Zeynep Kaya' AND birth_year=2013\"),c.commit(),c.close())"
       - name: Generate panel JSON
         run: python generate_rankings_json.py
 
