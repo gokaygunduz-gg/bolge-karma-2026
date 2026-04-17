@@ -170,5 +170,16 @@
       "canonical_city": "İstanbul",
       "canonical_region": 1
     }
+    ,{
+      "_aciklama": "Naz Hazirolan: PDF'te noktasiz i ile geliyor, Hazirolan = Hazirolan",
+      "name": "Naz Hazirolan",
+      "birth_year": 2013,
+      "gender": "F",
+      "resolution": "same",
+      "canonical_name": "Naz Hazırolan",
+      "canonical_club": "Vamos Spor Kulübü",
+      "canonical_city": "Ankara",
+      "canonical_region": 4
+    }
   ]
 }
