@@ -39,8 +39,8 @@ null_fixes = [
     ("Egemen Karakuş", 2, "Bursa"),
 ]
 for name, region, city in null_fixes:
-    c.execute("UPDATE fed_results SET region=?, city=? WHERE athlete_name=? AND region IS NULL", (region, city, name))
-    c.execute("UPDATE fed_athlete_best SET region=?, city=? WHERE athlete_name=? AND region IS NULL", (region, city, name))
+    c.execute("UPDATE fed_results SET region=?, city=? WHERE athlete_name=?", (region, city, name))
+    c.execute("UPDATE fed_athlete_best SET region=?, city=? WHERE athlete_name=?", (region, city, name))
     print(f"Bolge duzeltildi: {name} -> B{region} {city}")
 c.commit()
 c.close()
