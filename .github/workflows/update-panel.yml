@@ -46,6 +46,7 @@ jobs:
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
       - name: Fix DB name encoding
+        run: python fix_db.py
         
       - name: Fetch Edirne data
         if: env.EDIRNE_URL != ''
