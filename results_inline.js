@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-17 08:38:19",
+  "generated_at": "2026-04-17 08:43:30",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -9921,8 +9921,8 @@ window.RESULTS_DATA = {
           "club": "İstanbul Teknik Üniversitesi Spor Kulübü",
           "city": "İstanbul",
           "region": 1,
-          "top3": 19,
-          "seq_display": "7+7+5 | 4 4",
+          "top3": 20,
+          "seq_display": "7+7+6 | 4 4",
           "region_rank": null,
           "selected": "TR",
           "selected_slot": "TR-3",
@@ -9951,7 +9951,7 @@ window.RESULTS_DATA = {
               "event": "200m Kelebek",
               "stroke": "Kelebek",
               "dist": 200,
-              "points": 5,
+              "points": 6,
               "is_50m": false,
               "in_top3": true
             },
@@ -10038,10 +10038,18 @@ window.RESULTS_DATA = {
               "points": 6,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 19,
-          "top3_edirne": 6
+          "top3_edirne": 12
         },
         {
           "rank": 4,
@@ -11053,9 +11061,18 @@ window.RESULTS_DATA = {
               "in_top3": false
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 4
         },
         {
           "rank": 14,
@@ -12072,9 +12089,18 @@ window.RESULTS_DATA = {
               "in_top3": true
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 1
         },
         {
           "rank": 26,
@@ -21002,9 +21028,18 @@ window.RESULTS_DATA = {
               "in_top3": false
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 7
         },
         {
           "rank": 6,
