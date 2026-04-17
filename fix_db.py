@@ -30,9 +30,18 @@ for canonical_name, wrong_name, by in fixes:
     print(f"Duzeltildi: {wrong_name} -> {canonical_name}")
 
 # Bolge null duzeltmesi
-c.execute("UPDATE fed_results SET region=4, city='Ankara' WHERE athlete_name='Zeynep Kaya' AND birth_year=2013 AND region IS NULL")
-c.execute("UPDATE fed_athlete_best SET region=4, city='Ankara' WHERE athlete_name='Zeynep Kaya' AND birth_year=2013 AND region IS NULL")
-
+null_fixes = [
+    ("Uras Ozan Türkyılmaz", 1, "İstanbul"),
+    ("Tusem Anastasiya Aşkar", 6, "Antalya"),
+    ("Zeynep Kaya", 4, "Ankara"),
+    ("Defne Ide", 4, "Ankara"),
+    ("Uras Güneş", 3, "İzmir"),
+    ("Egemen Karakuş", 2, "Bursa"),
+]
+for name, region, city in null_fixes:
+    c.execute("UPDATE fed_results SET region=?, city=? WHERE athlete_name=? AND region IS NULL", (region, city, name))
+    c.execute("UPDATE fed_athlete_best SET region=?, city=? WHERE athlete_name=? AND region IS NULL", (region, city, name))
+    print(f"Bolge duzeltildi: {name} -> B{region} {city}")
 c.commit()
 c.close()
 print("DB fix tamamlandi")
