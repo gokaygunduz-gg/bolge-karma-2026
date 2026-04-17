@@ -181,5 +181,15 @@
       "canonical_city": "Ankara",
       "canonical_region": 4
     }
+    ,{
+      "name": "Ahmet Tuna Atci",
+      "birth_year": 2013,
+      "gender": "M",
+      "resolution": "same",
+      "canonical_name": "Ahmet Tuna Atcı",
+      "canonical_club": "Nesibe Aydın Spor Kulübü",
+      "canonical_city": "Ankara",
+      "canonical_region": 4
+    }
   ]
 }
