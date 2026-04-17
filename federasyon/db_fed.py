@@ -71,7 +71,18 @@ def init_fed_db():
 # ─────────────────────────────────────────────────────────────────────────────
 # fed_results yazma
 # ─────────────────────────────────────────────────────────────────────────────
-
+def _canonical_name(conn: sqlite3.Connection, athlete_name: str, birth_year: int) -> str:
+    """Mevcut kayıtlarda normalize edilmiş eşleşen adı döner (i/ı toleransı)."""
+    from modules.m1_normalize import normalize_for_lookup
+    name_norm = normalize_for_lookup(athlete_name)
+    rows = conn.execute(
+        "SELECT DISTINCT athlete_name FROM fed_results WHERE birth_year=?",
+        (birth_year,)
+    ).fetchall()
+    for row in rows:
+        if normalize_for_lookup(row["athlete_name"]) == name_norm:
+            return row["athlete_name"]
+    return athlete_name
 def upsert_result(race_leg: str, race_date: str, athlete_name: str,
                   birth_year: int, gender: str, region: int, city: str, club: str,
                   stroke: str, distance: int, time_text: str,
@@ -81,6 +92,7 @@ def upsert_result(race_leg: str, race_date: str, athlete_name: str,
     Aynı yarış bacağı (leg) + sporcu + branşta daha iyi süre gelirse günceller.
     """
     with get_conn() as conn:
+      athlete_name = _canonical_name(conn, athlete_name, birth_year)
         existing = conn.execute(
             "SELECT id, time_seconds FROM fed_results "
             "WHERE race_leg=? AND athlete_name=? AND birth_year=? "
