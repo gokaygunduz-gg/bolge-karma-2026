@@ -92,7 +92,7 @@ def upsert_result(race_leg: str, race_date: str, athlete_name: str,
     Aynı yarış bacağı (leg) + sporcu + branşta daha iyi süre gelirse günceller.
     """
     with get_conn() as conn:
-      athlete_name = _canonical_name(conn, athlete_name, birth_year)
+        athlete_name = _canonical_name(conn, athlete_name, birth_year)
         existing = conn.execute(
             "SELECT id, time_seconds FROM fed_results "
             "WHERE race_leg=? AND athlete_name=? AND birth_year=? "
