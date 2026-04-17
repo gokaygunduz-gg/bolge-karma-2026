@@ -45,12 +45,14 @@ jobs:
           fi
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
-      - name: Fix DB name encoding
-        run: python fix_db.py
+      
         
       - name: Fetch Edirne data
         if: env.EDIRNE_URL != ''
         run: python process_edirne_karma.py --url "$EDIRNE_URL"
+
+      - name: Fix DB name encoding
+        run: python fix_db.py
         
       - name: Generate panel JSON
         run: python generate_rankings_json.py
