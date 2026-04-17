@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-17 09:45:33",
+  "generated_at": "2026-04-17 09:46:35",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
