@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17 07:49:57",
+  "generated_at": "2026-04-17 07:58:56",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -3480,7 +3480,7 @@
           "city": "İstanbul",
           "region": 1,
           "top3": 27,
-          "seq_display": "9+9+9 | 6",
+          "seq_display": "9+9+9 | 7",
           "region_rank": null,
           "selected": "MULTINATIONS",
           "selected_slot": "MULTI",
@@ -3502,6 +3502,11 @@
               "leg": "antalya",
               "stroke": "Kurbağalama",
               "dist": 200
+            },
+            {
+              "leg": "edirne",
+              "stroke": "Serbest",
+              "dist": 100
             }
           ],
           "events": [
@@ -3533,7 +3538,7 @@
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
-              "points": 6,
+              "points": 7,
               "is_50m": false,
               "in_top3": false
             },
@@ -3588,9 +3593,18 @@
               "in_top3": false
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 7
         },
         {
           "rank": 0,
@@ -4233,9 +4247,18 @@
               "in_top3": true
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 6
         },
         {
           "rank": 1,
@@ -5249,9 +5272,18 @@
               "in_top3": true
             }
           ],
-          "events_edirne": [],
+          "events_edirne": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 4
         },
         {
           "rank": 12,
@@ -7598,13 +7630,7 @@
           "selected_label": "Baraj Yok",
           "qualifies": false,
           "tied": false,
-          "first_place": [
-            {
-              "leg": "edirne",
-              "stroke": "Serbest",
-              "dist": 100
-            }
-          ],
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
