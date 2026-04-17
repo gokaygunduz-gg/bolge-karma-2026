@@ -45,9 +45,9 @@ jobs:
           fi
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
-      - name: Fix DB name encoding
-        run: python -c "import sqlite3,os; db='data/bolge_karmalari.db'; c=sqlite3.connect(db) if os.path.exists(db) else None; c and (c.execute('UPDATE fed_results SET athlete_name=? WHERE athlete_name=?',('Naz Haz'+chr(305)+'rolan','Naz Hazirolan')),c.execute('UPDATE fed_athlete_best SET athlete_name=? WHERE athlete_name=?',('Naz Haz'+chr(305)+'rolan','Naz Hazirolan')),c.commit(),c.close())"
-
+- name: Fix DB name encoding
+        run: python -c "import sqlite3,os;db='data/bolge_karmalari.db';i=chr(305);fixes=[('Naz Haz'+i+'rolan','Naz Hazirolan'),('Ahmet Tuna Atc'+i,'Ahmet Tuna Atci')];c=sqlite3.connect(db) if os.path.exists(db) else None;c and [[c.execute('UPDATE fed_results SET athlete_name=? WHERE athlete_name=?',f),c.execute('UPDATE fed_athlete_best SET athlete_name=? WHERE athlete_name=?',f)] for f in fixes] and (c.commit(),c.close())"
+      
       - name: Fetch Edirne data
         if: env.EDIRNE_URL != ''
         run: python process_edirne_karma.py --url "$EDIRNE_URL"
