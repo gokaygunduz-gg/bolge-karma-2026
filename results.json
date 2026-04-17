@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17 12:31:48",
+  "generated_at": "2026-04-17 12:39:19",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -8211,11 +8211,11 @@
           "birth_year": 2011,
           "gender": "M",
           "club": "İstanbul Ferdi",
-          "city": "",
-          "region": null,
+          "city": "İstanbul",
+          "region": 1,
           "top3": 7,
           "seq_display": "5+2",
-          "region_rank": 1,
+          "region_rank": 20,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -11411,8 +11411,8 @@
           "birth_year": 2012,
           "gender": "F",
           "club": "Ferdi",
-          "city": "",
-          "region": null,
+          "city": "Antalya",
+          "region": 6,
           "top3": 14,
           "seq_display": "6+4+4",
           "region_rank": null,
@@ -27543,13 +27543,13 @@
           "gender": "F",
           "club": "Ankara Ferdi",
           "city": "Ankara",
-          "region": null,
+          "region": 4,
           "top3": 10,
           "seq_display": "6+2+2 | 0",
-          "region_rank": 1,
-          "selected": "-",
-          "selected_slot": "-",
-          "selected_label": "-",
+          "region_rank": 2,
+          "selected": "BÖLGE",
+          "selected_slot": "B4-2",
+          "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
           "first_place": [],
@@ -27628,9 +27628,9 @@
           "region": 4,
           "top3": 9,
           "seq_display": "9+0",
-          "region_rank": 2,
+          "region_rank": 3,
           "selected": "BÖLGE",
-          "selected_slot": "B4-2",
+          "selected_slot": "B4-3",
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
@@ -27808,10 +27808,10 @@
           "region": 4,
           "top3": 8,
           "seq_display": "4+3+1",
-          "region_rank": 3,
-          "selected": "BÖLGE",
-          "selected_slot": "B4-3",
-          "selected_label": "Bölge",
+          "region_rank": 4,
+          "selected": "-",
+          "selected_slot": "-",
+          "selected_label": "-",
           "qualifies": true,
           "tied": false,
           "first_place": [],
@@ -28489,7 +28489,7 @@
           "region": 4,
           "top3": 7,
           "seq_display": "5+2",
-          "region_rank": 4,
+          "region_rank": 5,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -28546,7 +28546,7 @@
           "region": 4,
           "top3": 7,
           "seq_display": "4+3",
-          "region_rank": 5,
+          "region_rank": 6,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -30410,8 +30410,8 @@
           "birth_year": 2013,
           "gender": "F",
           "club": "Ferdi",
-          "city": "",
-          "region": null,
+          "city": "Ankara",
+          "region": 4,
           "top3": 3,
           "seq_display": "3",
           "region_rank": null,
@@ -35318,14 +35318,14 @@
           "birth_year": 2013,
           "gender": "M",
           "club": "Ferdi",
-          "city": "",
-          "region": null,
+          "city": "İzmir",
+          "region": 3,
           "top3": 16,
           "seq_display": "7+5+4 | 3",
-          "region_rank": 1,
-          "selected": "-",
-          "selected_slot": "-",
-          "selected_label": "-",
+          "region_rank": 3,
+          "selected": "BÖLGE",
+          "selected_slot": "B3-3",
+          "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
           "first_place": [],
@@ -36979,10 +36979,10 @@
           "region": 3,
           "top3": 11,
           "seq_display": "4+4+3 | 1 1 1",
-          "region_rank": 3,
-          "selected": "BÖLGE",
-          "selected_slot": "B3-3",
-          "selected_label": "Bölge",
+          "region_rank": 4,
+          "selected": "-",
+          "selected_slot": "-",
+          "selected_label": "-",
           "qualifies": true,
           "tied": false,
           "first_place": [],
@@ -37371,7 +37371,7 @@
           "region": 3,
           "top3": 11,
           "seq_display": "9+2",
-          "region_rank": 4,
+          "region_rank": 5,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -37851,11 +37851,11 @@
           "birth_year": 2013,
           "gender": "M",
           "club": "Ferdi",
-          "city": "",
-          "region": null,
+          "city": "Bursa",
+          "region": 2,
           "top3": 10,
           "seq_display": "4+3+3",
-          "region_rank": 2,
+          "region_rank": 7,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -37937,7 +37937,7 @@
           "region": 3,
           "top3": 10,
           "seq_display": "7+2+1",
-          "region_rank": 5,
+          "region_rank": 6,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -38159,7 +38159,7 @@
           "region": 2,
           "top3": 9,
           "seq_display": "4+3+2 | 2 1 0",
-          "region_rank": 7,
+          "region_rank": 8,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -38363,7 +38363,7 @@
           "region": 2,
           "top3": 9,
           "seq_display": "4+3+2 | 2",
-          "region_rank": 8,
+          "region_rank": 9,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -38551,7 +38551,7 @@
           "region": 2,
           "top3": 8,
           "seq_display": "4+3+1",
-          "region_rank": 9,
+          "region_rank": 10,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -38756,7 +38756,7 @@
           "region": 3,
           "top3": 7,
           "seq_display": "3+2+2 | 2 2 1",
-          "region_rank": 6,
+          "region_rank": 7,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -38943,7 +38943,7 @@
           "region": 2,
           "top3": 7,
           "seq_display": "7",
-          "region_rank": 10,
+          "region_rank": 11,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -39107,7 +39107,7 @@
           "region": 2,
           "top3": 7,
           "seq_display": "4+3+0",
-          "region_rank": 11,
+          "region_rank": 12,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -39164,7 +39164,7 @@
           "region": 2,
           "top3": 7,
           "seq_display": "7+0",
-          "region_rank": 12,
+          "region_rank": 13,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -39246,7 +39246,7 @@
           "region": 2,
           "top3": 7,
           "seq_display": "7",
-          "region_rank": 13,
+          "region_rank": 14,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -41890,6 +41890,13 @@
         "total": 2
       },
       {
+        "club": "Ankara Ferdi",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 2,
+        "total": 2
+      },
+      {
         "club": "İstanbul Su Sporları Spor Kulübü",
         "multi": 0,
         "tr": 1,
@@ -41898,6 +41905,13 @@
       },
       {
         "club": "İstanbul Teknik Üniversitesi Spor Kulübü",
+        "multi": 0,
+        "tr": 1,
+        "bolge": 1,
+        "total": 2
+      },
+      {
+        "club": "Ferdi",
         "multi": 0,
         "tr": 1,
         "bolge": 1,
@@ -41936,13 +41950,6 @@
         "multi": 0,
         "tr": 2,
         "bolge": 0,
-        "total": 2
-      },
-      {
-        "club": "Muğla Atletik Spor Kulübü",
-        "multi": 0,
-        "tr": 0,
-        "bolge": 2,
         "total": 2
       },
       {
@@ -42016,13 +42023,6 @@
         "total": 1
       },
       {
-        "club": "Ankara Ferdi",
-        "multi": 0,
-        "tr": 0,
-        "bolge": 1,
-        "total": 1
-      },
-      {
         "club": "İstanbul Ferdi",
         "multi": 0,
         "tr": 0,
@@ -42052,13 +42052,6 @@
       },
       {
         "club": "İstek Spor Kulübü",
-        "multi": 0,
-        "tr": 1,
-        "bolge": 0,
-        "total": 1
-      },
-      {
-        "club": "Ferdi",
         "multi": 0,
         "tr": 1,
         "bolge": 0,
@@ -42142,6 +42135,13 @@
         "total": 1
       },
       {
+        "club": "Muğla Atletik Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 1,
+        "total": 1
+      },
+      {
         "club": "Buzadam Yüzme İhtisas Spor Kulübü",
         "multi": 0,
         "tr": 0,
@@ -42185,13 +42185,6 @@
       },
       {
         "club": "Kayseri Atak Spor Kulübü",
-        "multi": 0,
-        "tr": 0,
-        "bolge": 1,
-        "total": 1
-      },
-      {
-        "club": "Kutlubey Okullari Spor Kulübü",
         "multi": 0,
         "tr": 0,
         "bolge": 1,
@@ -42570,6 +42563,13 @@
       },
       {
         "club": "Çorlu Belediyesi Spor Kulübü",
+        "multi": 0,
+        "tr": 0,
+        "bolge": 0,
+        "total": 0
+      },
+      {
+        "club": "Kutlubey Okullari Spor Kulübü",
         "multi": 0,
         "tr": 0,
         "bolge": 0,
@@ -43945,14 +43945,14 @@
           "total": 1
         },
         {
-          "club": "Kayseri Atak Spor Kulübü",
+          "club": "Ankara Ferdi",
           "multi": 0,
           "tr": 0,
           "bolge": 1,
           "total": 1
         },
         {
-          "club": "Kutlubey Okullari Spor Kulübü",
+          "club": "Kayseri Atak Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 1,
@@ -44029,14 +44029,14 @@
           "total": 0
         },
         {
-          "club": "Ankara Ferdi",
+          "club": "Poseidon Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
           "total": 0
         },
         {
-          "club": "Poseidon Spor Kulübü",
+          "club": "Kutlubey Okullari Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
@@ -44416,6 +44416,13 @@
           "total": 1
         },
         {
+          "club": "Ferdi",
+          "multi": 0,
+          "tr": 0,
+          "bolge": 1,
+          "total": 1
+        },
+        {
           "club": "Nesibe Aydın Spor Kulübü",
           "multi": 0,
           "tr": 0,
@@ -44458,25 +44465,11 @@
           "total": 1
         },
         {
-          "club": "Muğla Atletik Spor Kulübü",
-          "multi": 0,
-          "tr": 0,
-          "bolge": 1,
-          "total": 1
-        },
-        {
           "club": "Giresunalfa Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 1,
           "total": 1
-        },
-        {
-          "club": "Ferdi",
-          "multi": 0,
-          "tr": 0,
-          "bolge": 0,
-          "total": 0
         },
         {
           "club": "İstanbul İtü Geliştirme Vakfı Okulları Spor Kulübü",
@@ -44508,6 +44501,13 @@
         },
         {
           "club": "Edirnespor Su Sporları Spor Kulübü",
+          "multi": 0,
+          "tr": 0,
+          "bolge": 0,
+          "total": 0
+        },
+        {
+          "club": "Muğla Atletik Spor Kulübü",
           "multi": 0,
           "tr": 0,
           "bolge": 0,
