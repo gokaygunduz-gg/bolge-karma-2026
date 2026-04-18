@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-18 13:29 (TR)",
+  "generated_at": "2026-04-18 13:48 (TR)",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -372,11 +372,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 15,
           "top3_edirne": 12,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:25.17"
-            },
             {
               "stroke": "Kelebek",
               "dist": 50,
@@ -860,11 +855,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 9,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.42"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:05.58"
@@ -979,11 +969,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:26.75"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:19.34"
             },
@@ -996,11 +981,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:28.56"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:23.62"
             }
           ]
         },
@@ -1102,11 +1082,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:09.68"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": null
             }
           ]
         },
@@ -1375,11 +1350,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.75"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:24.62"
             }
           ]
         },
@@ -1570,11 +1540,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:15.37"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:00.48"
             },
             {
               "stroke": "Sırtüstü",
@@ -2462,11 +2427,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.25"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:05.28"
             }
           ]
         },
@@ -2769,11 +2729,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "34.93"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:16.57"
             }
@@ -2994,11 +2949,6 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": null
             }
@@ -3094,11 +3044,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.26"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:29.18"
             }
           ]
         },
@@ -3710,11 +3655,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.14"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:06.25"
             }
           ]
         },
@@ -3815,11 +3755,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "28.96"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": null
             },
             {
               "stroke": "Sırtüstü",
@@ -4099,11 +4034,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:21.23"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.61"
             }
           ]
         },
@@ -4300,11 +4230,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:12.06"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:35.19"
             }
           ]
         },
@@ -4440,24 +4365,9 @@ window.RESULTS_DATA = {
               "entry_time": "30.85"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:07.99"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.55"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:10.11"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "32.93"
             }
           ]
         },
@@ -4531,18 +4441,8 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "36.04"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:17.99"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:51.83"
             }
           ]
         },
@@ -4662,13 +4562,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 3,
           "top3_edirne": 1,
-          "pending_events": [
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:29.09"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -4959,11 +4853,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 2,
           "top3_edirne": 0,
           "pending_events": [
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "32.88"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -6763,16 +6652,6 @@ window.RESULTS_DATA = {
               "entry_time": "4:52.96"
             },
             {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "31.28"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": null
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:02.59"
@@ -7007,16 +6886,6 @@ window.RESULTS_DATA = {
               "entry_time": "26.75"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:01.21"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "25.55"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:01.76"
@@ -7192,19 +7061,9 @@ window.RESULTS_DATA = {
               "entry_time": "4:47.36"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:15.71"
-            },
-            {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:12.48"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:34.64"
             },
             {
               "stroke": "Serbest",
@@ -7359,11 +7218,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "4:49.05"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "56.42"
             },
             {
               "stroke": "Serbest",
@@ -8086,11 +7940,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 12,
           "pending_events": [
             {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "32.61"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:03.33"
@@ -8464,11 +8313,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "25.97"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "1:59.03"
             },
@@ -8476,11 +8320,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:14.27"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": null
             }
           ]
         },
@@ -8575,11 +8414,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:03.51"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:19.65"
             }
           ]
         },
@@ -8893,11 +8727,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:12.38"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:34.28"
             },
             {
               "stroke": "Serbest",
@@ -9247,11 +9076,6 @@ window.RESULTS_DATA = {
               "entry_time": "27.64"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:01.22"
-            },
-            {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:10.07"
@@ -9453,11 +9277,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "56.05"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:01.15"
             },
@@ -9584,11 +9403,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 9,
           "top3_edirne": 7,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:19.32"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -9846,18 +9660,8 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "26.11"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:02.31"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": null
             }
           ]
         },
@@ -10257,11 +10061,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:04.21"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:15.95"
             }
           ]
         },
@@ -10432,11 +10231,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "27.51"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "25.96"
             },
             {
               "stroke": "Sırtüstü",
@@ -11280,11 +11074,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:10.32"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:33.65"
             }
           ]
         },
@@ -12031,16 +11820,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 4,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "25.98"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "59.31"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.45"
@@ -12238,11 +12017,6 @@ window.RESULTS_DATA = {
               "entry_time": "27.61"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:01.57"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:06.71"
@@ -12314,11 +12088,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "56.71"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:03.77"
             },
@@ -12326,11 +12095,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 1500,
               "entry_time": "17:10.46"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "30.72"
             }
           ]
         },
@@ -12603,11 +12367,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "27.08"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:01.08"
             }
           ]
         },
@@ -12877,11 +12636,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 1,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "27.68"
@@ -13001,11 +12755,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:10.65"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:34.26"
             }
           ]
         },
@@ -13058,11 +12807,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:04.07"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "30.41"
             }
           ]
         },
@@ -13163,11 +12907,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 2,
           "top3_edirne": 0,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:19.14"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -13422,16 +13161,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "27.93"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:01.43"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "56.53"
             }
           ]
         },
@@ -13547,19 +13276,9 @@ window.RESULTS_DATA = {
           "top3_edirne": 1,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:20.59"
-            },
-            {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:09.95"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:30.53"
             }
           ]
         },
@@ -13606,13 +13325,7 @@ window.RESULTS_DATA = {
           "events_edirne": [],
           "top3_antalya": 1,
           "top3_edirne": 0,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "25.11"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 83,
@@ -13912,11 +13625,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.28"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:27.07"
             }
           ]
         },
@@ -14529,11 +14237,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 14,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:07.03"
@@ -14964,11 +14667,6 @@ window.RESULTS_DATA = {
               "entry_time": "1:16.51"
             },
             {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:14.34"
@@ -15358,11 +15056,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:17.50"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:48.76"
             }
           ]
         },
@@ -15496,11 +15189,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 12,
           "top3_edirne": 7,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:30.54"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -16250,11 +15938,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:09.54"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:31.88"
             }
           ]
         },
@@ -16473,19 +16156,9 @@ window.RESULTS_DATA = {
               "entry_time": "1:19.82"
             },
             {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:51.31"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:09.96"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:31.56"
             }
           ]
         },
@@ -16836,11 +16509,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 8,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:03.08"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.67"
@@ -17150,11 +16818,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:38.53"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:28.39"
             }
           ]
         },
@@ -17261,11 +16924,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 6,
           "top3_edirne": 4,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:31.52"
-            },
             {
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -17483,11 +17141,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "36.90"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:19.60"
             },
@@ -17667,11 +17320,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:19.49"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -18013,13 +17661,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 2,
           "top3_edirne": 5,
-          "pending_events": [
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": null
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -18092,11 +17734,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 4,
           "top3_edirne": 1,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.15"
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -18219,11 +17856,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:24.58"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "36.94"
             },
             {
               "stroke": "Kurbağalama",
@@ -18429,16 +18061,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 3,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.30"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:16.65"
@@ -18514,11 +18136,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 1,
           "pending_events": [
             {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:31.08"
-            },
-            {
               "stroke": "Serbest",
               "dist": 1500,
               "entry_time": "18:47.12"
@@ -18569,11 +18186,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 3,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:34.09"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -18778,11 +18390,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:45.71"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:49.73"
             }
           ]
         },
@@ -18869,11 +18476,6 @@ window.RESULTS_DATA = {
               "entry_time": "1:20.49"
             },
             {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:52.24"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:16.12"
@@ -18942,21 +18544,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 2,
           "top3_edirne": 0,
           "pending_events": [
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:08.68"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.15"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.26"
-            },
             {
               "stroke": "Serbest",
               "dist": 200,
@@ -19200,13 +18787,7 @@ window.RESULTS_DATA = {
           "events_edirne": [],
           "top3_antalya": 1,
           "top3_edirne": 0,
-          "pending_events": [
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": null
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 53,
@@ -19256,11 +18837,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:32.07"
             }
           ]
         },
@@ -20305,16 +19881,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 20,
           "top3_edirne": 23,
           "pending_events": [
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:03.50"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "8:45.43"
-            },
             {
               "stroke": "Serbest",
               "dist": 1500,
@@ -21897,11 +21463,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 18,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "58.27"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:06.32"
@@ -22306,16 +21867,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "27.48"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:23.22"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "26.98"
             },
             {
               "stroke": "Sırtüstü",
@@ -23263,16 +22814,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 13,
           "pending_events": [
             {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:24.34"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "59.38"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:06.86"
@@ -23545,11 +23086,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 12,
           "top3_edirne": 8,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "27.32"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -24694,11 +24230,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 5,
           "top3_edirne": 10,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:00.36"
-            },
             {
               "stroke": "Serbest",
               "dist": 200,
@@ -26342,11 +25873,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "28.96"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": null
             }
           ]
         },
@@ -27321,11 +26847,6 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:10.98"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 1500,
               "entry_time": "17:30.06"
             }
@@ -27499,11 +27020,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:07.97"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -27720,11 +27236,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "59.70"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:08.88"
             },
@@ -27732,11 +27243,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:32.21"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:15.58"
             },
             {
               "stroke": "Serbest",
@@ -27816,11 +27322,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 1,
           "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:27.03"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -28033,11 +27534,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
             {
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -28361,11 +27857,6 @@ window.RESULTS_DATA = {
               "entry_time": "28.84"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:06.22"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:09.52"
@@ -28591,11 +28082,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:08.25"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:23.11"
             }
           ]
         },
@@ -29195,11 +28681,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": null
             },
@@ -29258,21 +28739,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:18.55"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:56.42"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.91"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:03.99"
             }
           ]
         },
@@ -29323,11 +28789,6 @@ window.RESULTS_DATA = {
             {
               "stroke": "Sırtüstü",
               "dist": 100,
-              "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
               "entry_time": null
             }
           ]
@@ -29542,11 +29003,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 1,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -29798,16 +29254,6 @@ window.RESULTS_DATA = {
               "entry_time": "30.39"
             },
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.29"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.83"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:07.98"
@@ -29957,19 +29403,9 @@ window.RESULTS_DATA = {
               "entry_time": "5:29.22"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:10.15"
-            },
-            {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:16.52"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:02.23"
             }
           ]
         },
@@ -30489,11 +29925,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:34.18"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:35.30"
             },
@@ -30501,11 +29932,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.03"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:12.04"
             },
             {
               "stroke": "Serbest",
@@ -30835,11 +30261,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:20.01"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:40.79"
             }
           ]
         },
@@ -30999,11 +30420,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:47.30"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:24.21"
             }
           ]
         },
@@ -31365,11 +30781,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:36.23"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "17:56.97"
             },
             {
               "stroke": "Sırtüstü",
@@ -31769,19 +31180,9 @@ window.RESULTS_DATA = {
               "entry_time": "5:38.20"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:11.87"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:20.74"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:00.76"
             }
           ]
         },
@@ -32118,11 +31519,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:36.47"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:05.41"
             }
           ]
         },
@@ -32251,11 +31647,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.29"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:19.18"
             },
             {
               "stroke": "Sırtüstü",
@@ -32540,11 +31931,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:35.58"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:28.36"
             },
@@ -32557,11 +31943,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:51.30"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:57.57"
             }
           ]
         },
@@ -32784,11 +32165,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:40.88"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:42.47"
             }
@@ -32917,11 +32293,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "29.78"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:04.26"
             }
           ]
         },
@@ -33420,11 +32791,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.14"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.22"
             }
           ]
         },
@@ -33595,11 +32961,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:39.67"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:52.70"
             },
@@ -33737,11 +33098,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:52.22"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:07.86"
             }
           ]
         },
@@ -33918,23 +33274,8 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.36"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:35.37"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:27.42"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.76"
             },
             {
               "stroke": "Sırtüstü",
@@ -34076,11 +33417,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:40.57"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:42.51"
             }
           ]
         },
@@ -34720,11 +34056,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 9,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:38.72"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:16.75"
@@ -34733,11 +34064,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:46.27"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:41.29"
             },
             {
               "stroke": "Sırtüstü",
@@ -34944,11 +34270,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:44.51"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:27.00"
             }
           ]
         },
@@ -35034,11 +34355,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:05.00"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:19.53"
             },
@@ -35046,11 +34362,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:53.32"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:10.95"
             }
           ]
         },
@@ -35345,11 +34656,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:21.43"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:56.30"
             }
           ]
         },
@@ -35453,11 +34759,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "32.19"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.24"
             }
           ]
         },
@@ -36150,11 +35451,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:21.11"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:58.11"
             }
           ]
         },
@@ -36231,18 +35527,8 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.75"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:38.66"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:33.28"
             }
           ]
         },
@@ -36361,11 +35647,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.14"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:03.90"
             }
           ]
         },
@@ -36439,13 +35720,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 11,
           "top3_edirne": 7,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:09.33"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 51,
@@ -36617,11 +35892,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:11.68"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:35.57"
             }
           ]
         },
@@ -36700,11 +35970,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "6:03.01"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:42.04"
             }
           ]
         },
@@ -36786,11 +36051,6 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "38.37"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:24.07"
             },
@@ -36798,11 +36058,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:56.57"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:16.52"
             }
           ]
         },
@@ -36893,11 +36148,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 5,
           "top3_edirne": 8,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.65"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -37113,21 +36363,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:56.30"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:26.10"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "35.02"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:38.60"
             }
           ]
         },
@@ -37251,11 +36486,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.41"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:37.82"
             },
             {
               "stroke": "Serbest",
@@ -37680,11 +36910,6 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:03.98"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:18.01"
             },
@@ -37692,11 +36917,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:46.23"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:50.75"
             }
           ]
         },
@@ -37922,18 +37142,8 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:04.24"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:21.66"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.92"
             },
             {
               "stroke": "Sırtüstü",
@@ -38055,11 +37265,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.56"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:04.08"
             }
           ]
         },
@@ -38180,11 +37385,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:53.65"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:55.00"
             }
           ]
         },
@@ -38242,11 +37442,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:49.82"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:24.68"
             }
           ]
         },
@@ -38429,24 +37624,9 @@ window.RESULTS_DATA = {
           "top3_edirne": 1,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": null
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:04.72"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:13.34"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -38629,11 +37809,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:56.48"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:23.32"
             }
           ]
         },
@@ -38712,11 +37887,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:44.93"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:56.79"
             }
           ]
         },
@@ -38958,11 +38128,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:12.82"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:38.52"
             }
           ]
         },
@@ -39164,11 +38329,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:56.17"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:41.63"
             }
           ]
         },
@@ -39314,11 +38474,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 7,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.70"
-            },
-            {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "32.30"
@@ -39384,11 +38539,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:55.55"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:06.99"
             }
           ]
         },
@@ -39640,11 +38790,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.57"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:44.81"
             },
@@ -39652,11 +38797,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.96"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:38.53"
             }
           ]
         },
@@ -39726,11 +38866,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:45.60"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:37.03"
             }
           ]
         },
@@ -39797,11 +38932,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:49.75"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "18:49.49"
             }
           ]
         },
@@ -39867,24 +38997,9 @@ window.RESULTS_DATA = {
           "top3_edirne": 0,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.45"
-            },
-            {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "32.33"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:04.80"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "33.97"
             },
             {
               "stroke": "Sırtüstü",
@@ -39940,11 +39055,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:40.60"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:47.64"
             },
@@ -39952,11 +39062,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:53.67"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:03.07"
             }
           ]
         },
@@ -40014,11 +39119,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:53.09"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:30.96"
             }
           ]
         },
@@ -40082,18 +39182,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 6,
-          "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:41.75"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:49.96"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 93,
@@ -40243,11 +39332,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.70"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -40493,11 +39577,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:44.04"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:56.35"
             }
           ]
         },
@@ -40819,13 +39898,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 6,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:41.95"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 103,
@@ -40890,11 +39963,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:55.89"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:27.03"
             }
           ]
         },
@@ -40980,11 +40048,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.23"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.74"
             }
           ]
         },
@@ -41088,11 +40151,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:41.70"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:48.47"
             }
           ]
         },
@@ -41382,19 +40440,9 @@ window.RESULTS_DATA = {
               "entry_time": "31.62"
             },
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.08"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:13.28"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -41462,18 +40510,8 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "38.17"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:22.38"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:57.32"
             }
           ]
         },
@@ -42228,13 +41266,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 3,
           "top3_edirne": 2,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "29.79"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 124,
@@ -42282,24 +41314,9 @@ window.RESULTS_DATA = {
           "top3_edirne": 0,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:40.74"
-            },
-            {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:23.00"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "3:00.26"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.51"
             }
           ]
         },
@@ -42761,11 +41778,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "38.52"
-            },
-            {
-              "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:22.68"
             }
@@ -43074,13 +42086,7 @@ window.RESULTS_DATA = {
           "events_edirne": [],
           "top3_antalya": 2,
           "top3_edirne": 0,
-          "pending_events": [
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.42"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 138,
@@ -43126,13 +42132,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 1,
-          "pending_events": [
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:12.20"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 139,
@@ -43187,11 +42187,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:14.53"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:38.95"
             }
           ]
         },
@@ -43239,13 +42234,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 1,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "10:42.44"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 141,
@@ -43342,11 +42331,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:56.80"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 1500,
-              "entry_time": "19:54.59"
             }
           ]
         },
@@ -44660,11 +43644,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:15.98"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.82"
             }
           ]
         },
@@ -45040,23 +44019,8 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.39"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.83"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:42.32"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "9:36.06"
             },
             {
               "stroke": "Serbest",
@@ -45252,11 +44216,6 @@ window.RESULTS_DATA = {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:13.56"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "32.06"
             },
             {
               "stroke": "Sırtüstü",
@@ -45818,19 +44777,9 @@ window.RESULTS_DATA = {
           "top3_edirne": 23,
           "pending_events": [
             {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:34.47"
-            },
-            {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.75"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:00.97"
             },
             {
               "stroke": "Serbest",
@@ -46124,11 +45073,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:11.89"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:54.28"
             },
             {
               "stroke": "Serbest",
@@ -46427,11 +45371,6 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:00.84"
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:10.22"
             },
@@ -46542,11 +45481,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 18,
           "top3_edirne": 16,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:33.70"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -46864,11 +45798,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 18,
           "top3_edirne": 19,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "27.71"
-            },
             {
               "stroke": "Serbest",
               "dist": 200,
@@ -47834,11 +46763,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "28.63"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:34.32"
             },
             {
               "stroke": "Kurbağalama",
@@ -48857,11 +47781,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:12.47"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:36.04"
             }
           ]
         },
@@ -49432,11 +48351,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:10.85"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:33.64"
             }
           ]
         },
@@ -49683,11 +48597,6 @@ window.RESULTS_DATA = {
               "entry_time": "29.51"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:06.98"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:17.06"
@@ -49806,11 +48715,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 14,
           "top3_edirne": 12,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:34.31"
-            },
             {
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -50147,11 +49051,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 11,
           "pending_events": [
             {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:09.70"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:10.68"
@@ -50463,11 +49362,6 @@ window.RESULTS_DATA = {
               "entry_time": "30.68"
             },
             {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:35.10"
-            },
-            {
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:15.81"
@@ -50476,11 +49370,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:10.48"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:30.28"
             }
           ]
         },
@@ -51149,11 +50038,6 @@ window.RESULTS_DATA = {
           "top3_edirne": 14,
           "pending_events": [
             {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.58"
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:11.12"
@@ -51505,11 +50389,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.09"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.55"
             },
             {
               "stroke": "Serbest",
@@ -52013,11 +50892,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "29.75"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "33.77"
             }
           ]
         },
@@ -52125,11 +50999,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 5,
           "top3_edirne": 10,
           "pending_events": [
-            {
-              "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:35.74"
-            },
             {
               "stroke": "Karışık",
               "dist": 400,
@@ -52990,11 +51859,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.85"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:09.12"
             },
             {
               "stroke": "Serbest",
@@ -53908,11 +52772,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:19.55"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:53.20"
             }
           ]
         },
@@ -54083,11 +52942,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:37.23"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": null
             },
             {
               "stroke": "Serbest",
@@ -54347,18 +53201,8 @@ window.RESULTS_DATA = {
             },
             {
               "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "33.61"
-            },
-            {
-              "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": "1:12.69"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": "2:31.80"
             }
           ]
         },
@@ -54424,11 +53268,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 9,
           "pending_events": [
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": null
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -54617,11 +53456,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.99"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.49"
             }
           ]
         },
@@ -54696,16 +53530,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.93"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 100,
-              "entry_time": "1:10.28"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.54"
             },
             {
               "stroke": "Serbest",
@@ -54791,18 +53615,8 @@ window.RESULTS_DATA = {
               "entry_time": null
             },
             {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
               "stroke": "Sırtüstü",
               "dist": 100,
-              "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
               "entry_time": null
             }
           ]
@@ -55215,18 +54029,8 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": "2:32.22"
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:22.92"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.28"
             },
             {
               "stroke": "Serbest",
@@ -55684,11 +54488,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": null
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": null
             }
           ]
         },
@@ -55780,16 +54579,6 @@ window.RESULTS_DATA = {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.99"
-            },
-            {
-              "stroke": "Kelebek",
-              "dist": 200,
-              "entry_time": "2:39.53"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": null
             }
           ]
         },
@@ -55929,11 +54718,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:22.21"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.35"
             }
           ]
         },
@@ -56130,11 +54914,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": "1:02.66"
-            },
             {
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -56591,11 +55370,6 @@ window.RESULTS_DATA = {
               "entry_time": "1:22.22"
             },
             {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:54.83"
-            },
-            {
               "stroke": "Serbest",
               "dist": 1500,
               "entry_time": "18:53.79"
@@ -56649,21 +55423,11 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Karışık",
-              "dist": 200,
-              "entry_time": null
-            },
-            {
-              "stroke": "Karışık",
               "dist": 400,
               "entry_time": null
             },
             {
               "stroke": "Kurbağalama",
-              "dist": 100,
-              "entry_time": null
-            },
-            {
-              "stroke": "Serbest",
               "dist": 100,
               "entry_time": null
             },
@@ -56889,11 +55653,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": null
             }
@@ -57011,13 +55770,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 4,
-          "pending_events": [
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.15"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 119,
@@ -57107,11 +55860,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:21.04"
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.49"
             }
           ]
         },
@@ -57341,11 +56089,6 @@ window.RESULTS_DATA = {
           "pending_events": [
             {
               "stroke": "Serbest",
-              "dist": 100,
-              "entry_time": null
-            },
-            {
-              "stroke": "Serbest",
               "dist": 200,
               "entry_time": null
             }
@@ -57417,11 +56160,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:22.55"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -57473,11 +56211,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:18.64"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:47.93"
             }
           ]
         },
@@ -57575,11 +56308,6 @@ window.RESULTS_DATA = {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:20.28"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 200,
-              "entry_time": "2:53.94"
             }
           ]
         },
@@ -57699,11 +56427,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:37.75"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.25"
             }
           ]
         },
@@ -58083,13 +56806,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 2,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 50,
-              "entry_time": "28.47"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 137,
@@ -58135,18 +56852,7 @@ window.RESULTS_DATA = {
           ],
           "top3_antalya": 0,
           "top3_edirne": 2,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 800,
-              "entry_time": "10:07.78"
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "entry_time": "34.14"
-            }
-          ]
+          "pending_events": []
         },
         {
           "rank": 138,
@@ -58580,11 +57286,6 @@ window.RESULTS_DATA = {
               "stroke": "Sırtüstü",
               "dist": 100,
               "entry_time": null
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "entry_time": null
             }
           ]
         },
@@ -58633,11 +57334,6 @@ window.RESULTS_DATA = {
           "top3_antalya": 0,
           "top3_edirne": 1,
           "pending_events": [
-            {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "36.52"
-            },
             {
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -58837,11 +57533,6 @@ window.RESULTS_DATA = {
               "stroke": "Karışık",
               "dist": 400,
               "entry_time": "5:38.27"
-            },
-            {
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "entry_time": "37.19"
             },
             {
               "stroke": "Kurbağalama",
