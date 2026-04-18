@@ -314,6 +314,7 @@ function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
   <div class="tab active" data-tab="rankings" onclick="switchTab('rankings',this)">Sıralama</div>
   <div class="tab" data-tab="search" onclick="switchTab('search',this)">Arama</div>
   <div class="tab" data-tab="clubs" onclick="switchTab('clubs',this)">Kulüpler</div>
+  <div class="tab" data-tab="yarıslar" onclick="switchTab('yarıslar',this)">Yarışlar</div>
   <div class="tab" data-tab="kota" onclick="switchTab('kota',this)">Kota</div>
   <div class="tab" data-tab="barajlar" onclick="switchTab('barajlar',this)">Barajlar</div>
   <div class="tab" data-tab="matrix" onclick="switchTab('matrix',this)">Özet</div>
@@ -442,6 +443,7 @@ function renderAll() {
   if      (activeTab === 'rankings')   renderRankings(content);
   else if (activeTab === 'search')     renderSearch(content);
   else if (activeTab === 'clubs')      renderClubs(content);
+  else if (activeTab === 'yarıslar')   renderYarıslar(content);
   else if (activeTab === 'kota')      renderKota(content);
   else if (activeTab === 'barajlar')  renderBarajlar(content);
   else if (activeTab === 'matrix')     renderMatrix(content);
@@ -967,6 +969,109 @@ function renderKota(content) {
     wrap.appendChild(tbl);
   }
 
+  content.appendChild(wrap);
+}
+
+// ── Yarışlar tab ──────────────────────────────────────────────────────────────
+const EVENTS_LIST = [
+  {stroke:'Serbest',   dists:[50,100,200,400,800,1500]},
+  {stroke:'Sırtüstü',  dists:[50,100,200]},
+  {stroke:'Kurbağalama',dists:[50,100,200]},
+  {stroke:'Kelebek',   dists:[50,100,200]},
+  {stroke:'Karışık',   dists:[200,400]},
+];
+
+let _yrStroke='Kelebek', _yrDist=200, _yrBy='2013', _yrGender='M', _yrRegion=0;
+
+function renderYarıslar(content) {
+  const data = window.RESULTS_DATA;
+  if (!data) { content.innerHTML='<p style="padding:20px;color:var(--muted)">Veri yükleniyor...</p>'; return; }
+
+  // Seçili grubun sporcuları
+  const grpKey = `${_yrBy}_${_yrGender}`;
+  const grp = data.groups[grpKey];
+
+  // Branş seçimi (stroke butonları)
+  const strokeBtns = EVENTS_LIST.map(e =>
+    `<button class="filter-btn${_yrStroke===e.stroke?' active':''}" onclick="_yrStroke='${e.stroke}';_yrDist=${e.dists.includes(_yrDist)?_yrDist:e.dists[0]};renderAll()">${e.stroke}</button>`
+  ).join('');
+
+  // Mesafe butonları (seçili stroke'a göre)
+  const selStroke = EVENTS_LIST.find(e=>e.stroke===_yrStroke) || EVENTS_LIST[0];
+  const distBtns = selStroke.dists.map(d =>
+    `<button class="filter-btn${_yrDist===d?' active':''}" onclick="_yrDist=${d};renderAll()">${d}m</button>`
+  ).join('');
+
+  // Yaş/cinsiyet
+  const byBtns   = ['2013','2012','2011'].map(b => `<button class="filter-btn${_yrBy===b?' active':''}" onclick="_yrBy='${b}';renderAll()">${{2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'}[b]}</button>`).join('');
+  const genBtns  = [['M','Erkek'],['F','Kadın']].map(([v,l]) => `<button class="filter-btn${_yrGender===v?' active':''}" onclick="_yrGender='${v}';renderAll()">${l}</button>`).join('');
+
+  // Bölge filtresi
+  const regBtns = [`<button class="filter-btn${_yrRegion===0?' active':''}" onclick="_yrRegion=0;renderAll()">Tümü</button>`]
+    .concat([1,2,3,4,5,6].map(r => `<button class="filter-btn${_yrRegion===r?' active':''}" onclick="_yrRegion=${r};renderAll()">B${r}</button>`))
+    .join('');
+
+  // Tablo: seçili branşta puanı olan sporcuları topla
+  let athletes = [];
+  if (grp) {
+    grp.athletes.forEach(a => {
+      if (a.selected === 'MULTINATIONS') return;
+      if (_yrRegion > 0 && a.region !== _yrRegion) return;
+      // Birleşik (total) events listesinden ilgili branşı bul
+      const ev = (a.events || []).find(e => e.stroke === _yrStroke && e.dist === _yrDist);
+      const pts = ev ? ev.points : 0;
+      if (pts > 0) athletes.push({...a, ev_pts: pts});
+    });
+  }
+
+  // Puana göre sırala, eşitlikte tr_rank
+  athletes.sort((a,b) => b.ev_pts - a.ev_pts || (a.rank||999) - (b.rank||999));
+
+  // Satırlar
+  let rank = 0, prevPts = -1, displayRank = 0;
+  const rows = athletes.map(a => {
+    rank++;
+    if (a.ev_pts !== prevPts) { displayRank = rank; prevPts = a.ev_pts; }
+    const selBadge = a.selected === 'TR' ? `<span class="badge badge-tr">TR-${a.selected_slot?.replace('TR-','')}</span>`
+      : a.selected === 'BÖLGE' ? `<span class="badge badge-bolge">${a.selected_slot}</span>` : '';
+    return `<tr>
+      <td style="width:36px;text-align:center;color:var(--muted);font-size:12px">${displayRank}</td>
+      <td>
+        <div style="font-weight:600;font-size:13px">${a.name}</div>
+        <div style="font-size:11px;color:var(--muted)">${a.club||''} ${a.city?'· '+a.city:''}</div>
+      </td>
+      <td style="width:50px;text-align:center">${selBadge}</td>
+      <td style="width:44px;text-align:center">
+        <span class="ep ${ptsClass(a.ev_pts)}" style="font-size:15px;font-weight:700">${a.ev_pts}</span>
+      </td>
+    </tr>`;
+  }).join('');
+
+  const empty = athletes.length === 0
+    ? `<div style="padding:24px;text-align:center;color:var(--muted)">Bu branşta puan alan sporcu yok</div>` : '';
+
+  const groupLabel = grp ? `${grp.age_label} ${grp.gender_label}` : '—';
+
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div style="padding:10px 12px;background:var(--card);border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:6px;align-items:center">
+      ${strokeBtns}
+      <div class="filter-sep"></div>
+      ${distBtns}
+    </div>
+    <div style="padding:8px 12px;background:#162032;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:6px;align-items:center">
+      ${byBtns}
+      <div class="filter-sep"></div>
+      ${genBtns}
+      <div class="filter-sep"></div>
+      ${regBtns}
+    </div>
+    <div style="padding:8px 14px;font-size:12px;color:var(--muted)">
+      <b style="color:var(--text)">${_yrDist}m ${_yrStroke}</b> · ${groupLabel}${_yrRegion?` · Bölge ${_yrRegion}`:''}
+      <span style="float:right;color:var(--blue)">${athletes.length} sporcu</span>
+    </div>
+    ${athletes.length > 0 ? `<div style="padding:0 10px 16px"><table style="width:100%"><tbody>${rows}</tbody></table></div>` : empty}
+  `;
   content.appendChild(wrap);
 }
 
