@@ -341,3 +341,85 @@ def parse_lenex(lenex_content: bytes) -> list[RawResult]:
     logger.info("Lenex: %d sonuç çıkarıldı (%d kulüpten).",
                 len(results), len(root.findall(".//CLUB")))
     return results
+
+
+def parse_lenex_entries(lenex_content: bytes) -> list[dict]:
+    """
+    Lenex'teki ENTRY elemanlarını parse eder → start list.
+
+    Döner: her kayıt için dict:
+      {name_raw, birth_year, gender, stroke, distance, entry_time_sec}
+
+    Not: entry_time_sec None olabilir (yarışa kaydolmuş ama süre girilmemiş).
+    """
+    entries: list[dict] = []
+
+    try:
+        with zipfile.ZipFile(io.BytesIO(lenex_content)) as zf:
+            xml_content = zf.read(zf.namelist()[0]).decode("utf-8", errors="replace")
+    except Exception as e:
+        logger.error("Lenex entries: ZIP açılamadı: %s", e)
+        return []
+
+    try:
+        root = ET.fromstring(xml_content)
+    except ET.ParseError as e:
+        logger.error("Lenex entries: XML parse hatası: %s", e)
+        return []
+
+    # Event tablosu: eventid → {gender, distance, stroke}
+    events: dict[str, dict] = {}
+    for event in root.findall(".//EVENT"):
+        eid = event.attrib.get("eventid")
+        if not eid:
+            continue
+        if event.find("RELAY") is not None or event.attrib.get("relay", "").upper() == "YES":
+            continue
+        swimstyle = event.find("SWIMSTYLE")
+        if swimstyle is None:
+            continue
+        try:
+            distance = int(swimstyle.attrib.get("distance", "0"))
+        except ValueError:
+            continue
+        if distance not in {50, 100, 200, 400, 800, 1500}:
+            continue
+        stroke = STROKE_MAP.get(swimstyle.attrib.get("stroke", "").upper())
+        if stroke is None:
+            continue
+        gender_raw = event.attrib.get("gender", "").upper()
+        gender = "F" if gender_raw in ("F", "FEMALE", "W", "WOMEN") else "M"
+        events[eid] = {"gender": gender, "distance": distance, "stroke": stroke}
+
+    # Sporcular ve entry'leri
+    for club in root.findall(".//CLUB"):
+        for athlete in club.findall(".//ATHLETE"):
+            firstname  = athlete.attrib.get("firstname", "").strip()
+            lastname   = athlete.attrib.get("lastname",  "").strip()
+            full_name  = f"{firstname} {lastname}".strip()
+            birthdate  = athlete.attrib.get("birthdate", "")
+            gender_raw = athlete.attrib.get("gender", "").upper()
+            gender     = "F" if gender_raw in ("F", "FEMALE", "W") else "M"
+            birth_year = parse_birthdate(birthdate)
+            if not birth_year:
+                continue
+
+            for entry in athlete.findall(".//ENTRY"):
+                eid = entry.attrib.get("eventid")
+                if eid not in events:
+                    continue
+                evt = events[eid]
+                entry_time_raw = entry.attrib.get("entrytime", "")
+                entry_time_sec = _lenex_time_to_seconds(entry_time_raw)
+                entries.append({
+                    "name_raw":      full_name,
+                    "birth_year":    birth_year,
+                    "gender":        gender,
+                    "stroke":        evt["stroke"],
+                    "distance":      evt["distance"],
+                    "entry_time_sec": entry_time_sec,
+                    "entry_time_txt": _seconds_to_display(entry_time_sec) if entry_time_sec else None,
+                })
+
+    logger.info("Lenex entries: %d kayıt çıkarıldı.", len(entries))
+    return entries

@@ -22,7 +22,7 @@ from modules.m2_scraper import scrape_race
 from modules.m4_mapping import reload_mapping, clear_missing_clubs, apply_overrides_to_mapping
 from federasyon.scoring_tables import EXCEL_COL_TO_EVENT
 from federasyon.scorer import score_athlete_row, parse_time
-from federasyon.db_fed import init_fed_db, upsert_result, rebuild_athlete_best
+from federasyon.db_fed import init_fed_db, upsert_result, rebuild_athlete_best, save_start_list
 
 RACE_LEG  = "edirne"
 RACE_DATE = "2026.04.17"
@@ -68,6 +68,26 @@ def process_edirne(url: str, verbose: bool = True):
     name_overrides = _load_name_overrides()
     if name_overrides:
         print(f"  ℹ {len(name_overrides)} sporcu override yüklendi.")
+
+    # ── Start list: Lenex entry'lerini çek ve kaydet ─────────────────────────
+    try:
+        from parsers.lenex_parser import download_lenex, parse_lenex_entries
+        from modules.m1_normalize import normalize_display
+        lenex_bytes = download_lenex(url)
+        if lenex_bytes:
+            raw_entries = parse_lenex_entries(lenex_bytes)
+            enriched_entries = []
+            for e in raw_entries:
+                if e.get("birth_year") not in TARGET_BYS:
+                    continue
+                name_disp = normalize_display(e["name_raw"])
+                enriched_entries.append({**e, "name": name_disp})
+            written_sl = save_start_list(RACE_LEG, enriched_entries)
+            print(f"  ✓ Start list: {written_sl} entry kaydedildi")
+        else:
+            print("  ℹ Lenex bulunamadı, start list güncellenmiyor")
+    except Exception as ex:
+        print(f"  ⚠ Start list kaydedilemedi: {ex}")
 
     results = scrape_race(url, verbose=verbose)
     if not results:

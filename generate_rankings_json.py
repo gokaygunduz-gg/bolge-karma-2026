@@ -12,7 +12,7 @@ import sys, os, json, datetime
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-from federasyon.db_fed import load_athletes_for_ranking, load_athletes_for_ranking_by_leg, get_stats, get_event_winners, init_fed_db
+from federasyon.db_fed import load_athletes_for_ranking, load_athletes_for_ranking_by_leg, get_stats, get_event_winners, init_fed_db, get_pending_events
 from federasyon.ranker import rank_all, rank_group, format_seq_display, compute_club_rankings, compute_summary_matrix
 from federasyon.scorer import best_scores_sequence
 from federasyon.scoring_tables import SELECTION_QUOTAS, EXCEL_COL_TO_EVENT
@@ -80,7 +80,8 @@ def format_event_scores(event_scores: dict, seq: list) -> list:
     return result
 
 
-def build_group_data(athletes_ranked: list, by_leg_data: dict, event_winners: dict = None) -> list:
+def build_group_data(athletes_ranked: list, by_leg_data: dict, event_winners: dict = None,
+                     pending_data: dict = None) -> list:
     rows = []
     for a in athletes_ranked:
         seq   = a.get("seq", [])
@@ -101,6 +102,10 @@ def build_group_data(athletes_ranked: list, by_leg_data: dict, event_winners: di
             for (leg, g, stroke, dist), winner in event_winners.items():
                 if g == gender and winner == name:
                     first_place_events.append({"leg": leg, "stroke": stroke, "dist": dist})
+
+        # Bekleyen (henüz yüzülmemiş) yarışlar
+        pending_key = (a["name"], a["birth_year"])
+        pending_events = (pending_data or {}).get(pending_key, [])
 
         rows.append({
             "rank":           a.get("tr_rank"),
@@ -126,6 +131,7 @@ def build_group_data(athletes_ranked: list, by_leg_data: dict, event_winners: di
             "events_edirne":  format_event_scores(edirne_scores,  best_scores_sequence(edirne_scores))  if edirne_scores  else [],
             "top3_antalya":   sum(best_scores_sequence(antalya_scores)[:3]) if antalya_scores else 0,
             "top3_edirne":    sum(best_scores_sequence(edirne_scores)[:3])  if edirne_scores  else 0,
+            "pending_events": pending_events,  # start listesinde ama henüz yüzülmemiş
         })
     return rows
 
@@ -135,6 +141,7 @@ def main():
     athletes      = load_athletes_for_ranking([2013, 2012, 2011])
     by_leg_data   = load_athletes_for_ranking_by_leg([2013, 2012, 2011])
     event_winners = get_event_winners([2013, 2012, 2011])
+    pending_data  = get_pending_events("edirne", [2013, 2012, 2011])
 
     if not athletes:
         print("DB bos! Once process_antalya_karma.py calistirin.")
@@ -185,7 +192,7 @@ def main():
             "multi_count":        multi_count,
             "tr_count":           tr_count,
             "bolge_count":        bolge_count,
-            "athletes":           build_group_data(group, by_leg_data, event_winners),
+            "athletes":           build_group_data(group, by_leg_data, event_winners, pending_data),
         }
 
     # ── Missing clubs raporu (telefonda bakılabilir) ──────────────────────────

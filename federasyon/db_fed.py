@@ -15,6 +15,19 @@ from pathlib import Path
 DB_PATH = Path(__file__).parent.parent / "data" / "bolge_karmalari.db"
 
 SCHEMA = """
+CREATE TABLE IF NOT EXISTS fed_start_list (
+    id           INTEGER PRIMARY KEY AUTOINCREMENT,
+    race_leg     TEXT    NOT NULL,
+    athlete_name TEXT    NOT NULL,
+    birth_year   INTEGER NOT NULL,
+    gender       TEXT    NOT NULL,
+    stroke       TEXT    NOT NULL,
+    distance     INTEGER NOT NULL,
+    entry_time   TEXT,
+    added_at     TEXT    DEFAULT (datetime('now')),
+    UNIQUE(race_leg, athlete_name, birth_year, stroke, distance)
+);
+
 CREATE TABLE IF NOT EXISTS fed_results (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     race_leg      TEXT    NOT NULL,   -- 'antalya' | 'edirne'
@@ -304,3 +317,82 @@ def get_stats() -> dict:
             FROM fed_results
         """).fetchone()
         return dict(r) if r else {}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# fed_start_list — start list (henüz yüzülmemiş kayıtlar)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def save_start_list(race_leg: str, entries: list[dict]):
+    """
+    Start list entry'lerini DB'ye yazar.
+    entries: [{"name_raw"|"name": str, "birth_year": int, "gender": str,
+               "stroke": str, "distance": int, "entry_time_txt": str|None}]
+    """
+    if not entries:
+        return 0
+    written = 0
+    with get_conn() as conn:
+        # Önce bu leg'e ait eski start list'i temizle
+        conn.execute("DELETE FROM fed_start_list WHERE race_leg=?", (race_leg,))
+        for e in entries:
+            name = e.get("name") or e.get("name_raw", "")
+            by   = e.get("birth_year")
+            if not name or not by:
+                continue
+            try:
+                conn.execute("""
+                    INSERT OR REPLACE INTO fed_start_list
+                    (race_leg, athlete_name, birth_year, gender, stroke, distance, entry_time)
+                    VALUES (?,?,?,?,?,?,?)
+                """, (race_leg, name, by, e.get("gender",""),
+                      e.get("stroke",""), e.get("distance",0),
+                      e.get("entry_time_txt")))
+                written += 1
+            except Exception:
+                pass
+        conn.commit()
+    return written
+
+
+def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
+    """
+    start list'te olup o leg'de henüz yüzülmemiş branşları döner.
+    Döner: {(athlete_name, birth_year): [{"stroke": s, "dist": d, "entry_time": t}, ...]}
+    """
+    with get_conn() as conn:
+        by_clause = ""
+        params_sl: list = [race_leg]
+        params_r:  list = [race_leg]
+        if birth_years:
+            ph = ",".join("?" * len(birth_years))
+            by_clause = f" AND birth_year IN ({ph})"
+            params_sl += birth_years
+            params_r  += birth_years
+
+        sl_rows = conn.execute(
+            f"SELECT athlete_name, birth_year, stroke, distance, entry_time "
+            f"FROM fed_start_list WHERE race_leg=?{by_clause}",
+            params_sl
+        ).fetchall()
+
+        done_rows = conn.execute(
+            f"SELECT DISTINCT athlete_name, birth_year, stroke, distance "
+            f"FROM fed_results WHERE race_leg=?{by_clause}",
+            params_r
+        ).fetchall()
+
+    done_set = {(r["athlete_name"], r["birth_year"], r["stroke"], r["distance"])
+                for r in done_rows}
+
+    result: dict = {}
+    for r in sl_rows:
+        key = (r["athlete_name"], r["birth_year"])
+        ev_key = (r["athlete_name"], r["birth_year"], r["stroke"], r["distance"])
+        if ev_key not in done_set:
+            result.setdefault(key, []).append({
+                "stroke":     r["stroke"],
+                "dist":       r["distance"],
+                "entry_time": r["entry_time"],
+            })
+    return result

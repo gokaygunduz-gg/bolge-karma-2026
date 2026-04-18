@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-18 12:33 (TR)",
+  "generated_at": "2026-04-18 13:11 (TR)",
   "legs": "antalya",
   "groups": {
     "2011_F": {
@@ -107,7 +107,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 25,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -192,7 +193,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -293,7 +295,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 17,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -365,7 +368,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -466,7 +470,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -550,7 +555,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -635,7 +641,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -729,7 +736,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -797,7 +805,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 1,
@@ -875,7 +884,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -1003,7 +1013,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -1131,7 +1142,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -1209,7 +1221,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -1287,7 +1300,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -1366,7 +1380,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -1427,7 +1442,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -1505,7 +1521,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -1583,7 +1600,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -1661,7 +1679,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -1722,7 +1741,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -1801,7 +1821,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -1862,7 +1883,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -1939,7 +1961,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -2018,7 +2041,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -2094,7 +2118,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -2155,7 +2180,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -2216,7 +2242,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -2277,7 +2304,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -2339,7 +2367,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -2384,7 +2413,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -2445,7 +2475,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -2507,7 +2538,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -2569,7 +2601,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -2631,7 +2664,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -2693,7 +2727,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -2738,7 +2773,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -2783,7 +2819,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -2845,7 +2882,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -2906,7 +2944,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -2950,7 +2989,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -2994,7 +3034,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -3055,7 +3096,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -3116,7 +3158,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -3178,7 +3221,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -3223,7 +3267,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     },
@@ -3365,7 +3410,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3497,7 +3543,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 25,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3581,7 +3628,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 25,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3671,7 +3719,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 22,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3766,7 +3815,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3850,7 +3900,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -3952,7 +4003,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -4040,7 +4092,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 1,
@@ -4136,7 +4189,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -4215,7 +4269,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -4293,7 +4348,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -4423,7 +4479,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -4534,7 +4591,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -4612,7 +4670,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -4707,7 +4766,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -4768,7 +4828,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -4847,7 +4908,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -4924,7 +4986,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -5003,7 +5066,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -5082,7 +5146,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -5160,7 +5225,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -5272,7 +5338,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -5365,7 +5432,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -5493,7 +5561,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -5588,7 +5657,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -5682,7 +5752,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -5760,7 +5831,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -5822,7 +5894,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -5918,7 +5991,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -5995,7 +6069,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -6089,7 +6164,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -6168,7 +6244,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -6246,7 +6323,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -6307,7 +6385,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -6386,7 +6465,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -6447,7 +6527,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -6509,7 +6590,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -6587,7 +6669,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -6664,7 +6747,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -6741,7 +6825,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -6803,7 +6888,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -6881,7 +6967,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -6960,7 +7047,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -7021,7 +7109,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -7066,7 +7155,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 38,
@@ -7128,7 +7218,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 39,
@@ -7189,7 +7280,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 40,
@@ -7250,7 +7342,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 41,
@@ -7312,7 +7405,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 42,
@@ -7356,7 +7450,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 43,
@@ -7417,7 +7512,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 44,
@@ -7496,7 +7592,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 45,
@@ -7557,7 +7654,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 46,
@@ -7619,7 +7717,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 47,
@@ -7664,7 +7763,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 48,
@@ -7708,7 +7808,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 49,
@@ -7753,7 +7854,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 50,
@@ -7798,7 +7900,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 51,
@@ -7860,7 +7963,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 52,
@@ -7922,7 +8026,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 53,
@@ -7982,7 +8087,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 54,
@@ -8026,7 +8132,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 55,
@@ -8071,7 +8178,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 56,
@@ -8116,7 +8224,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 57,
@@ -8160,7 +8269,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 58,
@@ -8205,7 +8315,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 59,
@@ -8250,7 +8361,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 60,
@@ -8294,7 +8406,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 61,
@@ -8338,7 +8451,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 62,
@@ -8382,7 +8496,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 63,
@@ -8427,7 +8542,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 64,
@@ -8471,7 +8587,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     },
@@ -8603,7 +8720,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 0,
@@ -8704,7 +8822,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 1,
@@ -8782,7 +8901,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -8861,7 +8981,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -8989,7 +9110,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -9102,7 +9224,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 17,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -9180,7 +9303,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -9291,7 +9415,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -9352,7 +9477,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -9468,7 +9594,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -9581,7 +9708,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -9675,7 +9803,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -9752,7 +9881,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -9846,7 +9976,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -9958,7 +10089,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -10019,7 +10151,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -10115,7 +10248,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -10211,7 +10345,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -10272,7 +10407,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -10368,7 +10504,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -10446,7 +10583,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -10508,7 +10646,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -10620,7 +10759,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -10681,7 +10821,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -10759,7 +10900,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -10821,7 +10963,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -10865,7 +11008,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -10944,7 +11088,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -11006,7 +11151,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -11067,7 +11213,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -11129,7 +11276,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -11223,7 +11371,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -11285,7 +11434,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -11346,7 +11496,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -11390,7 +11541,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -11435,7 +11587,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -11480,7 +11633,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -11525,7 +11679,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -11587,7 +11742,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 38,
@@ -11648,7 +11804,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 39,
@@ -11692,7 +11849,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 40,
@@ -11736,7 +11894,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 41,
@@ -11798,7 +11957,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 42,
@@ -11858,7 +12018,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 43,
@@ -11903,7 +12064,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 44,
@@ -11948,7 +12110,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 45,
@@ -11992,7 +12155,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 46,
@@ -12037,7 +12201,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     },
@@ -12130,7 +12295,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -12208,7 +12374,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -12303,7 +12470,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 25,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -12397,7 +12565,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 23,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -12491,7 +12660,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 23,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -12603,7 +12773,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 22,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -12682,7 +12853,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -12777,7 +12949,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -12906,7 +13079,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -12984,7 +13158,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -13062,7 +13237,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -13158,7 +13334,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 17,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -13236,7 +13413,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 17,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -13363,7 +13541,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -13459,7 +13638,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -13554,7 +13734,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -13649,7 +13830,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -13743,7 +13925,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -13821,7 +14004,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -13899,7 +14083,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -14029,7 +14214,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -14125,7 +14311,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -14220,7 +14407,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -14298,7 +14486,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -14392,7 +14581,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -14488,7 +14678,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -14599,7 +14790,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -14710,7 +14902,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -14805,7 +14998,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -14883,7 +15077,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -14961,7 +15156,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -15073,7 +15269,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -15135,7 +15332,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -15213,7 +15411,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -15307,7 +15506,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -15403,7 +15603,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -15480,7 +15681,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 38,
@@ -15575,7 +15777,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 39,
@@ -15637,7 +15840,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 40,
@@ -15731,7 +15935,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 41,
@@ -15792,7 +15997,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 42,
@@ -15871,7 +16077,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 43,
@@ -15932,7 +16139,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 44,
@@ -16028,7 +16236,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 45,
@@ -16123,7 +16332,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 46,
@@ -16202,7 +16412,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 47,
@@ -16279,7 +16490,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 48,
@@ -16358,7 +16570,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 49,
@@ -16419,7 +16632,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 50,
@@ -16497,7 +16711,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 51,
@@ -16559,7 +16774,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 52,
@@ -16620,7 +16836,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 53,
@@ -16698,7 +16915,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 54,
@@ -16760,7 +16978,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 55,
@@ -16839,7 +17058,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 56,
@@ -16900,7 +17120,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 57,
@@ -16962,7 +17183,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 58,
@@ -17024,7 +17246,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 59,
@@ -17102,7 +17325,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 60,
@@ -17164,7 +17388,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 61,
@@ -17242,7 +17467,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 62,
@@ -17287,7 +17513,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 63,
@@ -17348,7 +17575,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 64,
@@ -17393,7 +17621,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 65,
@@ -17438,7 +17667,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 66,
@@ -17483,7 +17713,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 67,
@@ -17528,7 +17759,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 68,
@@ -17573,7 +17805,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     },
@@ -17700,7 +17933,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -17813,7 +18047,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -17942,7 +18177,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -18038,7 +18274,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -18133,7 +18370,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -18262,7 +18500,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 25,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -18391,7 +18630,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 24,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -18504,7 +18744,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 24,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -18665,7 +18906,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -18761,7 +19003,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -18888,7 +19131,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -18984,7 +19228,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -19080,7 +19325,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -19210,7 +19456,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -19306,7 +19553,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -19434,7 +19682,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 17,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -19545,7 +19794,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -19672,7 +19922,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -19768,7 +20019,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -19846,7 +20098,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -19957,7 +20210,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -20035,7 +20289,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -20163,7 +20418,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -20257,7 +20513,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -20335,7 +20592,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -20448,7 +20706,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -20526,7 +20785,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -20604,7 +20864,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -20665,7 +20926,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -20727,7 +20989,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -20789,7 +21052,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -20868,7 +21132,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -20930,7 +21195,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -21008,7 +21274,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -21070,7 +21337,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -21132,7 +21400,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -21194,7 +21463,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 38,
@@ -21340,7 +21610,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 39,
@@ -21451,7 +21722,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 40,
@@ -21530,7 +21802,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 41,
@@ -21607,7 +21880,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 42,
@@ -21685,7 +21959,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 43,
@@ -21780,7 +22055,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 44,
@@ -21842,7 +22118,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 45,
@@ -21904,7 +22181,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 46,
@@ -21999,7 +22277,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 47,
@@ -22077,7 +22356,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 48,
@@ -22156,7 +22436,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 49,
@@ -22218,7 +22499,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 50,
@@ -22280,7 +22562,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 51,
@@ -22341,7 +22624,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 52,
@@ -22452,7 +22736,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 53,
@@ -22531,7 +22816,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 54,
@@ -22592,7 +22878,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 55,
@@ -22654,7 +22941,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 56,
@@ -22732,7 +23020,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 57,
@@ -22810,7 +23099,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 58,
@@ -22855,7 +23145,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 59,
@@ -22916,7 +23207,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 60,
@@ -22961,7 +23253,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 61,
@@ -23038,7 +23331,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 62,
@@ -23099,7 +23393,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 63,
@@ -23161,7 +23456,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 64,
@@ -23222,7 +23518,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 65,
@@ -23284,7 +23581,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 66,
@@ -23346,7 +23644,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 67,
@@ -23408,7 +23707,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 68,
@@ -23485,7 +23785,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 69,
@@ -23529,7 +23830,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 70,
@@ -23574,7 +23876,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 71,
@@ -23618,7 +23921,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 72,
@@ -23680,7 +23984,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 73,
@@ -23725,7 +24030,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 74,
@@ -23786,7 +24092,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 75,
@@ -23831,7 +24138,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 76,
@@ -23875,7 +24183,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 77,
@@ -23937,7 +24246,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 78,
@@ -23982,7 +24292,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 79,
@@ -24026,7 +24337,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 80,
@@ -24070,7 +24382,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 81,
@@ -24132,7 +24445,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 82,
@@ -24176,7 +24490,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 83,
@@ -24221,7 +24536,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 84,
@@ -24265,7 +24581,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 85,
@@ -24310,7 +24627,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 86,
@@ -24355,7 +24673,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 87,
@@ -24400,7 +24719,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     },
@@ -24543,7 +24863,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 2,
@@ -24672,7 +24993,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 3,
@@ -24784,7 +25106,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 4,
@@ -24914,7 +25237,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 27,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 5,
@@ -25043,7 +25367,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 24,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 6,
@@ -25205,7 +25530,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 23,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 7,
@@ -25283,7 +25609,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 22,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 8,
@@ -25395,7 +25722,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 9,
@@ -25490,7 +25818,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 10,
@@ -25568,7 +25897,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 21,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 11,
@@ -25681,7 +26011,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 20,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 12,
@@ -25827,7 +26158,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 13,
@@ -25954,7 +26286,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 14,
@@ -26083,7 +26416,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 15,
@@ -26161,7 +26495,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 19,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 16,
@@ -26273,7 +26608,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 17,
@@ -26401,7 +26737,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 18,
@@ -26514,7 +26851,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 19,
@@ -26610,7 +26948,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 20,
@@ -26688,7 +27027,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 21,
@@ -26782,7 +27122,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 22,
@@ -26860,7 +27201,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 18,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 23,
@@ -26955,7 +27297,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 16,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 24,
@@ -27068,7 +27411,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 25,
@@ -27194,7 +27538,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 15,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 26,
@@ -27324,7 +27669,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -27452,7 +27798,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 28,
@@ -27546,7 +27893,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 29,
@@ -27624,7 +27972,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 30,
@@ -27702,7 +28051,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 14,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 31,
@@ -27815,7 +28165,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 32,
@@ -27893,7 +28244,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 13,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 33,
@@ -27971,7 +28323,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 12,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 34,
@@ -28049,7 +28402,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 35,
@@ -28127,7 +28481,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 11,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 36,
@@ -28188,7 +28543,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 37,
@@ -28266,7 +28622,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 38,
@@ -28345,7 +28702,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 39,
@@ -28423,7 +28781,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 40,
@@ -28501,7 +28860,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 41,
@@ -28580,7 +28940,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 10,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 42,
@@ -28675,7 +29036,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 43,
@@ -28770,7 +29132,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 44,
@@ -28865,7 +29228,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 45,
@@ -28943,7 +29307,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 46,
@@ -29022,7 +29387,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 9,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 47,
@@ -29118,7 +29484,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 48,
@@ -29231,7 +29598,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 49,
@@ -29309,7 +29677,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 50,
@@ -29371,7 +29740,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 8,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 51,
@@ -29484,7 +29854,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 52,
@@ -29579,7 +29950,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 53,
@@ -29640,7 +30012,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 54,
@@ -29702,7 +30075,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 55,
@@ -29763,7 +30137,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 56,
@@ -29840,7 +30215,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 57,
@@ -29902,7 +30278,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 58,
@@ -29962,7 +30339,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 7,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 59,
@@ -30024,7 +30402,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 60,
@@ -30086,7 +30465,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 6,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 61,
@@ -30148,7 +30528,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 62,
@@ -30193,7 +30574,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 63,
@@ -30254,7 +30636,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 64,
@@ -30316,7 +30699,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 65,
@@ -30377,7 +30761,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 66,
@@ -30439,7 +30824,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 67,
@@ -30484,7 +30870,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 5,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 68,
@@ -30596,7 +30983,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 69,
@@ -30657,7 +31045,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 70,
@@ -30718,7 +31107,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 4,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 71,
@@ -30763,7 +31153,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 72,
@@ -30824,7 +31215,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 73,
@@ -30886,7 +31278,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 74,
@@ -30930,7 +31323,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 3,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 75,
@@ -30975,7 +31369,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 76,
@@ -31020,7 +31415,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 77,
@@ -31065,7 +31461,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 78,
@@ -31109,7 +31506,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 79,
@@ -31154,7 +31552,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 2,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 80,
@@ -31199,7 +31598,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 81,
@@ -31244,7 +31644,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 82,
@@ -31289,7 +31690,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 83,
@@ -31334,7 +31736,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 84,
@@ -31379,7 +31782,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         },
         {
           "rank": 85,
@@ -31424,7 +31828,8 @@ window.RESULTS_DATA = {
           ],
           "events_edirne": [],
           "top3_antalya": 1,
-          "top3_edirne": 0
+          "top3_edirne": 0,
+          "pending_events": []
         }
       ]
     }
