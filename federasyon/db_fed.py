@@ -377,10 +377,13 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
     start list'te olup o leg'de henüz yüzülmemiş branşları döner.
     Döner: {(athlete_name, birth_year): [{"stroke": s, "dist": d, "entry_time": t}, ...]}
 
-    İsim karşılaştırması normalize_for_lookup ile yapılır (i/ı/İ/I toleransı).
-    """
-    from modules.m1_normalize import normalize_for_lookup
+    Öncelik: YARIŞIN tamamlanıp tamamlanmadığına bak.
+    Eğer (birth_year, gender, stroke, distance) kombinasyonunda herhangi bir
+    fed_results kaydı varsa → o yarış bitti → start list'teki tüm sporcular için
+    o yarışı bekleyende gösterme.
 
+    Bu yaklaşım isim normalizasyon sorunlarını tamamen devre dışı bırakır.
+    """
     with get_conn() as conn:
         by_clause = ""
         params_sl: list = [race_leg]
@@ -392,32 +395,34 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
             params_r  += birth_years
 
         sl_rows = conn.execute(
-            f"SELECT athlete_name, birth_year, stroke, distance, entry_time "
+            f"SELECT athlete_name, birth_year, gender, stroke, distance, entry_time "
             f"FROM fed_start_list WHERE race_leg=?{by_clause}",
             params_sl
         ).fetchall()
 
+        # Sonucu olan (birth_year, gender, stroke, distance) kombinasyonları
+        # = yarış tamamlanmış demek
         done_rows = conn.execute(
-            f"SELECT DISTINCT athlete_name, birth_year, stroke, distance "
+            f"SELECT DISTINCT birth_year, gender, stroke, distance "
             f"FROM fed_results WHERE race_leg=?{by_clause}",
             params_r
         ).fetchall()
 
-    # Normalize edilmiş isimle "tamamlandı" seti
-    done_set = {
-        (normalize_for_lookup(r["athlete_name"]), r["birth_year"], r["stroke"], r["distance"])
+    # Tamamlanan yarışların seti: (birth_year, gender, stroke, distance)
+    completed_races = {
+        (r["birth_year"], r["gender"], r["stroke"], r["distance"])
         for r in done_rows
     }
 
     result: dict = {}
     for r in sl_rows:
-        norm_name = normalize_for_lookup(r["athlete_name"])
-        ev_key = (norm_name, r["birth_year"], r["stroke"], r["distance"])
-        if ev_key not in done_set:
-            key = (r["athlete_name"], r["birth_year"])
-            result.setdefault(key, []).append({
-                "stroke":     r["stroke"],
-                "dist":       r["distance"],
-                "entry_time": r["entry_time"],
-            })
+        race_key = (r["birth_year"], r["gender"], r["stroke"], r["distance"])
+        if race_key in completed_races:
+            continue   # Bu yarış tamamlanmış → hiçbir sporcu için bekleyende gösterme
+        key = (r["athlete_name"], r["birth_year"])
+        result.setdefault(key, []).append({
+            "stroke":     r["stroke"],
+            "dist":       r["distance"],
+            "entry_time": r["entry_time"],
+        })
     return result
