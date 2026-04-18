@@ -39,11 +39,12 @@ class EventInfo:
 
 @dataclass
 class RacePageInfo:
-    title:       str                      # Yarış başlığı
-    location:    str                      # Şehir
-    date:        str                      # Tarih string (ör: "27.-30.11.2025")
-    event_map:   dict[str, EventInfo]     # {"ResultList_10.pdf": EventInfo(...), ...}
-    pdf_links:   list[str]                # Tüm ResultList PDF URL'leri (tam URL)
+    title:              str                      # Yarış başlığı
+    location:           str                      # Şehir
+    date:               str                      # Tarih string (ör: "27.-30.11.2025")
+    event_map:          dict[str, EventInfo]     # {"ResultList_10.pdf": EventInfo(...), ...}
+    pdf_links:          list[str]                # Tüm ResultList PDF URL'leri (tam URL)
+    start_list_links:   list[str] = None         # Tüm StartList PDF URL'leri (tam URL)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -253,6 +254,33 @@ def extract_pdf_urls(soup: BeautifulSoup, base_url: str) -> list[str]:
     return pdf_urls
 
 
+def extract_start_list_pdf_urls(soup: BeautifulSoup, base_url: str) -> list[str]:
+    """
+    Sayfadaki tüm StartList PDF linklerini tam URL olarak döndürür.
+    event_map'te ResultList_N → EventInfo varsa, StartList_N de aynı EventInfo ile eşleşir.
+    """
+    base_url = base_url.rstrip("/") + "/"
+    pdf_urls: list[str] = []
+
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "StartList" not in href:
+            continue
+        if not href.endswith(".pdf"):
+            continue
+        full_url = href if href.startswith("http") else base_url + href.lstrip("/")
+        if full_url not in pdf_urls:
+            pdf_urls.append(full_url)
+
+    def _sort_key(url: str) -> int:
+        m = re.search(r"(\d+)\.pdf$", url)
+        return int(m.group(1)) if m else 999
+
+    pdf_urls.sort(key=_sort_key)
+    logger.info("%d StartList PDF linki bulundu.", len(pdf_urls))
+    return pdf_urls
+
+
 def extract_race_meta(soup: BeautifulSoup) -> dict:
     """
     Yarış başlığı, şehir ve tarih bilgilerini HTML'den çıkarır.
@@ -293,15 +321,24 @@ def parse_race_page(url: str) -> RacePageInfo | None:
     if soup is None:
         return None
 
-    base_url = url.rstrip("/") + "/"
-    event_map = extract_event_map(soup)
-    pdf_urls  = extract_pdf_urls(soup, base_url)
-    meta      = extract_race_meta(soup)
+    base_url        = url.rstrip("/") + "/"
+    event_map       = extract_event_map(soup)
+    pdf_urls        = extract_pdf_urls(soup, base_url)
+    start_list_urls = extract_start_list_pdf_urls(soup, base_url)
+    meta            = extract_race_meta(soup)
+
+    # StartList_N.pdf → EventInfo: ResultList_N.pdf ile aynı event
+    for sl_url in start_list_urls:
+        sl_fname = sl_url.split("/")[-1]
+        rl_fname = sl_fname.replace("StartList", "ResultList")
+        if rl_fname in event_map and sl_fname not in event_map:
+            event_map[sl_fname] = event_map[rl_fname]
 
     return RacePageInfo(
-        title     = meta.get("title", ""),
-        location  = meta.get("location", ""),
-        date      = meta.get("date", ""),
-        event_map = event_map,
-        pdf_links = pdf_urls,
+        title            = meta.get("title", ""),
+        location         = meta.get("location", ""),
+        date             = meta.get("date", ""),
+        event_map        = event_map,
+        pdf_links        = pdf_urls,
+        start_list_links = start_list_urls,
     )

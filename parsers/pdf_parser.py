@@ -510,6 +510,151 @@ def parse_pdf_from_url(pdf_url: str, hint_event: EventInfo | None = None) -> lis
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# StartList PDF ayrıştırıcı
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _parse_start_list_line(line: str, event: EventInfo) -> dict | None:
+    """
+    StartList satırını ayrıştırır.
+
+    Formatlар (Splash Meet Manager StartList):
+      "1  4  Ali YILMAZ  13  Ankara SK  2:29.00"   (sıra + kulvar + ad + YB + kulüp + giriş süresi)
+      "2  3  Mehmet KAYA 12  İstanbul SK  NT"       (NT = giriş süresi yok)
+      "Ali YILMAZ 13 Ankara SK"                    (sıra/kulvar olmadan)
+
+    Döner: {"name_raw", "birth_year", "gender", "stroke", "distance",
+             "entry_time_sec", "entry_time_txt"} veya None
+    """
+    line = line.strip()
+    if not line or len(line) < 6:
+        return None
+
+    # Satır başındaki sıra/kulvar numaralarını at: "1 4 Ali..." → "Ali..."
+    line = re.sub(r"^[\d\s]{1,8}(?=[A-ZÇĞİÖŞÜa-zçğışöü])", "", line).strip()
+    # Tek harf öneki de temizle: "A Ali..." → "Ali..."
+    line = re.sub(r"^[A-ZÇĞİÖŞÜa-zçğışöü]\s+(?=[A-ZÇĞİÖŞÜ])", "", line).strip()
+
+    if not line or len(line) < 5:
+        return None
+
+    # "NT" veya "YB Zaman" gibi başlık satırlarını atla
+    norm_line = _norm(line)
+    if re.match(r"^(nt|yb|ht|yd|yan|kulvar|heat|lane|scratch|dns|dsq)\b", norm_line):
+        return None
+    if _is_skip_line(line):
+        return None
+
+    # YB'yi bul (2 haneli sayı)
+    yb_match = re.search(r"(?<!\d)(\d{2})(?!\d)", line)
+    if not yb_match:
+        return None
+
+    yb_str = yb_match.group(1)
+    try:
+        yb_int = int(yb_str)
+    except ValueError:
+        return None
+
+    from config import YB_CENTURY_CUTOFF, COMPETITION_YEAR
+    birth_year = (2000 + yb_int) if yb_int <= YB_CENTURY_CUTOFF else (1900 + yb_int)
+    age = COMPETITION_YEAR - birth_year
+    if not (8 <= age <= 60):
+        return None
+
+    name_raw = line[:yb_match.start()].strip()
+    # İsim çok kısa veya harfsizse geçersiz
+    if not name_raw or len(name_raw) < 2:
+        return None
+    if not re.search(r"[A-Za-zÀ-ÿ\u00C0-\u024F]", name_raw):
+        return None
+
+    after_yb = line[yb_match.end():].strip()
+
+    # Giriş süresini çıkar (opsiyonel): en sondaki zaman kalıbı
+    entry_time_sec = None
+    entry_time_txt = None
+    time_m = list(_TIME_PATTERN.finditer(after_yb))
+    if time_m:
+        last_m = time_m[-1]
+        t_str = last_m.group(1)
+        t_sec = _time_to_seconds(t_str)
+        if t_sec and t_sec > 1:
+            t_str, t_sec = _fix_ocr_time(t_str, t_sec, event.stroke, event.distance)
+            entry_time_sec = t_sec
+            entry_time_txt = t_str
+        after_yb = after_yb[:last_m.start()].strip()
+
+    # NT, puan rakamını ve sondaki çöpleri temizle
+    after_yb = re.sub(r"\s+(NT|nt|N\.T\.)\s*$", "", after_yb).strip()
+    after_yb = re.sub(r"\s+\d+\s*$", "", after_yb).strip()   # sondaki puan/sıra rakamı
+
+    club_raw = after_yb or "Bilinmiyor"
+
+    return {
+        "name_raw":       name_raw,
+        "birth_year":     birth_year,
+        "gender":         event.gender,
+        "stroke":         event.stroke,
+        "distance":       event.distance,
+        "club_raw":       club_raw,
+        "entry_time_sec": entry_time_sec,
+        "entry_time_txt": entry_time_txt,
+    }
+
+
+def parse_start_list_pdf(pdf_content: bytes,
+                         hint_event: EventInfo | None = None) -> list[dict]:
+    """
+    StartList PDF'ini ayrıştırır. Her kayıt:
+      {name_raw, birth_year, gender, stroke, distance, club_raw, entry_time_sec, entry_time_txt}
+    Zaman olmayan (NT) kayıtlar da dahil edilir.
+    """
+    entries: list[dict] = []
+    current_event: EventInfo | None = hint_event
+
+    try:
+        reader = PyPDF2.PdfReader(io.BytesIO(pdf_content))
+    except Exception as e:
+        logger.error("StartList PDF okunamadı: %s", e)
+        return []
+
+    for page_num, page in enumerate(reader.pages):
+        try:
+            text = page.extract_text() or ""
+        except Exception:
+            continue
+
+        for line in text.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+
+            header = _parse_pdf_header(line)
+            if header:
+                current_event = header
+                continue
+
+            if current_event is None:
+                continue
+
+            entry = _parse_start_list_line(line, current_event)
+            if entry:
+                entries.append(entry)
+
+    logger.debug("StartList PDF: %d kayıt çıkarıldı.", len(entries))
+    return entries
+
+
+def parse_start_list_pdf_from_url(pdf_url: str,
+                                   hint_event: EventInfo | None = None) -> list[dict]:
+    """StartList PDF URL'sini indirir ve ayrıştırır."""
+    pdf_content = download_pdf(pdf_url)
+    if not pdf_content:
+        return []
+    return parse_start_list_pdf(pdf_content, hint_event)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # OCR tabanlı PDF ayrıştırma (görüntü tabanlı PDF'ler için)
 # ─────────────────────────────────────────────────────────────────────────────
 
