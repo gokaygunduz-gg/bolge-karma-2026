@@ -3,15 +3,19 @@ name: Update Panel (Edirne Canlı)
 # ─────────────────────────────────────────────────────────────────────────────
 # ZAMANLAMA (TR = UTC+3)
 #
-# Her 20 dakika:  17-20 Nisan, TR 08:00-23:59
-# Lenex kontrol:  17-20 Nisan saat 08:50 10:50 12:50 14:50 15:50 17:50 19:50 21:50 23:50 (TR)
+# Her 5 dakika:  17-20 Nisan, TR 08:00-00:00
+# Lenex kontrol: 17-20 Nisan saat 08:50 10:50 12:50 14:50 15:50 17:50 19:50 21:50 23:50 (TR)
+# Push trigger:  master'a her push'ta çalışır
 #
 # Yarış yoksa EDIRNE_URL boşsa sadece generate_rankings_json.py çalışır (Antalya verisi gösterilir).
 # ─────────────────────────────────────────────────────────────────────────────
 on:
+  push:
+    branches: [master]
+
   schedule:
-    # Her 20 dakika — 17-20 Nisan, UTC 05:00-21:00 (TR 08:00-00:00)
-    - cron: '0,20,40 5-21 17-20 4 *'
+    # Her 5 dakika — 17-20 Nisan, UTC 05:00-21:00 (TR 08:00-00:00)
+    - cron: '*/5 5-21 17-20 4 *'
     # Lenex kontrol saatleri — UTC: 05:50 07:50 09:50 11:50 12:50 14:50 16:50 18:50 20:50
     - cron: '50 5,7,9,11,12,14,16,18,20 17-20 4 *'
 
