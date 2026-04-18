@@ -35,10 +35,10 @@
 
   /* ── Sekmeler ── */
   .tabs { display: flex; gap: 0; background: var(--card); border-bottom: 1px solid var(--border); overflow-x: auto; }
-  .tab { padding: 10px 16px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .tab { padding: 10px 14px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
   .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
-  /* ── Filtreler ── */
+  /* ── Filtreler (sadece Sıralama sekmesinde) ── */
   .filters { padding: 8px 12px; background: var(--card); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .filter-btn {
     padding: 4px 12px; border-radius: 16px; border: 1px solid var(--border);
@@ -136,6 +136,8 @@
   .club-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 6px 10px; text-align: left; }
   .club-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
   .club-table tr:last-child td { border-bottom: 0; }
+  .club-table tr.club-row { cursor: pointer; transition: background .1s; }
+  .club-table tr.club-row:hover { background: rgba(59,130,246,.1); }
   .club-total { font-weight: 700; color: var(--text); }
   .num-multi { color: var(--gold); font-weight: 700; }
   .num-tr    { color: var(--green); font-weight: 700; }
@@ -150,6 +152,55 @@
   .matrix-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; text-align: center; }
   .matrix-table td:first-child { text-align: left; font-weight: 600; }
   .matrix-table tr:last-child td { border-bottom: 0; font-weight: 700; background: rgba(255,255,255,.03); }
+
+  /* ── Barajlar ── */
+  .threshold-wrap { margin: 10px; }
+  .threshold-wrap h3 { font-size: 13px; color: var(--gold); margin-bottom: 8px; padding-top: 8px; }
+  .threshold-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
+  .threshold-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 7px 10px; text-align: left; }
+  .threshold-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .threshold-table tr:last-child td { border-bottom: 0; }
+  .pts-system-box { background: var(--card); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+  .pts-system-box h4 { font-size: 11px; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em; }
+  .pts-row { display: flex; flex-wrap: wrap; gap: 5px; }
+  .pts-chip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 9px; border-radius: 8px; background: #1a2740; border: 1px solid var(--border); font-size: 11px; }
+
+  /* ── Arama ── */
+  .search-wrap { margin: 10px; }
+  .search-box { display: flex; gap: 6px; margin-bottom: 12px; }
+  .search-input {
+    flex: 1; padding: 10px 14px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-size: 14px; outline: none;
+  }
+  .search-input:focus { border-color: var(--blue); }
+  .search-btn {
+    padding: 10px 16px; background: var(--blue); border: none; border-radius: 8px;
+    color: #fff; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .search-result { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 8px; }
+  .search-result-header { padding: 10px 12px; border-bottom: 1px solid var(--border); background: #162032; }
+  .search-result-name { font-size: 14px; font-weight: 700; }
+  .search-result-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .search-result-ranks { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; }
+  .rank-chip { display: inline-flex; flex-direction: column; align-items: center; background: #1a2740; border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; min-width: 70px; }
+  .rank-chip .rc-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .rank-chip .rc-val { font-size: 16px; font-weight: 800; margin-top: 1px; }
+  .search-result-events { padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 4px; border-top: 1px solid var(--border); }
+  .search-empty { padding: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+
+  /* ── Modal (kulüp sporcuları) ── */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); z-index: 200; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; max-width: 480px; width: 94%; max-height: 80vh; overflow-y: auto; }
+  .modal-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: var(--card); }
+  .modal-title { font-size: 14px; font-weight: 700; color: var(--gold); }
+  .modal-close { background: none; border: none; color: var(--muted); font-size: 20px; cursor: pointer; padding: 0 4px; line-height: 1; }
+  .modal-body { padding: 10px; }
+  .modal-athlete { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 6px; margin-bottom: 4px; background: #162032; border: 1px solid var(--border); }
+  .modal-athlete-rank { font-size: 11px; font-weight: 700; color: var(--muted); min-width: 24px; text-align: center; }
+  .modal-athlete-info { flex: 1; }
+  .modal-athlete-name { font-size: 12px; font-weight: 600; }
+  .modal-athlete-sub { font-size: 10px; color: var(--muted); margin-top: 1px; }
 
   /* ── Loader ── */
   #loader { display: flex; align-items: center; justify-content: center; height: 60vh; font-size: 16px; color: var(--muted); text-align: center; padding: 20px; }
@@ -173,6 +224,7 @@
     <h2 style="color:#e2e8f0;font-size:18px;margin-bottom:4px;">2026 Federasyon Karması</h2>
     <p style="color:#94a3b8;font-size:13px;margin-bottom:20px;">Devam etmek için şifreyi girin</p>
     <input id="pw-input" type="password" placeholder="Şifre"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
       style="width:100%;padding:10px 14px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:15px;outline:none;margin-bottom:12px;"
       onkeydown="if(event.key==='Enter')checkPw()">
     <button onclick="checkPw()"
@@ -180,11 +232,11 @@
       Giriş
     </button>
     <p id="pw-err" style="color:#ef4444;font-size:12px;margin-top:10px;display:none;">Yanlış şifre</p>
+    <p id="pw-hint" style="color:#64748b;font-size:10px;margin-top:6px;display:none;"></p>
   </div>
 </div>
 <script>
 // ── Merkezi auth (gh-pages/auth.json) ────────────────────────────────────────
-// Şifre bu cihazda değil GitHub'da saklanır → değişince herkes için geçerli
 const AUTH_URL = 'https://gokaygunduz-gg.github.io/bolge-karma-2026/auth.json';
 let _auth = null;  // {pw, admin_pw, pw_off}
 
@@ -211,16 +263,34 @@ function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
     setTimeout(()=>document.getElementById("pw-input").focus(), 100);
   }
   window.checkPw = function(){
-    const v = document.getElementById("pw-input").value;
+    // trim() → Android autocorrect bazen boşluk ekliyor
+    const v = document.getElementById("pw-input").value.trim();
     if(v === getMainPw()){
       sessionStorage.setItem(KEY,"1"); overlay.style.display="none";
     } else {
       document.getElementById("pw-err").style.display="block";
       document.getElementById("pw-input").value="";
+      // Hatalı giriş sayısını logla (localStorage'da — hata ayıklama için)
+      const logKey='karma_fail_log';
+      const log=JSON.parse(localStorage.getItem(logKey)||'[]');
+      log.push({t:new Date().toISOString(),len:v.length});
+      if(log.length>20) log.splice(0,log.length-20);
+      localStorage.setItem(logKey,JSON.stringify(log));
     }
   };
 })();
 </script>
+
+<!-- ── Modal (kulüp sporcuları) ── -->
+<div id="club-modal" class="modal-overlay" onclick="if(event.target===this)closeClubModal()">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title" id="club-modal-title">—</div>
+      <button class="modal-close" onclick="closeClubModal()">×</button>
+    </div>
+    <div class="modal-body" id="club-modal-body"></div>
+  </div>
+</div>
 
 <header>
   <div class="header-row">
@@ -239,7 +309,10 @@ function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
 <!-- ── Sekmeler ── -->
 <div class="tabs">
   <div class="tab active" data-tab="rankings" onclick="switchTab('rankings',this)">Sıralama</div>
+  <div class="tab" data-tab="search" onclick="switchTab('search',this)">Arama</div>
   <div class="tab" data-tab="clubs" onclick="switchTab('clubs',this)">Kulüpler</div>
+  <div class="tab" data-tab="kota" onclick="switchTab('kota',this)">Kota</div>
+  <div class="tab" data-tab="barajlar" onclick="switchTab('barajlar',this)">Barajlar</div>
   <div class="tab" data-tab="matrix" onclick="switchTab('matrix',this)">Özet</div>
   <div class="tab" id="admin-tab" data-tab="admin" onclick="switchTab('admin',this)" style="display:none">⚙ Admin</div>
 </div>
@@ -298,28 +371,11 @@ let filterAge   = 'all';
 let filterGender= 'all';
 let filterRegion= 'all';
 let filterSel   = 'all';
-let activeLeg   = 'combined';   // 'combined' | 'antalya' | 'edirne'
+let activeLeg   = 'combined';
 let activeTab   = 'rankings';
-let activeClubGroup = 'overall';  // kulüpler sekmesi için global state
+let activeClubGroup = 'overall';
 let expanded    = new Set();
-
-// ── Load ──────────────────────────────────────────────────────────────────────
-async function loadData() {
-  if (window.RESULTS_DATA) {
-    DATA = window.RESULTS_DATA;
-    renderAll();
-    return;
-  }
-  try {
-    const r = await fetch('results.json?t=' + Date.now());
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    DATA = await r.json();
-    renderAll();
-  } catch(e) {
-    document.getElementById('loader').textContent =
-      '⚠ Veri yüklenemedi. serve.py ile açın veya generate_rankings_json.py çalıştırın.';
-  }
-}
+let _searchTerm = '';
 
 // ── Tab switch ────────────────────────────────────────────────────────────────
 function switchTab(tab, el) {
@@ -380,10 +436,13 @@ function renderAll() {
   const content = document.getElementById('content');
   content.innerHTML = '';
 
-  if (activeTab === 'rankings') renderRankings(content);
-  else if (activeTab === 'clubs') renderClubs(content);
-  else if (activeTab === 'matrix') renderMatrix(content);
-  else if (activeTab === 'admin') renderAdmin(content);
+  if      (activeTab === 'rankings')   renderRankings(content);
+  else if (activeTab === 'search')     renderSearch(content);
+  else if (activeTab === 'clubs')      renderClubs(content);
+  else if (activeTab === 'kota')      renderKota(content);
+  else if (activeTab === 'barajlar')  renderBarajlar(content);
+  else if (activeTab === 'matrix')     renderMatrix(content);
+  else if (activeTab === 'admin')      renderAdmin(content);
 }
 
 function legsLabel(legs) {
@@ -405,12 +464,9 @@ function renderRankings(content) {
     if (filterGender !== 'all' && grp.gender !== filterGender)           continue;
 
     let athletes = grp.athletes;
-
-    // Bölge filtresi: Multinations sporcular her zaman göster
     if (filterRegion !== 'all') {
       athletes = athletes.filter(a =>
-        a.selected === 'MULTINATIONS' ||
-        String(a.region) === filterRegion
+        a.selected === 'MULTINATIONS' || String(a.region) === filterRegion
       );
     }
     if (filterSel === 'selected') {
@@ -471,7 +527,6 @@ function toggleGroup(key) {
 
 function buildTable(groupKey, grp, athletes) {
   let rows = '';
-  // Satır numarası için index (Multinations grubunu 0 ile başlat)
   athletes.forEach((a, idx) => {
     const expKey = groupKey + '_' + idx;
     const isExp  = expanded.has(expKey);
@@ -488,7 +543,6 @@ function buildTable(groupKey, grp, athletes) {
     const rankCls = (a.rank && a.rank <= 3 && !isMulti) ? `rank-${a.rank}` : '';
     const rankStr = isMulti ? '★' : (a.rank || '—');
 
-    // Seçim badge
     let badgeHtml = '';
     if (isMulti)
       badgeHtml = `<span class="badge badge-multi">Multinations</span>`;
@@ -504,7 +558,6 @@ function buildTable(groupKey, grp, athletes) {
       else        badgeHtml = `<span class="badge-none">—</span>`;
     }
 
-    // Leg'e göre puan
     let score, events;
     if (activeLeg === 'antalya') {
       score  = a.top3_antalya;
@@ -517,10 +570,8 @@ function buildTable(groupKey, grp, athletes) {
       events = a.events;
     }
 
-    // Tie işareti isim yanında
     const tieStar = (isTied && a.selected !== 'TR') ? '<span class="tie-mark">★</span>' : '';
 
-    // 1. bitiş badge
     let firstBadge = '';
     try {
       if (a.first_place && a.first_place.length > 0) {
@@ -596,6 +647,116 @@ function ptsClass(p) {
   return 'pts-0';
 }
 
+// ── Search tab ────────────────────────────────────────────────────────────────
+function renderSearch(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'search-wrap';
+
+  wrap.innerHTML = `
+    <div class="search-box">
+      <input id="search-input" class="search-input" type="search" placeholder="Sporcu adı ara..."
+        autocomplete="off" autocorrect="off" autocapitalize="off"
+        value="${_esc(_searchTerm)}"
+        onkeydown="if(event.key==='Enter'){_searchTerm=this.value.trim();renderAll();}">
+      <button class="search-btn" onclick="_searchTerm=document.getElementById('search-input').value.trim();renderAll()">Ara</button>
+    </div>
+    <div id="search-results"></div>
+  `;
+  content.appendChild(wrap);
+
+  const resultsDiv = wrap.querySelector('#search-results');
+  if (!_searchTerm) {
+    resultsDiv.innerHTML = '<div class="search-empty">Sporcu adını yazıp Ara\'ya basın</div>';
+    setTimeout(()=>{ const el=document.getElementById('search-input'); if(el) el.focus(); }, 50);
+    return;
+  }
+
+  // Normalize for search
+  function norm(s) {
+    return (s||'').replace(/İ/g,'I').replace(/ı/g,'i').replace(/Ş/g,'S').replace(/ş/g,'s')
+      .replace(/Ç/g,'C').replace(/ç/g,'c').replace(/Ğ/g,'G').replace(/ğ/g,'g')
+      .replace(/Ö/g,'O').replace(/ö/g,'o').replace(/Ü/g,'U').replace(/ü/g,'u')
+      .toLowerCase();
+  }
+
+  const term = norm(_searchTerm);
+  const ORDER = ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+  const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+  let found = 0;
+
+  for (const key of ORDER) {
+    const grp = DATA.groups[key];
+    if (!grp) continue;
+    grp.athletes.forEach(a => {
+      if (!norm(a.name).includes(term)) return;
+      found++;
+
+      // Bölge sıralaması: aynı grup içinde aynı bölgeden kaçıncı
+      const sameRegion = grp.athletes.filter(x => x.region === a.region && x.selected !== 'MULTINATIONS');
+      const regionRank = sameRegion.findIndex(x => x.name === a.name) + 1;
+
+      // Seçim badge
+      let selBadge = '';
+      if (a.selected === 'MULTINATIONS') selBadge = `<span class="badge badge-multi">Multinations</span>`;
+      else if (a.selected === 'TR')      selBadge = `<span class="badge badge-tr">${a.selected_slot}</span>`;
+      else if (a.selected === 'BÖLGE')   selBadge = `<span class="badge badge-bolge">${a.selected_slot}</span>`;
+      else if (a.selected === 'BARAJ_YOK') selBadge = `<span class="badge badge-baraj">Baraj↓</span>`;
+      else                                selBadge = `<span class="badge-none">Seçilmedi</span>`;
+
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      const REGION_NAMES = {1:'İstanbul',2:'Marmara',3:'Ege',4:'İç Anadolu',5:'Karadeniz',6:'Güneydoğu'};
+
+      const card = document.createElement('div');
+      card.className = 'search-result';
+      card.innerHTML = `
+        <div class="search-result-header">
+          <div class="search-result-name">
+            <span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span>
+            ${a.name} ${selBadge}
+          </div>
+          <div class="search-result-sub">${a.club||'—'} · ${a.city||'—'} · ${AGE_LABEL[a.birth_year]||a.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}</div>
+        </div>
+        <div class="search-result-ranks">
+          <div class="rank-chip">
+            <span class="rc-label">Türkiye</span>
+            <span class="rc-val ${a.rank && a.rank<=3?'rank-'+a.rank:''}">${a.selected==='MULTINATIONS'?'★':(a.rank||'—')}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">B${a.region||'?'} ${REGION_NAMES[a.region]||''}</span>
+            <span class="rc-val" style="color:var(--blue)">${regionRank || '—'}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Toplam Puan</span>
+            <span class="rc-val ${ptsClass(Math.floor(a.top3/3))}">${a.top3}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Antalya</span>
+            <span class="rc-val" style="color:var(--teal)">${a.top3_antalya||0}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Edirne</span>
+            <span class="rc-val" style="color:var(--orange)">${a.top3_edirne||0}</span>
+          </div>
+        </div>
+        <div class="search-result-events">
+          ${buildEventChips(a.events || [])}
+        </div>
+      `;
+      resultsDiv.appendChild(card);
+    });
+  }
+
+  if (found === 0) {
+    resultsDiv.innerHTML = `<div class="search-empty">
+      "${_searchTerm}" için sonuç bulunamadı<br>
+      <span style="font-size:11px;color:#475569">Türkçe karakter farkına dikkat etmeden arama yapılır</span>
+    </div>`;
+  }
+
+  setTimeout(()=>{ const el=document.getElementById('search-input'); if(el) el.focus(); }, 50);
+}
+
 // ── Clubs tab ─────────────────────────────────────────────────────────────────
 function renderClubs(content) {
   if (!DATA || !DATA.club_rankings) {
@@ -604,7 +765,6 @@ function renderClubs(content) {
   }
   const cr = DATA.club_rankings;
 
-  // Group seçici
   const groupKeys = ['overall', ...Object.keys(cr.by_group || {}).sort()];
   const GROUP_LABEL = {
     overall: 'Genel Toplam',
@@ -616,7 +776,6 @@ function renderClubs(content) {
   const wrap = document.createElement('div');
   wrap.className = 'club-table-wrap';
 
-  // Butonlar
   const filterRow = document.createElement('div');
   filterRow.className = 'club-filter-row';
   groupKeys.forEach(gk => {
@@ -632,25 +791,30 @@ function renderClubs(content) {
 
   const data = activeClubGroup === 'overall' ? cr.overall : (cr.by_group[activeClubGroup] || []);
 
+  // Kulübe tıklandığında seçili sporcularını göster
+  const groupForModal = activeClubGroup === 'overall' ? null : activeClubGroup;
+
   let rows = '';
   data.filter(c => c.total > 0).forEach((c, i) => {
-    rows += `<tr>
+    rows += `<tr class="club-row" onclick="showClubAthletes('${_esc(c.club)}','${groupForModal||''}')">
       <td style="color:var(--muted);font-size:11px">${i+1}</td>
-      <td>${c.club}</td>
+      <td style="color:var(--blue)">${c.club}</td>
       <td class="num-multi">${c.multi || 0}</td>
       <td class="num-tr">${c.tr || 0}</td>
       <td class="num-bolge">${c.bolge || 0}</td>
       <td class="club-total">${c.total}</td>
+      <td style="color:var(--muted);font-size:14px">›</td>
     </tr>`;
   });
 
   const table = `<table class="club-table">
     <thead><tr>
-      <th>#</th><th>Kulüp</th>
+      <th>#</th><th>Kulüp <span style="color:#475569;font-size:9px">(tıkla)</span></th>
       <th style="color:var(--gold)">Multi</th>
       <th style="color:var(--green)">TR</th>
       <th style="color:var(--blue)">Bölge</th>
       <th>Toplam</th>
+      <th></th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
@@ -660,6 +824,199 @@ function renderClubs(content) {
   wrap.appendChild(h3);
   wrap.appendChild(filterRow);
   wrap.appendChild(tableDiv);
+
+  const note = document.createElement('div');
+  note.style.cssText = 'font-size:10px;color:#475569;padding:6px 0;';
+  note.textContent = 'Kulüp adına tıklayarak seçilen sporcuları görebilirsiniz.';
+  wrap.appendChild(note);
+
+  content.appendChild(wrap);
+}
+
+// Kulüp modal
+window.showClubAthletes = function(club, groupKey) {
+  const modal = document.getElementById('club-modal');
+  const title = document.getElementById('club-modal-title');
+  const body  = document.getElementById('club-modal-body');
+  title.textContent = club;
+  body.innerHTML = '';
+
+  const ORDER = groupKey ? [groupKey] : ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+  const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+  let count = 0;
+
+  for (const key of ORDER) {
+    const grp = DATA && DATA.groups && DATA.groups[key];
+    if (!grp) continue;
+    const selected = grp.athletes.filter(a =>
+      (a.club||'') === club &&
+      (a.selected === 'TR' || a.selected === 'BÖLGE' || a.selected === 'MULTINATIONS')
+    );
+    if (selected.length === 0) continue;
+
+    const groupLabel = `${AGE_LABEL[grp.birth_year]||grp.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}`;
+    const groupHeader = document.createElement('div');
+    groupHeader.style.cssText = 'font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;padding:8px 10px 4px;';
+    groupHeader.textContent = groupLabel;
+    body.appendChild(groupHeader);
+
+    selected.forEach(a => {
+      count++;
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      let selBadge = '';
+      if (a.selected === 'MULTINATIONS') selBadge = '<span class="badge badge-multi">Multi</span>';
+      else if (a.selected === 'TR')      selBadge = `<span class="badge badge-tr">${a.selected_slot}</span>`;
+      else if (a.selected === 'BÖLGE')   selBadge = `<span class="badge badge-bolge">${a.selected_slot}</span>`;
+
+      const div = document.createElement('div');
+      div.className = 'modal-athlete';
+      div.innerHTML = `
+        <div class="modal-athlete-rank ${a.rank&&a.rank<=3?'rank-'+a.rank:''}">${a.selected==='MULTINATIONS'?'★':(a.rank||'—')}</div>
+        <div class="modal-athlete-info">
+          <div class="modal-athlete-name"><span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span> ${a.name} ${selBadge}</div>
+          <div class="modal-athlete-sub">${a.city||'—'} · B${a.region||'?'} · Puan: ${a.top3}</div>
+        </div>
+      `;
+      body.appendChild(div);
+    });
+  }
+
+  if (count === 0) {
+    body.innerHTML = '<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">Bu kulüpten seçilen sporcu yok</div>';
+  }
+
+  modal.classList.add('open');
+};
+
+window.closeClubModal = function() {
+  document.getElementById('club-modal').classList.remove('open');
+};
+
+// ── Kota tab ──────────────────────────────────────────────────────────────────
+function renderKota(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'threshold-wrap';
+  wrap.innerHTML = '<h3>Kota Tablosu</h3>';
+
+  if (DATA && DATA.groups) {
+    const ORDER = ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+    const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+    const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+
+    let rows = '';
+    for (const key of ORDER) {
+      const grp = DATA.groups[key];
+      if (!grp) continue;
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      const trC    = grp.athletes.filter(a=>a.selected==='TR').length;
+      const bC     = grp.athletes.filter(a=>a.selected==='BÖLGE').length;
+      const multiC = grp.athletes.filter(a=>a.selected==='MULTINATIONS').length;
+      const barajPts = grp.min_points || '—';
+
+      rows += `<tr>
+        <td><span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span> ${AGE_LABEL[grp.birth_year]||grp.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}</td>
+        <td style="text-align:center;color:var(--gold);font-weight:700">${grp.tr_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${grp.region_1_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${grp.region_other_quota}</td>
+        <td style="text-align:center;color:var(--red);font-weight:700">${barajPts}</td>
+        <td style="text-align:center;color:var(--green)">${trC}/${grp.tr_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${bC}</td>
+        <td style="text-align:center;color:var(--gold)">${multiC}</td>
+      </tr>`;
+    }
+
+    const tbl = document.createElement('div');
+    tbl.innerHTML = `
+      <table class="threshold-table">
+        <thead><tr>
+          <th>Grup</th>
+          <th style="text-align:center;color:var(--gold)">TR Kota</th>
+          <th style="text-align:center;color:var(--blue)">B1 Kota</th>
+          <th style="text-align:center;color:var(--blue)">B2-6 Kota</th>
+          <th style="text-align:center;color:var(--red)">Min Puan</th>
+          <th style="text-align:center;color:var(--green)">TR Dolu</th>
+          <th style="text-align:center;color:var(--blue)">Bölge Dolu</th>
+          <th style="text-align:center;color:var(--gold)">Multi</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div style="font-size:10px;color:#475569;padding:4px 0 12px">
+        B1: İstanbul bölgesi · B2-6: Diğer 5 bölgeden her biri ayrı kota · Min Puan: seçilmek için gereken en az puan
+      </div>
+    `;
+    wrap.appendChild(tbl);
+  }
+
+  content.appendChild(wrap);
+}
+
+// ── Barajlar tab (süre eşikleri) ──────────────────────────────────────────────
+const SCORING_TABLES = {"2013":{"F":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"27.47"},{"p":7,"t":"28.07"},{"p":6,"t":"28.37"},{"p":5,"t":"28.67"},{"p":4,"t":"28.96"},{"p":3,"t":"29.26"},{"p":2,"t":"29.56"},{"p":1,"t":"29.86"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"59.81"},{"p":7,"t":"1:01.11"},{"p":6,"t":"1:01.76"},{"p":5,"t":"1:02.41"},{"p":4,"t":"1:03.06"},{"p":3,"t":"1:03.71"},{"p":2,"t":"1:04.36"},{"p":1,"t":"1:05.01"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"2:10.80"},{"p":7,"t":"2:13.64"},{"p":6,"t":"2:15.06"},{"p":5,"t":"2:16.48"},{"p":4,"t":"2:17.90"},{"p":3,"t":"2:19.33"},{"p":2,"t":"2:20.75"},{"p":1,"t":"2:22.17"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"4:32.85"},{"p":7,"t":"4:38.79"},{"p":6,"t":"4:41.75"},{"p":5,"t":"4:44.72"},{"p":4,"t":"4:47.68"},{"p":3,"t":"4:50.65"},{"p":2,"t":"4:53.61"},{"p":1,"t":"4:56.58"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"9:55.10"},{"p":7,"t":"10:08.04"},{"p":6,"t":"10:14.51"},{"p":5,"t":"10:20.98"},{"p":4,"t":"10:27.44"},{"p":3,"t":"10:33.91"},{"p":2,"t":"10:40.38"},{"p":1,"t":"10:46.85"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"19:06.73"},{"p":7,"t":"19:31.66"},{"p":6,"t":"19:44.13"},{"p":5,"t":"19:56.59"},{"p":4,"t":"20:09.06"},{"p":3,"t":"20:21.52"},{"p":2,"t":"20:33.99"},{"p":1,"t":"20:46.45"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"32.23"},{"p":7,"t":"32.93"},{"p":6,"t":"33.28"},{"p":5,"t":"33.63"},{"p":4,"t":"33.98"},{"p":3,"t":"34.33"},{"p":2,"t":"34.68"},{"p":1,"t":"35.03"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:09.18"},{"p":7,"t":"1:10.69"},{"p":6,"t":"1:11.44"},{"p":5,"t":"1:12.19"},{"p":4,"t":"1:12.94"},{"p":3,"t":"1:13.70"},{"p":2,"t":"1:14.45"},{"p":1,"t":"1:15.20"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:26.45"},{"p":7,"t":"2:29.64"},{"p":6,"t":"2:31.23"},{"p":5,"t":"2:32.82"},{"p":4,"t":"2:34.41"},{"p":3,"t":"2:36.01"},{"p":2,"t":"2:37.60"},{"p":1,"t":"2:39.19"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"35.55"},{"p":7,"t":"36.32"},{"p":6,"t":"36.71"},{"p":5,"t":"37.09"},{"p":4,"t":"37.48"},{"p":3,"t":"37.87"},{"p":2,"t":"38.25"},{"p":1,"t":"38.64"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:18.23"},{"p":7,"t":"1:19.93"},{"p":6,"t":"1:20.78"},{"p":5,"t":"1:21.63"},{"p":4,"t":"1:22.48"},{"p":3,"t":"1:23.33"},{"p":2,"t":"1:24.18"},{"p":1,"t":"1:25.03"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:46.74"},{"p":7,"t":"2:50.37"},{"p":6,"t":"2:52.18"},{"p":5,"t":"2:53.99"},{"p":4,"t":"2:55.80"},{"p":3,"t":"2:57.62"},{"p":2,"t":"2:59.43"},{"p":1,"t":"3:01.24"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"29.83"},{"p":7,"t":"30.47"},{"p":6,"t":"30.80"},{"p":5,"t":"31.12"},{"p":4,"t":"31.45"},{"p":3,"t":"31.77"},{"p":2,"t":"32.10"},{"p":1,"t":"32.42"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"1:06.70"},{"p":7,"t":"1:08.15"},{"p":6,"t":"1:08.88"},{"p":5,"t":"1:09.60"},{"p":4,"t":"1:10.33"},{"p":3,"t":"1:11.05"},{"p":2,"t":"1:11.78"},{"p":1,"t":"1:12.50"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:31.82"},{"p":7,"t":"2:35.12"},{"p":6,"t":"2:36.77"},{"p":5,"t":"2:38.42"},{"p":4,"t":"2:40.07"},{"p":3,"t":"2:41.72"},{"p":2,"t":"2:43.37"},{"p":1,"t":"2:45.02"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:28.81"},{"p":7,"t":"2:32.04"},{"p":6,"t":"2:33.66"},{"p":5,"t":"2:35.28"},{"p":4,"t":"2:36.90"},{"p":3,"t":"2:38.51"},{"p":2,"t":"2:40.13"},{"p":1,"t":"2:41.75"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"5:35.81"},{"p":7,"t":"5:43.11"},{"p":6,"t":"5:46.76"},{"p":5,"t":"5:50.41"},{"p":4,"t":"5:54.06"},{"p":3,"t":"5:57.71"},{"p":2,"t":"6:01.36"},{"p":1,"t":"6:05.01"}]}],"M":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"26.33"},{"p":7,"t":"26.90"},{"p":6,"t":"27.19"},{"p":5,"t":"27.48"},{"p":4,"t":"27.76"},{"p":3,"t":"28.05"},{"p":2,"t":"28.33"},{"p":1,"t":"28.62"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"57.80"},{"p":7,"t":"59.06"},{"p":6,"t":"59.69"},{"p":5,"t":"1:00.32"},{"p":4,"t":"1:00.95"},{"p":3,"t":"1:01.57"},{"p":2,"t":"1:02.20"},{"p":1,"t":"1:02.83"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"2:06.25"},{"p":7,"t":"2:09.00"},{"p":6,"t":"2:10.37"},{"p":5,"t":"2:11.74"},{"p":4,"t":"2:13.11"},{"p":3,"t":"2:14.49"},{"p":2,"t":"2:15.86"},{"p":1,"t":"2:17.23"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"4:22.17"},{"p":7,"t":"4:27.87"},{"p":6,"t":"4:30.72"},{"p":5,"t":"4:33.57"},{"p":4,"t":"4:36.42"},{"p":3,"t":"4:39.27"},{"p":2,"t":"4:42.12"},{"p":1,"t":"4:44.97"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"9:21.08"},{"p":7,"t":"9:33.28"},{"p":6,"t":"9:39.38"},{"p":5,"t":"9:45.48"},{"p":4,"t":"9:51.57"},{"p":3,"t":"9:57.67"},{"p":2,"t":"10:03.77"},{"p":1,"t":"10:09.87"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"17:53.21"},{"p":7,"t":"18:16.54"},{"p":6,"t":"18:28.20"},{"p":5,"t":"18:39.87"},{"p":4,"t":"18:51.53"},{"p":3,"t":"19:03.20"},{"p":2,"t":"19:14.86"},{"p":1,"t":"19:26.53"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"31.63"},{"p":7,"t":"32.32"},{"p":6,"t":"32.66"},{"p":5,"t":"33.00"},{"p":4,"t":"33.35"},{"p":3,"t":"33.69"},{"p":2,"t":"34.04"},{"p":1,"t":"34.38"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:08.26"},{"p":7,"t":"1:09.75"},{"p":6,"t":"1:10.49"},{"p":5,"t":"1:11.23"},{"p":4,"t":"1:11.97"},{"p":3,"t":"1:12.72"},{"p":2,"t":"1:13.46"},{"p":1,"t":"1:14.20"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:23.78"},{"p":7,"t":"2:26.90"},{"p":6,"t":"2:28.47"},{"p":5,"t":"2:30.03"},{"p":4,"t":"2:31.59"},{"p":3,"t":"2:33.15"},{"p":2,"t":"2:34.72"},{"p":1,"t":"2:36.28"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"34.40"},{"p":7,"t":"35.15"},{"p":6,"t":"35.52"},{"p":5,"t":"35.89"},{"p":4,"t":"36.27"},{"p":3,"t":"36.64"},{"p":2,"t":"37.02"},{"p":1,"t":"37.39"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:16.40"},{"p":7,"t":"1:18.06"},{"p":6,"t":"1:18.89"},{"p":5,"t":"1:19.72"},{"p":4,"t":"1:20.55"},{"p":3,"t":"1:21.38"},{"p":2,"t":"1:22.21"},{"p":1,"t":"1:23.04"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:42.69"},{"p":7,"t":"2:46.23"},{"p":6,"t":"2:48.00"},{"p":5,"t":"2:49.77"},{"p":4,"t":"2:51.53"},{"p":3,"t":"2:53.30"},{"p":2,"t":"2:55.07"},{"p":1,"t":"2:56.84"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"28.68"},{"p":7,"t":"29.30"},{"p":6,"t":"29.61"},{"p":5,"t":"29.92"},{"p":4,"t":"30.23"},{"p":3,"t":"30.55"},{"p":2,"t":"30.86"},{"p":1,"t":"31.17"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"1:04.85"},{"p":7,"t":"1:06.26"},{"p":6,"t":"1:06.97"},{"p":5,"t":"1:07.67"},{"p":4,"t":"1:08.38"},{"p":3,"t":"1:09.08"},{"p":2,"t":"1:09.79"},{"p":1,"t":"1:10.49"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:27.66"},{"p":7,"t":"2:30.87"},{"p":6,"t":"2:32.47"},{"p":5,"t":"2:34.08"},{"p":4,"t":"2:35.68"},{"p":3,"t":"2:37.29"},{"p":2,"t":"2:38.90"},{"p":1,"t":"2:40.50"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:23.41"},{"p":7,"t":"2:26.53"},{"p":6,"t":"2:28.09"},{"p":5,"t":"2:29.64"},{"p":4,"t":"2:31.20"},{"p":3,"t":"2:32.76"},{"p":2,"t":"2:34.32"},{"p":1,"t":"2:35.88"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"5:15.53"},{"p":7,"t":"5:22.39"},{"p":6,"t":"5:25.82"},{"p":5,"t":"5:29.25"},{"p":4,"t":"5:32.68"},{"p":3,"t":"5:36.11"},{"p":2,"t":"5:39.54"},{"p":1,"t":"5:42.97"}]}]},"2012":{"F":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"27.00"},{"p":7,"t":"27.59"},{"p":6,"t":"27.88"},{"p":5,"t":"28.18"},{"p":4,"t":"28.47"},{"p":3,"t":"28.76"},{"p":2,"t":"29.06"},{"p":1,"t":"29.35"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"58.33"},{"p":7,"t":"59.60"},{"p":6,"t":"1:00.23"},{"p":5,"t":"1:00.86"},{"p":4,"t":"1:01.50"},{"p":3,"t":"1:02.13"},{"p":2,"t":"1:02.77"},{"p":1,"t":"1:03.40"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"2:05.76"},{"p":7,"t":"2:08.50"},{"p":6,"t":"2:09.86"},{"p":5,"t":"2:11.23"},{"p":4,"t":"2:12.60"},{"p":3,"t":"2:13.97"},{"p":2,"t":"2:15.33"},{"p":1,"t":"2:16.70"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"4:22.85"},{"p":7,"t":"4:28.57"},{"p":6,"t":"4:31.42"},{"p":5,"t":"4:34.28"},{"p":4,"t":"4:37.14"},{"p":3,"t":"4:40.00"},{"p":2,"t":"4:42.85"},{"p":1,"t":"4:45.71"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"9:05.42"},{"p":7,"t":"9:17.28"},{"p":6,"t":"9:23.21"},{"p":5,"t":"9:29.14"},{"p":4,"t":"9:35.06"},{"p":3,"t":"9:40.99"},{"p":2,"t":"9:46.92"},{"p":1,"t":"9:52.85"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"17:42.08"},{"p":7,"t":"18:05.17"},{"p":6,"t":"18:16.72"},{"p":5,"t":"18:28.26"},{"p":4,"t":"18:39.81"},{"p":3,"t":"18:51.35"},{"p":2,"t":"19:02.90"},{"p":1,"t":"19:14.44"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"30.88"},{"p":7,"t":"31.56"},{"p":6,"t":"31.89"},{"p":5,"t":"32.23"},{"p":4,"t":"32.56"},{"p":3,"t":"32.90"},{"p":2,"t":"33.23"},{"p":1,"t":"33.57"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:06.68"},{"p":7,"t":"1:08.13"},{"p":6,"t":"1:08.86"},{"p":5,"t":"1:09.58"},{"p":4,"t":"1:10.31"},{"p":3,"t":"1:11.03"},{"p":2,"t":"1:11.76"},{"p":1,"t":"1:12.48"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:20.33"},{"p":7,"t":"2:23.38"},{"p":6,"t":"2:24.90"},{"p":5,"t":"2:26.43"},{"p":4,"t":"2:27.95"},{"p":3,"t":"2:29.48"},{"p":2,"t":"2:31.00"},{"p":1,"t":"2:32.53"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"34.25"},{"p":7,"t":"35.00"},{"p":6,"t":"35.37"},{"p":5,"t":"35.74"},{"p":4,"t":"36.11"},{"p":3,"t":"36.49"},{"p":2,"t":"36.86"},{"p":1,"t":"37.23"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:14.12"},{"p":7,"t":"1:15.74"},{"p":6,"t":"1:16.54"},{"p":5,"t":"1:17.35"},{"p":4,"t":"1:18.15"},{"p":3,"t":"1:18.96"},{"p":2,"t":"1:19.76"},{"p":1,"t":"1:20.57"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:38.65"},{"p":7,"t":"2:42.10"},{"p":6,"t":"2:43.83"},{"p":5,"t":"2:45.55"},{"p":4,"t":"2:47.28"},{"p":3,"t":"2:49.00"},{"p":2,"t":"2:50.73"},{"p":1,"t":"2:52.45"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"28.69"},{"p":7,"t":"29.31"},{"p":6,"t":"29.62"},{"p":5,"t":"29.93"},{"p":4,"t":"30.24"},{"p":3,"t":"30.56"},{"p":2,"t":"30.87"},{"p":1,"t":"31.18"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"1:03.43"},{"p":7,"t":"1:04.81"},{"p":6,"t":"1:05.50"},{"p":5,"t":"1:06.19"},{"p":4,"t":"1:06.88"},{"p":3,"t":"1:07.57"},{"p":2,"t":"1:08.26"},{"p":1,"t":"1:08.95"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:20.03"},{"p":7,"t":"2:23.08"},{"p":6,"t":"2:24.60"},{"p":5,"t":"2:26.12"},{"p":4,"t":"2:27.64"},{"p":3,"t":"2:29.17"},{"p":2,"t":"2:30.69"},{"p":1,"t":"2:32.21"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:23.13"},{"p":7,"t":"2:26.25"},{"p":6,"t":"2:27.80"},{"p":5,"t":"2:29.36"},{"p":4,"t":"2:30.91"},{"p":3,"t":"2:32.47"},{"p":2,"t":"2:34.02"},{"p":1,"t":"2:35.58"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"5:01.24"},{"p":7,"t":"5:07.79"},{"p":6,"t":"5:11.07"},{"p":5,"t":"5:14.34"},{"p":4,"t":"5:17.62"},{"p":3,"t":"5:20.89"},{"p":2,"t":"5:24.17"},{"p":1,"t":"5:27.44"}]}],"M":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"25.39"},{"p":7,"t":"25.94"},{"p":6,"t":"26.22"},{"p":5,"t":"26.50"},{"p":4,"t":"26.77"},{"p":3,"t":"27.05"},{"p":2,"t":"27.32"},{"p":1,"t":"27.60"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"55.58"},{"p":7,"t":"56.79"},{"p":6,"t":"57.39"},{"p":5,"t":"57.99"},{"p":4,"t":"58.60"},{"p":3,"t":"59.20"},{"p":2,"t":"59.81"},{"p":1,"t":"1:00.41"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"2:01.11"},{"p":7,"t":"2:03.74"},{"p":6,"t":"2:05.06"},{"p":5,"t":"2:06.37"},{"p":4,"t":"2:07.69"},{"p":3,"t":"2:09.01"},{"p":2,"t":"2:10.32"},{"p":1,"t":"2:11.64"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"4:12.67"},{"p":7,"t":"4:18.16"},{"p":6,"t":"4:20.91"},{"p":5,"t":"4:23.65"},{"p":4,"t":"4:26.40"},{"p":3,"t":"4:29.15"},{"p":2,"t":"4:31.89"},{"p":1,"t":"4:34.64"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"8:39.40"},{"p":7,"t":"8:50.70"},{"p":6,"t":"8:56.34"},{"p":5,"t":"9:01.99"},{"p":4,"t":"9:07.63"},{"p":3,"t":"9:13.28"},{"p":2,"t":"9:18.92"},{"p":1,"t":"9:24.57"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"16:39.89"},{"p":7,"t":"17:01.63"},{"p":6,"t":"17:12.50"},{"p":5,"t":"17:23.37"},{"p":4,"t":"17:34.23"},{"p":3,"t":"17:45.10"},{"p":2,"t":"17:55.97"},{"p":1,"t":"18:06.84"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"29.68"},{"p":7,"t":"30.32"},{"p":6,"t":"30.65"},{"p":5,"t":"30.97"},{"p":4,"t":"31.29"},{"p":3,"t":"31.61"},{"p":2,"t":"31.94"},{"p":1,"t":"32.26"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:04.15"},{"p":7,"t":"1:05.55"},{"p":6,"t":"1:06.24"},{"p":5,"t":"1:06.94"},{"p":4,"t":"1:07.64"},{"p":3,"t":"1:08.34"},{"p":2,"t":"1:09.03"},{"p":1,"t":"1:09.73"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:15.97"},{"p":7,"t":"2:18.92"},{"p":6,"t":"2:20.40"},{"p":5,"t":"2:21.88"},{"p":4,"t":"2:23.36"},{"p":3,"t":"2:24.83"},{"p":2,"t":"2:26.31"},{"p":1,"t":"2:27.79"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"32.02"},{"p":7,"t":"32.71"},{"p":6,"t":"33.06"},{"p":5,"t":"33.41"},{"p":4,"t":"33.76"},{"p":3,"t":"34.10"},{"p":2,"t":"34.45"},{"p":1,"t":"34.80"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:10.58"},{"p":7,"t":"1:12.12"},{"p":6,"t":"1:12.88"},{"p":5,"t":"1:13.65"},{"p":4,"t":"1:14.42"},{"p":3,"t":"1:15.19"},{"p":2,"t":"1:15.95"},{"p":1,"t":"1:16.72"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:30.74"},{"p":7,"t":"2:34.02"},{"p":6,"t":"2:35.66"},{"p":5,"t":"2:37.30"},{"p":4,"t":"2:38.93"},{"p":3,"t":"2:40.57"},{"p":2,"t":"2:42.21"},{"p":1,"t":"2:43.85"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"27.37"},{"p":7,"t":"27.96"},{"p":6,"t":"28.26"},{"p":5,"t":"28.56"},{"p":4,"t":"28.86"},{"p":3,"t":"29.16"},{"p":2,"t":"29.45"},{"p":1,"t":"29.75"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"1:01.09"},{"p":7,"t":"1:02.42"},{"p":6,"t":"1:03.08"},{"p":5,"t":"1:03.74"},{"p":4,"t":"1:04.41"},{"p":3,"t":"1:05.07"},{"p":2,"t":"1:05.74"},{"p":1,"t":"1:06.40"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:14.23"},{"p":7,"t":"2:17.15"},{"p":6,"t":"2:18.61"},{"p":5,"t":"2:20.06"},{"p":4,"t":"2:21.52"},{"p":3,"t":"2:22.98"},{"p":2,"t":"2:24.44"},{"p":1,"t":"2:25.90"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:17.07"},{"p":7,"t":"2:20.05"},{"p":6,"t":"2:21.54"},{"p":5,"t":"2:23.03"},{"p":4,"t":"2:24.52"},{"p":3,"t":"2:26.01"},{"p":2,"t":"2:27.50"},{"p":1,"t":"2:28.99"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"4:49.44"},{"p":7,"t":"4:55.73"},{"p":6,"t":"4:58.88"},{"p":5,"t":"5:02.03"},{"p":4,"t":"5:05.17"},{"p":3,"t":"5:08.32"},{"p":2,"t":"5:11.46"},{"p":1,"t":"5:14.61"}]}]},"2011":{"F":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"26.32"},{"p":7,"t":"26.89"},{"p":6,"t":"27.18"},{"p":5,"t":"27.47"},{"p":4,"t":"27.75"},{"p":3,"t":"28.04"},{"p":2,"t":"28.32"},{"p":1,"t":"28.61"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"56.69"},{"p":7,"t":"57.92"},{"p":6,"t":"58.54"},{"p":5,"t":"59.16"},{"p":4,"t":"59.77"},{"p":3,"t":"1:00.39"},{"p":2,"t":"1:01.00"},{"p":1,"t":"1:01.62"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"2:03.03"},{"p":7,"t":"2:05.71"},{"p":6,"t":"2:07.04"},{"p":5,"t":"2:08.38"},{"p":4,"t":"2:09.72"},{"p":3,"t":"2:11.06"},{"p":2,"t":"2:12.39"},{"p":1,"t":"2:13.73"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"4:15.93"},{"p":7,"t":"4:21.50"},{"p":6,"t":"4:24.28"},{"p":5,"t":"4:27.06"},{"p":4,"t":"4:29.84"},{"p":3,"t":"4:32.63"},{"p":2,"t":"4:35.41"},{"p":1,"t":"4:38.19"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"8:51.46"},{"p":7,"t":"9:03.01"},{"p":6,"t":"9:08.79"},{"p":5,"t":"9:14.56"},{"p":4,"t":"9:20.34"},{"p":3,"t":"9:26.12"},{"p":2,"t":"9:31.89"},{"p":1,"t":"9:37.67"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"17:09.26"},{"p":7,"t":"17:31.63"},{"p":6,"t":"17:42.82"},{"p":5,"t":"17:54.01"},{"p":4,"t":"18:05.20"},{"p":3,"t":"18:16.38"},{"p":2,"t":"18:27.57"},{"p":1,"t":"18:38.76"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"30.38"},{"p":7,"t":"31.04"},{"p":6,"t":"31.37"},{"p":5,"t":"31.70"},{"p":4,"t":"32.03"},{"p":3,"t":"32.36"},{"p":2,"t":"32.69"},{"p":1,"t":"33.02"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:05.11"},{"p":7,"t":"1:06.52"},{"p":6,"t":"1:07.23"},{"p":5,"t":"1:07.94"},{"p":4,"t":"1:08.65"},{"p":3,"t":"1:09.35"},{"p":2,"t":"1:10.06"},{"p":1,"t":"1:10.77"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:18.02"},{"p":7,"t":"2:21.02"},{"p":6,"t":"2:22.52"},{"p":5,"t":"2:24.02"},{"p":4,"t":"2:25.52"},{"p":3,"t":"2:27.02"},{"p":2,"t":"2:28.52"},{"p":1,"t":"2:30.02"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"33.19"},{"p":7,"t":"33.92"},{"p":6,"t":"34.28"},{"p":5,"t":"34.64"},{"p":4,"t":"35.00"},{"p":3,"t":"35.36"},{"p":2,"t":"35.72"},{"p":1,"t":"36.08"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:12.49"},{"p":7,"t":"1:14.06"},{"p":6,"t":"1:14.85"},{"p":5,"t":"1:15.64"},{"p":4,"t":"1:16.43"},{"p":3,"t":"1:17.21"},{"p":2,"t":"1:18.00"},{"p":1,"t":"1:18.79"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:37.44"},{"p":7,"t":"2:40.86"},{"p":6,"t":"2:42.57"},{"p":5,"t":"2:44.28"},{"p":4,"t":"2:46.00"},{"p":3,"t":"2:47.71"},{"p":2,"t":"2:49.42"},{"p":1,"t":"2:51.13"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"28.38"},{"p":7,"t":"29.00"},{"p":6,"t":"29.31"},{"p":5,"t":"29.62"},{"p":4,"t":"29.92"},{"p":3,"t":"30.23"},{"p":2,"t":"30.54"},{"p":1,"t":"30.85"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"1:02.55"},{"p":7,"t":"1:03.91"},{"p":6,"t":"1:04.59"},{"p":5,"t":"1:05.27"},{"p":4,"t":"1:05.95"},{"p":3,"t":"1:06.63"},{"p":2,"t":"1:07.31"},{"p":1,"t":"1:07.99"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:19.22"},{"p":7,"t":"2:22.25"},{"p":6,"t":"2:23.76"},{"p":5,"t":"2:25.28"},{"p":4,"t":"2:26.79"},{"p":3,"t":"2:28.30"},{"p":2,"t":"2:29.82"},{"p":1,"t":"2:31.33"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:19.71"},{"p":7,"t":"2:22.75"},{"p":6,"t":"2:24.27"},{"p":5,"t":"2:25.79"},{"p":4,"t":"2:27.30"},{"p":3,"t":"2:28.82"},{"p":2,"t":"2:30.34"},{"p":1,"t":"2:31.86"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"4:55.53"},{"p":7,"t":"5:01.96"},{"p":6,"t":"5:05.17"},{"p":5,"t":"5:08.38"},{"p":4,"t":"5:11.59"},{"p":3,"t":"5:14.81"},{"p":2,"t":"5:18.02"},{"p":1,"t":"5:21.23"}]}],"M":[{"stroke":"Serbest","dist":50,"pts":[{"p":9,"t":"24.04"},{"p":7,"t":"24.56"},{"p":6,"t":"24.82"},{"p":5,"t":"25.08"},{"p":4,"t":"25.35"},{"p":3,"t":"25.61"},{"p":2,"t":"25.87"},{"p":1,"t":"26.13"}]},{"stroke":"Serbest","dist":100,"pts":[{"p":9,"t":"52.28"},{"p":7,"t":"53.42"},{"p":6,"t":"53.99"},{"p":5,"t":"54.56"},{"p":4,"t":"55.13"},{"p":3,"t":"55.69"},{"p":2,"t":"56.26"},{"p":1,"t":"56.83"}]},{"stroke":"Serbest","dist":200,"pts":[{"p":9,"t":"1:54.43"},{"p":7,"t":"1:56.92"},{"p":6,"t":"1:58.16"},{"p":5,"t":"1:59.40"},{"p":4,"t":"2:00.65"},{"p":3,"t":"2:01.89"},{"p":2,"t":"2:03.14"},{"p":1,"t":"2:04.38"}]},{"stroke":"Serbest","dist":400,"pts":[{"p":9,"t":"3:58.04"},{"p":7,"t":"4:03.22"},{"p":6,"t":"4:05.80"},{"p":5,"t":"4:08.39"},{"p":4,"t":"4:10.98"},{"p":3,"t":"4:13.57"},{"p":2,"t":"4:16.15"},{"p":1,"t":"4:18.74"}]},{"stroke":"Serbest","dist":800,"pts":[{"p":9,"t":"8:20.37"},{"p":7,"t":"8:31.25"},{"p":6,"t":"8:36.69"},{"p":5,"t":"8:42.12"},{"p":4,"t":"8:47.56"},{"p":3,"t":"8:53.00"},{"p":2,"t":"8:58.44"},{"p":1,"t":"9:03.88"}]},{"stroke":"Serbest","dist":1500,"pts":[{"p":9,"t":"15:55.03"},{"p":7,"t":"16:15.80"},{"p":6,"t":"16:26.18"},{"p":5,"t":"16:36.56"},{"p":4,"t":"16:46.94"},{"p":3,"t":"16:57.32"},{"p":2,"t":"17:07.70"},{"p":1,"t":"17:18.08"}]},{"stroke":"Sırtüstü","dist":50,"pts":[{"p":9,"t":"28.41"},{"p":7,"t":"29.03"},{"p":6,"t":"29.34"},{"p":5,"t":"29.64"},{"p":4,"t":"29.95"},{"p":3,"t":"30.26"},{"p":2,"t":"30.57"},{"p":1,"t":"30.88"}]},{"stroke":"Sırtüstü","dist":100,"pts":[{"p":9,"t":"1:00.28"},{"p":7,"t":"1:01.59"},{"p":6,"t":"1:02.24"},{"p":5,"t":"1:02.90"},{"p":4,"t":"1:03.55"},{"p":3,"t":"1:04.21"},{"p":2,"t":"1:04.86"},{"p":1,"t":"1:05.52"}]},{"stroke":"Sırtüstü","dist":200,"pts":[{"p":9,"t":"2:08.80"},{"p":7,"t":"2:11.60"},{"p":6,"t":"2:13.00"},{"p":5,"t":"2:14.40"},{"p":4,"t":"2:15.80"},{"p":3,"t":"2:17.20"},{"p":2,"t":"2:18.60"},{"p":1,"t":"2:20.00"}]},{"stroke":"Kurbağalama","dist":50,"pts":[{"p":9,"t":"30.29"},{"p":7,"t":"30.94"},{"p":6,"t":"31.27"},{"p":5,"t":"31.60"},{"p":4,"t":"31.93"},{"p":3,"t":"32.26"},{"p":2,"t":"32.59"},{"p":1,"t":"32.92"}]},{"stroke":"Kurbağalama","dist":100,"pts":[{"p":9,"t":"1:07.13"},{"p":7,"t":"1:08.59"},{"p":6,"t":"1:09.32"},{"p":5,"t":"1:10.05"},{"p":4,"t":"1:10.78"},{"p":3,"t":"1:11.51"},{"p":2,"t":"1:12.24"},{"p":1,"t":"1:12.97"}]},{"stroke":"Kurbağalama","dist":200,"pts":[{"p":9,"t":"2:22.98"},{"p":7,"t":"2:26.09"},{"p":6,"t":"2:27.64"},{"p":5,"t":"2:29.19"},{"p":4,"t":"2:30.75"},{"p":3,"t":"2:32.30"},{"p":2,"t":"2:33.86"},{"p":1,"t":"2:35.41"}]},{"stroke":"Kelebek","dist":50,"pts":[{"p":9,"t":"25.86"},{"p":7,"t":"26.42"},{"p":6,"t":"26.70"},{"p":5,"t":"26.99"},{"p":4,"t":"27.27"},{"p":3,"t":"27.55"},{"p":2,"t":"27.83"},{"p":1,"t":"28.11"}]},{"stroke":"Kelebek","dist":100,"pts":[{"p":9,"t":"56.72"},{"p":7,"t":"57.95"},{"p":6,"t":"58.57"},{"p":5,"t":"59.18"},{"p":4,"t":"59.80"},{"p":3,"t":"1:00.42"},{"p":2,"t":"1:01.03"},{"p":1,"t":"1:01.65"}]},{"stroke":"Kelebek","dist":200,"pts":[{"p":9,"t":"2:06.83"},{"p":7,"t":"2:09.59"},{"p":6,"t":"2:10.97"},{"p":5,"t":"2:12.35"},{"p":4,"t":"2:13.72"},{"p":3,"t":"2:15.10"},{"p":2,"t":"2:16.48"},{"p":1,"t":"2:17.86"}]},{"stroke":"Karışık","dist":200,"pts":[{"p":9,"t":"2:09.34"},{"p":7,"t":"2:12.15"},{"p":6,"t":"2:13.56"},{"p":5,"t":"2:14.97"},{"p":4,"t":"2:16.37"},{"p":3,"t":"2:17.78"},{"p":2,"t":"2:19.18"},{"p":1,"t":"2:20.59"}]},{"stroke":"Karışık","dist":400,"pts":[{"p":9,"t":"4:35.07"},{"p":7,"t":"4:41.05"},{"p":6,"t":"4:44.04"},{"p":5,"t":"4:47.03"},{"p":4,"t":"4:50.02"},{"p":3,"t":"4:53.01"},{"p":2,"t":"4:56.00"},{"p":1,"t":"4:58.99"}]}]}};
+
+let _barajBy='2013', _barajGender='M';
+
+function renderBarajlar(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'threshold-wrap';
+
+  const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const PTS_COLOR = {9:'var(--gold)',7:'#fb923c',6:'#facc15',5:'var(--green)',4:'var(--teal)',3:'var(--blue)',2:'var(--purple)',1:'var(--muted)'};
+
+  // Filtre butonları
+  const filterHtml = `
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">
+      <div style="display:flex;gap:4px">
+        ${['2013','2012','2011'].map(by=>`<button onclick="_barajBy='${by}';renderAll()" class="filter-btn${_barajBy===by?' active':''}">${AGE_LABEL[by]}</button>`).join('')}
+      </div>
+      <div style="width:1px;background:var(--border)"></div>
+      <div style="display:flex;gap:4px">
+        <button onclick="_barajGender='F';renderAll()" class="filter-btn${_barajGender==='F'?' active':''}">♀ Kadın</button>
+        <button onclick="_barajGender='M';renderAll()" class="filter-btn${_barajGender==='M'?' active':''}">♂ Erkek</button>
+      </div>
+    </div>
+  `;
+
+  const gColor = _barajGender === 'F' ? '#f472b6' : '#60a5fa';
+  const title = `${AGE_LABEL[_barajBy]} ${_barajGender==='F'?'♀ Kadın':'♂ Erkek'} — Puan Barajları`;
+
+  wrap.innerHTML = `<h3>Puan Barajları (TYF PDF)</h3>${filterHtml}
+    <div style="font-size:11px;color:#64748b;margin-bottom:10px;padding:8px;background:var(--card);border-radius:6px;border:1px solid var(--border)">
+      <b style="color:var(--text)">Nasıl okunur:</b> Her satırda bir branş var. O süreden <b>daha hızlı</b> yüzersen o puanı kazanırsın.
+      Örneğin 13 Yaş Erkek 200m Kelebek'te <b style="color:var(--gold)">02:27.66</b> veya daha hızlı → 9 puan,
+      <b style="color:#fb923c">02:30.87</b> veya daha hızlı → 7 puan. En düşük satır (1 puan) aynı zamanda yarışa giriş barajıdır.
+    </div>
+    <div style="font-size:12px;font-weight:700;color:${gColor};margin-bottom:6px">${title}</div>
+  `;
+
+  const events = SCORING_TABLES[_barajBy]?.[_barajGender] || [];
+  const ptsCols = [9,7,6,5,4,3,2,1];
+
+  const thCells = ptsCols.map(p=>`<th style="text-align:center;color:${PTS_COLOR[p]};font-weight:800">${p}</th>`).join('');
+  let rows = '';
+  events.forEach(ev => {
+    const cells = ptsCols.map(p => {
+      const entry = ev.pts.find(x=>x.p===p);
+      return `<td style="text-align:center;font-family:monospace;font-size:11px;color:${PTS_COLOR[p]}">${entry?entry.t:'—'}</td>`;
+    }).join('');
+    rows += `<tr><td style="font-size:11px;white-space:nowrap">${ev.stroke} ${ev.dist}m</td>${cells}</tr>`;
+  });
+
+  const tbl = document.createElement('div');
+  tbl.innerHTML = `
+    <div style="overflow-x:auto">
+      <table class="threshold-table" style="min-width:420px">
+        <thead><tr>
+          <th>Branş</th>${thCells}
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    <div style="font-size:10px;color:#475569;padding:4px 0 8px">
+      Kaynak: TYF 2026 Federasyon Karması PDF (2025-11-21). Süre o değer veya daha hızlı olmalıdır.
+    </div>
+  `;
+  wrap.appendChild(tbl);
   content.appendChild(wrap);
 }
 
@@ -715,16 +1072,11 @@ function renderMatrix(content) {
   content.appendChild(wrap);
 }
 
-// ── Admin şifre yönetimi (localStorage tabanlı) ───────────────────────────────
-// getMainPw / getAdminPw / isPwOff → auth.json'dan, tanımlar script başında
-
+// ── Admin şifre yönetimi ──────────────────────────────────────────────────────
 let adminUnlocked = sessionStorage.getItem("bolge_karma_admin") === "1";
+let pendingClubAliases   = {};
+let pendingNameOverrides = {};
 
-// Bekleyen değişiklikler (oturum bazlı)
-let pendingClubAliases   = {};  // raw → {canonical, city, region}
-let pendingNameOverrides = {};  // "name|by|gender" → {name,birth_year,gender,resolution,...}
-
-// Şehir → Bölge haritası
 const CITY_REGION = {
   'İstanbul':1,
   'Bursa':2,'Kocaeli':2,'Sakarya':2,'Edirne':2,'Tekirdağ':2,'Kırklareli':2,
@@ -753,13 +1105,13 @@ function _regionOpts() {
   return '<option value="">Bölge</option>' +
     [1,2,3,4,5,6].map(r=>`<option value="${r}">B${r} ${REGION_NAMES[r]}</option>`).join('');
 }
-function _esc(s){ return String(s).replace(/'/g,"\\'"); }
+function _esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/'/g,"&#39;").replace(/"/g,'&quot;'); }
 function showMsg(id,text,color){
   const el=document.getElementById(id); if(!el)return;
   el.style.display='block'; el.style.color=color; el.textContent=text;
 }
 
-// ── Aynı isimli sporcu tespiti ────────────────────────────────────────────────
+// Aynı isimli sporcu tespiti
 function findDuplicateAthletes() {
   if (!DATA||!DATA.groups) return [];
   const seen={};
@@ -806,6 +1158,17 @@ function renderAdmin(content) {
   // ── 1. GÜVENLİK ──
   const pwOff=isPwOff();
   const ghTokVal=localStorage.getItem('karma_gh_token')||'';
+
+  // Başarısız giriş logunu göster
+  const failLog=JSON.parse(localStorage.getItem('karma_fail_log')||'[]');
+  const failLogHtml=failLog.length>0
+    ?`<div style="margin-top:10px;padding:8px;background:#0f172a;border-radius:6px">
+       <div style="font-size:10px;color:#64748b;margin-bottom:4px">BAŞARISIZ GİRİŞ LOGLARI (bu cihazda)</div>
+       ${failLog.slice(-5).reverse().map(l=>`<div style="font-size:11px;color:#ef4444;padding:1px 0">${l.t} — ${l.len} karakter</div>`).join('')}
+       <button onclick="localStorage.removeItem('karma_fail_log');renderAll()" style="margin-top:6px;padding:3px 10px;background:#334155;border:none;border-radius:4px;color:#e2e8f0;font-size:11px;cursor:pointer">Logları Temizle</button>
+     </div>`
+    :'<div style="font-size:11px;color:#22c55e;margin-top:6px">Bu cihazda başarısız giriş yok</div>';
+
   wrap.appendChild(sec('🔒 GÜVENLİK','#94a3b8',`
     <div style="margin-bottom:12px;padding:10px;background:#0f172a;border-radius:6px">
       <div style="font-size:11px;color:#64748b;margin-bottom:6px">GITHUB TOKEN — şifre değiştirmek için gerekli</div>
@@ -830,6 +1193,7 @@ function renderAdmin(content) {
       </div>
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">
         <input id="new-main-pw" type="text" placeholder="Yeni giriş şifresi..."
+          autocorrect="off" autocapitalize="off"
           style="flex:1;min-width:130px;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
         <button onclick="adminChangePw('main')"
           style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
@@ -843,12 +1207,14 @@ function renderAdmin(content) {
       <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Admin Şifresi</div>
       <div style="display:flex;gap:6px">
         <input id="new-admin-pw" type="text" placeholder="Yeni admin şifre..."
+          autocorrect="off" autocapitalize="off"
           style="flex:1;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
         <button onclick="adminChangePw('admin')"
           style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
       </div>
       <div id="pw-admin-msg" style="font-size:11px;margin-top:4px;display:none"></div>
     </div>
+    ${failLogHtml}
   `));
 
   // ── 2. EKSİK KULÜPLER ──
@@ -888,7 +1254,7 @@ function renderAdmin(content) {
           <div style="display:flex;gap:6px;flex-wrap:wrap">
             <input id="cc-${i}" type="text" placeholder="Kanonik kulüp adı (boşsa aynı kalır)"
               style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
-              value="${club}">
+              value="${_esc(club)}">
             <button onclick="adminSaveClub(${i},'${_esc(club)}')"
               style="padding:7px 14px;background:#22c55e;border:none;border-radius:6px;color:#0f172a;font-size:12px;font-weight:700;cursor:pointer">Kaydet</button>
           </div>
@@ -984,12 +1350,18 @@ function renderAdmin(content) {
   wrap.appendChild(sec('📡 DURUM','#64748b',`
     <div style="font-size:13px;color:#e2e8f0;margin-bottom:4px">Son güncelleme: <b>${DATA.generated_at}</b></div>
     <div style="font-size:12px;color:#94a3b8;margin-bottom:10px">${getNextUpdateInfo()}</div>
-    <div style="font-size:11px;color:#64748b;margin-bottom:10px">17-20 Nisan: her 20dk + Lenex saatleri (TR 08:50-23:50)</div>
+    <div style="font-size:11px;color:#64748b;margin-bottom:10px">17-20 Nisan: her 5dk + Lenex saatleri + master'a push tetikler</div>
     <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/actions/workflows/update-panel.yml"
        target="_blank"
        style="display:inline-block;padding:7px 14px;background:#3b82f6;color:#fff;border-radius:6px;font-size:12px;font-weight:600;text-decoration:none">
       → GitHub Actions (Manuel Tetikle)
     </a>
+    <div style="margin-top:14px;padding:10px;background:#0f172a;border-radius:6px;font-size:11px;color:#64748b">
+      <b style="color:#94a3b8">Anlık kullanıcı sayısı</b><br>
+      GitHub Pages statik hosting kullandığı için sunucu taraflı canlı kullanıcı sayısı takibi yapılamaz.
+      Panel ziyaret istatistikleri için:
+      <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/graphs/traffic" target="_blank" style="color:#3b82f6">→ GitHub Traffic &amp; Analytics</a>
+    </div>
   `));
 
   content.appendChild(wrap);
@@ -997,7 +1369,7 @@ function renderAdmin(content) {
 
 // ── Admin aksiyonlar ──────────────────────────────────────────────────────────
 window.checkAdminPw = function(){
-  const v=document.getElementById('admin-pw-in').value;
+  const v=document.getElementById('admin-pw-in').value.trim();
   if(v===getAdminPw()){
     adminUnlocked=true; sessionStorage.setItem("bolge_karma_admin","1");
     document.getElementById('admin-tab').style.display=''; renderAll();
@@ -1007,7 +1379,6 @@ window.checkAdminPw = function(){
   }
 };
 function _getToken(){
-  // Önce ekrandaki inputtan oku, yoksa localStorage'dan
   return (document.getElementById('gh-tok-sec')?.value.trim()) ||
          localStorage.getItem('karma_gh_token') || '';
 }
@@ -1034,7 +1405,7 @@ window.adminChangePw = async function(type){
   if(ok){
     showMsg(msgId,`✓ Değiştirildi: "${v}" — tüm cihazlarda geçerli`,'#22c55e');
     document.getElementById(field).value='';
-    localStorage.setItem('karma_gh_token', token);  // başarılıysa kaydet
+    localStorage.setItem('karma_gh_token', token);
   } else {
     showMsg(msgId,'⚠ Kaydedilemedi — Token geçerli mi? "Test" butonuna basın','#ef4444');
   }
@@ -1049,7 +1420,6 @@ window.adminTogglePw = async function(){
   else showMsg('pw-main-msg','⚠ Kaydedilemedi','#ef4444');
 };
 
-// auth.json'ı GitHub API ile güncelle (gh-pages branch)
 async function _updateAuthJson(token, patch){
   try {
     const REPO='gokaygunduz-gg/bolge-karma-2026', BRANCH='gh-pages', PATH='auth.json';
@@ -1067,7 +1437,7 @@ async function _updateAuthJson(token, patch){
     if(p.ok){ _auth = {...current, ...patch}; return true; }
     return false;
   } catch(e){ return false; }
-};
+}
 window.adminCityDrop = function(i,club){
   const city=document.getElementById(`cs-${i}`)?.value||'';
   const reg=CITY_REGION[city]||0;
@@ -1179,18 +1549,18 @@ document.querySelector('header h1').addEventListener('click',()=>{
   }
 });
 
-// ── Sonraki güncelleme hesapla ────────────────────────────────────────────────
+// ── Sonraki güncelleme hesapla (5dk) ─────────────────────────────────────────
 function getNextUpdateInfo(){
   const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
   if(y!==2026||m!==3||d<17||d>20) return 'Otomatik güncelleme: 17-20 Nisan arası aktif';
   const utcH=now.getUTCHours(),utcM=now.getUTCMinutes();
   if(utcH<5||utcH>=21) return 'Güncelleme dışı saat (UTC 05-21 arası aktif)';
-  const passed=utcM%20, wait=20-passed;
+  const passed=utcM%5, wait=5-passed;
   const nextM=(utcM+wait)%60, nextH=utcH+(utcM+wait>=60?1:0);
   return `Sonraki güncelleme: ~${wait} dk sonra (TR ${nextH+3}:${String(nextM).padStart(2,'0')})`;
 }
 
-// ── Header sayaç ──────────────────────────────────────────────────────────────
+// ── Header sayaç (5dk = 300sn) ────────────────────────────────────────────────
 function updateNextBadge(){
   const badge=document.getElementById('next-update-badge'); if(!badge)return;
   const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
@@ -1198,7 +1568,7 @@ function updateNextBadge(){
   const utcH=now.getUTCHours(),utcM=now.getUTCMinutes(),utcS=now.getUTCSeconds();
   if(utcH<5||utcH>=21){badge.style.display='none';return;}
   const totalSec=utcH*3600+utcM*60+utcS;
-  const slotSec=Math.ceil((totalSec+1)/1200)*1200;
+  const slotSec=Math.ceil((totalSec+1)/300)*300;  // 300 = 5 dakika
   const waitSec=slotSec-totalSec;
   badge.style.display='';
   badge.textContent=`↻ ${Math.floor(waitSec/60)}:${String(waitSec%60).padStart(2,'0')}`;
@@ -1206,26 +1576,24 @@ function updateNextBadge(){
 setInterval(updateNextBadge,1000);
 updateNextBadge();
 
-// ── Veri yükleme (missing report dahil) ──────────────────────────────────────
+// ── Veri yükleme ──────────────────────────────────────────────────────────────
 async function loadData(){
   const MISSING_URL='https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now();
   const isOnline = location.protocol !== 'file:';
 
   if(isOnline){
-    // Online: her zaman fresh results.json çek (cache bypass)
     try{
       const[r1,r2]=await Promise.allSettled([
         fetch('results.json?t='+Date.now()),
         fetch(MISSING_URL)
       ]);
       if(r1.status==='fulfilled'&&r1.value.ok) DATA=await r1.value.json();
-      else if(window.RESULTS_DATA) DATA=window.RESULTS_DATA;  // network fail → inline fallback
+      else if(window.RESULTS_DATA) DATA=window.RESULTS_DATA;
       else throw new Error('Veri yüklenemedi');
       if(r2.status==='fulfilled'&&r2.value.ok){const j=await r2.value.json();DATA._missing_clubs=j.missing_clubs||[];}
       renderAll();
     }catch(e){document.getElementById('loader').textContent='⚠ Veri yüklenemedi.';}
   } else {
-    // Offline / file:// → gömülü veri kullan
     if(window.RESULTS_DATA){ DATA=window.RESULTS_DATA; renderAll(); }
     else document.getElementById('loader').textContent='⚠ Veri bulunamadı.';
   }
