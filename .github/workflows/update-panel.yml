@@ -1,14 +1,9 @@
-name: Update Panel (Edirne Canlı)
+name: Update Panel (Edirne Canli)
 
-# ─────────────────────────────────────────────────────────────────────────────
-# ZAMANLAMA (TR = UTC+3)
-#
-# Her 5 dakika:  17-20 Nisan, TR 08:00-00:00
-# Lenex kontrol: 17-20 Nisan saat 08:50 10:50 12:50 14:50 15:50 17:50 19:50 21:50 23:50 (TR)
-# Push trigger:  master'a her push'ta çalışır
-#
-# Yarış yoksa EDIRNE_URL boşsa sadece generate_rankings_json.py çalışır (Antalya verisi gösterilir).
-# ─────────────────────────────────────────────────────────────────────────────
+# Her 5 dakika: 17-20 Nisan UTC 05-21 (TR 08-00)
+# Push trigger: master'a her push'ta çalışır
+# fix_db.py: Edirne çekildikten sonra encoding düzeltmesi
+
 on:
   push:
     branches: [master]
@@ -22,7 +17,7 @@ on:
   workflow_dispatch:
     inputs:
       edirne_url:
-        description: 'Edirne yarış URL (boş bırakırsan kayıtlı URL kullanılır)'
+        description: 'Edirne yaris URL'
         required: false
 
 permissions:
@@ -31,7 +26,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -61,28 +55,29 @@ jobs:
           fi
           echo "EDIRNE_URL=$URL" >> $GITHUB_ENV
 
-      - name: Fetch Edirne data & update DB
+      - name: Fetch Edirne data
         if: env.EDIRNE_URL != ''
-        run: |
-          python process_edirne_karma.py --url "$EDIRNE_URL"
+        run: python process_edirne_karma.py --url "$EDIRNE_URL"
+
+      - name: Fix DB name encoding
+        run: python fix_db.py
 
       - name: Generate panel JSON
-        run: |
-          python generate_rankings_json.py
+        run: python generate_rankings_json.py
 
-      - name: Commit updated DB & panel to master
+      - name: Commit to master
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add panel/results_inline.js panel/results.json data/bolge_karmalari.db data/missing_report.json 2>/dev/null || true
           if git diff --staged --quiet; then
-            echo "Değişiklik yok."
+            echo "Degisiklik yok."
           else
-            git commit -m "chore: panel güncellendi ($(date -u '+%Y-%m-%d %H:%M') UTC)"
+            git commit -m "chore: panel guncellendi ($(date -u '+%Y-%m-%d %H:%M') UTC)"
             git push
           fi
 
-      - name: Deploy panel to gh-pages
+      - name: Deploy to gh-pages
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -94,7 +89,7 @@ jobs:
           cd /tmp/gh-pages
           git add -A
           if git diff --staged --quiet; then
-            echo "gh-pages değişiklik yok."
+            echo "gh-pages degisiklik yok."
           else
             git commit -m "deploy: $(date -u '+%Y-%m-%d %H:%M') UTC"
             git push origin HEAD:gh-pages
