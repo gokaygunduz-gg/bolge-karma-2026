@@ -35,10 +35,10 @@
 
   /* ── Sekmeler ── */
   .tabs { display: flex; gap: 0; background: var(--card); border-bottom: 1px solid var(--border); overflow-x: auto; }
-  .tab { padding: 10px 16px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
+  .tab { padding: 10px 14px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; }
   .tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
-  /* ── Filtreler ── */
+  /* ── Filtreler (sadece Sıralama sekmesinde) ── */
   .filters { padding: 8px 12px; background: var(--card); border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .filter-btn {
     padding: 4px 12px; border-radius: 16px; border: 1px solid var(--border);
@@ -136,6 +136,8 @@
   .club-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 6px 10px; text-align: left; }
   .club-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
   .club-table tr:last-child td { border-bottom: 0; }
+  .club-table tr.club-row { cursor: pointer; transition: background .1s; }
+  .club-table tr.club-row:hover { background: rgba(59,130,246,.1); }
   .club-total { font-weight: 700; color: var(--text); }
   .num-multi { color: var(--gold); font-weight: 700; }
   .num-tr    { color: var(--green); font-weight: 700; }
@@ -150,6 +152,55 @@
   .matrix-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); font-size: 12px; text-align: center; }
   .matrix-table td:first-child { text-align: left; font-weight: 600; }
   .matrix-table tr:last-child td { border-bottom: 0; font-weight: 700; background: rgba(255,255,255,.03); }
+
+  /* ── Barajlar ── */
+  .threshold-wrap { margin: 10px; }
+  .threshold-wrap h3 { font-size: 13px; color: var(--gold); margin-bottom: 8px; padding-top: 8px; }
+  .threshold-table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 8px; overflow: hidden; margin-bottom: 14px; }
+  .threshold-table th { background: #1a2740; color: var(--muted); font-size: 10px; padding: 7px 10px; text-align: left; }
+  .threshold-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); font-size: 12px; }
+  .threshold-table tr:last-child td { border-bottom: 0; }
+  .pts-system-box { background: var(--card); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+  .pts-system-box h4 { font-size: 11px; color: var(--muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em; }
+  .pts-row { display: flex; flex-wrap: wrap; gap: 5px; }
+  .pts-chip { display: inline-flex; align-items: center; gap: 4px; padding: 4px 9px; border-radius: 8px; background: #1a2740; border: 1px solid var(--border); font-size: 11px; }
+
+  /* ── Arama ── */
+  .search-wrap { margin: 10px; }
+  .search-box { display: flex; gap: 6px; margin-bottom: 12px; }
+  .search-input {
+    flex: 1; padding: 10px 14px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; color: var(--text); font-size: 14px; outline: none;
+  }
+  .search-input:focus { border-color: var(--blue); }
+  .search-btn {
+    padding: 10px 16px; background: var(--blue); border: none; border-radius: 8px;
+    color: #fff; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .search-result { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 8px; }
+  .search-result-header { padding: 10px 12px; border-bottom: 1px solid var(--border); background: #162032; }
+  .search-result-name { font-size: 14px; font-weight: 700; }
+  .search-result-sub { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .search-result-ranks { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; }
+  .rank-chip { display: inline-flex; flex-direction: column; align-items: center; background: #1a2740; border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; min-width: 70px; }
+  .rank-chip .rc-label { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .rank-chip .rc-val { font-size: 16px; font-weight: 800; margin-top: 1px; }
+  .search-result-events { padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 4px; border-top: 1px solid var(--border); }
+  .search-empty { padding: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+
+  /* ── Modal (kulüp sporcuları) ── */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); z-index: 200; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal-box { background: var(--card); border: 1px solid var(--border); border-radius: 12px; max-width: 480px; width: 94%; max-height: 80vh; overflow-y: auto; }
+  .modal-header { padding: 14px 16px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; background: var(--card); }
+  .modal-title { font-size: 14px; font-weight: 700; color: var(--gold); }
+  .modal-close { background: none; border: none; color: var(--muted); font-size: 20px; cursor: pointer; padding: 0 4px; line-height: 1; }
+  .modal-body { padding: 10px; }
+  .modal-athlete { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: 6px; margin-bottom: 4px; background: #162032; border: 1px solid var(--border); }
+  .modal-athlete-rank { font-size: 11px; font-weight: 700; color: var(--muted); min-width: 24px; text-align: center; }
+  .modal-athlete-info { flex: 1; }
+  .modal-athlete-name { font-size: 12px; font-weight: 600; }
+  .modal-athlete-sub { font-size: 10px; color: var(--muted); margin-top: 1px; }
 
   /* ── Loader ── */
   #loader { display: flex; align-items: center; justify-content: center; height: 60vh; font-size: 16px; color: var(--muted); text-align: center; padding: 20px; }
@@ -173,6 +224,7 @@
     <h2 style="color:#e2e8f0;font-size:18px;margin-bottom:4px;">2026 Federasyon Karması</h2>
     <p style="color:#94a3b8;font-size:13px;margin-bottom:20px;">Devam etmek için şifreyi girin</p>
     <input id="pw-input" type="password" placeholder="Şifre"
+      autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
       style="width:100%;padding:10px 14px;background:#0f172a;border:1px solid #334155;border-radius:8px;color:#e2e8f0;font-size:15px;outline:none;margin-bottom:12px;"
       onkeydown="if(event.key==='Enter')checkPw()">
     <button onclick="checkPw()"
@@ -180,11 +232,11 @@
       Giriş
     </button>
     <p id="pw-err" style="color:#ef4444;font-size:12px;margin-top:10px;display:none;">Yanlış şifre</p>
+    <p id="pw-hint" style="color:#64748b;font-size:10px;margin-top:6px;display:none;"></p>
   </div>
 </div>
 <script>
 // ── Merkezi auth (gh-pages/auth.json) ────────────────────────────────────────
-// Şifre bu cihazda değil GitHub'da saklanır → değişince herkes için geçerli
 const AUTH_URL = 'https://gokaygunduz-gg.github.io/bolge-karma-2026/auth.json';
 let _auth = null;  // {pw, admin_pw, pw_off}
 
@@ -211,16 +263,34 @@ function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
     setTimeout(()=>document.getElementById("pw-input").focus(), 100);
   }
   window.checkPw = function(){
-    const v = document.getElementById("pw-input").value;
+    // trim() → Android autocorrect bazen boşluk ekliyor
+    const v = document.getElementById("pw-input").value.trim();
     if(v === getMainPw()){
       sessionStorage.setItem(KEY,"1"); overlay.style.display="none";
     } else {
       document.getElementById("pw-err").style.display="block";
       document.getElementById("pw-input").value="";
+      // Hatalı giriş sayısını logla (localStorage'da — hata ayıklama için)
+      const logKey='karma_fail_log';
+      const log=JSON.parse(localStorage.getItem(logKey)||'[]');
+      log.push({t:new Date().toISOString(),len:v.length});
+      if(log.length>20) log.splice(0,log.length-20);
+      localStorage.setItem(logKey,JSON.stringify(log));
     }
   };
 })();
 </script>
+
+<!-- ── Modal (kulüp sporcuları) ── -->
+<div id="club-modal" class="modal-overlay" onclick="if(event.target===this)closeClubModal()">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-title" id="club-modal-title">—</div>
+      <button class="modal-close" onclick="closeClubModal()">×</button>
+    </div>
+    <div class="modal-body" id="club-modal-body"></div>
+  </div>
+</div>
 
 <header>
   <div class="header-row">
@@ -239,7 +309,9 @@ function isPwOff()    { return _auth ? !!_auth.pw_off  : false; }
 <!-- ── Sekmeler ── -->
 <div class="tabs">
   <div class="tab active" data-tab="rankings" onclick="switchTab('rankings',this)">Sıralama</div>
+  <div class="tab" data-tab="search" onclick="switchTab('search',this)">Arama</div>
   <div class="tab" data-tab="clubs" onclick="switchTab('clubs',this)">Kulüpler</div>
+  <div class="tab" data-tab="thresholds" onclick="switchTab('thresholds',this)">Barajlar</div>
   <div class="tab" data-tab="matrix" onclick="switchTab('matrix',this)">Özet</div>
   <div class="tab" id="admin-tab" data-tab="admin" onclick="switchTab('admin',this)" style="display:none">⚙ Admin</div>
 </div>
@@ -298,28 +370,11 @@ let filterAge   = 'all';
 let filterGender= 'all';
 let filterRegion= 'all';
 let filterSel   = 'all';
-let activeLeg   = 'combined';   // 'combined' | 'antalya' | 'edirne'
+let activeLeg   = 'combined';
 let activeTab   = 'rankings';
-let activeClubGroup = 'overall';  // kulüpler sekmesi için global state
+let activeClubGroup = 'overall';
 let expanded    = new Set();
-
-// ── Load ──────────────────────────────────────────────────────────────────────
-async function loadData() {
-  if (window.RESULTS_DATA) {
-    DATA = window.RESULTS_DATA;
-    renderAll();
-    return;
-  }
-  try {
-    const r = await fetch('results.json?t=' + Date.now());
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    DATA = await r.json();
-    renderAll();
-  } catch(e) {
-    document.getElementById('loader').textContent =
-      '⚠ Veri yüklenemedi. serve.py ile açın veya generate_rankings_json.py çalıştırın.';
-  }
-}
+let _searchTerm = '';
 
 // ── Tab switch ────────────────────────────────────────────────────────────────
 function switchTab(tab, el) {
@@ -380,10 +435,12 @@ function renderAll() {
   const content = document.getElementById('content');
   content.innerHTML = '';
 
-  if (activeTab === 'rankings') renderRankings(content);
-  else if (activeTab === 'clubs') renderClubs(content);
-  else if (activeTab === 'matrix') renderMatrix(content);
-  else if (activeTab === 'admin') renderAdmin(content);
+  if      (activeTab === 'rankings')   renderRankings(content);
+  else if (activeTab === 'search')     renderSearch(content);
+  else if (activeTab === 'clubs')      renderClubs(content);
+  else if (activeTab === 'thresholds') renderThresholds(content);
+  else if (activeTab === 'matrix')     renderMatrix(content);
+  else if (activeTab === 'admin')      renderAdmin(content);
 }
 
 function legsLabel(legs) {
@@ -405,12 +462,9 @@ function renderRankings(content) {
     if (filterGender !== 'all' && grp.gender !== filterGender)           continue;
 
     let athletes = grp.athletes;
-
-    // Bölge filtresi: Multinations sporcular her zaman göster
     if (filterRegion !== 'all') {
       athletes = athletes.filter(a =>
-        a.selected === 'MULTINATIONS' ||
-        String(a.region) === filterRegion
+        a.selected === 'MULTINATIONS' || String(a.region) === filterRegion
       );
     }
     if (filterSel === 'selected') {
@@ -471,7 +525,6 @@ function toggleGroup(key) {
 
 function buildTable(groupKey, grp, athletes) {
   let rows = '';
-  // Satır numarası için index (Multinations grubunu 0 ile başlat)
   athletes.forEach((a, idx) => {
     const expKey = groupKey + '_' + idx;
     const isExp  = expanded.has(expKey);
@@ -488,7 +541,6 @@ function buildTable(groupKey, grp, athletes) {
     const rankCls = (a.rank && a.rank <= 3 && !isMulti) ? `rank-${a.rank}` : '';
     const rankStr = isMulti ? '★' : (a.rank || '—');
 
-    // Seçim badge
     let badgeHtml = '';
     if (isMulti)
       badgeHtml = `<span class="badge badge-multi">Multinations</span>`;
@@ -504,7 +556,6 @@ function buildTable(groupKey, grp, athletes) {
       else        badgeHtml = `<span class="badge-none">—</span>`;
     }
 
-    // Leg'e göre puan
     let score, events;
     if (activeLeg === 'antalya') {
       score  = a.top3_antalya;
@@ -517,10 +568,8 @@ function buildTable(groupKey, grp, athletes) {
       events = a.events;
     }
 
-    // Tie işareti isim yanında
     const tieStar = (isTied && a.selected !== 'TR') ? '<span class="tie-mark">★</span>' : '';
 
-    // 1. bitiş badge
     let firstBadge = '';
     try {
       if (a.first_place && a.first_place.length > 0) {
@@ -596,6 +645,116 @@ function ptsClass(p) {
   return 'pts-0';
 }
 
+// ── Search tab ────────────────────────────────────────────────────────────────
+function renderSearch(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'search-wrap';
+
+  wrap.innerHTML = `
+    <div class="search-box">
+      <input id="search-input" class="search-input" type="search" placeholder="Sporcu adı ara..."
+        autocomplete="off" autocorrect="off" autocapitalize="off"
+        value="${_esc(_searchTerm)}"
+        onkeydown="if(event.key==='Enter'){_searchTerm=this.value.trim();renderAll();}">
+      <button class="search-btn" onclick="_searchTerm=document.getElementById('search-input').value.trim();renderAll()">Ara</button>
+    </div>
+    <div id="search-results"></div>
+  `;
+  content.appendChild(wrap);
+
+  const resultsDiv = wrap.querySelector('#search-results');
+  if (!_searchTerm) {
+    resultsDiv.innerHTML = '<div class="search-empty">Sporcu adını yazıp Ara\'ya basın</div>';
+    setTimeout(()=>{ const el=document.getElementById('search-input'); if(el) el.focus(); }, 50);
+    return;
+  }
+
+  // Normalize for search
+  function norm(s) {
+    return (s||'').replace(/İ/g,'I').replace(/ı/g,'i').replace(/Ş/g,'S').replace(/ş/g,'s')
+      .replace(/Ç/g,'C').replace(/ç/g,'c').replace(/Ğ/g,'G').replace(/ğ/g,'g')
+      .replace(/Ö/g,'O').replace(/ö/g,'o').replace(/Ü/g,'U').replace(/ü/g,'u')
+      .toLowerCase();
+  }
+
+  const term = norm(_searchTerm);
+  const ORDER = ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+  const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+  let found = 0;
+
+  for (const key of ORDER) {
+    const grp = DATA.groups[key];
+    if (!grp) continue;
+    grp.athletes.forEach(a => {
+      if (!norm(a.name).includes(term)) return;
+      found++;
+
+      // Bölge sıralaması: aynı grup içinde aynı bölgeden kaçıncı
+      const sameRegion = grp.athletes.filter(x => x.region === a.region && x.selected !== 'MULTINATIONS');
+      const regionRank = sameRegion.findIndex(x => x.name === a.name) + 1;
+
+      // Seçim badge
+      let selBadge = '';
+      if (a.selected === 'MULTINATIONS') selBadge = `<span class="badge badge-multi">Multinations</span>`;
+      else if (a.selected === 'TR')      selBadge = `<span class="badge badge-tr">${a.selected_slot}</span>`;
+      else if (a.selected === 'BÖLGE')   selBadge = `<span class="badge badge-bolge">${a.selected_slot}</span>`;
+      else if (a.selected === 'BARAJ_YOK') selBadge = `<span class="badge badge-baraj">Baraj↓</span>`;
+      else                                selBadge = `<span class="badge-none">Seçilmedi</span>`;
+
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      const REGION_NAMES = {1:'İstanbul',2:'Marmara',3:'Ege',4:'İç Anadolu',5:'Karadeniz',6:'Güneydoğu'};
+
+      const card = document.createElement('div');
+      card.className = 'search-result';
+      card.innerHTML = `
+        <div class="search-result-header">
+          <div class="search-result-name">
+            <span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span>
+            ${a.name} ${selBadge}
+          </div>
+          <div class="search-result-sub">${a.club||'—'} · ${a.city||'—'} · ${AGE_LABEL[a.birth_year]||a.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}</div>
+        </div>
+        <div class="search-result-ranks">
+          <div class="rank-chip">
+            <span class="rc-label">Türkiye</span>
+            <span class="rc-val ${a.rank && a.rank<=3?'rank-'+a.rank:''}">${a.selected==='MULTINATIONS'?'★':(a.rank||'—')}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">B${a.region||'?'} ${REGION_NAMES[a.region]||''}</span>
+            <span class="rc-val" style="color:var(--blue)">${regionRank || '—'}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Toplam Puan</span>
+            <span class="rc-val ${ptsClass(Math.floor(a.top3/3))}">${a.top3}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Antalya</span>
+            <span class="rc-val" style="color:var(--teal)">${a.top3_antalya||0}</span>
+          </div>
+          <div class="rank-chip">
+            <span class="rc-label">Edirne</span>
+            <span class="rc-val" style="color:var(--orange)">${a.top3_edirne||0}</span>
+          </div>
+        </div>
+        <div class="search-result-events">
+          ${buildEventChips(a.events || [])}
+        </div>
+      `;
+      resultsDiv.appendChild(card);
+    });
+  }
+
+  if (found === 0) {
+    resultsDiv.innerHTML = `<div class="search-empty">
+      "${_searchTerm}" için sonuç bulunamadı<br>
+      <span style="font-size:11px;color:#475569">Türkçe karakter farkına dikkat etmeden arama yapılır</span>
+    </div>`;
+  }
+
+  setTimeout(()=>{ const el=document.getElementById('search-input'); if(el) el.focus(); }, 50);
+}
+
 // ── Clubs tab ─────────────────────────────────────────────────────────────────
 function renderClubs(content) {
   if (!DATA || !DATA.club_rankings) {
@@ -604,7 +763,6 @@ function renderClubs(content) {
   }
   const cr = DATA.club_rankings;
 
-  // Group seçici
   const groupKeys = ['overall', ...Object.keys(cr.by_group || {}).sort()];
   const GROUP_LABEL = {
     overall: 'Genel Toplam',
@@ -616,7 +774,6 @@ function renderClubs(content) {
   const wrap = document.createElement('div');
   wrap.className = 'club-table-wrap';
 
-  // Butonlar
   const filterRow = document.createElement('div');
   filterRow.className = 'club-filter-row';
   groupKeys.forEach(gk => {
@@ -632,25 +789,30 @@ function renderClubs(content) {
 
   const data = activeClubGroup === 'overall' ? cr.overall : (cr.by_group[activeClubGroup] || []);
 
+  // Kulübe tıklandığında seçili sporcularını göster
+  const groupForModal = activeClubGroup === 'overall' ? null : activeClubGroup;
+
   let rows = '';
   data.filter(c => c.total > 0).forEach((c, i) => {
-    rows += `<tr>
+    rows += `<tr class="club-row" onclick="showClubAthletes('${_esc(c.club)}','${groupForModal||''}')">
       <td style="color:var(--muted);font-size:11px">${i+1}</td>
-      <td>${c.club}</td>
+      <td style="color:var(--blue)">${c.club}</td>
       <td class="num-multi">${c.multi || 0}</td>
       <td class="num-tr">${c.tr || 0}</td>
       <td class="num-bolge">${c.bolge || 0}</td>
       <td class="club-total">${c.total}</td>
+      <td style="color:var(--muted);font-size:14px">›</td>
     </tr>`;
   });
 
   const table = `<table class="club-table">
     <thead><tr>
-      <th>#</th><th>Kulüp</th>
+      <th>#</th><th>Kulüp <span style="color:#475569;font-size:9px">(tıkla)</span></th>
       <th style="color:var(--gold)">Multi</th>
       <th style="color:var(--green)">TR</th>
       <th style="color:var(--blue)">Bölge</th>
       <th>Toplam</th>
+      <th></th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
@@ -660,6 +822,156 @@ function renderClubs(content) {
   wrap.appendChild(h3);
   wrap.appendChild(filterRow);
   wrap.appendChild(tableDiv);
+
+  const note = document.createElement('div');
+  note.style.cssText = 'font-size:10px;color:#475569;padding:6px 0;';
+  note.textContent = 'Kulüp adına tıklayarak seçilen sporcuları görebilirsiniz.';
+  wrap.appendChild(note);
+
+  content.appendChild(wrap);
+}
+
+// Kulüp modal
+window.showClubAthletes = function(club, groupKey) {
+  const modal = document.getElementById('club-modal');
+  const title = document.getElementById('club-modal-title');
+  const body  = document.getElementById('club-modal-body');
+  title.textContent = club;
+  body.innerHTML = '';
+
+  const ORDER = groupKey ? [groupKey] : ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+  const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+  const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+  let count = 0;
+
+  for (const key of ORDER) {
+    const grp = DATA && DATA.groups && DATA.groups[key];
+    if (!grp) continue;
+    const selected = grp.athletes.filter(a =>
+      (a.club||'') === club &&
+      (a.selected === 'TR' || a.selected === 'BÖLGE' || a.selected === 'MULTINATIONS')
+    );
+    if (selected.length === 0) continue;
+
+    const groupLabel = `${AGE_LABEL[grp.birth_year]||grp.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}`;
+    const groupHeader = document.createElement('div');
+    groupHeader.style.cssText = 'font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;padding:8px 10px 4px;';
+    groupHeader.textContent = groupLabel;
+    body.appendChild(groupHeader);
+
+    selected.forEach(a => {
+      count++;
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      let selBadge = '';
+      if (a.selected === 'MULTINATIONS') selBadge = '<span class="badge badge-multi">Multi</span>';
+      else if (a.selected === 'TR')      selBadge = `<span class="badge badge-tr">${a.selected_slot}</span>`;
+      else if (a.selected === 'BÖLGE')   selBadge = `<span class="badge badge-bolge">${a.selected_slot}</span>`;
+
+      const div = document.createElement('div');
+      div.className = 'modal-athlete';
+      div.innerHTML = `
+        <div class="modal-athlete-rank ${a.rank&&a.rank<=3?'rank-'+a.rank:''}">${a.selected==='MULTINATIONS'?'★':(a.rank||'—')}</div>
+        <div class="modal-athlete-info">
+          <div class="modal-athlete-name"><span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span> ${a.name} ${selBadge}</div>
+          <div class="modal-athlete-sub">${a.city||'—'} · B${a.region||'?'} · Puan: ${a.top3}</div>
+        </div>
+      `;
+      body.appendChild(div);
+    });
+  }
+
+  if (count === 0) {
+    body.innerHTML = '<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px">Bu kulüpten seçilen sporcu yok</div>';
+  }
+
+  modal.classList.add('open');
+};
+
+window.closeClubModal = function() {
+  document.getElementById('club-modal').classList.remove('open');
+};
+
+// ── Thresholds tab ────────────────────────────────────────────────────────────
+function renderThresholds(content) {
+  const wrap = document.createElement('div');
+  wrap.className = 'threshold-wrap';
+
+  // Puan sistemi açıklaması
+  const PTS = [
+    {place:'1.',pts:9,color:'var(--gold)'},{place:'2.',pts:7,color:'#fb923c'},
+    {place:'3.',pts:6,color:'#facc15'},{place:'4.',pts:5,color:'var(--green)'},
+    {place:'5.',pts:4,color:'var(--teal)'},{place:'6.',pts:3,color:'var(--blue)'},
+    {place:'7.',pts:2,color:'var(--purple)'},{place:'8.',pts:1,color:'var(--muted)'},
+  ];
+  const ptsChips = PTS.map(p =>
+    `<div class="pts-chip"><span style="color:${p.color};font-weight:800">${p.pts}</span><span style="color:var(--muted)">${p.place}</span></div>`
+  ).join('');
+
+  wrap.innerHTML = `
+    <h3>Puan ve Kota Tablosu</h3>
+    <div class="pts-system-box">
+      <h4>Puan Sistemi (Yarış Sıralaması)</h4>
+      <div class="pts-row">${ptsChips}</div>
+      <div style="font-size:10px;color:#475569;margin-top:8px">
+        Her branş için derecelerine göre puan verilir. Her sporcunun en iyi 3 branşından toplam puan hesaplanır.
+        Baraj şartı: en az 1 branşta minimum puana sahip olmak gerekir.
+      </div>
+    </div>
+  `;
+
+  // Grup tablosu
+  if (DATA && DATA.groups) {
+    const ORDER = ['2013_F','2013_M','2012_F','2012_M','2011_F','2011_M'];
+    const AGE_LABEL = {2013:'13 Yaş',2012:'14 Yaş',2011:'15 Yaş'};
+    const GEN_LABEL = {F:'Kadın',M:'Erkek'};
+
+    let rows = '';
+    for (const key of ORDER) {
+      const grp = DATA.groups[key];
+      if (!grp) continue;
+      const gColor = grp.gender === 'F' ? '#f472b6' : '#60a5fa';
+      const totalQuota = (grp.tr_quota||0) + (grp.region_1_quota||0) + ((grp.region_other_quota||0)*5);
+
+      // Kaç sporcu seçildi
+      const multiC = grp.athletes.filter(a=>a.selected==='MULTINATIONS').length;
+      const trC    = grp.athletes.filter(a=>a.selected==='TR').length;
+      const bC     = grp.athletes.filter(a=>a.selected==='BÖLGE').length;
+      const barajPts = grp.min_points || '—';
+
+      rows += `<tr>
+        <td><span style="color:${gColor}">${grp.gender==='F'?'♀':'♂'}</span> ${AGE_LABEL[grp.birth_year]||grp.birth_year} ${GEN_LABEL[grp.gender]||grp.gender}</td>
+        <td style="text-align:center;color:var(--gold);font-weight:700">${grp.tr_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${grp.region_1_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${grp.region_other_quota}</td>
+        <td style="text-align:center;color:var(--red);font-weight:700">${barajPts}</td>
+        <td style="text-align:center;color:var(--green)">${trC}/${grp.tr_quota}</td>
+        <td style="text-align:center;color:var(--blue)">${bC}</td>
+        <td style="text-align:center;color:var(--gold)">${multiC}</td>
+      </tr>`;
+    }
+
+    const tbl = document.createElement('div');
+    tbl.innerHTML = `
+      <table class="threshold-table">
+        <thead><tr>
+          <th>Grup</th>
+          <th style="text-align:center;color:var(--gold)">TR Kota</th>
+          <th style="text-align:center;color:var(--blue)">B1 Kota</th>
+          <th style="text-align:center;color:var(--blue)">B2-6 Kota</th>
+          <th style="text-align:center;color:var(--red)">Baraj Puan</th>
+          <th style="text-align:center;color:var(--green)">TR Dolu</th>
+          <th style="text-align:center;color:var(--blue)">Bölge Dolu</th>
+          <th style="text-align:center;color:var(--gold)">Multi</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <div style="font-size:10px;color:#475569;padding:4px 0 8px">
+        B1: İstanbul bölgesi · B2-6: Diğer 5 bölge her birinden ayrı kota · Baraj Puan: seçilmek için gereken minimum puan
+      </div>
+    `;
+    wrap.appendChild(tbl);
+  }
+
   content.appendChild(wrap);
 }
 
@@ -715,16 +1027,11 @@ function renderMatrix(content) {
   content.appendChild(wrap);
 }
 
-// ── Admin şifre yönetimi (localStorage tabanlı) ───────────────────────────────
-// getMainPw / getAdminPw / isPwOff → auth.json'dan, tanımlar script başında
-
+// ── Admin şifre yönetimi ──────────────────────────────────────────────────────
 let adminUnlocked = sessionStorage.getItem("bolge_karma_admin") === "1";
+let pendingClubAliases   = {};
+let pendingNameOverrides = {};
 
-// Bekleyen değişiklikler (oturum bazlı)
-let pendingClubAliases   = {};  // raw → {canonical, city, region}
-let pendingNameOverrides = {};  // "name|by|gender" → {name,birth_year,gender,resolution,...}
-
-// Şehir → Bölge haritası
 const CITY_REGION = {
   'İstanbul':1,
   'Bursa':2,'Kocaeli':2,'Sakarya':2,'Edirne':2,'Tekirdağ':2,'Kırklareli':2,
@@ -753,13 +1060,13 @@ function _regionOpts() {
   return '<option value="">Bölge</option>' +
     [1,2,3,4,5,6].map(r=>`<option value="${r}">B${r} ${REGION_NAMES[r]}</option>`).join('');
 }
-function _esc(s){ return String(s).replace(/'/g,"\\'"); }
+function _esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/'/g,"&#39;").replace(/"/g,'&quot;'); }
 function showMsg(id,text,color){
   const el=document.getElementById(id); if(!el)return;
   el.style.display='block'; el.style.color=color; el.textContent=text;
 }
 
-// ── Aynı isimli sporcu tespiti ────────────────────────────────────────────────
+// Aynı isimli sporcu tespiti
 function findDuplicateAthletes() {
   if (!DATA||!DATA.groups) return [];
   const seen={};
@@ -806,6 +1113,17 @@ function renderAdmin(content) {
   // ── 1. GÜVENLİK ──
   const pwOff=isPwOff();
   const ghTokVal=localStorage.getItem('karma_gh_token')||'';
+
+  // Başarısız giriş logunu göster
+  const failLog=JSON.parse(localStorage.getItem('karma_fail_log')||'[]');
+  const failLogHtml=failLog.length>0
+    ?`<div style="margin-top:10px;padding:8px;background:#0f172a;border-radius:6px">
+       <div style="font-size:10px;color:#64748b;margin-bottom:4px">BAŞARISIZ GİRİŞ LOGLARI (bu cihazda)</div>
+       ${failLog.slice(-5).reverse().map(l=>`<div style="font-size:11px;color:#ef4444;padding:1px 0">${l.t} — ${l.len} karakter</div>`).join('')}
+       <button onclick="localStorage.removeItem('karma_fail_log');renderAll()" style="margin-top:6px;padding:3px 10px;background:#334155;border:none;border-radius:4px;color:#e2e8f0;font-size:11px;cursor:pointer">Logları Temizle</button>
+     </div>`
+    :'<div style="font-size:11px;color:#22c55e;margin-top:6px">Bu cihazda başarısız giriş yok</div>';
+
   wrap.appendChild(sec('🔒 GÜVENLİK','#94a3b8',`
     <div style="margin-bottom:12px;padding:10px;background:#0f172a;border-radius:6px">
       <div style="font-size:11px;color:#64748b;margin-bottom:6px">GITHUB TOKEN — şifre değiştirmek için gerekli</div>
@@ -830,6 +1148,7 @@ function renderAdmin(content) {
       </div>
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">
         <input id="new-main-pw" type="text" placeholder="Yeni giriş şifresi..."
+          autocorrect="off" autocapitalize="off"
           style="flex:1;min-width:130px;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
         <button onclick="adminChangePw('main')"
           style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
@@ -843,12 +1162,14 @@ function renderAdmin(content) {
       <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">Admin Şifresi</div>
       <div style="display:flex;gap:6px">
         <input id="new-admin-pw" type="text" placeholder="Yeni admin şifre..."
+          autocorrect="off" autocapitalize="off"
           style="flex:1;padding:8px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px">
         <button onclick="adminChangePw('admin')"
           style="padding:8px 14px;background:#3b82f6;border:none;border-radius:6px;color:#fff;font-size:12px;font-weight:600;cursor:pointer">Değiştir</button>
       </div>
       <div id="pw-admin-msg" style="font-size:11px;margin-top:4px;display:none"></div>
     </div>
+    ${failLogHtml}
   `));
 
   // ── 2. EKSİK KULÜPLER ──
@@ -888,7 +1209,7 @@ function renderAdmin(content) {
           <div style="display:flex;gap:6px;flex-wrap:wrap">
             <input id="cc-${i}" type="text" placeholder="Kanonik kulüp adı (boşsa aynı kalır)"
               style="flex:1;padding:7px;background:#0f172a;border:1px solid #334155;border-radius:6px;color:#e2e8f0;font-size:13px"
-              value="${club}">
+              value="${_esc(club)}">
             <button onclick="adminSaveClub(${i},'${_esc(club)}')"
               style="padding:7px 14px;background:#22c55e;border:none;border-radius:6px;color:#0f172a;font-size:12px;font-weight:700;cursor:pointer">Kaydet</button>
           </div>
@@ -984,12 +1305,17 @@ function renderAdmin(content) {
   wrap.appendChild(sec('📡 DURUM','#64748b',`
     <div style="font-size:13px;color:#e2e8f0;margin-bottom:4px">Son güncelleme: <b>${DATA.generated_at}</b></div>
     <div style="font-size:12px;color:#94a3b8;margin-bottom:10px">${getNextUpdateInfo()}</div>
-    <div style="font-size:11px;color:#64748b;margin-bottom:10px">17-20 Nisan: her 20dk + Lenex saatleri (TR 08:50-23:50)</div>
+    <div style="font-size:11px;color:#64748b;margin-bottom:10px">17-20 Nisan: her 5dk + Lenex saatleri + master'a push tetikler</div>
     <a href="https://github.com/gokaygunduz-gg/bolge-karma-2026/actions/workflows/update-panel.yml"
        target="_blank"
        style="display:inline-block;padding:7px 14px;background:#3b82f6;color:#fff;border-radius:6px;font-size:12px;font-weight:600;text-decoration:none">
       → GitHub Actions (Manuel Tetikle)
     </a>
+    <div style="margin-top:14px;padding:10px;background:#0f172a;border-radius:6px;font-size:11px;color:#64748b">
+      <b style="color:#94a3b8">Anlık kullanıcı sayısı</b><br>
+      GitHub Pages statik hosting kullandığı için sunucu taraflı canlı kullanıcı sayısı takibi yapılamaz.
+      Panel ziyaret istatistikleri için GitHub Settings &gt; Pages &gt; Analytics kullanılabilir.
+    </div>
   `));
 
   content.appendChild(wrap);
@@ -997,7 +1323,7 @@ function renderAdmin(content) {
 
 // ── Admin aksiyonlar ──────────────────────────────────────────────────────────
 window.checkAdminPw = function(){
-  const v=document.getElementById('admin-pw-in').value;
+  const v=document.getElementById('admin-pw-in').value.trim();
   if(v===getAdminPw()){
     adminUnlocked=true; sessionStorage.setItem("bolge_karma_admin","1");
     document.getElementById('admin-tab').style.display=''; renderAll();
@@ -1007,7 +1333,6 @@ window.checkAdminPw = function(){
   }
 };
 function _getToken(){
-  // Önce ekrandaki inputtan oku, yoksa localStorage'dan
   return (document.getElementById('gh-tok-sec')?.value.trim()) ||
          localStorage.getItem('karma_gh_token') || '';
 }
@@ -1034,7 +1359,7 @@ window.adminChangePw = async function(type){
   if(ok){
     showMsg(msgId,`✓ Değiştirildi: "${v}" — tüm cihazlarda geçerli`,'#22c55e');
     document.getElementById(field).value='';
-    localStorage.setItem('karma_gh_token', token);  // başarılıysa kaydet
+    localStorage.setItem('karma_gh_token', token);
   } else {
     showMsg(msgId,'⚠ Kaydedilemedi — Token geçerli mi? "Test" butonuna basın','#ef4444');
   }
@@ -1049,7 +1374,6 @@ window.adminTogglePw = async function(){
   else showMsg('pw-main-msg','⚠ Kaydedilemedi','#ef4444');
 };
 
-// auth.json'ı GitHub API ile güncelle (gh-pages branch)
 async function _updateAuthJson(token, patch){
   try {
     const REPO='gokaygunduz-gg/bolge-karma-2026', BRANCH='gh-pages', PATH='auth.json';
@@ -1067,7 +1391,7 @@ async function _updateAuthJson(token, patch){
     if(p.ok){ _auth = {...current, ...patch}; return true; }
     return false;
   } catch(e){ return false; }
-};
+}
 window.adminCityDrop = function(i,club){
   const city=document.getElementById(`cs-${i}`)?.value||'';
   const reg=CITY_REGION[city]||0;
@@ -1179,18 +1503,18 @@ document.querySelector('header h1').addEventListener('click',()=>{
   }
 });
 
-// ── Sonraki güncelleme hesapla ────────────────────────────────────────────────
+// ── Sonraki güncelleme hesapla (5dk) ─────────────────────────────────────────
 function getNextUpdateInfo(){
   const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
   if(y!==2026||m!==3||d<17||d>20) return 'Otomatik güncelleme: 17-20 Nisan arası aktif';
   const utcH=now.getUTCHours(),utcM=now.getUTCMinutes();
   if(utcH<5||utcH>=21) return 'Güncelleme dışı saat (UTC 05-21 arası aktif)';
-  const passed=utcM%20, wait=20-passed;
+  const passed=utcM%5, wait=5-passed;
   const nextM=(utcM+wait)%60, nextH=utcH+(utcM+wait>=60?1:0);
   return `Sonraki güncelleme: ~${wait} dk sonra (TR ${nextH+3}:${String(nextM).padStart(2,'0')})`;
 }
 
-// ── Header sayaç ──────────────────────────────────────────────────────────────
+// ── Header sayaç (5dk = 300sn) ────────────────────────────────────────────────
 function updateNextBadge(){
   const badge=document.getElementById('next-update-badge'); if(!badge)return;
   const now=new Date(),y=now.getUTCFullYear(),m=now.getUTCMonth(),d=now.getUTCDate();
@@ -1198,7 +1522,7 @@ function updateNextBadge(){
   const utcH=now.getUTCHours(),utcM=now.getUTCMinutes(),utcS=now.getUTCSeconds();
   if(utcH<5||utcH>=21){badge.style.display='none';return;}
   const totalSec=utcH*3600+utcM*60+utcS;
-  const slotSec=Math.ceil((totalSec+1)/1200)*1200;
+  const slotSec=Math.ceil((totalSec+1)/300)*300;  // 300 = 5 dakika
   const waitSec=slotSec-totalSec;
   badge.style.display='';
   badge.textContent=`↻ ${Math.floor(waitSec/60)}:${String(waitSec%60).padStart(2,'0')}`;
@@ -1206,26 +1530,24 @@ function updateNextBadge(){
 setInterval(updateNextBadge,1000);
 updateNextBadge();
 
-// ── Veri yükleme (missing report dahil) ──────────────────────────────────────
+// ── Veri yükleme ──────────────────────────────────────────────────────────────
 async function loadData(){
   const MISSING_URL='https://raw.githubusercontent.com/gokaygunduz-gg/bolge-karma-2026/master/data/missing_report.json?t='+Date.now();
   const isOnline = location.protocol !== 'file:';
 
   if(isOnline){
-    // Online: her zaman fresh results.json çek (cache bypass)
     try{
       const[r1,r2]=await Promise.allSettled([
         fetch('results.json?t='+Date.now()),
         fetch(MISSING_URL)
       ]);
       if(r1.status==='fulfilled'&&r1.value.ok) DATA=await r1.value.json();
-      else if(window.RESULTS_DATA) DATA=window.RESULTS_DATA;  // network fail → inline fallback
+      else if(window.RESULTS_DATA) DATA=window.RESULTS_DATA;
       else throw new Error('Veri yüklenemedi');
       if(r2.status==='fulfilled'&&r2.value.ok){const j=await r2.value.json();DATA._missing_clubs=j.missing_clubs||[];}
       renderAll();
     }catch(e){document.getElementById('loader').textContent='⚠ Veri yüklenemedi.';}
   } else {
-    // Offline / file:// → gömülü veri kullan
     if(window.RESULTS_DATA){ DATA=window.RESULTS_DATA; renderAll(); }
     else document.getElementById('loader').textContent='⚠ Veri bulunamadı.';
   }
