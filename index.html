@@ -631,9 +631,12 @@ function buildPendingChips(pending) {
   if (!pending || pending.length === 0) return '';
   const chips = pending.map(e => {
     const timeStr = e.entry_time ? ` <span style="color:var(--muted);font-size:10px">${e.entry_time}</span>` : '';
+    const ptsStr  = e.entry_points > 0
+      ? ` <span style="color:#f0a500;font-size:10px;font-weight:600">${e.entry_points}p</span>`
+      : '';
     return `<div class="event-chip pending-chip">
       <span class="ep pts-0">⏳</span>
-      <span class="en">${e.dist}m ${e.stroke}${timeStr}</span>
+      <span class="en">${e.dist}m ${e.stroke}${timeStr}${ptsStr}</span>
     </div>`;
   }).join('');
   return `<div class="pending-section">
