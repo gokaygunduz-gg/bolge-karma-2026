@@ -57,6 +57,7 @@ class RawResult:
     time_seconds:     float          # saniye cinsinden, sıralama için
     source:           str = "lenex"  # "lenex" | "pdf"
     participant_type: str | None = None  # "TK" | "FD" | "TD" (okul yarışları için)
+    pdf_seq:          int | None = None  # ResultList_N.pdf'deki N (PDF sıra numarası)
 
 
 # ─────────────────────────────────────────────────────────────────────────────

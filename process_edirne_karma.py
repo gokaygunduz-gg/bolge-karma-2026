@@ -69,62 +69,17 @@ def process_edirne(url: str, verbose: bool = True):
     if name_overrides:
         print(f"  ℹ {len(name_overrides)} sporcu override yüklendi.")
 
-    # ── Start list: PDF'lerden entry'leri çek ve kaydet ─────────────────────
-    try:
-        from parsers.html_parser import parse_race_page
-        from parsers.pdf_parser import parse_start_list_pdf_from_url
-        from modules.m1_normalize import normalize_display
-        from modules.m4_mapping import lookup_club
+    # ── Yarış sayfası bilgisi (start list + event_map için) ──────────────────
+    from parsers.html_parser import parse_race_page as _parse_page
+    page_info = _parse_page(url)
 
-        page_info = parse_race_page(url)
-        if page_info and page_info.start_list_links:
-            print(f"  ℹ {len(page_info.start_list_links)} StartList PDF bulundu")
-            all_entries = []
-            for sl_url in page_info.start_list_links:
-                sl_fname  = sl_url.split("/")[-1]
-                hint_evt  = page_info.event_map.get(sl_fname)
-                raw_entries = parse_start_list_pdf_from_url(sl_url, hint_evt)
-                for e in raw_entries:
-                    by = e.get("birth_year")
-                    if by not in TARGET_BYS:
-                        continue
-                    name_disp = normalize_display(e["name_raw"])
-                    # Kulüp → şehir/bölge
-                    club_info = lookup_club(e.get("club_raw", ""))
-                    all_entries.append({
-                        "name":           name_disp,
-                        "birth_year":     by,
-                        "gender":         e["gender"],
-                        "stroke":         e["stroke"],
-                        "distance":       e["distance"],
-                        "entry_time_txt": e.get("entry_time_txt"),
-                    })
-            written_sl = save_start_list(RACE_LEG, all_entries)
-            print(f"  ✓ Start list: {written_sl} entry DB'ye yazıldı")
-        else:
-            print("  ℹ Start list PDF'leri henüz yayınlanmamış")
-
-        # Lenex varsa ondan da entry çek (ek kaynak — kompetisyon sonunda gelir)
-        from parsers.lenex_parser import download_lenex, parse_lenex_entries
-        lenex_bytes = download_lenex(url)
-        if lenex_bytes:
-            raw_entries = parse_lenex_entries(lenex_bytes)
-            lx_entries = []
-            for e in raw_entries:
-                if e.get("birth_year") not in TARGET_BYS:
-                    continue
-                name_disp = normalize_display(e["name_raw"])
-                lx_entries.append({**e, "name": name_disp})
-            if lx_entries:
-                written_lx = save_start_list(RACE_LEG, lx_entries)
-                print(f"  ✓ Lenex start list: {written_lx} entry eklendi/güncellendi")
-    except Exception as ex:
-        print(f"  ⚠ Start list kaydedilemedi: {ex}")
-
+    # ── 1. Sonuçları çek ve DB'ye yaz (start list'ten ÖNCE — canonical isim için) ──
     results = scrape_race(url, verbose=verbose)
     if not results:
         print("  ⚠ Sonuç bulunamadı (henüz yayınlanmadı?)")
-        return 0
+        # Sonuç yokken de start list kaydedebiliriz — aşağıya devam et
+
+    from federasyon.scorer import score_event
 
     processed  = 0
     ev_written = 0
@@ -155,9 +110,9 @@ def process_edirne(url: str, verbose: bool = True):
         dist   = r.get("distance") or 0
         t_txt  = r.get("time_text") or ""
         t_sec  = r.get("time_seconds")
+        pdf_seq = r.get("pdf_seq")  # ResultList_N.pdf sıra numarası
 
         # Puanla
-        from federasyon.scorer import score_event
         pts = score_event(t_sec, birth_year, gender, stroke, dist) if t_sec else 0
 
         if pts == 0:
@@ -168,12 +123,73 @@ def process_edirne(url: str, verbose: bool = True):
             athlete_name=name, birth_year=birth_year, gender=gender,
             region=region, city=city, club=club,
             stroke=stroke, distance=dist,
-            time_text=t_txt, time_seconds=t_sec, points=pts
+            time_text=t_txt, time_seconds=t_sec, points=pts,
+            pdf_seq=pdf_seq,
         )
         ev_written += 1
         processed += 1
 
-    print(f"  ✓ {processed} sonuç işlendi, {ev_written} branş DB'ye yazıldı")
+    if results:
+        print(f"  ✓ {processed} sonuç işlendi, {ev_written} branş DB'ye yazıldı")
+
+    # ── 2. Start list: sonuçlar kaydedildikten sonra kaydet ──────────────────
+    # (Böylece save_start_list canonical isim araması güncel fed_results'ı bulur)
+    try:
+        from parsers.pdf_parser import parse_start_list_pdf_from_url
+        from modules.m1_normalize import normalize_display
+        from modules.m4_mapping import lookup_club
+        import re as _re
+
+        if page_info and page_info.start_list_links:
+            print(f"  ℹ {len(page_info.start_list_links)} StartList PDF bulundu")
+            all_entries = []
+            for sl_url in page_info.start_list_links:
+                sl_fname  = sl_url.split("/")[-1]
+                hint_evt  = page_info.event_map.get(sl_fname)
+                # StartList_N.pdf → N (start list sıra numarası)
+                _sm = _re.search(r"(\d+)\.pdf$", sl_fname)
+                sl_pdf_seq = int(_sm.group(1)) if _sm else None
+                raw_entries = parse_start_list_pdf_from_url(sl_url, hint_evt)
+                for e in raw_entries:
+                    by = e.get("birth_year")
+                    if by not in TARGET_BYS:
+                        continue
+                    name_disp = normalize_display(e["name_raw"])
+                    all_entries.append({
+                        "name":           name_disp,
+                        "birth_year":     by,
+                        "gender":         e["gender"],
+                        "stroke":         e["stroke"],
+                        "distance":       e["distance"],
+                        "entry_time_txt": e.get("entry_time_txt"),
+                        "pdf_seq":        sl_pdf_seq,
+                    })
+            written_sl = save_start_list(RACE_LEG, all_entries)
+            print(f"  ✓ Start list: {written_sl} entry DB'ye yazıldı")
+        else:
+            print("  ℹ Start list PDF'leri henüz yayınlanmamış")
+
+        # Lenex varsa ondan da entry çek (ek kaynak — kompetisyon sonunda gelir)
+        from parsers.lenex_parser import download_lenex, parse_lenex_entries
+        lenex_bytes = download_lenex(url)
+        if lenex_bytes:
+            raw_entries = parse_lenex_entries(lenex_bytes)
+            lx_entries = []
+            for e in raw_entries:
+                if e.get("birth_year") not in TARGET_BYS:
+                    continue
+                name_disp = normalize_display(e["name_raw"])
+                lx_entries.append({**e, "name": name_disp})
+            if lx_entries:
+                written_lx = save_start_list(RACE_LEG, lx_entries)
+                print(f"  ✓ Lenex start list: {written_lx} entry eklendi/güncellendi")
+    except Exception as ex:
+        print(f"  ⚠ Start list kaydedilemedi: {ex}")
+
+    if not results:
+        return 0
+
+    print(f"  ✓ Toplam: {processed} sonuç işlendi")
 
     # Özet güncelle
     rebuild_athlete_best()

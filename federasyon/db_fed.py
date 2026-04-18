@@ -24,26 +24,28 @@ CREATE TABLE IF NOT EXISTS fed_start_list (
     stroke       TEXT    NOT NULL,
     distance     INTEGER NOT NULL,
     entry_time   TEXT,
+    pdf_seq      INTEGER,
     added_at     TEXT    DEFAULT (datetime('now')),
     UNIQUE(race_leg, athlete_name, birth_year, stroke, distance)
 );
 
 CREATE TABLE IF NOT EXISTS fed_results (
-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
-    race_leg      TEXT    NOT NULL,   -- 'antalya' | 'edirne'
-    race_date     TEXT,
-    athlete_name  TEXT    NOT NULL,
-    birth_year    INTEGER NOT NULL,
-    gender        TEXT    NOT NULL,   -- 'F' | 'M'
-    region        INTEGER,
-    city          TEXT,
-    club          TEXT,
-    stroke        TEXT    NOT NULL,
-    distance      INTEGER NOT NULL,
-    time_text     TEXT,
-    time_seconds  REAL,
-    points        INTEGER DEFAULT 0,
-    added_at      TEXT    DEFAULT (datetime('now'))
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    race_leg        TEXT    NOT NULL,   -- 'antalya' | 'edirne'
+    race_date       TEXT,
+    athlete_name    TEXT    NOT NULL,
+    birth_year      INTEGER NOT NULL,
+    gender          TEXT    NOT NULL,   -- 'F' | 'M'
+    region          INTEGER,
+    city            TEXT,
+    club            TEXT,
+    stroke          TEXT    NOT NULL,
+    distance        INTEGER NOT NULL,
+    time_text       TEXT,
+    time_seconds    REAL,
+    points          INTEGER DEFAULT 0,
+    source_pdf_seq  INTEGER,           -- ResultList_N.pdf sıra numarası
+    added_at        TEXT    DEFAULT (datetime('now'))
 );
 
 CREATE UNIQUE INDEX IF NOT EXISTS ux_fed_results
@@ -75,9 +77,19 @@ def get_conn() -> sqlite3.Connection:
     return conn
 
 
+def _add_column_if_missing(conn: sqlite3.Connection, table: str, column: str, col_type: str):
+    """Tablo zaten varsa eksik kolonu ekler (migrasyon yardımcısı)."""
+    existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table})").fetchall()}
+    if column not in existing:
+        conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {col_type}")
+
+
 def init_fed_db():
     with get_conn() as conn:
         conn.executescript(SCHEMA)
+        # Eski tablolara geriye dönük uyumlu kolon eklemeleri
+        _add_column_if_missing(conn, "fed_results",    "source_pdf_seq", "INTEGER")
+        _add_column_if_missing(conn, "fed_start_list", "pdf_seq",        "INTEGER")
         conn.commit()
 
 
@@ -99,10 +111,11 @@ def _canonical_name(conn: sqlite3.Connection, athlete_name: str, birth_year: int
 def upsert_result(race_leg: str, race_date: str, athlete_name: str,
                   birth_year: int, gender: str, region: int, city: str, club: str,
                   stroke: str, distance: int, time_text: str,
-                  time_seconds: float, points: int):
+                  time_seconds: float, points: int, pdf_seq: int = None):
     """
     Yeni sonuç ekle veya güncelle.
     Aynı yarış bacağı (leg) + sporcu + branşta daha iyi süre gelirse günceller.
+    pdf_seq: ResultList_N.pdf'deki N — bekleyen yarış tespiti için kullanılır.
     """
     with get_conn() as conn:
         athlete_name = _canonical_name(conn, athlete_name, birth_year)
@@ -120,19 +133,19 @@ def upsert_result(race_leg: str, race_date: str, athlete_name: str,
             ):
                 conn.execute(
                     "UPDATE fed_results SET time_text=?, time_seconds=?, points=?, "
-                    "race_date=?, gender=?, region=?, city=?, club=? "
+                    "race_date=?, gender=?, region=?, city=?, club=?, source_pdf_seq=? "
                     "WHERE id=?",
                     (time_text, time_seconds, points, race_date,
-                     gender, region, city, club, existing["id"])
+                     gender, region, city, club, pdf_seq, existing["id"])
                 )
         else:
             conn.execute(
                 "INSERT INTO fed_results "
                 "(race_leg, race_date, athlete_name, birth_year, gender, region, "
-                " city, club, stroke, distance, time_text, time_seconds, points) "
-                "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                " city, club, stroke, distance, time_text, time_seconds, points, source_pdf_seq) "
+                "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 (race_leg, race_date, athlete_name, birth_year, gender, region,
-                 city, club, stroke, distance, time_text, time_seconds, points)
+                 city, club, stroke, distance, time_text, time_seconds, points, pdf_seq)
             )
         conn.commit()
 
@@ -360,11 +373,11 @@ def save_start_list(race_leg: str, entries: list[dict]):
             try:
                 conn.execute("""
                     INSERT OR REPLACE INTO fed_start_list
-                    (race_leg, athlete_name, birth_year, gender, stroke, distance, entry_time)
-                    VALUES (?,?,?,?,?,?,?)
+                    (race_leg, athlete_name, birth_year, gender, stroke, distance, entry_time, pdf_seq)
+                    VALUES (?,?,?,?,?,?,?,?)
                 """, (race_leg, name, by, e.get("gender",""),
                       e.get("stroke",""), e.get("distance",0),
-                      e.get("entry_time_txt")))
+                      e.get("entry_time_txt"), e.get("pdf_seq")))
                 written += 1
             except Exception:
                 pass
@@ -377,12 +390,20 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
     start list'te olup o leg'de henüz yüzülmemiş branşları döner.
     Döner: {(athlete_name, birth_year): [{"stroke": s, "dist": d, "entry_time": t}, ...]}
 
-    Öncelik: YARIŞIN tamamlanıp tamamlanmadığına bak.
-    Eğer (birth_year, gender, stroke, distance) kombinasyonunda herhangi bir
-    fed_results kaydı varsa → o yarış bitti → start list'teki tüm sporcular için
-    o yarışı bekleyende gösterme.
+    Üç katmanlı kontrol:
 
-    Bu yaklaşım isim normalizasyon sorunlarını tamamen devre dışı bırakır.
+    1. source_pdf_seq varsa (yeni veri):
+       - pdf_seq < max_seq → sonraki yarış başladı → bu yarış kesinlikle bitti
+       - pdf_seq == max_seq → son aktif yarış → sporcu bazlı kontrol:
+           sporcunun sonucu varsa → yüzdü, bekleyende değil
+           yoksa → henüz yüzmedi, bekleyende
+       - pdf_seq is NULL → eski veri fallback
+
+    2. source_pdf_seq yoksa (NULL/eski veri):
+       - (birth_year, stroke, distance) kombinasyonunda herhangi bir sonuç varsa → bitti
+       - gender ile de karşılaştır; gender boş/yanlışsa sadece by+stroke+dist yeterli
+
+    3. Hiç sonuç yoksa → tüm start list sporcuları bekleyende
     """
     with get_conn() as conn:
         by_clause = ""
@@ -400,29 +421,91 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
             params_sl
         ).fetchall()
 
-        # Sonucu olan (birth_year, gender, stroke, distance) kombinasyonları
-        # = yarış tamamlanmış demek
-        done_rows = conn.execute(
-            f"SELECT DISTINCT birth_year, gender, stroke, distance "
-            f"FROM fed_results WHERE race_leg=?{by_clause}",
+        # Her etkinlik için sonuç bilgileri (pdf_seq ile birlikte)
+        event_rows = conn.execute(
+            f"SELECT DISTINCT birth_year, gender, stroke, distance, "
+            f"MIN(source_pdf_seq) as pdf_seq "
+            f"FROM fed_results WHERE race_leg=?{by_clause} "
+            f"GROUP BY birth_year, gender, stroke, distance",
             params_r
         ).fetchall()
 
-    # Tamamlanan yarışların seti: (birth_year, gender, stroke, distance)
-    completed_races = {
-        (r["birth_year"], r["gender"], r["stroke"], r["distance"])
-        for r in done_rows
-    }
+        # Bu leg'deki maksimum pdf_seq (son aktif PDF)
+        max_seq_row = conn.execute(
+            f"SELECT MAX(source_pdf_seq) as ms FROM fed_results WHERE race_leg=?{by_clause}",
+            params_r
+        ).fetchone()
+        max_seq = max_seq_row["ms"] if max_seq_row else None
+
+        # Son aktif pdf_seq'deki sporcuların isimleri (athlete-level check için)
+        athletes_done_in_last_pdf = set()
+        if max_seq is not None:
+            last_pdf_rows = conn.execute(
+                f"SELECT DISTINCT athlete_name, birth_year, stroke, distance "
+                f"FROM fed_results WHERE race_leg=? AND source_pdf_seq=?{by_clause}",
+                [race_leg, max_seq] + (list(birth_years) if birth_years else [])
+            ).fetchall()
+            athletes_done_in_last_pdf = {
+                (r["athlete_name"], r["birth_year"], r["stroke"], r["distance"])
+                for r in last_pdf_rows
+            }
+
+    # Tamamlanan etkinlik setleri
+    # gender'lı ve gender'sız — start list'te gender boş olabilir
+    completed_with_gender: set = set()   # (by, gender, stroke, dist) — kesin eşleşme
+    completed_no_gender:   set = set()   # (by, stroke, dist) — gender toleranslı
+    last_active_events:    set = set()   # pdf_seq == max_seq olan etkinlikler
+
+    for r in event_rows:
+        by, g, s, d = r["birth_year"], r["gender"], r["stroke"], r["distance"]
+        seq = r["pdf_seq"]
+
+        if seq is not None and max_seq is not None:
+            if seq < max_seq:
+                # Sonraki PDF zaten başlamış → bu etkinlik kesinlikle bitti
+                completed_with_gender.add((by, g, s, d))
+                completed_no_gender.add((by, s, d))
+            else:
+                # seq == max_seq: son aktif etkinlik → sporcu bazlı kontrol
+                last_active_events.add((by, g, s, d))
+                # gender toleranslı versiyon da ekle
+                last_active_events.add((by, "", s, d))
+        else:
+            # pdf_seq yok (eski veri) → herhangi bir sonuç varsa bitti say
+            completed_with_gender.add((by, g, s, d))
+            completed_no_gender.add((by, s, d))
 
     result: dict = {}
     for r in sl_rows:
-        race_key = (r["birth_year"], r["gender"], r["stroke"], r["distance"])
-        if race_key in completed_races:
-            continue   # Bu yarış tamamlanmış → hiçbir sporcu için bekleyende gösterme
-        key = (r["athlete_name"], r["birth_year"])
+        by, g, s, d = r["birth_year"], r["gender"] or "", r["stroke"], r["distance"]
+        name = r["athlete_name"]
+
+        # 1. Kesin tamamlanmış mı?
+        if g:
+            if (by, g, s, d) in completed_with_gender:
+                continue
+        else:
+            if (by, s, d) in completed_no_gender:
+                continue
+
+        # 2. Son aktif etkinlikte (partial results) → sporcu bazlı kontrol
+        in_last = (by, g, s, d) in last_active_events or (by, "", s, d) in last_active_events
+        if in_last:
+            # Bu sporcunun sonucu var mı?
+            from modules.m1_normalize import normalize_for_lookup
+            norm = normalize_for_lookup(name)
+            found = any(
+                normalize_for_lookup(k[0]) == norm and k[1] == by and k[2] == s and k[3] == d
+                for k in athletes_done_in_last_pdf
+            )
+            if found:
+                continue  # Yüzdü → bekleyende değil
+
+        # 3. Bekleyende
+        key = (name, by)
         result.setdefault(key, []).append({
-            "stroke":     r["stroke"],
-            "dist":       r["distance"],
+            "stroke":     s,
+            "dist":       d,
             "entry_time": r["entry_time"],
         })
     return result

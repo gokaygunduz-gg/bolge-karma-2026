@@ -127,6 +127,7 @@ def _enrich(raw: RawResult) -> dict:
         "source":           raw.source,
         "club_found":       club_found,
         "participant_type": raw.participant_type,  # "TK"/"FD"/"TD" veya None
+        "pdf_seq":          raw.pdf_seq,           # ResultList_N.pdf sıra numarası (None = Lenex)
     }
 
 
@@ -453,9 +454,15 @@ def scrape_race(url: str, verbose: bool = True,
     for pdf_url in page_info.pdf_links:
         pdf_filename = pdf_url.split("/")[-1]
         hint_event   = page_info.event_map.get(pdf_filename)
+        # ResultList_N.pdf → N (PDF sıra numarası — bekleyen yarış kontrolü için)
+        _seq_m = re.search(r"(\d+)\.pdf$", pdf_filename)
+        pdf_seq = int(_seq_m.group(1)) if _seq_m else None
         # parse_pdf_from_url_auto: önce metin dener, sonuç yoksa OCR'e geçer
         # (hem text-based hem image-based PDF'leri destekler)
         pdf_results  = parse_pdf_from_url_auto(pdf_url, hint_event)
+        # Her sonuca PDF sıra numarasını ekle (bekleyen yarış mantığı için)
+        for r in pdf_results:
+            r.pdf_seq = pdf_seq
         raw_results.extend(pdf_results)
 
         if verbose and pdf_results:
