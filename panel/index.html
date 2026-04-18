@@ -113,6 +113,9 @@
     padding: 8px 12px; background: #162032; border-top: 1px solid var(--border);
     display: flex; flex-wrap: wrap; gap: 5px;
   }
+  .cum-sums { width: 100%; display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  .cum-badge { font-size: 11px; color: var(--muted); background: #1e293b; border: 1px solid var(--border); border-radius: 10px; padding: 2px 8px; }
+  .cum-badge b { color: var(--text); margin-left: 2px; }
   .event-chip {
     display: inline-flex; align-items: center; gap: 3px;
     padding: 3px 7px; border-radius: 7px; font-size: 10px;
@@ -596,7 +599,9 @@ function buildTable(groupKey, grp, athletes) {
     </tr>`;
 
     if (isExp) {
+      const cumBadges = buildCumBadges(a.seq || []);
       rows += `<tr class="expand-row"><td colspan="6"><div class="event-detail">
+        ${cumBadges ? `<div class="cum-sums">${cumBadges}</div>` : ''}
         ${buildEventChips(events || [])}
       </div></td></tr>`;
     }
@@ -613,6 +618,20 @@ function buildTable(groupKey, grp, athletes) {
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
+}
+
+function buildCumBadges(seq) {
+  if (!seq || seq.length < 3) return '';
+  const badges = [];
+  let running = 0;
+  for (let i = 0; i < Math.min(seq.length, 6); i++) {
+    running += seq[i];
+    if (i >= 2) { // 3. elemandan itibaren (0-indexed: i=2 → 3Y)
+      const label = `${i+1}Y`;
+      badges.push(`<span class="cum-badge">${label}:<b>${running}</b></span>`);
+    }
+  }
+  return badges.join('');
 }
 
 function buildEventChips(events) {

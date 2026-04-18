@@ -111,6 +111,7 @@ def build_group_data(athletes_ranked: list, by_leg_data: dict, event_winners: di
             "city":           a.get("city", ""),
             "region":         a.get("region"),
             "top3":           top3,
+            "seq":            seq,
             "seq_display":    format_seq_display(seq),
             "region_rank":    a.get("region_rank"),
             "selected":       sel,

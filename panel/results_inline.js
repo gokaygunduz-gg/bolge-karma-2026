@@ -1,5 +1,5 @@
 window.RESULTS_DATA = {
-  "generated_at": "2026-04-16 23:24:25",
+  "generated_at": "2026-04-18 12:33 (TR)",
   "legs": "antalya",
   "groups": {
     "2011_F": {
@@ -24,6 +24,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 25,
+          "seq": [
+            9,
+            9,
+            7
+          ],
           "seq_display": "9+9+7",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -113,6 +118,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            7,
+            6,
+            6,
+            0
+          ],
           "seq_display": "7+6+6 | 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -192,6 +203,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 17,
+          "seq": [
+            7,
+            5,
+            5,
+            2
+          ],
           "seq_display": "7+5+5 | 2",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -287,6 +304,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 16,
+          "seq": [
+            9,
+            7
+          ],
           "seq_display": "9+7",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -355,6 +376,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 15,
+          "seq": [
+            6,
+            5,
+            4,
+            3
+          ],
           "seq_display": "6+5+4 | 3",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -450,6 +477,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            5,
+            5,
+            5
+          ],
           "seq_display": "5+5+5",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -529,6 +561,12 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 15,
+          "seq": [
+            6,
+            6,
+            3,
+            0
+          ],
           "seq_display": "6+6+3 | 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -608,6 +646,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 12,
+          "seq": [
+            7,
+            3,
+            2
+          ],
           "seq_display": "7+3+2",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -697,6 +740,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            4,
+            4,
+            0
+          ],
           "seq_display": "4+4+0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -760,6 +808,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 16,
+          "seq": [
+            7,
+            6,
+            3
+          ],
           "seq_display": "7+6+3",
           "region_rank": null,
           "selected": "TR",
@@ -833,6 +886,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            6,
+            5,
+            4,
+            4,
+            3
+          ],
           "seq_display": "6+5+4 | 4 3",
           "region_rank": null,
           "selected": "TR",
@@ -954,6 +1014,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            6,
+            5,
+            3,
+            3,
+            1
+          ],
           "seq_display": "6+5+3 | 3 1",
           "region_rank": null,
           "selected": "TR",
@@ -1075,6 +1142,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            5,
+            5,
+            4
+          ],
           "seq_display": "5+5+4",
           "region_rank": null,
           "selected": "TR",
@@ -1148,6 +1220,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            6,
+            5,
+            3
+          ],
           "seq_display": "6+5+3",
           "region_rank": null,
           "selected": "TR",
@@ -1221,6 +1298,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            7,
+            3,
+            1,
+            0
+          ],
           "seq_display": "7+3+1 | 0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -1294,6 +1377,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            7,
+            4
+          ],
           "seq_display": "7+4",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -1351,6 +1438,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3
+          ],
           "seq_display": "4+3+3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -1424,6 +1516,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 10,
+          "seq": [
+            5,
+            3,
+            2
+          ],
           "seq_display": "5+3+2",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -1497,6 +1594,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3
+          ],
           "seq_display": "4+3+3",
           "region_rank": 3,
           "selected": "-",
@@ -1570,6 +1672,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            5,
+            4
+          ],
           "seq_display": "5+4",
           "region_rank": 4,
           "selected": "-",
@@ -1627,6 +1733,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            3,
+            3,
+            3,
+            0
+          ],
           "seq_display": "3+3+3 | 0",
           "region_rank": 5,
           "selected": "-",
@@ -1700,6 +1812,10 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 8,
+          "seq": [
+            5,
+            3
+          ],
           "seq_display": "5+3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -1757,6 +1873,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            5,
+            3
+          ],
           "seq_display": "5+3",
           "region_rank": 6,
           "selected": "-",
@@ -1830,6 +1950,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            3,
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+3+2 | 0",
           "region_rank": 7,
           "selected": "-",
@@ -1903,6 +2029,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            7
+          ],
           "seq_display": "7",
           "region_rank": 8,
           "selected": "-",
@@ -1976,6 +2105,10 @@ window.RESULTS_DATA = {
           "city": "Konya",
           "region": 4,
           "top3": 6,
+          "seq": [
+            3,
+            3
+          ],
           "seq_display": "3+3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2033,6 +2166,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            4,
+            2
+          ],
           "seq_display": "4+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2090,6 +2227,10 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 5,
+          "seq": [
+            4,
+            1
+          ],
           "seq_display": "4+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2147,6 +2288,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2204,6 +2350,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            4,
+            0
+          ],
           "seq_display": "4+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2245,6 +2395,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            3,
+            1
+          ],
           "seq_display": "3+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2302,6 +2456,11 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2359,6 +2518,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            2,
+            0
+          ],
           "seq_display": "2+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2416,6 +2580,11 @@ window.RESULTS_DATA = {
           "city": "Kırklareli",
           "region": 2,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2473,6 +2642,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2530,6 +2704,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2571,6 +2749,10 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2612,6 +2794,11 @@ window.RESULTS_DATA = {
           "city": "Kayseri",
           "region": 4,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2669,6 +2856,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2726,6 +2917,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2767,6 +2961,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2808,6 +3005,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2865,6 +3066,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2922,6 +3127,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 2,
+          "seq": [
+            1,
+            1,
+            0
+          ],
           "seq_display": "1+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -2979,6 +3189,10 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -3035,6 +3249,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            6
+          ],
           "seq_display": "9+9+9 | 6",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3156,6 +3376,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 25,
+          "seq": [
+            9,
+            9,
+            7,
+            7
+          ],
           "seq_display": "9+9+7 | 7",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3282,6 +3508,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 25,
+          "seq": [
+            9,
+            9,
+            7
+          ],
           "seq_display": "9+9+7",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3361,6 +3592,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 22,
+          "seq": [
+            9,
+            7,
+            6,
+            0
+          ],
           "seq_display": "9+7+6 | 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3445,6 +3682,12 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 21,
+          "seq": [
+            9,
+            7,
+            5,
+            0
+          ],
           "seq_display": "9+7+5 | 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3534,6 +3777,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 20,
+          "seq": [
+            9,
+            6,
+            5
+          ],
           "seq_display": "9+6+5",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3613,6 +3861,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 16,
+          "seq": [
+            6,
+            5,
+            5,
+            4,
+            0
+          ],
           "seq_display": "6+5+5 | 4 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3708,6 +3963,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            9,
+            6
+          ],
           "seq_display": "9+6",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -3792,6 +4051,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            7,
+            7,
+            7,
+            6,
+            0
+          ],
           "seq_display": "7+7+7 | 6 0",
           "region_rank": null,
           "selected": "TR",
@@ -3881,6 +4147,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            7,
+            7,
+            7,
+            0
+          ],
           "seq_display": "7+7+7 | 0",
           "region_rank": null,
           "selected": "TR",
@@ -3954,6 +4226,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 18,
+          "seq": [
+            6,
+            6,
+            6
+          ],
           "seq_display": "6+6+6",
           "region_rank": null,
           "selected": "TR",
@@ -4027,6 +4304,15 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            6,
+            5,
+            4,
+            4,
+            2,
+            1,
+            0
+          ],
           "seq_display": "6+5+4 | 4 2 1",
           "region_rank": null,
           "selected": "TR",
@@ -4148,6 +4434,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            7,
+            7,
+            1,
+            1
+          ],
           "seq_display": "7+7+1 | 1",
           "region_rank": null,
           "selected": "TR",
@@ -4253,6 +4545,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            7,
+            4,
+            4
+          ],
           "seq_display": "7+4+4",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -4326,6 +4623,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            5,
+            5,
+            3,
+            3
+          ],
           "seq_display": "5+5+3 | 3",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -4415,6 +4718,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            7,
+            6
+          ],
           "seq_display": "7+6",
           "region_rank": 3,
           "selected": "-",
@@ -4472,6 +4779,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            5,
+            5,
+            3,
+            0
+          ],
           "seq_display": "5+5+3 | 0",
           "region_rank": 4,
           "selected": "-",
@@ -4545,6 +4858,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            7,
+            6
+          ],
           "seq_display": "7+6",
           "region_rank": 5,
           "selected": "-",
@@ -4618,6 +4935,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            6,
+            5,
+            2,
+            0
+          ],
           "seq_display": "6+5+2 | 0",
           "region_rank": 6,
           "selected": "-",
@@ -4691,6 +5014,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            5,
+            5,
+            2,
+            0
+          ],
           "seq_display": "5+5+2 | 0",
           "region_rank": 7,
           "selected": "-",
@@ -4764,6 +5093,11 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 12,
+          "seq": [
+            7,
+            4,
+            1
+          ],
           "seq_display": "7+4+1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -4837,6 +5171,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            3,
+            1
+          ],
           "seq_display": "4+4+3 | 3 1",
           "region_rank": 8,
           "selected": "-",
@@ -4942,6 +5283,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            6,
+            5
+          ],
           "seq_display": "6+5",
           "region_rank": 9,
           "selected": "-",
@@ -5031,6 +5376,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3,
+            3,
+            1
+          ],
           "seq_display": "4+3+3 | 3 1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -5152,6 +5504,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3,
+            1
+          ],
           "seq_display": "4+3+3 | 1",
           "region_rank": 10,
           "selected": "-",
@@ -5241,6 +5599,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            6,
+            3,
+            1
+          ],
           "seq_display": "6+3+1",
           "region_rank": 11,
           "selected": "-",
@@ -5330,6 +5693,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            4,
+            2
+          ],
           "seq_display": "4+4+2",
           "region_rank": 12,
           "selected": "-",
@@ -5403,6 +5771,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            5,
+            5,
+            0
+          ],
           "seq_display": "5+5+0",
           "region_rank": 13,
           "selected": "-",
@@ -5460,6 +5833,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 9,
+          "seq": [
+            5,
+            3,
+            1,
+            1,
+            0
+          ],
           "seq_display": "5+3+1 | 1 0",
           "region_rank": 2,
           "selected": "-",
@@ -5549,6 +5929,10 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 9,
+          "seq": [
+            6,
+            3
+          ],
           "seq_display": "6+3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -5622,6 +6006,11 @@ window.RESULTS_DATA = {
           "city": "Giresun",
           "region": 5,
           "top3": 9,
+          "seq": [
+            5,
+            3,
+            1
+          ],
           "seq_display": "5+3+1",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -5711,6 +6100,12 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 8,
+          "seq": [
+            5,
+            2,
+            1,
+            0
+          ],
           "seq_display": "5+2+1 | 0",
           "region_rank": 3,
           "selected": "-",
@@ -5784,6 +6179,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 8,
+          "seq": [
+            4,
+            2,
+            2
+          ],
           "seq_display": "4+2+2",
           "region_rank": 2,
           "selected": "-",
@@ -5857,6 +6257,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            5,
+            3
+          ],
           "seq_display": "5+3",
           "region_rank": 14,
           "selected": "-",
@@ -5914,6 +6318,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            2,
+            1,
+            0
+          ],
           "seq_display": "4+2+1 | 0",
           "region_rank": 15,
           "selected": "-",
@@ -5987,6 +6397,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 16,
           "selected": "-",
@@ -6044,6 +6458,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 7,
+          "seq": [
+            4,
+            3,
+            0
+          ],
           "seq_display": "4+3+0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -6101,6 +6520,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            2,
+            1
+          ],
           "seq_display": "4+2+1",
           "region_rank": 17,
           "selected": "-",
@@ -6174,6 +6598,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 18,
           "selected": "-",
@@ -6247,6 +6675,10 @@ window.RESULTS_DATA = {
           "city": "Rize",
           "region": 5,
           "top3": 7,
+          "seq": [
+            6,
+            1
+          ],
           "seq_display": "6+1",
           "region_rank": 3,
           "selected": "-",
@@ -6320,6 +6752,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 7,
+          "seq": [
+            5,
+            2,
+            0
+          ],
           "seq_display": "5+2+0",
           "region_rank": 4,
           "selected": "-",
@@ -6377,6 +6814,11 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1
+          ],
           "seq_display": "3+2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6450,6 +6892,12 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1,
+            0
+          ],
           "seq_display": "3+2+1 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6523,6 +6971,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 6,
+          "seq": [
+            3,
+            3
+          ],
           "seq_display": "3+3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6580,6 +7032,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            5,
+            0
+          ],
           "seq_display": "5+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6621,6 +7077,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6678,6 +7139,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            4,
+            1
+          ],
           "seq_display": "4+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6735,6 +7200,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            3,
+            2
+          ],
           "seq_display": "3+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6792,6 +7261,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6849,6 +7323,9 @@ window.RESULTS_DATA = {
           "city": "Kıbrıs/KKTC",
           "region": 6,
           "top3": 4,
+          "seq": [
+            4
+          ],
           "seq_display": "4",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6890,6 +7367,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 4,
+          "seq": [
+            3,
+            1
+          ],
           "seq_display": "3+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -6947,6 +7428,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            1,
+            1,
+            0
+          ],
           "seq_display": "2+1+1 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7020,6 +7507,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1
+          ],
           "seq_display": "2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7077,6 +7568,11 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7134,6 +7630,10 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7175,6 +7675,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7216,6 +7719,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7257,6 +7764,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7298,6 +7809,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7355,6 +7871,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7412,6 +7933,9 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7469,6 +7993,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7510,6 +8037,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7551,6 +8082,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7592,6 +8127,9 @@ window.RESULTS_DATA = {
           "city": "Tekirdağ",
           "region": 2,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7633,6 +8171,10 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7674,6 +8216,10 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7715,6 +8261,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7756,6 +8305,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7797,6 +8349,9 @@ window.RESULTS_DATA = {
           "city": "Tekirdağ",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7838,6 +8393,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7879,6 +8438,9 @@ window.RESULTS_DATA = {
           "city": "Kıbrıs/KKTC",
           "region": 6,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -7935,6 +8497,13 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            7,
+            0
+          ],
           "seq_display": "9+9+9 | 7 0",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -8045,6 +8614,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5,
+            5
+          ],
           "seq_display": "7+6+5 | 5",
           "region_rank": null,
           "selected": "MULTINATIONS",
@@ -8140,6 +8715,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            9,
+            7,
+            5
+          ],
           "seq_display": "9+7+5",
           "region_rank": null,
           "selected": "TR",
@@ -8213,6 +8793,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            9,
+            7,
+            5,
+            0
+          ],
           "seq_display": "9+7+5 | 0",
           "region_rank": null,
           "selected": "TR",
@@ -8286,6 +8872,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            7,
+            7,
+            5,
+            4,
+            4
+          ],
           "seq_display": "7+7+5 | 4 4",
           "region_rank": null,
           "selected": "TR",
@@ -8407,6 +9000,14 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 17,
+          "seq": [
+            6,
+            6,
+            5,
+            4,
+            4,
+            0
+          ],
           "seq_display": "6+6+5 | 4 4 0",
           "region_rank": null,
           "selected": "TR",
@@ -8512,6 +9113,11 @@ window.RESULTS_DATA = {
           "city": "Manisa",
           "region": 3,
           "top3": 16,
+          "seq": [
+            6,
+            6,
+            4
+          ],
           "seq_display": "6+6+4",
           "region_rank": null,
           "selected": "TR",
@@ -8585,6 +9191,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            6,
+            6,
+            2,
+            2
+          ],
           "seq_display": "6+6+2 | 2",
           "region_rank": null,
           "selected": "TR",
@@ -8690,6 +9302,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            7,
+            7
+          ],
           "seq_display": "7+7",
           "region_rank": null,
           "selected": "TR",
@@ -8747,6 +9363,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 14,
+          "seq": [
+            9,
+            3,
+            2
+          ],
           "seq_display": "9+3+2",
           "region_rank": null,
           "selected": "TR",
@@ -8858,6 +9479,14 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3,
+            2,
+            2,
+            0
+          ],
           "seq_display": "5+4+3 | 2 2 0",
           "region_rank": null,
           "selected": "TR",
@@ -8963,6 +9592,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3
+          ],
           "seq_display": "5+4+3",
           "region_rank": null,
           "selected": "TR",
@@ -9052,6 +9686,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            7,
+            5
+          ],
           "seq_display": "7+5",
           "region_rank": null,
           "selected": "TR",
@@ -9125,6 +9763,11 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3
+          ],
           "seq_display": "5+4+3",
           "region_rank": null,
           "selected": "TR",
@@ -9214,6 +9857,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            1,
+            1
+          ],
           "seq_display": "4+4+3 | 1 1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -9319,6 +9969,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            6,
+            5
+          ],
           "seq_display": "6+5",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -9376,6 +10030,13 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 10,
+          "seq": [
+            5,
+            3,
+            2,
+            1,
+            0
+          ],
           "seq_display": "5+3+2 | 1 0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -9465,6 +10126,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            4,
+            2,
+            1,
+            0
+          ],
           "seq_display": "4+4+2 | 1 0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -9554,6 +10222,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            6,
+            3
+          ],
           "seq_display": "6+3",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -9611,6 +10283,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            3,
+            3,
+            2,
+            2,
+            0
+          ],
           "seq_display": "3+3+2 | 2 0",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -9700,6 +10379,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1
+          ],
           "seq_display": "4+3+1",
           "region_rank": 5,
           "selected": "-",
@@ -9773,6 +10457,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            5,
+            2,
+            0
+          ],
           "seq_display": "5+2+0",
           "region_rank": 6,
           "selected": "-",
@@ -9830,6 +10519,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 6,
+          "seq": [
+            2,
+            2,
+            2,
+            1,
+            1
+          ],
           "seq_display": "2+2+2 | 1 1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -9935,6 +10631,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            3,
+            3
+          ],
           "seq_display": "3+3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -9992,6 +10692,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            2,
+            2,
+            2
+          ],
           "seq_display": "2+2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10065,6 +10770,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10122,6 +10832,9 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 5,
+          "seq": [
+            5
+          ],
           "seq_display": "5",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10163,6 +10876,12 @@ window.RESULTS_DATA = {
           "city": "Mersin",
           "region": 6,
           "top3": 5,
+          "seq": [
+            2,
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+2+1 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10236,6 +10955,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10293,6 +11017,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            2
+          ],
           "seq_display": "2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10350,6 +11078,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10407,6 +11140,11 @@ window.RESULTS_DATA = {
           "city": "Aydın",
           "region": 3,
           "top3": 4,
+          "seq": [
+            2,
+            1,
+            1
+          ],
           "seq_display": "2+1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10496,6 +11234,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10553,6 +11296,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1
+          ],
           "seq_display": "2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10610,6 +11357,9 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10651,6 +11401,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10692,6 +11446,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10733,6 +11491,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10774,6 +11536,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1,
+            0
+          ],
           "seq_display": "1+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10831,6 +11598,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10888,6 +11659,9 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10929,6 +11703,9 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -10970,6 +11747,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1,
+            0
+          ],
           "seq_display": "1+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11027,6 +11809,9 @@ window.RESULTS_DATA = {
           "city": "Adana",
           "region": 6,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11084,6 +11869,10 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11125,6 +11914,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11166,6 +11959,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11207,6 +12003,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -11263,6 +12063,11 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9
+          ],
           "seq_display": "9+9+9",
           "region_rank": null,
           "selected": "TR",
@@ -11336,6 +12141,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9
+          ],
           "seq_display": "9+9+9",
           "region_rank": null,
           "selected": "TR",
@@ -11409,6 +12219,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 25,
+          "seq": [
+            9,
+            9,
+            7,
+            7
+          ],
           "seq_display": "9+9+7 | 7",
           "region_rank": null,
           "selected": "TR",
@@ -11498,6 +12314,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 23,
+          "seq": [
+            9,
+            7,
+            7
+          ],
           "seq_display": "9+7+7",
           "region_rank": null,
           "selected": "TR",
@@ -11587,6 +12408,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 23,
+          "seq": [
+            9,
+            9,
+            5
+          ],
           "seq_display": "9+9+5",
           "region_rank": null,
           "selected": "TR",
@@ -11676,6 +12502,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 22,
+          "seq": [
+            9,
+            7,
+            6,
+            4,
+            4
+          ],
           "seq_display": "9+7+6 | 4 4",
           "region_rank": null,
           "selected": "TR",
@@ -11781,6 +12614,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            7,
+            7,
+            7,
+            0
+          ],
           "seq_display": "7+7+7 | 0",
           "region_rank": null,
           "selected": "TR",
@@ -11854,6 +12693,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 20,
+          "seq": [
+            7,
+            7,
+            6,
+            6
+          ],
           "seq_display": "7+7+6 | 6",
           "region_rank": null,
           "selected": "TR",
@@ -11943,6 +12788,14 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 20,
+          "seq": [
+            7,
+            7,
+            6,
+            5,
+            5,
+            3
+          ],
           "seq_display": "7+7+6 | 5 5 3",
           "region_rank": null,
           "selected": "TR",
@@ -12064,6 +12917,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 20,
+          "seq": [
+            7,
+            7,
+            6
+          ],
           "seq_display": "7+7+6",
           "region_rank": null,
           "selected": "TR",
@@ -12137,6 +12995,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            7,
+            7,
+            5
+          ],
           "seq_display": "7+7+5",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -12210,6 +13073,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 17,
+          "seq": [
+            6,
+            6,
+            5,
+            5,
+            0
+          ],
           "seq_display": "6+6+5 | 5 0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -12299,6 +13169,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 17,
+          "seq": [
+            7,
+            5,
+            5
+          ],
           "seq_display": "7+5+5",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -12372,6 +13247,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 16,
+          "seq": [
+            6,
+            6,
+            4,
+            3
+          ],
           "seq_display": "6+6+4 | 3",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -12493,6 +13374,13 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 13,
+          "seq": [
+            5,
+            4,
+            4,
+            3,
+            0
+          ],
           "seq_display": "5+4+4 | 3 0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -12582,6 +13470,12 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 13,
+          "seq": [
+            5,
+            4,
+            4,
+            3
+          ],
           "seq_display": "5+4+4 | 3",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -12671,6 +13565,12 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 13,
+          "seq": [
+            6,
+            4,
+            3,
+            3
+          ],
           "seq_display": "6+4+3 | 3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -12760,6 +13660,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 13,
+          "seq": [
+            7,
+            5,
+            1
+          ],
           "seq_display": "7+5+1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -12849,6 +13754,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 13,
+          "seq": [
+            7,
+            5,
+            1
+          ],
           "seq_display": "7+5+1",
           "region_rank": 3,
           "selected": "-",
@@ -12922,6 +13832,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 13,
+          "seq": [
+            5,
+            5,
+            3
+          ],
           "seq_display": "5+5+3",
           "region_rank": 3,
           "selected": "-",
@@ -12995,6 +13910,15 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3,
+            3,
+            3,
+            2,
+            0
+          ],
           "seq_display": "5+4+3 | 3 3 2",
           "region_rank": 4,
           "selected": "-",
@@ -13116,6 +14040,13 @@ window.RESULTS_DATA = {
           "city": "Mersin",
           "region": 6,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3,
+            2,
+            0
+          ],
           "seq_display": "5+4+3 | 2 0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -13205,6 +14136,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            5,
+            4,
+            3,
+            1
+          ],
           "seq_display": "5+4+3 | 1",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -13294,6 +14231,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            6,
+            4,
+            2
+          ],
           "seq_display": "6+4+2",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -13367,6 +14309,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 12,
+          "seq": [
+            4,
+            4,
+            4
+          ],
           "seq_display": "4+4+4",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -13456,6 +14403,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            2,
+            0
+          ],
           "seq_display": "4+4+3 | 2 0",
           "region_rank": 5,
           "selected": "-",
@@ -13545,6 +14499,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 11,
+          "seq": [
+            5,
+            3,
+            3,
+            1
+          ],
           "seq_display": "5+3+3 | 1",
           "region_rank": 3,
           "selected": "-",
@@ -13650,6 +14610,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            1
+          ],
           "seq_display": "4+4+3 | 1",
           "region_rank": 4,
           "selected": "-",
@@ -13755,6 +14721,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            1
+          ],
           "seq_display": "4+4+3 | 1",
           "region_rank": 5,
           "selected": "-",
@@ -13844,6 +14816,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 10,
+          "seq": [
+            5,
+            4,
+            1
+          ],
           "seq_display": "5+4+1",
           "region_rank": 6,
           "selected": "-",
@@ -13917,6 +14894,11 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3
+          ],
           "seq_display": "4+3+3",
           "region_rank": 5,
           "selected": "-",
@@ -13990,6 +14972,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2,
+            2,
+            2
+          ],
           "seq_display": "4+3+2 | 2 2",
           "region_rank": 7,
           "selected": "-",
@@ -14095,6 +15084,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            5,
+            4,
+            0
+          ],
           "seq_display": "5+4+0",
           "region_rank": 6,
           "selected": "-",
@@ -14152,6 +15146,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 9,
+          "seq": [
+            5,
+            3,
+            1
+          ],
           "seq_display": "5+3+1",
           "region_rank": 6,
           "selected": "-",
@@ -14225,6 +15224,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2
+          ],
           "seq_display": "4+3+2",
           "region_rank": 7,
           "selected": "-",
@@ -14314,6 +15318,13 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1,
+            1,
+            0
+          ],
           "seq_display": "4+3+1 | 1 0",
           "region_rank": 4,
           "selected": "-",
@@ -14403,6 +15414,10 @@ window.RESULTS_DATA = {
           "city": "Tekirdağ",
           "region": 2,
           "top3": 8,
+          "seq": [
+            4,
+            4
+          ],
           "seq_display": "4+4",
           "region_rank": 7,
           "selected": "-",
@@ -14476,6 +15491,12 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 7,
+          "seq": [
+            3,
+            3,
+            1,
+            1
+          ],
           "seq_display": "3+3+1 | 1",
           "region_rank": 8,
           "selected": "-",
@@ -14565,6 +15586,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 7,
+          "seq": [
+            4,
+            3,
+            0
+          ],
           "seq_display": "4+3+0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -14622,6 +15648,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            3,
+            2,
+            2
+          ],
           "seq_display": "3+2+2",
           "region_rank": 8,
           "selected": "-",
@@ -14711,6 +15742,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 9,
           "selected": "-",
@@ -14768,6 +15803,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 7,
+          "seq": [
+            4,
+            2,
+            1,
+            0
+          ],
           "seq_display": "4+2+1 | 0",
           "region_rank": 8,
           "selected": "-",
@@ -14841,6 +15882,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 5,
           "selected": "-",
@@ -14898,6 +15943,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1,
+            1,
+            0
+          ],
           "seq_display": "3+2+1 | 1 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -14987,6 +16039,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1,
+            1
+          ],
           "seq_display": "3+2+1 | 1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15076,6 +16134,12 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1,
+            0
+          ],
           "seq_display": "3+2+1 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15149,6 +16213,10 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 6,
+          "seq": [
+            3,
+            3
+          ],
           "seq_display": "3+3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15222,6 +16290,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 6,
+          "seq": [
+            2,
+            2,
+            2,
+            0
+          ],
           "seq_display": "2+2+2 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15295,6 +16369,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            3,
+            3
+          ],
           "seq_display": "3+3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15352,6 +16430,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            2,
+            2,
+            1
+          ],
           "seq_display": "2+2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15425,6 +16508,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15482,6 +16570,10 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 5,
+          "seq": [
+            3,
+            2
+          ],
           "seq_display": "3+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15539,6 +16631,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 5,
+          "seq": [
+            2,
+            2,
+            1
+          ],
           "seq_display": "2+2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15612,6 +16709,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15669,6 +16771,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            2,
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+2+1 | 0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15742,6 +16850,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            2
+          ],
           "seq_display": "2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15799,6 +16911,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            2,
+            0
+          ],
           "seq_display": "2+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15856,6 +16973,11 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15913,6 +17035,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            2,
+            1,
+            1
+          ],
           "seq_display": "2+1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -15986,6 +17113,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16043,6 +17175,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 3,
+          "seq": [
+            1,
+            1,
+            1
+          ],
           "seq_display": "1+1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16116,6 +17253,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16157,6 +17298,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16214,6 +17359,10 @@ window.RESULTS_DATA = {
           "city": "Kayseri",
           "region": 4,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16255,6 +17404,10 @@ window.RESULTS_DATA = {
           "city": "Tekirdağ",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16296,6 +17449,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16337,6 +17494,10 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16378,6 +17539,10 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -16434,6 +17599,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            7,
+            7
+          ],
           "seq_display": "9+9+9 | 7 7",
           "region_rank": null,
           "selected": "TR",
@@ -16539,6 +17711,14 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            7,
+            5,
+            0
+          ],
           "seq_display": "9+9+9 | 7 5 0",
           "region_rank": null,
           "selected": "TR",
@@ -16644,6 +17824,14 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            6,
+            5,
+            3
+          ],
           "seq_display": "9+9+9 | 6 5 3",
           "region_rank": null,
           "selected": "TR",
@@ -16765,6 +17953,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            6,
+            0
+          ],
           "seq_display": "9+9+9 | 6 0",
           "region_rank": null,
           "selected": "TR",
@@ -16854,6 +18049,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            5
+          ],
           "seq_display": "9+9+9 | 5",
           "region_rank": null,
           "selected": "TR",
@@ -16943,6 +18144,14 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 25,
+          "seq": [
+            9,
+            9,
+            7,
+            5,
+            5,
+            3
+          ],
           "seq_display": "9+9+7 | 5 5 3",
           "region_rank": null,
           "selected": "TR",
@@ -17064,6 +18273,14 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 24,
+          "seq": [
+            9,
+            9,
+            6,
+            6,
+            5,
+            4
+          ],
           "seq_display": "9+9+6 | 6 5 4",
           "region_rank": null,
           "selected": "TR",
@@ -17185,6 +18402,14 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 24,
+          "seq": [
+            9,
+            9,
+            6,
+            6,
+            3,
+            0
+          ],
           "seq_display": "9+9+6 | 6 3 0",
           "region_rank": null,
           "selected": "TR",
@@ -17290,6 +18515,14 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            9,
+            7,
+            5,
+            5,
+            3,
+            3
+          ],
           "seq_display": "9+7+5 | 5 3 3",
           "region_rank": null,
           "selected": "TR",
@@ -17443,6 +18676,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 21,
+          "seq": [
+            9,
+            6,
+            6,
+            2,
+            0
+          ],
           "seq_display": "9+6+6 | 2 0",
           "region_rank": null,
           "selected": "TR",
@@ -17532,6 +18772,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 20,
+          "seq": [
+            7,
+            7,
+            6,
+            3
+          ],
           "seq_display": "7+7+6 | 3",
           "region_rank": null,
           "selected": "TR",
@@ -17653,6 +18899,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 19,
+          "seq": [
+            7,
+            6,
+            6,
+            4,
+            0
+          ],
           "seq_display": "7+6+6 | 4 0",
           "region_rank": null,
           "selected": "TR",
@@ -17742,6 +18995,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            7,
+            7,
+            5,
+            1,
+            0
+          ],
           "seq_display": "7+7+5 | 1 0",
           "region_rank": null,
           "selected": "TR",
@@ -17831,6 +19091,15 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 18,
+          "seq": [
+            7,
+            7,
+            4,
+            2,
+            1,
+            1,
+            0
+          ],
           "seq_display": "7+7+4 | 2 1 1",
           "region_rank": null,
           "selected": "TR",
@@ -17952,6 +19221,13 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5,
+            1,
+            0
+          ],
           "seq_display": "7+6+5 | 1 0",
           "region_rank": null,
           "selected": "TR",
@@ -18041,6 +19317,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 17,
+          "seq": [
+            6,
+            6,
+            5,
+            5,
+            3
+          ],
           "seq_display": "6+6+5 | 5 3",
           "region_rank": null,
           "selected": "TR",
@@ -18162,6 +19445,12 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 16,
+          "seq": [
+            6,
+            6,
+            4,
+            2
+          ],
           "seq_display": "6+6+4 | 2",
           "region_rank": null,
           "selected": "TR",
@@ -18267,6 +19556,12 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 15,
+          "seq": [
+            7,
+            5,
+            3,
+            1
+          ],
           "seq_display": "7+5+3 | 1",
           "region_rank": null,
           "selected": "TR",
@@ -18388,6 +19683,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 15,
+          "seq": [
+            7,
+            7,
+            1,
+            1,
+            0
+          ],
           "seq_display": "7+7+1 | 1 0",
           "region_rank": null,
           "selected": "TR",
@@ -18477,6 +19779,11 @@ window.RESULTS_DATA = {
           "city": "Aydın",
           "region": 3,
           "top3": 15,
+          "seq": [
+            7,
+            6,
+            2
+          ],
           "seq_display": "7+6+2",
           "region_rank": null,
           "selected": "TR",
@@ -18550,6 +19857,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 14,
+          "seq": [
+            6,
+            5,
+            3,
+            3
+          ],
           "seq_display": "6+5+3 | 3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -18655,6 +19968,11 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 14,
+          "seq": [
+            7,
+            6,
+            1
+          ],
           "seq_display": "7+6+1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -18728,6 +20046,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 13,
+          "seq": [
+            6,
+            4,
+            3,
+            3,
+            2
+          ],
           "seq_display": "6+4+3 | 3 2",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -18849,6 +20174,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 13,
+          "seq": [
+            5,
+            5,
+            3
+          ],
           "seq_display": "5+5+3",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -18938,6 +20268,11 @@ window.RESULTS_DATA = {
           "city": "Rize",
           "region": 5,
           "top3": 13,
+          "seq": [
+            6,
+            5,
+            2
+          ],
           "seq_display": "6+5+2",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -19011,6 +20346,14 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 12,
+          "seq": [
+            7,
+            3,
+            2,
+            2,
+            1,
+            0
+          ],
           "seq_display": "7+3+2 | 2 1 0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -19116,6 +20459,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 12,
+          "seq": [
+            5,
+            5,
+            2
+          ],
           "seq_display": "5+5+2",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -19189,6 +20537,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 12,
+          "seq": [
+            6,
+            4,
+            2
+          ],
           "seq_display": "6+4+2",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -19262,6 +20615,10 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 12,
+          "seq": [
+            7,
+            5
+          ],
           "seq_display": "7+5",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -19319,6 +20676,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            6,
+            6,
+            0
+          ],
           "seq_display": "6+6+0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -19376,6 +20738,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            6,
+            6,
+            0
+          ],
           "seq_display": "6+6+0",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -19433,6 +20800,12 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 11,
+          "seq": [
+            4,
+            4,
+            3,
+            0
+          ],
           "seq_display": "4+4+3 | 0",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -19506,6 +20879,11 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 11,
+          "seq": [
+            6,
+            5,
+            0
+          ],
           "seq_display": "6+5+0",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -19563,6 +20941,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 11,
+          "seq": [
+            5,
+            3,
+            3
+          ],
           "seq_display": "5+3+3",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -19636,6 +21019,11 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 11,
+          "seq": [
+            6,
+            5,
+            0
+          ],
           "seq_display": "6+5+0",
           "region_rank": 5,
           "selected": "BÖLGE",
@@ -19693,6 +21081,11 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 11,
+          "seq": [
+            7,
+            4,
+            0
+          ],
           "seq_display": "7+4+0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -19750,6 +21143,11 @@ window.RESULTS_DATA = {
           "city": "Sakarya",
           "region": 2,
           "top3": 11,
+          "seq": [
+            6,
+            5,
+            0
+          ],
           "seq_display": "6+5+0",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -19807,6 +21205,15 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3,
+            3,
+            2,
+            2,
+            1
+          ],
           "seq_display": "4+3+3 | 3 2 2",
           "region_rank": 4,
           "selected": "-",
@@ -19944,6 +21351,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3,
+            3
+          ],
           "seq_display": "4+3+3 | 3",
           "region_rank": 5,
           "selected": "BÖLGE",
@@ -20049,6 +21462,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 10,
+          "seq": [
+            5,
+            4,
+            1,
+            0
+          ],
           "seq_display": "5+4+1 | 0",
           "region_rank": 5,
           "selected": "-",
@@ -20122,6 +21541,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            5,
+            5
+          ],
           "seq_display": "5+5",
           "region_rank": 6,
           "selected": "BÖLGE",
@@ -20195,6 +21618,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3
+          ],
           "seq_display": "4+3+3",
           "region_rank": 7,
           "selected": "BÖLGE",
@@ -20268,6 +21696,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2,
+            1
+          ],
           "seq_display": "4+3+2 | 1",
           "region_rank": 8,
           "selected": "-",
@@ -20357,6 +21791,11 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 9,
+          "seq": [
+            5,
+            4,
+            0
+          ],
           "seq_display": "5+4+0",
           "region_rank": 6,
           "selected": "-",
@@ -20414,6 +21853,11 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 9,
+          "seq": [
+            7,
+            2,
+            0
+          ],
           "seq_display": "7+2+0",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -20471,6 +21915,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 8,
+          "seq": [
+            4,
+            2,
+            2,
+            1
+          ],
           "seq_display": "4+2+2 | 1",
           "region_rank": 7,
           "selected": "-",
@@ -20560,6 +22010,11 @@ window.RESULTS_DATA = {
           "city": "Amasya",
           "region": 4,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1
+          ],
           "seq_display": "4+3+1",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -20633,6 +22088,12 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1,
+            0
+          ],
           "seq_display": "4+3+1 | 0",
           "region_rank": 8,
           "selected": "-",
@@ -20706,6 +22167,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            4,
+            4,
+            0
+          ],
           "seq_display": "4+4+0",
           "region_rank": 9,
           "selected": "-",
@@ -20763,6 +22229,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 8,
+          "seq": [
+            7,
+            1,
+            0
+          ],
           "seq_display": "7+1+0",
           "region_rank": 6,
           "selected": "-",
@@ -20820,6 +22291,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 8,
+          "seq": [
+            5,
+            3
+          ],
           "seq_display": "5+3",
           "region_rank": 10,
           "selected": "-",
@@ -20877,6 +22352,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 7,
+          "seq": [
+            3,
+            3,
+            1,
+            1
+          ],
           "seq_display": "3+3+1 | 1",
           "region_rank": 7,
           "selected": "-",
@@ -20982,6 +22463,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            4,
+            2,
+            1,
+            0
+          ],
           "seq_display": "4+2+1 | 0",
           "region_rank": 11,
           "selected": "-",
@@ -21055,6 +22542,10 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 8,
           "selected": "-",
@@ -21112,6 +22603,11 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 6,
+          "seq": [
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21169,6 +22665,11 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 6,
+          "seq": [
+            2,
+            2,
+            2
+          ],
           "seq_display": "2+2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21242,6 +22743,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 6,
+          "seq": [
+            3,
+            2,
+            1
+          ],
           "seq_display": "3+2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21315,6 +22821,10 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 6,
+          "seq": [
+            6,
+            0
+          ],
           "seq_display": "6+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21356,6 +22866,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 5,
+          "seq": [
+            3,
+            2
+          ],
           "seq_display": "3+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21413,6 +22927,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 5,
+          "seq": [
+            5,
+            0
+          ],
           "seq_display": "5+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21454,6 +22972,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            3,
+            2
+          ],
           "seq_display": "3+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21527,6 +23049,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 5,
+          "seq": [
+            4,
+            1
+          ],
           "seq_display": "4+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21584,6 +23110,11 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21641,6 +23172,10 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 4,
+          "seq": [
+            2,
+            2
+          ],
           "seq_display": "2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21698,6 +23233,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 4,
+          "seq": [
+            2,
+            2,
+            0
+          ],
           "seq_display": "2+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21755,6 +23295,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 4,
+          "seq": [
+            3,
+            1,
+            0
+          ],
           "seq_display": "3+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21812,6 +23357,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 4,
+          "seq": [
+            2,
+            2,
+            0
+          ],
           "seq_display": "2+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21869,6 +23419,10 @@ window.RESULTS_DATA = {
           "city": "Giresun",
           "region": 5,
           "top3": 3,
+          "seq": [
+            2,
+            1
+          ],
           "seq_display": "2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21942,6 +23496,9 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -21983,6 +23540,10 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22024,6 +23585,9 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22065,6 +23629,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22122,6 +23691,10 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22163,6 +23736,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1
+          ],
           "seq_display": "1+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22220,6 +23797,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22261,6 +23842,9 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22302,6 +23886,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 2,
+          "seq": [
+            1,
+            1,
+            0
+          ],
           "seq_display": "1+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22359,6 +23948,10 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22400,6 +23993,9 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22441,6 +24037,9 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22482,6 +24081,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 2,
+          "seq": [
+            1,
+            1,
+            0
+          ],
           "seq_display": "1+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22539,6 +24143,9 @@ window.RESULTS_DATA = {
           "city": "Gaziantep",
           "region": 6,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22580,6 +24187,10 @@ window.RESULTS_DATA = {
           "city": "Tekirdağ",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22621,6 +24232,9 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1
+          ],
           "seq_display": "1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22662,6 +24276,10 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22703,6 +24321,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22744,6 +24366,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -22800,6 +24426,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
           "seq_display": "9+9+9 | 9 9",
           "region_rank": null,
           "selected": "TR",
@@ -22921,6 +24554,14 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            9,
+            7,
+            5
+          ],
           "seq_display": "9+9+9 | 9 7 5",
           "region_rank": null,
           "selected": "TR",
@@ -23042,6 +24683,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            9,
+            7
+          ],
           "seq_display": "9+9+9 | 9 7",
           "region_rank": null,
           "selected": "TR",
@@ -23147,6 +24795,15 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 27,
+          "seq": [
+            9,
+            9,
+            9,
+            6,
+            5,
+            3,
+            0
+          ],
           "seq_display": "9+9+9 | 6 5 3",
           "region_rank": null,
           "selected": "TR",
@@ -23268,6 +24925,14 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 24,
+          "seq": [
+            9,
+            9,
+            6,
+            6,
+            6,
+            5
+          ],
           "seq_display": "9+9+6 | 6 6 5",
           "region_rank": null,
           "selected": "TR",
@@ -23389,6 +25054,15 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 23,
+          "seq": [
+            9,
+            7,
+            7,
+            7,
+            6,
+            5,
+            1
+          ],
           "seq_display": "9+7+7 | 7 6 5",
           "region_rank": null,
           "selected": "TR",
@@ -23542,6 +25216,11 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 22,
+          "seq": [
+            9,
+            9,
+            4
+          ],
           "seq_display": "9+9+4",
           "region_rank": null,
           "selected": "TR",
@@ -23615,6 +25294,13 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 21,
+          "seq": [
+            9,
+            7,
+            5,
+            5,
+            1
+          ],
           "seq_display": "9+7+5 | 5 1",
           "region_rank": null,
           "selected": "TR",
@@ -23720,6 +25406,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 21,
+          "seq": [
+            9,
+            6,
+            6,
+            4
+          ],
           "seq_display": "9+6+6 | 4",
           "region_rank": null,
           "selected": "TR",
@@ -23809,6 +25501,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 21,
+          "seq": [
+            9,
+            9,
+            3
+          ],
           "seq_display": "9+9+3",
           "region_rank": null,
           "selected": "TR",
@@ -23882,6 +25579,14 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 20,
+          "seq": [
+            7,
+            7,
+            6,
+            3,
+            3,
+            0
+          ],
           "seq_display": "7+7+6 | 3 3 0",
           "region_rank": null,
           "selected": "TR",
@@ -23987,6 +25692,15 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 19,
+          "seq": [
+            7,
+            7,
+            5,
+            5,
+            5,
+            2,
+            1
+          ],
           "seq_display": "7+7+5 | 5 5 2",
           "region_rank": null,
           "selected": "TR",
@@ -24124,6 +25838,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            7,
+            7,
+            5,
+            5
+          ],
           "seq_display": "7+7+5 | 5",
           "region_rank": null,
           "selected": "TR",
@@ -24245,6 +25965,14 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 19,
+          "seq": [
+            7,
+            6,
+            6,
+            4,
+            3,
+            1
+          ],
           "seq_display": "7+6+6 | 4 3 1",
           "region_rank": null,
           "selected": "TR",
@@ -24366,6 +26094,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 19,
+          "seq": [
+            9,
+            7,
+            3
+          ],
           "seq_display": "9+7+3",
           "region_rank": null,
           "selected": "TR",
@@ -24439,6 +26172,13 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5,
+            5,
+            4
+          ],
           "seq_display": "7+6+5 | 5 4",
           "region_rank": null,
           "selected": "TR",
@@ -24544,6 +26284,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 18,
+          "seq": [
+            7,
+            7,
+            4,
+            4,
+            2
+          ],
           "seq_display": "7+7+4 | 4 2",
           "region_rank": null,
           "selected": "TR",
@@ -24665,6 +26412,14 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5,
+            4,
+            1,
+            0
+          ],
           "seq_display": "7+6+5 | 4 1 0",
           "region_rank": null,
           "selected": "TR",
@@ -24770,6 +26525,13 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5,
+            3,
+            0
+          ],
           "seq_display": "7+6+5 | 3 0",
           "region_rank": null,
           "selected": "TR",
@@ -24859,6 +26621,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 18,
+          "seq": [
+            7,
+            7,
+            4
+          ],
           "seq_display": "7+7+4",
           "region_rank": null,
           "selected": "TR",
@@ -24932,6 +26699,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5
+          ],
           "seq_display": "7+6+5",
           "region_rank": null,
           "selected": "TR",
@@ -25021,6 +26793,11 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 18,
+          "seq": [
+            7,
+            6,
+            5
+          ],
           "seq_display": "7+6+5",
           "region_rank": null,
           "selected": "TR",
@@ -25094,6 +26871,12 @@ window.RESULTS_DATA = {
           "city": "Adana",
           "region": 6,
           "top3": 16,
+          "seq": [
+            6,
+            5,
+            5,
+            3
+          ],
           "seq_display": "6+5+5 | 3",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25183,6 +26966,14 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 15,
+          "seq": [
+            6,
+            6,
+            3,
+            3,
+            1,
+            0
+          ],
           "seq_display": "6+6+3 | 3 1 0",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25288,6 +27079,11 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 15,
+          "seq": [
+            7,
+            7,
+            1
+          ],
           "seq_display": "7+7+1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25409,6 +27205,15 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 14,
+          "seq": [
+            5,
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
           "seq_display": "5+5+4 | 3 2 1",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25530,6 +27335,13 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            5,
+            5,
+            4,
+            3,
+            2
+          ],
           "seq_display": "5+5+4 | 3 2",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25651,6 +27463,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 14,
+          "seq": [
+            5,
+            5,
+            4
+          ],
           "seq_display": "5+5+4",
           "region_rank": 1,
           "selected": "BÖLGE",
@@ -25740,6 +27557,11 @@ window.RESULTS_DATA = {
           "city": "Eskişehir",
           "region": 4,
           "top3": 14,
+          "seq": [
+            6,
+            5,
+            3
+          ],
           "seq_display": "6+5+3",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -25813,6 +27635,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 14,
+          "seq": [
+            5,
+            5,
+            4
+          ],
           "seq_display": "5+5+4",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -25886,6 +27713,14 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 13,
+          "seq": [
+            6,
+            4,
+            3,
+            2,
+            2,
+            0
+          ],
           "seq_display": "6+4+3 | 2 2 0",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -25991,6 +27826,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 13,
+          "seq": [
+            7,
+            5,
+            1
+          ],
           "seq_display": "7+5+1",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -26064,6 +27904,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 12,
+          "seq": [
+            6,
+            5,
+            1
+          ],
           "seq_display": "6+5+1",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -26137,6 +27982,11 @@ window.RESULTS_DATA = {
           "city": "Bolu",
           "region": 4,
           "top3": 11,
+          "seq": [
+            5,
+            5,
+            1
+          ],
           "seq_display": "5+5+1",
           "region_rank": 4,
           "selected": "-",
@@ -26210,6 +28060,11 @@ window.RESULTS_DATA = {
           "city": "Samsun",
           "region": 5,
           "top3": 11,
+          "seq": [
+            5,
+            4,
+            2
+          ],
           "seq_display": "5+4+2",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -26283,6 +28138,10 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 10,
+          "seq": [
+            5,
+            5
+          ],
           "seq_display": "5+5",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -26340,6 +28199,11 @@ window.RESULTS_DATA = {
           "city": "Adana",
           "region": 6,
           "top3": 10,
+          "seq": [
+            5,
+            3,
+            2
+          ],
           "seq_display": "5+3+2",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -26413,6 +28277,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 10,
+          "seq": [
+            4,
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+4+2 | 0",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -26486,6 +28356,11 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 10,
+          "seq": [
+            4,
+            3,
+            3
+          ],
           "seq_display": "4+3+3",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -26559,6 +28434,11 @@ window.RESULTS_DATA = {
           "city": "Balıkesir",
           "region": 3,
           "top3": 10,
+          "seq": [
+            5,
+            4,
+            1
+          ],
           "seq_display": "5+4+1",
           "region_rank": 2,
           "selected": "BÖLGE",
@@ -26632,6 +28512,12 @@ window.RESULTS_DATA = {
           "city": "Kayseri",
           "region": 4,
           "top3": 10,
+          "seq": [
+            4,
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+4+2 | 0",
           "region_rank": 5,
           "selected": "-",
@@ -26705,6 +28591,12 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2,
+            2
+          ],
           "seq_display": "4+3+2 | 2",
           "region_rank": 4,
           "selected": "-",
@@ -26794,6 +28686,12 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 9,
+          "seq": [
+            4,
+            4,
+            1,
+            1
+          ],
           "seq_display": "4+4+1 | 1",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -26883,6 +28781,12 @@ window.RESULTS_DATA = {
           "city": "İzmir",
           "region": 3,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2,
+            1
+          ],
           "seq_display": "4+3+2 | 1",
           "region_rank": 4,
           "selected": "BÖLGE",
@@ -26972,6 +28876,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            4,
+            3,
+            2
+          ],
           "seq_display": "4+3+2",
           "region_rank": 5,
           "selected": "BÖLGE",
@@ -27045,6 +28954,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 9,
+          "seq": [
+            6,
+            2,
+            1,
+            0
+          ],
           "seq_display": "6+2+1 | 0",
           "region_rank": 6,
           "selected": "BÖLGE",
@@ -27118,6 +29033,13 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 8,
+          "seq": [
+            3,
+            3,
+            2,
+            2,
+            0
+          ],
           "seq_display": "3+3+2 | 2 0",
           "region_rank": 5,
           "selected": "-",
@@ -27207,6 +29129,14 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1,
+            1,
+            1,
+            0
+          ],
           "seq_display": "4+3+1 | 1 1 0",
           "region_rank": 6,
           "selected": "-",
@@ -27312,6 +29242,11 @@ window.RESULTS_DATA = {
           "city": "Edirne",
           "region": 2,
           "top3": 8,
+          "seq": [
+            4,
+            3,
+            1
+          ],
           "seq_display": "4+3+1",
           "region_rank": 7,
           "selected": "-",
@@ -27385,6 +29320,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 8,
+          "seq": [
+            6,
+            2,
+            0
+          ],
           "seq_display": "6+2+0",
           "region_rank": 6,
           "selected": "-",
@@ -27442,6 +29382,14 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 7,
+          "seq": [
+            3,
+            2,
+            2,
+            2,
+            1,
+            0
+          ],
           "seq_display": "3+2+2 | 2 1 0",
           "region_rank": 5,
           "selected": "-",
@@ -27547,6 +29495,12 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            3,
+            3,
+            1,
+            1
+          ],
           "seq_display": "3+3+1 | 1",
           "region_rank": 7,
           "selected": "-",
@@ -27636,6 +29590,10 @@ window.RESULTS_DATA = {
           "city": "Mardin",
           "region": 6,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 3,
           "selected": "BÖLGE",
@@ -27693,6 +29651,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 7,
+          "seq": [
+            6,
+            1,
+            0
+          ],
           "seq_display": "6+1+0",
           "region_rank": 8,
           "selected": "-",
@@ -27750,6 +29713,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 7,
+          "seq": [
+            4,
+            3
+          ],
           "seq_display": "4+3",
           "region_rank": 8,
           "selected": "-",
@@ -27807,6 +29774,10 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 7,
+          "seq": [
+            5,
+            2
+          ],
           "seq_display": "5+2",
           "region_rank": 6,
           "selected": "-",
@@ -27880,6 +29851,11 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 7,
+          "seq": [
+            4,
+            3,
+            0
+          ],
           "seq_display": "4+3+0",
           "region_rank": 9,
           "selected": "-",
@@ -27937,6 +29913,9 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 7,
+          "seq": [
+            7
+          ],
           "seq_display": "7",
           "region_rank": 10,
           "selected": "-",
@@ -27994,6 +29973,11 @@ window.RESULTS_DATA = {
           "city": "Giresun",
           "region": 5,
           "top3": 6,
+          "seq": [
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28051,6 +30035,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 6,
+          "seq": [
+            4,
+            2,
+            0
+          ],
           "seq_display": "4+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28108,6 +30097,11 @@ window.RESULTS_DATA = {
           "city": "Ankara",
           "region": 4,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28165,6 +30159,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            5,
+            0
+          ],
           "seq_display": "5+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28206,6 +30204,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            3,
+            2
+          ],
           "seq_display": "3+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28263,6 +30265,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28320,6 +30327,10 @@ window.RESULTS_DATA = {
           "city": "Manisa",
           "region": 3,
           "top3": 5,
+          "seq": [
+            4,
+            1
+          ],
           "seq_display": "4+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28377,6 +30388,11 @@ window.RESULTS_DATA = {
           "city": "Kayseri",
           "region": 4,
           "top3": 5,
+          "seq": [
+            3,
+            2,
+            0
+          ],
           "seq_display": "3+2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28434,6 +30450,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 5,
+          "seq": [
+            5,
+            0
+          ],
           "seq_display": "5+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28475,6 +30495,13 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 4,
+          "seq": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
           "seq_display": "2+1+1 | 1 1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28580,6 +30607,10 @@ window.RESULTS_DATA = {
           "city": "Trabzon",
           "region": 5,
           "top3": 4,
+          "seq": [
+            2,
+            2
+          ],
           "seq_display": "2+2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28637,6 +30668,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 4,
+          "seq": [
+            3,
+            1
+          ],
           "seq_display": "3+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28694,6 +30729,10 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 3,
+          "seq": [
+            3,
+            0
+          ],
           "seq_display": "3+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28735,6 +30774,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1
+          ],
           "seq_display": "2+1",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28792,6 +30835,11 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 3,
+          "seq": [
+            2,
+            1,
+            0
+          ],
           "seq_display": "2+1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28849,6 +30897,9 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 3,
+          "seq": [
+            3
+          ],
           "seq_display": "3",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28890,6 +30941,10 @@ window.RESULTS_DATA = {
           "city": "Kırşehir",
           "region": 4,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28931,6 +30986,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -28972,6 +31031,10 @@ window.RESULTS_DATA = {
           "city": "Nevşehir",
           "region": 4,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29013,6 +31076,9 @@ window.RESULTS_DATA = {
           "city": "Çanakkale",
           "region": 2,
           "top3": 2,
+          "seq": [
+            2
+          ],
           "seq_display": "2",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29054,6 +31120,10 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 2,
+          "seq": [
+            2,
+            0
+          ],
           "seq_display": "2+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29095,6 +31165,10 @@ window.RESULTS_DATA = {
           "city": "Muğla",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29136,6 +31210,10 @@ window.RESULTS_DATA = {
           "city": "Antalya",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29177,6 +31255,10 @@ window.RESULTS_DATA = {
           "city": "İstanbul",
           "region": 1,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29218,6 +31300,10 @@ window.RESULTS_DATA = {
           "city": "Kocaeli",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29259,6 +31345,10 @@ window.RESULTS_DATA = {
           "city": "Denizli",
           "region": 3,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
@@ -29300,6 +31390,10 @@ window.RESULTS_DATA = {
           "city": "Bursa",
           "region": 2,
           "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
           "seq_display": "1+0",
           "region_rank": null,
           "selected": "BARAJ_YOK",
