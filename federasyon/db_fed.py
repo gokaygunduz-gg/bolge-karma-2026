@@ -501,11 +501,22 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
             if found:
                 continue  # Yüzdü → bekleyende değil
 
-        # 3. Bekleyende
+        # 3. Bekleyende — giriş süresi puanını da hesapla
+        entry_pts = 0
+        if r["entry_time"]:
+            try:
+                from federasyon.scorer import parse_time, score_event
+                et_sec = parse_time(r["entry_time"])
+                if et_sec and et_sec > 0:
+                    entry_pts = score_event(et_sec, by, g or "M", s, d) or 0
+            except Exception:
+                pass
+
         key = (name, by)
         result.setdefault(key, []).append({
-            "stroke":     s,
-            "dist":       d,
-            "entry_time": r["entry_time"],
+            "stroke":      s,
+            "dist":        d,
+            "entry_time":  r["entry_time"],
+            "entry_points": entry_pts,
         })
     return result
