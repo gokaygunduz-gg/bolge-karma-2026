@@ -116,6 +116,9 @@
   .cum-sums { width: 100%; display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
   .cum-badge { font-size: 11px; color: var(--muted); background: #1e293b; border: 1px solid var(--border); border-radius: 10px; padding: 2px 8px; }
   .cum-badge b { color: var(--text); margin-left: 2px; }
+  .pending-section { width: 100%; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+  .pending-label { font-size: 10px; color: var(--orange); width: 100%; margin-bottom: 2px; font-weight: 600; letter-spacing: .3px; }
+  .pending-chip { border-color: #7c3a00 !important; background: #1c1200 !important; }
   .event-chip {
     display: inline-flex; align-items: center; gap: 3px;
     padding: 3px 7px; border-radius: 7px; font-size: 10px;
@@ -601,10 +604,12 @@ function buildTable(groupKey, grp, athletes) {
     </tr>`;
 
     if (isExp) {
-      const cumBadges = buildCumBadges(a.seq || []);
+      const cumBadges    = buildCumBadges(a.seq || []);
+      const pendingHtml  = buildPendingChips(a.pending_events || []);
       rows += `<tr class="expand-row"><td colspan="6"><div class="event-detail">
-        ${cumBadges ? `<div class="cum-sums">${cumBadges}</div>` : ''}
+        ${cumBadges  ? `<div class="cum-sums">${cumBadges}</div>` : ''}
         ${buildEventChips(events || [])}
+        ${pendingHtml}
       </div></td></tr>`;
     }
   });
@@ -620,6 +625,21 @@ function buildTable(groupKey, grp, athletes) {
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>`;
+}
+
+function buildPendingChips(pending) {
+  if (!pending || pending.length === 0) return '';
+  const chips = pending.map(e => {
+    const timeStr = e.entry_time ? ` <span style="color:var(--muted);font-size:10px">${e.entry_time}</span>` : '';
+    return `<div class="event-chip pending-chip">
+      <span class="ep pts-0">⏳</span>
+      <span class="en">${e.dist}m ${e.stroke}${timeStr}</span>
+    </div>`;
+  }).join('');
+  return `<div class="pending-section">
+    <div class="pending-label">Bekleyen Yarışlar (Edirne)</div>
+    ${chips}
+  </div>`;
 }
 
 function buildCumBadges(seq) {
