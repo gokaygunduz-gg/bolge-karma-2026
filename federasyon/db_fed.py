@@ -328,18 +328,35 @@ def save_start_list(race_leg: str, entries: list[dict]):
     Start list entry'lerini DB'ye yazar.
     entries: [{"name_raw"|"name": str, "birth_year": int, "gender": str,
                "stroke": str, "distance": int, "entry_time_txt": str|None}]
+
+    İsim normalizasyonu: fed_results'taki canonical isimle eşleştirilir (i/ı toleransı).
     """
     if not entries:
         return 0
+    from modules.m1_normalize import normalize_for_lookup
+
     written = 0
     with get_conn() as conn:
+        # fed_results'taki mevcut isimleri önbelleğe al (normalize → canonical)
+        existing = conn.execute(
+            "SELECT DISTINCT athlete_name, birth_year FROM fed_results"
+        ).fetchall()
+        canonical_map: dict[tuple, str] = {}
+        for row in existing:
+            key = (normalize_for_lookup(row["athlete_name"]), row["birth_year"])
+            canonical_map[key] = row["athlete_name"]
+
         # Önce bu leg'e ait eski start list'i temizle
         conn.execute("DELETE FROM fed_start_list WHERE race_leg=?", (race_leg,))
+
         for e in entries:
             name = e.get("name") or e.get("name_raw", "")
             by   = e.get("birth_year")
             if not name or not by:
                 continue
+            # fed_results'ta eşleşen canonical isim varsa onu kullan
+            norm_key = (normalize_for_lookup(name), by)
+            name = canonical_map.get(norm_key, name)
             try:
                 conn.execute("""
                     INSERT OR REPLACE INTO fed_start_list
@@ -359,7 +376,11 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
     """
     start list'te olup o leg'de henüz yüzülmemiş branşları döner.
     Döner: {(athlete_name, birth_year): [{"stroke": s, "dist": d, "entry_time": t}, ...]}
+
+    İsim karşılaştırması normalize_for_lookup ile yapılır (i/ı/İ/I toleransı).
     """
+    from modules.m1_normalize import normalize_for_lookup
+
     with get_conn() as conn:
         by_clause = ""
         params_sl: list = [race_leg]
@@ -382,14 +403,18 @@ def get_pending_events(race_leg: str, birth_years: list[int] = None) -> dict:
             params_r
         ).fetchall()
 
-    done_set = {(r["athlete_name"], r["birth_year"], r["stroke"], r["distance"])
-                for r in done_rows}
+    # Normalize edilmiş isimle "tamamlandı" seti
+    done_set = {
+        (normalize_for_lookup(r["athlete_name"]), r["birth_year"], r["stroke"], r["distance"])
+        for r in done_rows
+    }
 
     result: dict = {}
     for r in sl_rows:
-        key = (r["athlete_name"], r["birth_year"])
-        ev_key = (r["athlete_name"], r["birth_year"], r["stroke"], r["distance"])
+        norm_name = normalize_for_lookup(r["athlete_name"])
+        ev_key = (norm_name, r["birth_year"], r["stroke"], r["distance"])
         if ev_key not in done_set:
+            key = (r["athlete_name"], r["birth_year"])
             result.setdefault(key, []).append({
                 "stroke":     r["stroke"],
                 "dist":       r["distance"],
