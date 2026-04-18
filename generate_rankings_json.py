@@ -154,7 +154,7 @@ def main():
 
     # ── JSON yap ─────────────────────────────────────────────────────────────
     output = {
-        "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "generated_at": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%Y-%m-%d %H:%M (TR)"),
         "legs":  get_stats().get("legs", ""),
         "groups": {},
         "club_rankings": club_rankings,
@@ -193,7 +193,7 @@ def main():
         missing = get_missing_clubs()
         if missing:
             missing_report = {
-                "generated_at": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "generated_at": datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=3))).strftime("%Y-%m-%d %H:%M (TR)"),
                 "missing_clubs": sorted(missing),
                 "count": len(missing),
                 "_talimat": "Bu kulüpleri manual_overrides.json'a club_aliases olarak ekleyin"
