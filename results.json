@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19 12:18 (TR)",
+  "generated_at": "2026-04-19 12:38 (TR)",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -5538,6 +5538,142 @@
         },
         {
           "rank": 0,
+          "name": "Sarper Taze",
+          "birth_year": 2011,
+          "gender": "M",
+          "club": "Galatasaray Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 23,
+          "seq": [
+            9,
+            7,
+            7,
+            5
+          ],
+          "seq_display": "9+7+7 | 5",
+          "region_rank": null,
+          "selected": "MULTINATIONS",
+          "selected_slot": "MULTI",
+          "selected_label": "Multinations",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [
+            {
+              "leg": "antalya",
+              "stroke": "Kelebek",
+              "dist": 200
+            },
+            {
+              "leg": "edirne",
+              "stroke": "Kelebek",
+              "dist": 200
+            },
+            {
+              "leg": "edirne",
+              "stroke": "Serbest",
+              "dist": 200
+            }
+          ],
+          "events": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": false
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": true
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 200,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 20,
+          "top3_edirne": 23,
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:07.44",
+              "entry_points": 5
+            }
+          ]
+        },
+        {
+          "rank": 0,
           "name": "Toprak Topatan",
           "birth_year": 2011,
           "gender": "M",
@@ -5668,135 +5804,6 @@
               "stroke": "Serbest",
               "dist": 400,
               "entry_time": "4:06.23",
-              "entry_points": 5
-            }
-          ]
-        },
-        {
-          "rank": 0,
-          "name": "Sarper Taze",
-          "birth_year": 2011,
-          "gender": "M",
-          "club": "Galatasaray Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 22,
-          "seq": [
-            9,
-            7,
-            6,
-            5
-          ],
-          "seq_display": "9+7+6 | 5",
-          "region_rank": null,
-          "selected": "MULTINATIONS",
-          "selected_slot": "MULTI",
-          "selected_label": "Multinations",
-          "qualifies": true,
-          "tied": false,
-          "first_place": [
-            {
-              "leg": "antalya",
-              "stroke": "Kelebek",
-              "dist": 200
-            },
-            {
-              "leg": "edirne",
-              "stroke": "Kelebek",
-              "dist": 200
-            }
-          ],
-          "events": [
-            {
-              "event": "200m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 200,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 7,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": false
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "200m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 200,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": true
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "200m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 200,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 7,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 20,
-          "top3_edirne": 16,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "1:57.70",
-              "entry_points": 6
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 400,
-              "entry_time": "4:07.44",
               "entry_points": 5
             }
           ]
@@ -6026,6 +6033,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
@@ -6035,14 +6050,8 @@
             }
           ],
           "top3_antalya": 16,
-          "top3_edirne": 11,
+          "top3_edirne": 17,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "1:56.50",
-              "entry_points": 7
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -6326,9 +6335,10 @@
             9,
             7,
             7,
+            6,
             0
           ],
-          "seq_display": "9+7+7 | 0",
+          "seq_display": "9+7+7 | 6 0",
           "region_rank": null,
           "selected": "TR",
           "selected_slot": "TR-2",
@@ -6360,6 +6370,14 @@
               "points": 7,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": false
             }
           ],
           "events_antalya": [
@@ -6404,17 +6422,19 @@
               "points": 7,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 21,
-          "top3_edirne": 16,
+          "top3_edirne": 22,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "1:59.07",
-              "entry_points": 5
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -7561,13 +7581,7 @@
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
-          "first_place": [
-            {
-              "leg": "edirne",
-              "stroke": "Serbest",
-              "dist": 200
-            }
-          ],
+          "first_place": [],
           "events": [
             {
               "event": "800m Serbest",
@@ -9128,17 +9142,19 @@
               "points": 4,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 12,
-          "top3_edirne": 4,
+          "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "1:59.03",
-              "entry_points": 5
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -9459,6 +9475,14 @@
               "points": 2,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
             }
           ],
           "top3_antalya": 10,
@@ -9475,12 +9499,6 @@
               "dist": 100,
               "entry_time": "1:12.38",
               "entry_points": 1
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:00.88",
-              "entry_points": 3
             },
             {
               "stroke": "Serbest",
@@ -11453,6 +11471,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -11462,15 +11488,8 @@
             }
           ],
           "top3_antalya": 6,
-          "top3_edirne": 4,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:00.68",
-              "entry_points": 3
-            }
-          ]
+          "top3_edirne": 7,
+          "pending_events": []
         },
         {
           "rank": 48,
