@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19 11:17 (TR)",
+  "generated_at": "2026-04-19 11:29 (TR)",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -2881,6 +2881,118 @@
         },
         {
           "rank": 16,
+          "name": "Duru Sarıbayır",
+          "birth_year": 2011,
+          "gender": "F",
+          "club": "Fenerbahçe Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 10,
+          "seq": [
+            5,
+            3,
+            2
+          ],
+          "seq_display": "5+3+2",
+          "region_rank": 9,
+          "selected": "-",
+          "selected_slot": "-",
+          "selected_label": "-",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 8,
+          "top3_edirne": 8,
+          "pending_events": []
+        },
+        {
+          "rank": 17,
           "name": "Nil Sağmal",
           "birth_year": 2011,
           "gender": "F",
@@ -2894,7 +3006,7 @@
             0
           ],
           "seq_display": "6+4+0",
-          "region_rank": 9,
+          "region_rank": 10,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -2960,7 +3072,7 @@
           "pending_events": []
         },
         {
-          "rank": 17,
+          "rank": 18,
           "name": "Suden Nisa Sarıbıyık",
           "birth_year": 2011,
           "gender": "F",
@@ -2974,7 +3086,7 @@
             3
           ],
           "seq_display": "4+3+3",
-          "region_rank": 10,
+          "region_rank": 11,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -3055,7 +3167,7 @@
           ]
         },
         {
-          "rank": 18,
+          "rank": 19,
           "name": "Ecrin Gülcan",
           "birth_year": 2011,
           "gender": "F",
@@ -3072,7 +3184,7 @@
             0
           ],
           "seq_display": "3+3+3 | 2 2 0",
-          "region_rank": 11,
+          "region_rank": 12,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -3191,7 +3303,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "name": "Alara Ada Arı",
           "birth_year": 2011,
           "gender": "F",
@@ -3291,7 +3403,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 21,
           "name": "Elvin Alver",
           "birth_year": 2011,
           "gender": "F",
@@ -3304,7 +3416,7 @@
             4
           ],
           "seq_display": "5+4",
-          "region_rank": 12,
+          "region_rank": 13,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -3385,7 +3497,7 @@
           ]
         },
         {
-          "rank": 21,
+          "rank": 22,
           "name": "Eslem Gül Eker",
           "birth_year": 2011,
           "gender": "F",
@@ -3399,7 +3511,7 @@
             2
           ],
           "seq_display": "4+3+2",
-          "region_rank": 13,
+          "region_rank": 14,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -3480,7 +3592,7 @@
           ]
         },
         {
-          "rank": 22,
+          "rank": 23,
           "name": "Matılda Velichuk",
           "birth_year": 2011,
           "gender": "F",
@@ -3551,108 +3663,6 @@
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:13.03",
-              "entry_points": 1
-            }
-          ]
-        },
-        {
-          "rank": 23,
-          "name": "Duru Sarıbayır",
-          "birth_year": 2011,
-          "gender": "F",
-          "club": "Fenerbahçe Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 8,
-          "seq": [
-            5,
-            3
-          ],
-          "seq_display": "5+3",
-          "region_rank": 14,
-          "selected": "-",
-          "selected_slot": "-",
-          "selected_label": "-",
-          "qualifies": true,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 8,
-          "top3_edirne": 6,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:13.12",
               "entry_points": 1
             }
           ]
@@ -14783,6 +14793,164 @@
         },
         {
           "rank": 7,
+          "name": "Ceylan Alya Çevikoğulları",
+          "birth_year": 2012,
+          "gender": "F",
+          "club": "Enka Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 16,
+          "seq": [
+            6,
+            6,
+            4,
+            3
+          ],
+          "seq_display": "6+6+4 | 3",
+          "region_rank": null,
+          "selected": "TR",
+          "selected_slot": "TR-7",
+          "selected_label": "TR Kadro",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "50m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "50m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "50m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
+            }
+          ],
+          "top3_antalya": 14,
+          "top3_edirne": 12,
+          "pending_events": [
+            {
+              "stroke": "Kurbağalama",
+              "dist": 100,
+              "entry_time": "1:16.51",
+              "entry_points": 6
+            },
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:37.92",
+              "entry_points": 3
+            }
+          ]
+        },
+        {
+          "rank": 8,
           "name": "Jasmin Arslan",
           "birth_year": 2012,
           "gender": "F",
@@ -14799,7 +14967,7 @@
           "seq_display": "7+5+4 | 2",
           "region_rank": null,
           "selected": "TR",
-          "selected_slot": "TR-7",
+          "selected_slot": "TR-8",
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
@@ -14918,7 +15086,7 @@
           ]
         },
         {
-          "rank": 8,
+          "rank": 9,
           "name": "Deniz Anıl",
           "birth_year": 2012,
           "gender": "F",
@@ -14937,7 +15105,7 @@
           "seq_display": "6+5+4 | 4 3 1",
           "region_rank": null,
           "selected": "TR",
-          "selected_slot": "TR-8",
+          "selected_slot": "TR-9",
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
@@ -15086,7 +15254,7 @@
           ]
         },
         {
-          "rank": 9,
+          "rank": 10,
           "name": "Merve Mengüberti",
           "birth_year": 2012,
           "gender": "F",
@@ -15105,7 +15273,7 @@
           "seq_display": "6+5+4 | 2 2 0",
           "region_rank": null,
           "selected": "TR",
-          "selected_slot": "TR-9",
+          "selected_slot": "TR-10",
           "selected_label": "TR Kadro",
           "qualifies": true,
           "tied": false,
@@ -15231,162 +15399,6 @@
           "top3_antalya": 12,
           "top3_edirne": 15,
           "pending_events": []
-        },
-        {
-          "rank": 10,
-          "name": "Ceylan Alya Çevikoğulları",
-          "birth_year": 2012,
-          "gender": "F",
-          "club": "Enka Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 15,
-          "seq": [
-            6,
-            6,
-            3,
-            2
-          ],
-          "seq_display": "6+6+3 | 2",
-          "region_rank": null,
-          "selected": "TR",
-          "selected_slot": "TR-10",
-          "selected_label": "TR Kadro",
-          "qualifies": true,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "50m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "50m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "50m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            }
-          ],
-          "top3_antalya": 14,
-          "top3_edirne": 8,
-          "pending_events": [
-            {
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "entry_time": "1:16.51",
-              "entry_points": 6
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.34",
-              "entry_points": 2
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 400,
-              "entry_time": "4:37.92",
-              "entry_points": 3
-            }
-          ]
         },
         {
           "rank": 11,
@@ -16042,6 +16054,125 @@
         },
         {
           "rank": 16,
+          "name": "Iklim Nur Arslan",
+          "birth_year": 2012,
+          "gender": "F",
+          "club": "Fenerbahçe Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 13,
+          "seq": [
+            5,
+            5,
+            3,
+            2,
+            0
+          ],
+          "seq_display": "5+5+3 | 2 0",
+          "region_rank": 3,
+          "selected": "BÖLGE",
+          "selected_slot": "B1-3",
+          "selected_label": "Bölge",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [
+            {
+              "leg": "edirne",
+              "stroke": "Serbest",
+              "dist": 200
+            }
+          ],
+          "events": [
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 6,
+          "top3_edirne": 13,
+          "pending_events": [
+            {
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "entry_time": "1:10.28",
+              "entry_points": 4
+            }
+          ]
+        },
+        {
+          "rank": 17,
           "name": "Nehir Berin Dağlı",
           "birth_year": 2012,
           "gender": "F",
@@ -16165,17 +16296,19 @@
               "points": 1,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": false
             }
           ],
           "top3_antalya": 10,
           "top3_edirne": 11,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.98",
-              "entry_points": 2
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -16185,7 +16318,7 @@
           ]
         },
         {
-          "rank": 17,
+          "rank": 18,
           "name": "Berrin Asya Koç",
           "birth_year": 2012,
           "gender": "F",
@@ -16280,7 +16413,7 @@
           "pending_events": []
         },
         {
-          "rank": 18,
+          "rank": 19,
           "name": "Idil Derin Arslan",
           "birth_year": 2012,
           "gender": "F",
@@ -16296,9 +16429,9 @@
             1
           ],
           "seq_display": "6+3+2 | 2 1",
-          "region_rank": 3,
+          "region_rank": 4,
           "selected": "BÖLGE",
-          "selected_slot": "B1-3",
+          "selected_slot": "B1-4",
           "selected_label": "Bölge",
           "qualifies": true,
           "tied": false,
@@ -16409,7 +16542,7 @@
           ]
         },
         {
-          "rank": 19,
+          "rank": 20,
           "name": "Ceren Dülger",
           "birth_year": 2012,
           "gender": "F",
@@ -16422,10 +16555,10 @@
             5
           ],
           "seq_display": "6+5",
-          "region_rank": 4,
-          "selected": "BÖLGE",
-          "selected_slot": "B1-4",
-          "selected_label": "Bölge",
+          "region_rank": 5,
+          "selected": "-",
+          "selected_slot": "-",
+          "selected_label": "-",
           "qualifies": true,
           "tied": false,
           "first_place": [],
@@ -16487,7 +16620,7 @@
           ]
         },
         {
-          "rank": 20,
+          "rank": 21,
           "name": "Nermin Erva Belli",
           "birth_year": 2012,
           "gender": "F",
@@ -16570,108 +16703,6 @@
               "dist": 400,
               "entry_time": "4:43.66",
               "entry_points": 1
-            }
-          ]
-        },
-        {
-          "rank": 21,
-          "name": "Iklim Nur Arslan",
-          "birth_year": 2012,
-          "gender": "F",
-          "club": "Fenerbahçe Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 10,
-          "seq": [
-            5,
-            3,
-            2,
-            0
-          ],
-          "seq_display": "5+3+2 | 0",
-          "region_rank": 5,
-          "selected": "-",
-          "selected_slot": "-",
-          "selected_label": "-",
-          "qualifies": true,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 6,
-          "top3_edirne": 8,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.87",
-              "entry_points": 2
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "entry_time": "1:10.28",
-              "entry_points": 4
             }
           ]
         },
@@ -16942,6 +16973,141 @@
         },
         {
           "rank": 25,
+          "name": "Defne Sinem Eken",
+          "birth_year": 2012,
+          "gender": "F",
+          "club": "Enka Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 8,
+          "seq": [
+            4,
+            2,
+            2,
+            2,
+            1
+          ],
+          "seq_display": "4+2+2 | 2 1",
+          "region_rank": 7,
+          "selected": "-",
+          "selected_slot": "-",
+          "selected_label": "-",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 2,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": true
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 2,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "top3_antalya": 3,
+          "top3_edirne": 8,
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:40.27",
+              "entry_points": 2
+            },
+            {
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "entry_time": "1:10.02",
+              "entry_points": 4
+            }
+          ]
+        },
+        {
+          "rank": 26,
           "name": "Candan Doğa Olut",
           "birth_year": 2012,
           "gender": "F",
@@ -16957,7 +17123,7 @@
             0
           ],
           "seq_display": "3+3+2 | 2 0",
-          "region_rank": 7,
+          "region_rank": 8,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -17038,7 +17204,7 @@
           "pending_events": []
         },
         {
-          "rank": 26,
+          "rank": 27,
           "name": "Irmak Atilla",
           "birth_year": 2012,
           "gender": "F",
@@ -17051,7 +17217,7 @@
             3
           ],
           "seq_display": "5+3",
-          "region_rank": 8,
+          "region_rank": 9,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -17122,7 +17288,7 @@
           ]
         },
         {
-          "rank": 27,
+          "rank": 28,
           "name": "Zeynep Derin Güldemir",
           "birth_year": 2012,
           "gender": "F",
@@ -17232,7 +17398,7 @@
           ]
         },
         {
-          "rank": 28,
+          "rank": 29,
           "name": "Zehra Ceren Kartal",
           "birth_year": 2012,
           "gender": "F",
@@ -17355,17 +17521,19 @@
               "points": 2,
               "is_50m": true,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 6,
-          "top3_edirne": 5,
+          "top3_edirne": 6,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.95",
-              "entry_points": 2
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -17375,7 +17543,7 @@
           ]
         },
         {
-          "rank": 29,
+          "rank": 30,
           "name": "Duru Aydın",
           "birth_year": 2012,
           "gender": "F",
@@ -17389,7 +17557,7 @@
             1
           ],
           "seq_display": "3+3+1",
-          "region_rank": 9,
+          "region_rank": 10,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -17492,7 +17660,7 @@
           ]
         },
         {
-          "rank": 30,
+          "rank": 31,
           "name": "Elif Safi",
           "birth_year": 2012,
           "gender": "F",
@@ -17506,7 +17674,7 @@
             2
           ],
           "seq_display": "3+2+2",
-          "region_rank": 10,
+          "region_rank": 11,
           "selected": "-",
           "selected_slot": "-",
           "selected_label": "-",
@@ -17591,130 +17759,6 @@
               "dist": 50,
               "entry_time": "30.75",
               "entry_points": 2
-            }
-          ]
-        },
-        {
-          "rank": 31,
-          "name": "Defne Sinem Eken",
-          "birth_year": 2012,
-          "gender": "F",
-          "club": "Enka Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 6,
-          "seq": [
-            2,
-            2,
-            2,
-            1
-          ],
-          "seq_display": "2+2+2 | 1",
-          "region_rank": null,
-          "selected": "BARAJ_YOK",
-          "selected_slot": "-",
-          "selected_label": "Baraj Yok",
-          "qualifies": false,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 2,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": false
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 2,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 3,
-          "top3_edirne": 5,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.45",
-              "entry_points": 2
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 400,
-              "entry_time": "4:40.27",
-              "entry_points": 2
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "entry_time": "1:10.02",
-              "entry_points": 4
             }
           ]
         },
@@ -18239,6 +18283,101 @@
         },
         {
           "rank": 38,
+          "name": "Sahra Çelikkökü",
+          "birth_year": 2012,
+          "gender": "F",
+          "club": "Galatasaray Spor Kulübü",
+          "city": "İstanbul",
+          "region": 1,
+          "top3": 5,
+          "seq": [
+            2,
+            2,
+            1
+          ],
+          "seq_display": "2+2+1",
+          "region_rank": null,
+          "selected": "BARAJ_YOK",
+          "selected_slot": "-",
+          "selected_label": "Baraj Yok",
+          "qualifies": false,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": true
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": true
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 2,
+          "top3_edirne": 4,
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:45.71",
+              "entry_points": 1
+            }
+          ]
+        },
+        {
+          "rank": 39,
           "name": "Simay Bayraktar",
           "birth_year": 2012,
           "gender": "F",
@@ -18313,7 +18452,7 @@
           ]
         },
         {
-          "rank": 39,
+          "rank": 40,
           "name": "Yağmur Çelik",
           "birth_year": 2012,
           "gender": "F",
@@ -18367,7 +18506,7 @@
           "pending_events": []
         },
         {
-          "rank": 40,
+          "rank": 41,
           "name": "Alya Peçen",
           "birth_year": 2012,
           "gender": "F",
@@ -18439,7 +18578,7 @@
           "pending_events": []
         },
         {
-          "rank": 41,
+          "rank": 42,
           "name": "Ela Güzelsoy",
           "birth_year": 2012,
           "gender": "F",
@@ -18492,7 +18631,7 @@
           ]
         },
         {
-          "rank": 42,
+          "rank": 43,
           "name": "Elvan Zeynep Şişman",
           "birth_year": 2012,
           "gender": "F",
@@ -18570,7 +18709,7 @@
           ]
         },
         {
-          "rank": 43,
+          "rank": 44,
           "name": "Nil Tangay",
           "birth_year": 2012,
           "gender": "F",
@@ -18633,7 +18772,7 @@
           "pending_events": []
         },
         {
-          "rank": 44,
+          "rank": 45,
           "name": "Nisan Ada Balkan",
           "birth_year": 2012,
           "gender": "F",
@@ -18766,7 +18905,7 @@
           ]
         },
         {
-          "rank": 45,
+          "rank": 46,
           "name": "Elif Deren Gür",
           "birth_year": 2012,
           "gender": "F",
@@ -18818,7 +18957,7 @@
           ]
         },
         {
-          "rank": 46,
+          "rank": 47,
           "name": "Elif Rüya Kandemir",
           "birth_year": 2012,
           "gender": "F",
@@ -18863,7 +19002,7 @@
           "pending_events": []
         },
         {
-          "rank": 47,
+          "rank": 48,
           "name": "Mira Aydın",
           "birth_year": 2012,
           "gender": "F",
@@ -18928,90 +19067,6 @@
               "stroke": "Serbest",
               "dist": 200,
               "entry_time": "2:16.65",
-              "entry_points": 1
-            }
-          ]
-        },
-        {
-          "rank": 48,
-          "name": "Sahra Çelikkökü",
-          "birth_year": 2012,
-          "gender": "F",
-          "club": "Galatasaray Spor Kulübü",
-          "city": "İstanbul",
-          "region": 1,
-          "top3": 3,
-          "seq": [
-            2,
-            1
-          ],
-          "seq_display": "2+1",
-          "region_rank": null,
-          "selected": "BARAJ_YOK",
-          "selected_slot": "-",
-          "selected_label": "Baraj Yok",
-          "qualifies": false,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 2,
-          "top3_edirne": 2,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:14.53",
-              "entry_points": 2
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 400,
-              "entry_time": "4:45.71",
               "entry_points": 1
             }
           ]
@@ -19369,6 +19424,52 @@
         },
         {
           "rank": 54,
+          "name": "Aybike Tekin",
+          "birth_year": 2012,
+          "gender": "F",
+          "club": "Eskişehir Gençlik Ve Spor Il Müdürlüğü Spor Kulübü",
+          "city": "Eskişehir",
+          "region": 4,
+          "top3": 1,
+          "seq": [
+            1,
+            0
+          ],
+          "seq_display": "1+0",
+          "region_rank": null,
+          "selected": "BARAJ_YOK",
+          "selected_slot": "-",
+          "selected_label": "Baraj Yok",
+          "qualifies": false,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "events_antalya": [],
+          "events_edirne": [
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 0,
+          "top3_edirne": 1,
+          "pending_events": []
+        },
+        {
+          "rank": 55,
           "name": "Bade Ela Kayserli",
           "birth_year": 2012,
           "gender": "F",
@@ -19414,7 +19515,7 @@
           "pending_events": []
         },
         {
-          "rank": 55,
+          "rank": 56,
           "name": "Duru Korkulu",
           "birth_year": 2012,
           "gender": "F",
@@ -19466,7 +19567,7 @@
           ]
         },
         {
-          "rank": 56,
+          "rank": 57,
           "name": "Ekin Yılmaz",
           "birth_year": 2012,
           "gender": "F",
@@ -19511,7 +19612,7 @@
           "pending_events": []
         },
         {
-          "rank": 57,
+          "rank": 58,
           "name": "Ela Yıldız",
           "birth_year": 2012,
           "gender": "F",
@@ -19564,7 +19665,7 @@
           ]
         },
         {
-          "rank": 58,
+          "rank": 59,
           "name": "Nehir Lara Kır",
           "birth_year": 2012,
           "gender": "F",
@@ -19609,7 +19710,7 @@
           "pending_events": []
         },
         {
-          "rank": 59,
+          "rank": 60,
           "name": "Zehra Özkan",
           "birth_year": 2012,
           "gender": "F",
@@ -32997,6 +33098,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 50,
@@ -33010,7 +33119,7 @@
               "dist": 200,
               "points": 4,
               "is_50m": false,
-              "in_top3": true
+              "in_top3": false
             },
             {
               "event": "100m Serbest",
@@ -33022,14 +33131,8 @@
             }
           ],
           "top3_antalya": 24,
-          "top3_edirne": 22,
+          "top3_edirne": 23,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:13.46",
-              "entry_points": 7
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -33057,10 +33160,11 @@
             9,
             9,
             6,
+            2,
             1,
             0
           ],
-          "seq_display": "9+9+6 | 1 0",
+          "seq_display": "9+9+6 | 2 1 0",
           "region_rank": null,
           "selected": "TR",
           "selected_slot": "TR-20",
@@ -33092,6 +33196,14 @@
               "points": 6,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
             },
             {
               "event": "200m Karışık",
@@ -33129,6 +33241,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
@@ -33140,12 +33260,6 @@
           "top3_antalya": 0,
           "top3_edirne": 24,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:18.01",
-              "entry_points": 3
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -33745,6 +33859,167 @@
         },
         {
           "rank": 25,
+          "name": "Yağmur Kont",
+          "birth_year": 2013,
+          "gender": "F",
+          "club": "Gaziantep Sehitkamil Belediyesi Spor Kulübü",
+          "city": "Gaziantep",
+          "region": 6,
+          "top3": 22,
+          "seq": [
+            9,
+            9,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "seq_display": "9+9+4 | 3 2 1",
+          "region_rank": 2,
+          "selected": "BÖLGE",
+          "selected_slot": "B6-2",
+          "selected_label": "Bölge",
+          "qualifies": true,
+          "tied": false,
+          "first_place": [],
+          "events": [
+            {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "1500m Serbest",
+              "stroke": "Serbest",
+              "dist": 1500,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_antalya": [
+            {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": false
+            }
+          ],
+          "events_edirne": [
+            {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "1500m Serbest",
+              "stroke": "Serbest",
+              "dist": 1500,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            }
+          ],
+          "top3_antalya": 12,
+          "top3_edirne": 22,
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:46.27",
+              "entry_points": 4
+            },
+            {
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "entry_time": "1:13.41",
+              "entry_points": 3
+            }
+          ]
+        },
+        {
+          "rank": 26,
           "name": "Ceren Yaşar",
           "birth_year": 2013,
           "gender": "F",
@@ -33847,7 +34122,7 @@
           ]
         },
         {
-          "rank": 26,
+          "rank": 27,
           "name": "Zeynep Çakir",
           "birth_year": 2013,
           "gender": "F",
@@ -33930,165 +34205,6 @@
               "dist": 400,
               "entry_time": "4:53.67",
               "entry_points": 1
-            }
-          ]
-        },
-        {
-          "rank": 27,
-          "name": "Yağmur Kont",
-          "birth_year": 2013,
-          "gender": "F",
-          "club": "Gaziantep Sehitkamil Belediyesi Spor Kulübü",
-          "city": "Gaziantep",
-          "region": 6,
-          "top3": 21,
-          "seq": [
-            9,
-            9,
-            3,
-            2,
-            2,
-            1,
-            0
-          ],
-          "seq_display": "9+9+3 | 2 2 1",
-          "region_rank": 2,
-          "selected": "BÖLGE",
-          "selected_slot": "B6-2",
-          "selected_label": "Bölge",
-          "qualifies": true,
-          "tied": false,
-          "first_place": [],
-          "events": [
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "1500m Serbest",
-              "stroke": "Serbest",
-              "dist": 1500,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": false
-            }
-          ],
-          "events_antalya": [
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 7,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": false
-            }
-          ],
-          "events_edirne": [
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "1500m Serbest",
-              "stroke": "Serbest",
-              "dist": 1500,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            }
-          ],
-          "top3_antalya": 12,
-          "top3_edirne": 18,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:16.75",
-              "entry_points": 4
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 400,
-              "entry_time": "4:46.27",
-              "entry_points": 4
-            },
-            {
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "entry_time": "1:13.41",
-              "entry_points": 3
             }
           ]
         },
@@ -35272,6 +35388,14 @@
               "points": 3,
               "is_50m": false,
               "in_top3": false
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": false
             }
           ],
           "top3_antalya": 13,
@@ -35281,12 +35405,6 @@
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "31.16",
-              "entry_points": 4
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:16.87",
               "entry_points": 4
             }
           ]
@@ -38616,22 +38734,24 @@
               "points": 4,
               "is_50m": true,
               "in_top3": false
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 10,
-          "top3_edirne": 8,
+          "top3_edirne": 12,
           "pending_events": [
             {
               "stroke": "Kurbağalama",
               "dist": 100,
               "entry_time": "1:22.30",
               "entry_points": 4
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:16.42",
-              "entry_points": 5
             }
           ]
         },
@@ -40219,13 +40339,7 @@
           "selected_label": "-",
           "qualifies": true,
           "tied": false,
-          "first_place": [
-            {
-              "leg": "edirne",
-              "stroke": "Serbest",
-              "dist": 200
-            }
-          ],
+          "first_place": [],
           "events": [
             {
               "event": "100m Serbest",
@@ -61038,15 +61152,15 @@
         "club": "Enka Spor Kulübü",
         "multi": 2,
         "tr": 10,
-        "bolge": 6,
-        "total": 18
+        "bolge": 5,
+        "total": 17
       },
       {
         "club": "Fenerbahçe Spor Kulübü",
         "multi": 3,
         "tr": 5,
-        "bolge": 4,
-        "total": 12
+        "bolge": 5,
+        "total": 13
       },
       {
         "club": "Vamos Spor Kulübü",
@@ -62459,8 +62573,8 @@
           "club": "Enka Spor Kulübü",
           "multi": 0,
           "tr": 3,
-          "bolge": 3,
-          "total": 6
+          "bolge": 2,
+          "total": 5
         },
         {
           "club": "Goztepe Spor Kulübü",
@@ -62526,6 +62640,13 @@
           "total": 1
         },
         {
+          "club": "Fenerbahçe Spor Kulübü",
+          "multi": 0,
+          "tr": 0,
+          "bolge": 1,
+          "total": 1
+        },
+        {
           "club": "Yildiz Su Sporları Spor Kulübü",
           "multi": 0,
           "tr": 0,
@@ -62559,13 +62680,6 @@
           "tr": 0,
           "bolge": 1,
           "total": 1
-        },
-        {
-          "club": "Fenerbahçe Spor Kulübü",
-          "multi": 0,
-          "tr": 0,
-          "bolge": 0,
-          "total": 0
         },
         {
           "club": "İstanbul Ferdi",
