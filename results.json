@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19 11:39 (TR)",
+  "generated_at": "2026-04-19 11:49 (TR)",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -3280,6 +3280,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
@@ -3293,18 +3301,12 @@
               "dist": 100,
               "points": 1,
               "is_50m": false,
-              "in_top3": true
+              "in_top3": false
             }
           ],
           "top3_antalya": 8,
-          "top3_edirne": 6,
+          "top3_edirne": 8,
           "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:10.46",
-              "entry_points": 3
-            },
             {
               "stroke": "Serbest",
               "dist": 400,
@@ -3957,6 +3959,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
@@ -3970,19 +3980,12 @@
               "dist": 50,
               "points": 1,
               "is_50m": true,
-              "in_top3": true
+              "in_top3": false
             }
           ],
           "top3_antalya": 4,
-          "top3_edirne": 4,
-          "pending_events": [
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:10.50",
-              "entry_points": 3
-            }
-          ]
+          "top3_edirne": 5,
+          "pending_events": []
         },
         {
           "rank": 27,
@@ -4562,6 +4565,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
@@ -4571,19 +4582,13 @@
             }
           ],
           "top3_antalya": 3,
-          "top3_edirne": 1,
+          "top3_edirne": 3,
           "pending_events": [
             {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.85",
               "entry_points": 1
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:10.11",
-              "entry_points": 3
             }
           ]
         },
@@ -14605,6 +14610,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
@@ -14626,7 +14639,7 @@
               "dist": 50,
               "points": 6,
               "is_50m": true,
-              "in_top3": true
+              "in_top3": false
             },
             {
               "event": "100m Kelebek",
@@ -14638,19 +14651,13 @@
             }
           ],
           "top3_antalya": 19,
-          "top3_edirne": 18,
+          "top3_edirne": 19,
           "pending_events": [
             {
               "stroke": "Kelebek",
               "dist": 50,
               "entry_time": "30.38",
               "entry_points": 3
-            },
-            {
-              "stroke": "Serbest",
-              "dist": 200,
-              "entry_time": "2:07.19",
-              "entry_points": 7
             },
             {
               "stroke": "Sırtüstü",
