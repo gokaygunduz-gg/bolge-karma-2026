@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20 14:07 (TR)",
+  "generated_at": "2026-04-20 18:58 (TR)",
   "legs": "antalya,edirne",
   "groups": {
     "2011_F": {
@@ -130,17 +130,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -254,19 +254,19 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 7,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 7,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 7,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -649,19 +649,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 6,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
               "in_top3": true
             }
           ],
@@ -1301,6 +1301,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -1309,10 +1317,10 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
-              "points": 7,
+              "points": 4,
               "is_50m": false,
               "in_top3": true
             },
@@ -1323,14 +1331,6 @@
               "points": 4,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
             }
           ],
           "top3_antalya": 10,
@@ -1472,17 +1472,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -2365,19 +2365,19 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
               "points": 3,
               "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
               "in_top3": false
             },
             {
@@ -2509,17 +2509,17 @@
               "in_top3": true
             },
             {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -2797,6 +2797,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
@@ -2808,14 +2816,6 @@
               "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -3014,19 +3014,19 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 3,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -3118,17 +3118,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -3409,17 +3409,17 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -3637,7 +3637,7 @@
         },
         {
           "rank": 23,
-          "name": "Matılda Velıchuk",
+          "name": "Matılda Velichuk",
           "birth_year": 2011,
           "gender": "F",
           "club": "Muratpaşa Belediyesi Spor Kulübü",
@@ -3860,16 +3860,16 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 5,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 5,
               "is_50m": true,
@@ -3981,20 +3981,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 4,
@@ -4124,16 +4124,16 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 2,
               "is_50m": false,
@@ -5468,8 +5468,8 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 9,
               "is_50m": true,
@@ -5484,8 +5484,8 @@
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 9,
               "is_50m": true,
@@ -5885,7 +5885,14 @@
           ],
           "top3_antalya": 20,
           "top3_edirne": 23,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:07.44",
+              "entry_points": 5
+            }
+          ]
         },
         {
           "rank": 0,
@@ -6138,7 +6145,14 @@
           ],
           "top3_antalya": 16,
           "top3_edirne": 18,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:08.33",
+              "entry_points": 5
+            }
+          ]
         },
         {
           "rank": 0,
@@ -6390,16 +6404,16 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 9,
               "is_50m": false,
@@ -6520,17 +6534,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": false
@@ -6538,7 +6552,14 @@
           ],
           "top3_antalya": 21,
           "top3_edirne": 22,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:08.74",
+              "entry_points": 4
+            }
+          ]
         },
         {
           "rank": 3,
@@ -6761,19 +6782,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 6,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
               "in_top3": true
             }
           ],
@@ -6874,17 +6895,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -7054,17 +7075,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": false
@@ -7723,17 +7744,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -7958,17 +7979,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
@@ -8386,14 +8407,6 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -8402,16 +8415,24 @@
               "in_top3": false
             },
             {
-              "event": "100m Kelebek",
+              "event": "50m Kelebek",
               "stroke": "Kelebek",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 2,
               "is_50m": false,
@@ -8977,17 +8998,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -9290,16 +9311,16 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 6,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 6,
               "is_50m": true,
@@ -9402,17 +9423,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -9627,20 +9648,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "50m Kelebek",
@@ -9750,7 +9771,14 @@
           ],
           "top3_antalya": 12,
           "top3_edirne": 7,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:14.27",
+              "entry_points": 2
+            }
+          ]
         },
         {
           "rank": 30,
@@ -9990,17 +10018,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -10008,7 +10036,14 @@
           ],
           "top3_antalya": 10,
           "top3_edirne": 9,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:15.75",
+              "entry_points": 2
+            }
+          ]
         },
         {
           "rank": 32,
@@ -10651,17 +10686,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -11085,8 +11120,16 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 3,
               "is_50m": true,
@@ -11101,16 +11144,8 @@
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "50m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 3,
               "is_50m": true,
@@ -11131,7 +11166,7 @@
         },
         {
           "rank": 42,
-          "name": "Miraç Efe Kargın",
+          "name": "Miraç Efe Kargin",
           "birth_year": 2011,
           "gender": "M",
           "club": "Uludag Oksijen Spor Kulübü",
@@ -11389,17 +11424,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 800,
               "points": 1,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
@@ -11756,11 +11791,11 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 4,
-              "is_50m": true,
+              "is_50m": false,
               "in_top3": true
             },
             {
@@ -11769,15 +11804,15 @@
               "dist": 50,
               "points": 4,
               "is_50m": true,
-              "in_top3": false
+              "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
               "points": 4,
-              "is_50m": false,
-              "in_top3": true
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 7,
@@ -13021,19 +13056,19 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 2,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 2,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 2,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -13051,7 +13086,7 @@
         },
         {
           "rank": 66,
-          "name": "Efe Aydınçakır",
+          "name": "Efe Aydinçakir",
           "birth_year": 2011,
           "gender": "M",
           "club": "Trabzon Yüzme Spor Kulübü",
@@ -13431,16 +13466,16 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 2,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 2,
               "is_50m": true,
@@ -14467,17 +14502,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -14684,17 +14719,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -14959,6 +14994,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -14967,10 +15010,10 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "100m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
-              "points": 7,
+              "dist": 100,
+              "points": 6,
               "is_50m": false,
               "in_top3": true
             },
@@ -14980,7 +15023,7 @@
               "dist": 200,
               "points": 6,
               "is_50m": false,
-              "in_top3": true
+              "in_top3": false
             },
             {
               "event": "50m Serbest",
@@ -14988,14 +15031,6 @@
               "dist": 50,
               "points": 6,
               "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 6,
-              "is_50m": false,
               "in_top3": false
             },
             {
@@ -15241,17 +15276,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -15533,17 +15568,17 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Serbest",
+              "event": "1500m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 1500,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "1500m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 1500,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -15718,19 +15753,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 3,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -15849,6 +15884,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "200m Kelebek",
               "stroke": "Kelebek",
               "dist": 200,
@@ -15860,14 +15903,6 @@
               "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 100,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": false
@@ -16135,17 +16170,17 @@
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -16599,16 +16634,8 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 4,
               "is_50m": false,
@@ -16623,8 +16650,16 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 100,
               "points": 4,
               "is_50m": false,
@@ -17034,17 +17069,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
@@ -17398,14 +17433,6 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
@@ -17414,12 +17441,12 @@
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
+              "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
             },
             {
               "event": "200m Karışık",
@@ -17427,6 +17454,14 @@
               "dist": 200,
               "points": 1,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -17608,6 +17643,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 100,
@@ -17616,10 +17659,10 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
-              "points": 4,
+              "points": 2,
               "is_50m": false,
               "in_top3": true
             },
@@ -17635,14 +17678,6 @@
               "event": "400m Serbest",
               "stroke": "Serbest",
               "dist": 400,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -17763,17 +17798,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -18173,16 +18208,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -18262,17 +18297,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": true
@@ -18584,8 +18619,8 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -18600,8 +18635,8 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -18917,8 +18952,16 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 2,
               "is_50m": true,
@@ -18933,20 +18976,12 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 2,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": true
             }
           ],
           "top3_antalya": 2,
@@ -19455,8 +19490,8 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -19471,8 +19506,8 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -19638,7 +19673,7 @@
         },
         {
           "rank": 49,
-          "name": "Mısra Saygılı",
+          "name": "Mısra Saygili",
           "birth_year": 2012,
           "gender": "F",
           "club": "Bosch Spor Kulübü",
@@ -19695,17 +19730,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
@@ -19765,6 +19800,14 @@
           "events_antalya": [],
           "events_edirne": [
             {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
@@ -19779,14 +19822,6 @@
               "points": 1,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
             }
           ],
           "top3_antalya": 0,
@@ -20569,11 +20604,11 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 9,
-              "is_50m": true,
+              "is_50m": false,
               "in_top3": true
             },
             {
@@ -20585,12 +20620,20 @@
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
               "points": 9,
-              "is_50m": false,
+              "is_50m": true,
               "in_top3": true
+            },
+            {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": false
             },
             {
               "event": "200m Kelebek",
@@ -20606,14 +20649,6 @@
               "dist": 50,
               "points": 7,
               "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 7,
-              "is_50m": false,
               "in_top3": false
             },
             {
@@ -20739,17 +20774,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "1500m Serbest",
+              "stroke": "Serbest",
+              "dist": 1500,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "1500m Serbest",
-              "stroke": "Serbest",
-              "dist": 1500,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -20877,17 +20912,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -21014,12 +21049,12 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
               "points": 9,
-              "is_50m": false,
-              "in_top3": true
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "200m Sırtüstü",
@@ -21030,12 +21065,12 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 9,
-              "is_50m": true,
-              "in_top3": false
+              "is_50m": false,
+              "in_top3": true
             },
             {
               "event": "100m Serbest",
@@ -21178,16 +21213,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 200,
               "points": 7,
               "is_50m": false,
@@ -21316,17 +21351,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -21567,17 +21602,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -21753,19 +21788,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
               "points": 5,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
               "in_top3": false
             },
             {
@@ -21882,17 +21917,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -22197,16 +22232,16 @@
               "in_top3": false
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 2,
               "is_50m": true,
               "in_top3": false
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 2,
               "is_50m": true,
@@ -22740,17 +22775,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -22901,19 +22936,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 3,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -23015,17 +23050,17 @@
               "in_top3": true
             },
             {
-              "event": "400m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 400,
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "400m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 400,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -23144,17 +23179,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -23258,17 +23293,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -23403,16 +23438,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 200,
               "points": 6,
               "is_50m": false,
@@ -23671,17 +23706,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "800m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 800,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 800,
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": false
@@ -24019,19 +24054,19 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
               "points": 2,
               "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
               "in_top3": false
             }
           ],
@@ -24213,6 +24248,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 200,
+              "points": 7,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -24221,10 +24264,10 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
-              "points": 7,
+              "points": 3,
               "is_50m": false,
               "in_top3": true
             },
@@ -24235,14 +24278,6 @@
               "points": 3,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
             },
             {
               "event": "400m Karışık",
@@ -24615,20 +24650,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "50m Serbest",
@@ -24753,24 +24788,24 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 200,
               "points": 3,
               "is_50m": false,
@@ -25047,17 +25082,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
@@ -25087,16 +25122,16 @@
               "in_top3": false
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 2,
               "is_50m": true,
               "in_top3": false
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 2,
               "is_50m": true,
@@ -25226,17 +25261,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
@@ -25395,19 +25430,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 4,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -25539,20 +25574,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 7,
@@ -25922,16 +25957,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
-              "stroke": "Kelebek",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kelebek",
+              "stroke": "Kelebek",
               "dist": 200,
               "points": 4,
               "is_50m": false,
@@ -25954,17 +25989,17 @@
               "in_top3": false
             },
             {
-              "event": "200m Serbest",
+              "event": "1500m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
+              "dist": 1500,
               "points": 1,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "1500m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 1500,
+              "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
@@ -26052,17 +26087,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -26086,7 +26121,14 @@
           ],
           "top3_antalya": 0,
           "top3_edirne": 13,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:28.47",
+              "entry_points": 3
+            }
+          ]
         },
         {
           "rank": 41,
@@ -26189,14 +26231,6 @@
               "in_top3": false
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -26208,6 +26242,14 @@
               "event": "200m Serbest",
               "stroke": "Serbest",
               "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -26489,16 +26531,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 3,
               "is_50m": false,
@@ -26766,16 +26808,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Serbest",
+              "stroke": "Serbest",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -26903,20 +26945,20 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
               "points": 3,
               "is_50m": true,
               "in_top3": false
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
             },
             {
               "event": "50m Sırtüstü",
@@ -27065,19 +27107,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "200m Kelebek",
               "stroke": "Kelebek",
               "dist": 200,
               "points": 3,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -27202,16 +27244,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -27630,14 +27672,6 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
@@ -27646,10 +27680,10 @@
               "in_top3": true
             },
             {
-              "event": "400m Serbest",
+              "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 400,
-              "points": 2,
+              "dist": 200,
+              "points": 4,
               "is_50m": false,
               "in_top3": true
             },
@@ -27657,6 +27691,14 @@
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -27783,19 +27825,19 @@
               "in_top3": false
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
               "points": 1,
               "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
               "in_top3": false
             }
           ],
@@ -27889,17 +27931,17 @@
           ],
           "events_edirne": [
             {
-              "event": "400m Serbest",
+              "event": "1500m Serbest",
               "stroke": "Serbest",
-              "dist": 400,
+              "dist": 1500,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "1500m Serbest",
+              "event": "400m Serbest",
               "stroke": "Serbest",
-              "dist": 1500,
+              "dist": 400,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -28120,7 +28162,7 @@
         },
         {
           "rank": 57,
-          "name": "Ateş Karallı",
+          "name": "Ateş Karalli",
           "birth_year": 2012,
           "gender": "M",
           "club": "Aykon Spor Kulübü",
@@ -28281,14 +28323,6 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
@@ -28297,11 +28331,11 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -28311,6 +28345,14 @@
               "points": 1,
               "is_50m": true,
               "in_top3": false
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 8,
@@ -28515,14 +28557,6 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
@@ -28534,6 +28568,14 @@
               "event": "400m Karışık",
               "stroke": "Karışık",
               "dist": 400,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -28646,16 +28688,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 3,
               "is_50m": false,
@@ -28927,17 +28969,17 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -28957,7 +28999,7 @@
         },
         {
           "rank": 65,
-          "name": "Ilgaz Fırtına",
+          "name": "Ilgaz Firtina",
           "birth_year": 2012,
           "gender": "M",
           "club": "Poseidon Spor Kulübü",
@@ -29016,22 +29058,6 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
@@ -29043,6 +29069,22 @@
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -29113,22 +29155,6 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
@@ -29140,6 +29166,22 @@
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -29226,7 +29268,14 @@
           ],
           "top3_antalya": 0,
           "top3_edirne": 9,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:31.48",
+              "entry_points": 2
+            }
+          ]
         },
         {
           "rank": 68,
@@ -29366,7 +29415,7 @@
         },
         {
           "rank": 69,
-          "name": "Çınar Furtacı",
+          "name": "Çınar Furtaci",
           "birth_year": 2012,
           "gender": "M",
           "club": "Sakarya Su Sporları Spor Kulübü",
@@ -29439,20 +29488,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 0,
@@ -29461,7 +29510,7 @@
         },
         {
           "rank": 70,
-          "name": "Ömer Kağan Çanakpınar",
+          "name": "Ömer Kağan Çanakpinar",
           "birth_year": 2012,
           "gender": "M",
           "club": "Trabzon Yesilova Spor Kulübü",
@@ -30442,6 +30491,14 @@
           "events_antalya": [],
           "events_edirne": [
             {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -30450,10 +30507,10 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 2,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 1,
               "is_50m": false,
               "in_top3": true
             },
@@ -30464,14 +30521,6 @@
               "points": 1,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
             }
           ],
           "top3_antalya": 0,
@@ -30537,19 +30586,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 1,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": true
             }
           ],
@@ -30902,7 +30951,14 @@
           ],
           "top3_antalya": 0,
           "top3_edirne": 3,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:33.05",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 88,
@@ -30954,16 +31010,16 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 2,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 2,
               "is_50m": true,
@@ -31576,9 +31632,9 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -31592,25 +31648,25 @@
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
               "points": 9,
               "is_50m": false,
-              "in_top3": false
+              "in_top3": true
             },
             {
               "event": "400m Karışık",
               "stroke": "Karışık",
               "dist": 400,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": false
@@ -31756,17 +31812,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -33876,6 +33932,14 @@
               "in_top3": true
             },
             {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
               "event": "50m Kelebek",
               "stroke": "Kelebek",
               "dist": 50,
@@ -33887,14 +33951,6 @@
               "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 100,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": false
@@ -34168,19 +34224,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 5,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -34622,17 +34678,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -34810,20 +34866,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "200m Karışık",
@@ -35536,7 +35592,7 @@
         },
         {
           "rank": 27,
-          "name": "Zeynep Çakır",
+          "name": "Zeynep Çakir",
           "birth_year": 2013,
           "gender": "F",
           "club": "Edirne Yüzme Eğitim Merkezi Spor Kulübü",
@@ -35742,17 +35798,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -35880,16 +35936,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Serbest",
+              "stroke": "Serbest",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -35992,11 +36048,11 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 50,
+              "dist": 200,
               "points": 7,
-              "is_50m": true,
+              "is_50m": false,
               "in_top3": true
             },
             {
@@ -36008,11 +36064,11 @@
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "50m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 50,
               "points": 7,
-              "is_50m": false,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -36965,14 +37021,6 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "200m Kelebek",
               "stroke": "Kelebek",
               "dist": 200,
@@ -36981,16 +37029,24 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
+              "dist": 100,
+              "points": 6,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 5,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 5,
               "is_50m": true,
@@ -37134,17 +37190,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -37637,17 +37693,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -37984,19 +38040,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
               "points": 3,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -38132,16 +38188,8 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -38164,11 +38212,19 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 1,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -38952,16 +39008,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -39065,19 +39121,19 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 5,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 5,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 5,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -39215,7 +39271,7 @@
         },
         {
           "rank": 58,
-          "name": "Derin Eda Aşcı",
+          "name": "Derin Eda Aşci",
           "birth_year": 2013,
           "gender": "F",
           "club": "Ege Ocean Yüzme İhtisas Spor Kulübü",
@@ -39732,20 +39788,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 2,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 2,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "200m Sırtüstü",
@@ -39965,19 +40021,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 4,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -40598,14 +40654,6 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 4,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
@@ -40614,17 +40662,25 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "50m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
+              "dist": 50,
+              "points": 4,
+              "is_50m": true,
               "in_top3": true
             },
             {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -40832,17 +40888,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -40969,6 +41025,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
@@ -40987,14 +41051,6 @@
             {
               "event": "200m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
               "dist": 200,
               "points": 4,
               "is_50m": false,
@@ -41115,14 +41171,6 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 200,
@@ -41131,17 +41179,25 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 2,
-              "is_50m": false,
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
               "in_top3": false
             },
             {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
+              "points": 2,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -41381,20 +41437,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "200m Serbest",
@@ -41772,17 +41828,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -41794,7 +41850,7 @@
         },
         {
           "rank": 83,
-          "name": "Zeynep Kanıgür",
+          "name": "Zeynep Kanigür",
           "birth_year": 2013,
           "gender": "F",
           "club": "Ted Ankara Kolejliler Spor Kulübü",
@@ -42103,19 +42159,19 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
               "points": 1,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -42501,20 +42557,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 0,
@@ -42589,6 +42645,14 @@
               "in_top3": true
             },
             {
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -42600,14 +42664,6 @@
               "event": "200m Serbest",
               "stroke": "Serbest",
               "dist": 200,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -42686,17 +42742,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -43846,14 +43902,6 @@
               "in_top3": false
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 200,
@@ -43865,6 +43913,14 @@
               "event": "400m Karışık",
               "stroke": "Karışık",
               "dist": 400,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": false
@@ -44018,7 +44074,7 @@
         },
         {
           "rank": 109,
-          "name": "Medine Hülya Uluışık",
+          "name": "Medine Hülya Uluişik",
           "birth_year": 2013,
           "gender": "F",
           "club": "Yildiz Su Sporları Spor Kulübü",
@@ -44067,17 +44123,17 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 3,
               "is_50m": false,
               "in_top3": true
@@ -44184,7 +44240,7 @@
         },
         {
           "rank": 111,
-          "name": "Duygu Sena Durdalı",
+          "name": "Duygu Sena Durdali",
           "birth_year": 2013,
           "gender": "F",
           "club": "Toroslar Yüzme Spor Kulübü",
@@ -44345,8 +44401,8 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 50,
               "points": 1,
               "is_50m": true,
@@ -44361,8 +44417,8 @@
               "in_top3": true
             },
             {
-              "event": "50m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 1,
               "is_50m": true,
@@ -44583,17 +44639,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": true
@@ -45399,9 +45455,9 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 1,
               "is_50m": false,
               "in_top3": true
@@ -45415,9 +45471,9 @@
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
@@ -45711,20 +45767,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
               "points": 1,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 1,
@@ -45773,19 +45829,19 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "400m Karışık",
               "stroke": "Karışık",
               "dist": 400,
               "points": 1,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": true
             }
           ],
@@ -46240,7 +46296,7 @@
         },
         {
           "rank": 144,
-          "name": "Ayşe Nisa Elmacı",
+          "name": "Ayşe Nisa Elmaci",
           "birth_year": 2013,
           "gender": "F",
           "club": "Biga Gelisim Spor Kulübü",
@@ -46617,12 +46673,12 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 50,
+              "dist": 200,
               "points": 9,
-              "is_50m": true,
-              "in_top3": false
+              "is_50m": false,
+              "in_top3": true
             },
             {
               "event": "100m Kelebek",
@@ -46633,12 +46689,20 @@
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 200,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 9,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 9,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "100m Kurbağalama",
@@ -46646,13 +46710,13 @@
               "dist": 100,
               "points": 9,
               "is_50m": false,
-              "in_top3": true
+              "in_top3": false
             },
             {
-              "event": "400m Karışık",
+              "event": "200m Karışık",
               "stroke": "Karışık",
-              "dist": 400,
-              "points": 9,
+              "dist": 200,
+              "points": 7,
               "is_50m": false,
               "in_top3": false
             },
@@ -46667,14 +46731,6 @@
             {
               "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
-              "points": 7,
-              "is_50m": false,
-              "in_top3": false
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
               "dist": 200,
               "points": 7,
               "is_50m": false,
@@ -46829,14 +46885,6 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "50m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 50,
@@ -46845,8 +46893,8 @@
               "in_top3": false
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 9,
               "is_50m": false,
@@ -46866,14 +46914,14 @@
               "dist": 400,
               "points": 9,
               "is_50m": false,
-              "in_top3": false
+              "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 7,
-              "is_50m": true,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
+              "points": 9,
+              "is_50m": false,
               "in_top3": false
             },
             {
@@ -46882,6 +46930,14 @@
               "dist": 200,
               "points": 7,
               "is_50m": false,
+              "in_top3": false
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 7,
+              "is_50m": true,
               "in_top3": false
             },
             {
@@ -47056,17 +47112,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": false
@@ -47236,6 +47292,14 @@
           ],
           "events_edirne": [
             {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 100,
@@ -47244,10 +47308,10 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
+              "event": "100m Serbest",
               "stroke": "Serbest",
-              "dist": 200,
-              "points": 9,
+              "dist": 100,
+              "points": 7,
               "is_50m": false,
               "in_top3": true
             },
@@ -47260,14 +47324,6 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 7,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -47278,7 +47334,14 @@
           ],
           "top3_antalya": 24,
           "top3_edirne": 25,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:26.33",
+              "entry_points": 7
+            }
+          ]
         },
         {
           "rank": 5,
@@ -47426,17 +47489,17 @@
           ],
           "events_edirne": [
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -47564,17 +47627,9 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
-              "event": "400m Serbest",
-              "stroke": "Serbest",
-              "dist": 400,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -47588,9 +47643,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Serbest",
+              "stroke": "Serbest",
               "dist": 200,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "400m Serbest",
+              "stroke": "Serbest",
+              "dist": 400,
               "points": 9,
               "is_50m": false,
               "in_top3": false
@@ -47767,20 +47830,20 @@
           ],
           "events_edirne": [
             {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 9,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 50,
               "points": 9,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 9,
-              "is_50m": false,
-              "in_top3": true
             },
             {
               "event": "50m Serbest",
@@ -47791,17 +47854,17 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -47956,17 +48019,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -47988,25 +48051,32 @@
               "in_top3": false
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 6,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "200m Karışık",
               "stroke": "Karışık",
               "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": false
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 6,
+              "is_50m": true,
+              "in_top3": false
             }
           ],
           "top3_antalya": 21,
           "top3_edirne": 27,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:42.32",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 9,
@@ -48177,6 +48247,14 @@
               "in_top3": false
             },
             {
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
+              "points": 5,
+              "is_50m": false,
+              "in_top3": false
+            },
+            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
@@ -48191,19 +48269,18 @@
               "points": 5,
               "is_50m": false,
               "in_top3": false
-            },
-            {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": false
             }
           ],
           "top3_antalya": 18,
           "top3_edirne": 27,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:27.99",
+              "entry_points": 6
+            }
+          ]
         },
         {
           "rank": 10,
@@ -48420,17 +48497,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -48642,17 +48719,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": false
@@ -48688,7 +48765,7 @@
         },
         {
           "rank": 13,
-          "name": "Ekin Yaldaeı",
+          "name": "Ekin Yaldaei",
           "birth_year": 2013,
           "gender": "M",
           "club": "Mersin Gençlerbirliği Spor Kulübü",
@@ -48789,17 +48866,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": false
@@ -48831,7 +48908,14 @@
           ],
           "top3_antalya": 0,
           "top3_edirne": 25,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:34.95",
+              "entry_points": 4
+            }
+          ]
         },
         {
           "rank": 14,
@@ -48986,17 +49070,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": false
@@ -49012,7 +49096,14 @@
           ],
           "top3_antalya": 14,
           "top3_edirne": 25,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:44.55",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 15,
@@ -49150,17 +49241,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": false
@@ -49419,16 +49510,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 200,
               "points": 6,
               "is_50m": false,
@@ -49605,11 +49696,11 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 6,
-              "is_50m": true,
+              "is_50m": false,
               "in_top3": false
             },
             {
@@ -49621,11 +49712,11 @@
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
               "points": 6,
-              "is_50m": false,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -49882,19 +49973,19 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 9,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 9,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 9,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -49914,16 +50005,16 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 100,
               "points": 4,
               "is_50m": false,
@@ -50219,19 +50310,19 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 9,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Kelebek",
               "stroke": "Kelebek",
               "dist": 100,
               "points": 9,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 9,
+              "is_50m": true,
               "in_top3": true
             },
             {
@@ -50331,17 +50422,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 9,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 9,
               "is_50m": false,
               "in_top3": true
@@ -50615,17 +50706,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": false
@@ -50810,16 +50901,16 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 5,
               "is_50m": false,
@@ -51085,14 +51176,6 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 7,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "200m Serbest",
               "stroke": "Serbest",
               "dist": 200,
@@ -51101,12 +51184,12 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
+              "event": "50m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
-              "points": 6,
-              "is_50m": false,
-              "in_top3": false
+              "dist": 50,
+              "points": 7,
+              "is_50m": true,
+              "in_top3": true
             },
             {
               "event": "50m Serbest",
@@ -51114,6 +51197,14 @@
               "dist": 50,
               "points": 6,
               "is_50m": true,
+              "in_top3": false
+            },
+            {
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
+              "points": 6,
+              "is_50m": false,
               "in_top3": false
             }
           ],
@@ -51725,17 +51816,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": false
@@ -51751,7 +51842,14 @@
           ],
           "top3_antalya": 18,
           "top3_edirne": 22,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:44.08",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 35,
@@ -52253,24 +52351,16 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 7,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 7,
               "is_50m": false,
@@ -52283,6 +52373,14 @@
               "points": 7,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 7,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "50m Serbest",
@@ -52458,17 +52556,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
+              "event": "1500m Serbest",
+              "stroke": "Serbest",
+              "dist": 1500,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "1500m Serbest",
-              "stroke": "Serbest",
-              "dist": 1500,
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -52516,7 +52614,14 @@
           ],
           "top3_antalya": 19,
           "top3_edirne": 20,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:42.86",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 40,
@@ -53356,17 +53461,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 200,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -53520,16 +53625,16 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 4,
               "is_50m": false,
@@ -53642,17 +53747,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -53753,17 +53858,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
+              "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 100,
+              "dist": 200,
               "points": 6,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
+              "event": "100m Kurbağalama",
               "stroke": "Kurbağalama",
-              "dist": 200,
+              "dist": 100,
               "points": 6,
               "is_50m": false,
               "in_top3": true
@@ -53832,16 +53937,16 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Sırtüstü",
+              "stroke": "Sırtüstü",
               "dist": 50,
               "points": 7,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Sırtüstü",
-              "stroke": "Sırtüstü",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 7,
               "is_50m": true,
@@ -54021,17 +54126,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
+              "event": "1500m Serbest",
+              "stroke": "Serbest",
+              "dist": 1500,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "1500m Serbest",
-              "stroke": "Serbest",
-              "dist": 1500,
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": false
@@ -54649,17 +54754,17 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 7,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 7,
               "is_50m": false,
               "in_top3": true
@@ -54820,16 +54925,16 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 5,
               "is_50m": false,
@@ -55008,8 +55113,8 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 4,
               "is_50m": false,
@@ -55024,8 +55129,8 @@
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Serbest",
+              "stroke": "Serbest",
               "dist": 200,
               "points": 4,
               "is_50m": false,
@@ -55034,7 +55139,14 @@
           ],
           "top3_antalya": 8,
           "top3_edirne": 17,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:40.96",
+              "entry_points": 2
+            }
+          ]
         },
         {
           "rank": 59,
@@ -55372,16 +55484,16 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 4,
               "is_50m": true,
               "in_top3": false
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 4,
               "is_50m": true,
@@ -55729,14 +55841,6 @@
               "in_top3": true
             },
             {
-              "event": "100m Kurbağalama",
-              "stroke": "Kurbağalama",
-              "dist": 100,
-              "points": 5,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "200m Kurbağalama",
               "stroke": "Kurbağalama",
               "dist": 200,
@@ -55750,6 +55854,14 @@
               "dist": 1500,
               "points": 5,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Kurbağalama",
+              "stroke": "Kurbağalama",
+              "dist": 100,
+              "points": 5,
+              "is_50m": false,
               "in_top3": false
             },
             {
@@ -55761,8 +55873,8 @@
               "in_top3": false
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
+              "event": "100m Serbest",
+              "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -55777,8 +55889,8 @@
               "in_top3": false
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
               "dist": 100,
               "points": 1,
               "is_50m": false,
@@ -55787,7 +55899,14 @@
           ],
           "top3_antalya": 2,
           "top3_edirne": 16,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:43.10",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 65,
@@ -56830,20 +56949,20 @@
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 200,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "50m Serbest",
               "stroke": "Serbest",
               "dist": 50,
               "points": 1,
               "is_50m": true,
               "in_top3": false
+            },
+            {
+              "event": "200m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 200,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
             }
           ],
           "top3_antalya": 7,
@@ -56954,17 +57073,17 @@
           ],
           "events_edirne": [
             {
-              "event": "100m Sırtüstü",
+              "event": "200m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 100,
+              "dist": 200,
               "points": 5,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Sırtüstü",
+              "event": "100m Sırtüstü",
               "stroke": "Sırtüstü",
-              "dist": 200,
+              "dist": 100,
               "points": 5,
               "is_50m": false,
               "in_top3": true
@@ -57123,17 +57242,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 2,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
               "points": 2,
               "is_50m": false,
               "in_top3": false
@@ -57368,7 +57487,14 @@
           ],
           "top3_antalya": 10,
           "top3_edirne": 14,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:39.87",
+              "entry_points": 2
+            }
+          ]
         },
         {
           "rank": 78,
@@ -57985,17 +58111,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -58496,17 +58622,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
+              "event": "200m Kelebek",
               "stroke": "Kelebek",
-              "dist": 100,
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "200m Kelebek",
+              "event": "100m Kelebek",
               "stroke": "Kelebek",
-              "dist": 200,
+              "dist": 100,
               "points": 4,
               "is_50m": false,
               "in_top3": true
@@ -58897,14 +59023,6 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
-              "points": 4,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
@@ -58916,6 +59034,14 @@
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
+              "points": 4,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
               "points": 4,
               "is_50m": false,
               "in_top3": false
@@ -58947,7 +59073,14 @@
           ],
           "top3_antalya": 8,
           "top3_edirne": 12,
-          "pending_events": []
+          "pending_events": [
+            {
+              "stroke": "Serbest",
+              "dist": 400,
+              "entry_time": "4:44.91",
+              "entry_points": 1
+            }
+          ]
         },
         {
           "rank": 92,
@@ -59438,17 +59571,17 @@
               "in_top3": true
             },
             {
-              "event": "200m Serbest",
-              "stroke": "Serbest",
-              "dist": 200,
+              "event": "400m Karışık",
+              "stroke": "Karışık",
+              "dist": 400,
               "points": 3,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "400m Karışık",
-              "stroke": "Karışık",
-              "dist": 400,
+              "event": "200m Serbest",
+              "stroke": "Serbest",
+              "dist": 200,
               "points": 3,
               "is_50m": false,
               "in_top3": false
@@ -59559,6 +59692,14 @@
               "in_top3": true
             },
             {
+              "event": "100m Serbest",
+              "stroke": "Serbest",
+              "dist": 100,
+              "points": 3,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
               "event": "50m Sırtüstü",
               "stroke": "Sırtüstü",
               "dist": 50,
@@ -59573,14 +59714,6 @@
               "points": 3,
               "is_50m": true,
               "in_top3": false
-            },
-            {
-              "event": "100m Serbest",
-              "stroke": "Serbest",
-              "dist": 100,
-              "points": 3,
-              "is_50m": false,
-              "in_top3": true
             },
             {
               "event": "200m Serbest",
@@ -59680,12 +59813,12 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
+              "event": "200m Karışık",
+              "stroke": "Karışık",
+              "dist": 200,
               "points": 2,
-              "is_50m": true,
-              "in_top3": false
+              "is_50m": false,
+              "in_top3": true
             },
             {
               "event": "100m Kelebek",
@@ -59693,14 +59826,14 @@
               "dist": 100,
               "points": 2,
               "is_50m": false,
-              "in_top3": true
+              "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
-              "dist": 200,
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
               "points": 2,
-              "is_50m": false,
+              "is_50m": true,
               "in_top3": false
             }
           ],
@@ -59710,7 +59843,7 @@
         },
         {
           "rank": 99,
-          "name": "Aras Küçükakın",
+          "name": "Aras Küçükakin",
           "birth_year": 2013,
           "gender": "M",
           "club": "Olimpik Performans Spor Kulübü",
@@ -59952,16 +60085,16 @@
               "in_top3": true
             },
             {
-              "event": "200m Kurbağalama",
-              "stroke": "Kurbağalama",
+              "event": "200m Karışık",
+              "stroke": "Karışık",
               "dist": 200,
               "points": 1,
               "is_50m": false,
               "in_top3": false
             },
             {
-              "event": "200m Karışık",
-              "stroke": "Karışık",
+              "event": "200m Kurbağalama",
+              "stroke": "Kurbağalama",
               "dist": 200,
               "points": 1,
               "is_50m": false,
@@ -60294,20 +60427,20 @@
               "in_top3": true
             },
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 50,
-              "points": 3,
-              "is_50m": true,
-              "in_top3": false
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
               "points": 3,
               "is_50m": false,
               "in_top3": true
+            },
+            {
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 50,
+              "points": 3,
+              "is_50m": true,
+              "in_top3": false
             },
             {
               "event": "100m Serbest",
@@ -60540,16 +60673,16 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "50m Kelebek",
-              "stroke": "Kelebek",
+              "event": "50m Serbest",
+              "stroke": "Serbest",
               "dist": 50,
               "points": 5,
               "is_50m": true,
               "in_top3": true
             },
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
+              "event": "50m Kelebek",
+              "stroke": "Kelebek",
               "dist": 50,
               "points": 5,
               "is_50m": true,
@@ -61220,7 +61353,7 @@
         },
         {
           "rank": 119,
-          "name": "Aslan Arı",
+          "name": "Aslan Ari",
           "birth_year": 2013,
           "gender": "M",
           "club": "Edirnespor Su Sporları Spor Kulübü",
@@ -61278,17 +61411,17 @@
               "in_top3": true
             },
             {
-              "event": "100m Kelebek",
-              "stroke": "Kelebek",
-              "dist": 100,
+              "event": "800m Serbest",
+              "stroke": "Serbest",
+              "dist": 800,
               "points": 1,
               "is_50m": false,
               "in_top3": true
             },
             {
-              "event": "800m Serbest",
-              "stroke": "Serbest",
-              "dist": 800,
+              "event": "100m Kelebek",
+              "stroke": "Kelebek",
+              "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
@@ -61751,7 +61884,7 @@
         },
         {
           "rank": 127,
-          "name": "Hasan Kağan Uyanık",
+          "name": "Hasan Kağan Uyanik",
           "birth_year": 2013,
           "gender": "M",
           "club": "Agm Spor Kulübü",
@@ -62185,19 +62318,19 @@
           ],
           "events_edirne": [
             {
-              "event": "50m Serbest",
-              "stroke": "Serbest",
-              "dist": 50,
-              "points": 1,
-              "is_50m": true,
-              "in_top3": true
-            },
-            {
               "event": "100m Serbest",
               "stroke": "Serbest",
               "dist": 100,
               "points": 1,
               "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "50m Serbest",
+              "stroke": "Serbest",
+              "dist": 50,
+              "points": 1,
+              "is_50m": true,
               "in_top3": true
             }
           ],
@@ -62804,14 +62937,6 @@
           "events_antalya": [],
           "events_edirne": [
             {
-              "event": "100m Sırtüstü",
-              "stroke": "Sırtüstü",
-              "dist": 100,
-              "points": 1,
-              "is_50m": false,
-              "in_top3": true
-            },
-            {
               "event": "800m Serbest",
               "stroke": "Serbest",
               "dist": 800,
@@ -62823,6 +62948,14 @@
               "event": "1500m Serbest",
               "stroke": "Serbest",
               "dist": 1500,
+              "points": 1,
+              "is_50m": false,
+              "in_top3": true
+            },
+            {
+              "event": "100m Sırtüstü",
+              "stroke": "Sırtüstü",
+              "dist": 100,
               "points": 1,
               "is_50m": false,
               "in_top3": true
@@ -63094,7 +63227,7 @@
         },
         {
           "rank": 148,
-          "name": "Yağız Efe Yağcıoğlu",
+          "name": "Yağız Efe Yağcioğlu",
           "birth_year": 2013,
           "gender": "M",
           "club": "Dokuz Eylül Üniversitesi Spor Kulübü",
@@ -63387,7 +63520,7 @@
         },
         {
           "rank": 154,
-          "name": "Eser Yıldızhan",
+          "name": "Eser Yildizhan",
           "birth_year": 2013,
           "gender": "M",
           "club": "Bolu Gençlik Ve Spor Il Müdürlüğü Spor Kulübü",
